@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
 
     public event Action<GameState> onStateChange;
 
+    public CameraPosition cameraPositon;
+
     private void Awake()
     {
         instance = this;
@@ -55,7 +57,7 @@ public class GameManager : MonoBehaviour
 
     private void HandleViewing()
     {
-        Debug.Log("Now Viewing");
+        cameraPositon.SetCameraDefaultPosition();
     }
 
     private void HandlePlanting()
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour
 
     private void HandleBuilding()
     {
-        Debug.Log("Now Building");
+        cameraPositon.SetCameraDefaultPosition();
     }
 }
+

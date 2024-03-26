@@ -12,6 +12,7 @@ public class OverlayUIManager : MonoBehaviour
     private void Start()
     {
         GameManager.instance.onStateChange += UpdateUI;
+        UpdateUI(GameManager.instance.state);
     }
 
     private void UpdateUI(GameState state)
