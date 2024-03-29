@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Plant : MonoBehaviour
+public abstract class Plant : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        Test();
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void Test()
     {
-        
+        Debug.Log("Look at me plantin");
     }
 }

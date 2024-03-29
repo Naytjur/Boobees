@@ -92,7 +92,6 @@ public class PlantingManager : MonoBehaviour
             Plant plant = instance.GetComponent<Plant>();
             plantList.Add(plant);
             currentPlot.AddPlant(plant);
-            Debug.Log("planted");
             hasInstance = false;
             isPlanting = false;
             UpdateAmountUI();

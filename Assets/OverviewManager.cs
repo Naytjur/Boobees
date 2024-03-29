@@ -39,5 +39,6 @@ public class OverviewManager : MonoBehaviour
     private void UpdateActiveState(GameState state)
     {
         isActive = state == GameState.Viewing;
+        Debug.Log(state);
     }
 }
