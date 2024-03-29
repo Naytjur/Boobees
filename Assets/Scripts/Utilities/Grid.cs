@@ -11,7 +11,7 @@ public struct GridObject
     public int x;
     public int z;
 
-    public int value;
+    public Building building;
 }
 
 public class Grid
@@ -58,7 +58,6 @@ public class Grid
                 gridArray[i, j].x = i;
                 gridArray[i, j].z = j;
                 gridArray[i, j].grid = this;
-                SetValue(i, j, 0);
             }
         }
     }
@@ -76,33 +75,44 @@ public class Grid
         y = Mathf.FloorToInt((worldPosition - origin).z * cellSize);
     }
 
-    public void SetValue(int x, int z, int value)
+    public void SetValue(int x, int z, Building building)
     {
         if(x  >= 0 && z >= 0 && x < width && z < height)
         {
-            gridArray[x, z].value = value;
+            gridArray[x, z].building = building;
         }
     }
 
-    public void SetValue(Vector3 worldPosition, int value)
+    public void SetValue(Vector3 worldPosition, Building building)
     {
         GetXZ(worldPosition, out int x, out int z);
-        SetValue(x, z, value);
+        SetValue(x, z, building);
 
     }
 
-    public int GetValue(int x, int z)
+    public GridObject GetGridObject(int x, int z)
+    {
+        return gridArray[x, z];
+    }
+
+    public GridObject GetGridObject(Vector3 worldPosition)
+    {
+        GetXZ(worldPosition, out int x, out int z);
+        return GetGridObject(x, z);
+    }
+
+    public bool IsPositionOnGrid(int x, int z)
     {
         if (x >= 0 && z >= 0 && x < width && z < height)
         {
-            return gridArray[x, z].value;
+            return true;
         }
-        return -1;
+        return false;
     }
 
-    public int GetValue(Vector3 worldPosition)
+    public bool IsPositionOnGrid(Vector3 worldPosition)
     {
         GetXZ(worldPosition, out int x, out int z);
-        return GetValue(x, z);
+        return IsPositionOnGrid(x, z);
     }
 }

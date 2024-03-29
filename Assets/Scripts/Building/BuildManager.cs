@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BuildManager : MonoBehaviour
 {
+    public static BuildManager instance;
+
     [Header("Grid Configuration")]
     [SerializeField]
     private Transform gridOrigin;
@@ -16,19 +19,25 @@ public class BuildManager : MonoBehaviour
 
     [Header("Buildings")]
     [SerializeField]
-    private Transform[] buildings;
+    private BuildingSO[] buildings;
 
     //Internal Variables
-    private Grid buildGrid;
-    private bool isActive = false;
-    private Transform currentBuilding;
+    public Grid buildGrid;
+    private bool isActive;
+    private BuildingSO currentBuilding;
+
+    public static event Action onBuildingChanged;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
         GameManager.instance.onStateChange += UpdateActiveState;
+        UpdateActiveState(GameManager.instance.state);
         buildGrid = new Grid(gridWidth, gridHeight, gridCellSize, gridOrigin.position);
-
-        currentBuilding = buildings[0];
     }
 
     private void Update()
@@ -41,19 +50,49 @@ public class BuildManager : MonoBehaviour
 
     private void PlaceBuilding()
     {
-        buildGrid.GetXZ(Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("BuildSurface")), out int x, out int z);
-
-        if(buildGrid.GetValue(x, z) == 0)
+        if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("BuildSurface"), out Vector3 pos) && currentBuilding != null)
         {
-            Instantiate(currentBuilding, buildGrid.GetWorldPosition(x, z) ,Quaternion.identity);
-            buildGrid.SetValue(x, z, 1);
+            buildGrid.GetXZ(pos, out int x, out int z);
+
+            if (buildGrid.IsPositionOnGrid(x, z) && buildGrid.GetGridObject(x, z).building == null)
+            {
+                Building buildObject = Building.Create(buildGrid.GetWorldPosition(x, z), new Vector2Int(x, z), currentBuilding);
+
+                buildGrid.SetValue(x, z, buildObject);
+            }
         }
     }
 
     //Getters and Setters
     public void SetCurrentBuilding(int index)
     {
-        currentBuilding = buildings[index];
+        if(index < buildings.Length)
+        {
+            currentBuilding = buildings[index];
+            onBuildingChanged?.Invoke();
+        }
+    }
+
+    public BuildingSO GetCurrentBuilding()
+    {
+        return currentBuilding;
+    }
+
+    public bool GetMouseGridPosition(out Vector3 hit)
+    {
+        hit = Vector3.zero;
+        
+        if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("BuildSurface"), out Vector3 pos))
+        {
+            buildGrid.GetXZ(pos, out int x, out int z);
+
+            if (buildGrid.IsPositionOnGrid(x, z))
+            {
+                hit = buildGrid.GetWorldPosition(x, z);
+                return true;
+            }
+        }
+        return false;
     }
 
     //GameFlow

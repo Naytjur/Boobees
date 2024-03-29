@@ -1,28 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
+using static UnityEditor.PlayerSettings;
 
 public static class Mouse3D
 {
-    public static Vector3 GetMouseWorldPosition()
+    public static bool GetMouseWorldPosition(out Vector3 pos)
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        if (Physics.Raycast(ray, out RaycastHit hit, 1000f))
         {
-            return hit.point;
+            pos = hit.point;
+            return true;
         }
-
-        return new Vector3(-1000, -1000, -1000);
+        pos = Vector3.zero;
+        return false;
     }
 
-    public static Vector3 GetMouseWorldPosition(LayerMask layer)
+    public static bool GetMouseWorldPosition(LayerMask layer, out Vector3 pos)
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hit, 1000f, layer))
         {
-            return hit.point;
+            pos = hit.point;
+            return true;
         }
-
-        return new Vector3(-1000, -1000, -1000);
+        pos = Vector3.zero;
+        return false;
     }
 }
