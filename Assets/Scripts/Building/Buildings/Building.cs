@@ -7,7 +7,7 @@ public class Building : MonoBehaviour
     private BuildingSO buildingSO;
     private Vector2Int origin;
 
-    public static Building Create(Vector3 worldPosition, Vector2Int origin, BuildingSO buildingSO)
+    public static Building Create(Vector3 worldPosition, Vector2Int origin, BuildingSO buildingSO, float size)
     {
         Transform buildingTransform = Instantiate(buildingSO.prefab, worldPosition, Quaternion.identity);
 
@@ -15,6 +15,8 @@ public class Building : MonoBehaviour
 
         building.buildingSO = buildingSO;
         building.origin = origin;
+
+        buildingTransform.localScale = new Vector3(size, size, size);
 
         return building;
     }

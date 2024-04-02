@@ -69,10 +69,10 @@ public class Grid
         return new Vector3(x, 0, z) * cellSize + origin;
     }
 
-    public void GetXZ(Vector3 worldPosition, out int x, out int y)
+    public void GetXZ(Vector3 worldPosition, out int x, out int z)
     {
-        x = Mathf.FloorToInt((worldPosition - origin).x * cellSize);
-        y = Mathf.FloorToInt((worldPosition - origin).z * cellSize);
+        x = Mathf.FloorToInt((worldPosition - origin).x / cellSize);
+        z = Mathf.FloorToInt((worldPosition - origin).z / cellSize);
     }
 
     public void SetValue(int x, int z, Building building)

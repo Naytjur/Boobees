@@ -15,5 +15,5 @@ MonoBehaviour:
   buildingName: House
   prefab: {fileID: 5749581333223817254, guid: 0deb14f719abeb74ea425dc18560271c, type: 3}
   visual: {fileID: 5749581333223817254, guid: 3b277f2691fa5c34d9179be7de87d138, type: 3}
-  width: 1
-  height: 1
+  width: 4
+  height: 4

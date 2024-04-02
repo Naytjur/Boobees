@@ -12,6 +12,14 @@ public class BuildingSO : ScriptableObject
     public int width;
     public int height;
 
+    public enum Dir
+    {
+        Front,
+        Left,
+        Back,
+        Right
+    }
+
     public List<Vector2Int> GetGridPositions(Vector2Int offset)
     {
         List<Vector2Int> gridPositionsList = new List<Vector2Int>();

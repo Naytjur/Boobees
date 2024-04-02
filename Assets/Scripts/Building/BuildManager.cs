@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BuildManager : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class BuildManager : MonoBehaviour
     [SerializeField]
     private int gridHeight;
     [SerializeField]
-    private float gridCellSize;
+    public float gridCellSize;
 
     [Header("Buildings")]
     [SerializeField]
@@ -25,6 +26,11 @@ public class BuildManager : MonoBehaviour
     public Grid buildGrid;
     private bool isActive;
     private BuildingSO currentBuilding;
+
+    //Hovering visuals
+    private bool hasPositionOnGrid = false;
+    private Vector3 lastTarget;
+    private Transform visual;
 
     public static event Action onBuildingChanged;
 
@@ -36,6 +42,8 @@ public class BuildManager : MonoBehaviour
     private void Start()
     {
         GameManager.instance.onStateChange += UpdateActiveState;
+        GameManager.instance.onStateChange += Toggle;
+        onBuildingChanged += ChangeVisual;
         UpdateActiveState(GameManager.instance.state);
         buildGrid = new Grid(gridWidth, gridHeight, gridCellSize, gridOrigin.position);
     }
@@ -48,17 +56,33 @@ public class BuildManager : MonoBehaviour
         }
     }
 
+    private void LateUpdate()
+    {
+        if (visual != null)
+        {
+            UpdateVisual();
+        }
+    }
+
     private void PlaceBuilding()
     {
         if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("BuildSurface"), out Vector3 pos) && currentBuilding != null)
         {
             buildGrid.GetXZ(pos, out int x, out int z);
 
-            if (buildGrid.IsPositionOnGrid(x, z) && buildGrid.GetGridObject(x, z).building == null)
+            foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z)))
             {
-                Building buildObject = Building.Create(buildGrid.GetWorldPosition(x, z), new Vector2Int(x, z), currentBuilding);
+                if(!buildGrid.IsPositionOnGrid(cell.x, cell.y) || buildGrid.GetGridObject(cell.x, cell.y).building != null)
+                {
+                    return;
+                }
+            }
+            
+            Building buildObject = Building.Create(buildGrid.GetWorldPosition(x, z), new Vector2Int(x, z), currentBuilding, gridCellSize);
 
-                buildGrid.SetValue(x, z, buildObject);
+            foreach(Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z)))
+            {
+                buildGrid.SetValue(cell.x, cell.y, buildObject);
             }
         }
     }
@@ -93,6 +117,57 @@ public class BuildManager : MonoBehaviour
             }
         }
         return false;
+    }
+
+    //Hovering visual
+    private void ChangeVisual()
+    {
+        hasPositionOnGrid = false;
+
+        if (visual != null)
+        {
+            Destroy(visual.gameObject);
+            visual = null;
+        }
+
+        BuildingSO buildingObject = BuildManager.instance.GetCurrentBuilding();
+
+        if (buildingObject != null && GameManager.instance.state == GameState.Building)
+        {
+            visual = Instantiate(buildingObject.visual, new Vector3(-1000, -1000, -1000), Quaternion.identity);
+            visual.localScale = new Vector3(gridCellSize, gridCellSize, gridCellSize);
+        }
+    }
+
+    private void UpdateVisual()
+    {
+        visual.transform.position = Vector3.Lerp(visual.transform.position, lastTarget, Time.deltaTime * 20f);
+
+        if (GetMouseGridPosition(out Vector3 hit))
+        {
+            buildGrid.GetXZ(hit, out int x, out int z);
+
+            foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z)))
+            {
+                if (!buildGrid.IsPositionOnGrid(cell.x, cell.y) || buildGrid.GetGridObject(cell.x, cell.y).building != null)
+                {
+                    return;
+                }
+            }
+
+            lastTarget = hit;
+
+            if (!hasPositionOnGrid)
+            {
+                visual.transform.position = hit;
+                hasPositionOnGrid = true;
+            }
+        }
+    }
+
+    private void Toggle(GameState state)
+    {
+        ChangeVisual();
     }
 
     //GameFlow
