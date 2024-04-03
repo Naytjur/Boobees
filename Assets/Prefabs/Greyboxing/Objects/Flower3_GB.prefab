@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8854510613899600965}
   m_Layer: 0
-  m_Name: Flower_GB
+  m_Name: Flower3_GB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +127,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8033450aa75e1204e8ce7244b035302e, type: 2}
+  - {fileID: 2100000, guid: 905d15d9a3e007241909dea6af119f7d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -210,7 +210,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0360395388aec3f409083b30a4ece885, type: 2}
+  - {fileID: 2100000, guid: c53f0e8e6bb5c4b48b1b7b82a3b7cdbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -293,7 +293,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8033450aa75e1204e8ce7244b035302e, type: 2}
+  - {fileID: 2100000, guid: 092ca97c14fa14349ae672fb00276a97, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

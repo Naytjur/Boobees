@@ -13,28 +13,26 @@ public class PlantingManager : MonoBehaviour
         Planting
     }
 
-    public Transform plantPrefab;
+    public List<Transform> plantPrefabs;
+    private int currentPrefabIndex = 0;
+
     private Transform instance;
-
     public static Plot currentPlot;
-
     public List<Plant> plantList = new List<Plant>();
-
-    //UI
-    public Button plantButton;
+    public Button confirmButton;
     public Button clearButton;
+    public Button plantSwitch;
     public TMP_Text plantAmount;
-
     public bool isPlanting = false;
     private bool hasInstance;
-
     private PlantState plantState = PlantState.Unselected;
 
     private void Start()
     {
         GameManager.instance.onStateChange += UpdateActiveState;
-        plantButton.onClick.AddListener(Plant);
+        confirmButton.onClick.AddListener(Plant);
         clearButton.onClick.AddListener(ClearCurrentPlot);
+        plantSwitch.onClick.AddListener(SwitchPlantPrefab);
     }
 
     void Update()
@@ -43,7 +41,7 @@ public class PlantingManager : MonoBehaviour
         {
             CheckHover();
         }
-        plantButton.gameObject.SetActive(plantState != PlantState.Unselected);
+        confirmButton.gameObject.SetActive(plantState != PlantState.Unselected);
     }
 
     private void CheckHover()
@@ -64,7 +62,7 @@ public class PlantingManager : MonoBehaviour
             {
                 Hover(pos);
                 plantState = PlantState.Hovering;
-                plantButton.interactable = false;
+                confirmButton.interactable = false;
             }
         }
     }
@@ -72,7 +70,7 @@ public class PlantingManager : MonoBehaviour
     public void StartPlanting()
     {
         plantState = PlantState.Unselected;
-        plantButton.interactable = false;
+        confirmButton.interactable = false;
         isPlanting = true;
         UpdateAmountUI();
     }
@@ -80,7 +78,7 @@ public class PlantingManager : MonoBehaviour
     private void PlacePlant()
     {
         plantState = PlantState.Planting;
-        plantButton.interactable = true;
+        confirmButton.interactable = true;
     }
 
     public void Plant()
@@ -104,7 +102,7 @@ public class PlantingManager : MonoBehaviour
     {
         if (hasInstance == false)
         {
-            instance = Instantiate(plantPrefab);
+            instance = Instantiate(plantPrefabs[currentPrefabIndex]);
             hasInstance = true;
         }
 
@@ -135,7 +133,7 @@ public class PlantingManager : MonoBehaviour
 
         if (plantState != PlantState.Unselected)
         {
-            Destroy(instance);
+            Destroy(instance.gameObject);
         }
 
         hasInstance = false;
@@ -152,11 +150,20 @@ public class PlantingManager : MonoBehaviour
         }
     }
 
-    //GameFlow
+    private void SwitchPlantPrefab()
+    {
+        currentPrefabIndex = (currentPrefabIndex + 1) % plantPrefabs.Count;
+
+        if (hasInstance)
+        {
+            Destroy(instance.gameObject);
+            hasInstance = false;
+        }
+    }
+
     private void UpdateActiveState(GameState state)
     {
-        switch (state
-)
+        switch (state)
         {
             case GameState.Viewing:
                 StopPlanting();
