@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 
 public class PlantingManager : MonoBehaviour
 {
+    public static PlantingManager instance;
     private enum PlantState
     {
         Unselected,
@@ -13,31 +15,45 @@ public class PlantingManager : MonoBehaviour
         Planting
     }
 
-    public List<Transform> plantPrefabs;
-    private int currentPrefabIndex = 0;
+    public List<PlantSO> allPlants;
 
-    private Transform instance;
-    public static Plot currentPlot;
+    private PlantSO currentPlant;
+
+    //hovering
+    private Transform hoverVisual;
+    private Vector3 hoverPosition;
+
+    public Plot currentPlot;
     public List<Plant> plantList = new List<Plant>();
+
+    //UI
     public Button confirmButton;
     public Button clearButton;
-    public Button plantSwitch;
     public TMP_Text plantAmount;
+    public Transform plantSelectionPanel;
+
+    //State
     public bool isPlanting = false;
-    private bool hasInstance;
     private PlantState plantState = PlantState.Unselected;
 
+    //events
+    public event Action onPlantUnlocked;
+
+
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
         GameManager.instance.onStateChange += UpdateActiveState;
         confirmButton.onClick.AddListener(Plant);
         clearButton.onClick.AddListener(ClearCurrentPlot);
-        plantSwitch.onClick.AddListener(SwitchPlantPrefab);
     }
 
     void Update()
     {
-        if (isPlanting && !currentPlot.IsFull())
+        if (isPlanting && !currentPlot.IsFull() && currentPlant != null)
         {
             CheckHover();
         }
@@ -51,6 +67,7 @@ public class PlantingManager : MonoBehaviour
             if (plantState == PlantState.Hovering)
             {
                 PlacePlant();
+                plantSelectionPanel.gameObject.SetActive(true);
             }
             return;
         }
@@ -60,9 +77,11 @@ public class PlantingManager : MonoBehaviour
 
             if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("PlantSurface"), out Vector3 pos))
             {
-                Hover(pos);
+                hoverPosition = pos;
+                Hover(hoverPosition);
                 plantState = PlantState.Hovering;
                 confirmButton.interactable = false;
+                plantSelectionPanel.gameObject.SetActive(false);
             }
         }
     }
@@ -87,10 +106,13 @@ public class PlantingManager : MonoBehaviour
 
         if (plantState == PlantState.Planting && !currentPlot.IsFull())
         {
-            Plant plant = instance.GetComponent<Plant>();
+            Transform plantTransform = Instantiate(currentPlant.prefab);
+            plantTransform.position = hoverPosition;
+
+            Plant plant = plantTransform.GetComponent<Plant>();
             plantList.Add(plant);
             currentPlot.AddPlant(plant);
-            hasInstance = false;
+            Destroy(hoverVisual.gameObject);
             isPlanting = false;
             UpdateAmountUI();
         }
@@ -100,13 +122,12 @@ public class PlantingManager : MonoBehaviour
 
     private void Hover(Vector3 location)
     {
-        if (hasInstance == false)
+        if (hoverVisual == null)
         {
-            instance = Instantiate(plantPrefabs[currentPrefabIndex]);
-            hasInstance = true;
+            hoverVisual = Instantiate(currentPlant.visual);
         }
 
-        instance.transform.position = location;
+        hoverVisual.transform.position = location;
     }
 
     public void ClearCurrentPlot()
@@ -133,10 +154,8 @@ public class PlantingManager : MonoBehaviour
 
         if (plantState != PlantState.Unselected)
         {
-            Destroy(instance.gameObject);
+            Destroy(hoverVisual.gameObject);
         }
-
-        hasInstance = false;
     }
 
     private void UpdateAmountUI()
@@ -150,15 +169,41 @@ public class PlantingManager : MonoBehaviour
         }
     }
 
-    private void SwitchPlantPrefab()
+    public void SwitchPlant(int index)
     {
-        currentPrefabIndex = (currentPrefabIndex + 1) % plantPrefabs.Count;
-
-        if (hasInstance)
+        if (allPlants[index].unlocked)
         {
-            Destroy(instance.gameObject);
-            hasInstance = false;
+            currentPlant = allPlants[index];
+
+            if(hoverVisual != null)
+            {
+                Destroy(hoverVisual.gameObject);
+                hoverVisual = Instantiate(allPlants[index].visual);
+                hoverVisual.position = hoverPosition;
+            }
         }
+    }
+
+    //Unlocking plants
+    public bool TryUnlockPlant(string id, out string name)
+    {
+        foreach(PlantSO plant in allPlants)
+        {
+            if (plant.id == id)
+            {
+                UnlockPlant(plant);
+                name = plant.name;
+                return true;
+            }
+        }
+        name = "Invalid ID";
+        return false;
+    }
+
+    public void UnlockPlant(PlantSO plant)
+    {
+        plant.unlocked = true;
+        onPlantUnlocked?.Invoke();
     }
 
     private void UpdateActiveState(GameState state)
@@ -175,5 +220,11 @@ public class PlantingManager : MonoBehaviour
                 StopPlanting();
                 break;
         }
+    }
+
+    //Setters and Getters
+    public List<PlantSO> GetPlantList()
+    {
+        return allPlants;
     }
 }

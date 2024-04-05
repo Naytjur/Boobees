@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
-public class BuildingUI : MonoBehaviour
+public class PlantingUI : MonoBehaviour
 {
     [SerializeField]
     private Transform buttonPrefab;
@@ -12,10 +13,10 @@ public class BuildingUI : MonoBehaviour
 
     private void OnEnable()
     {
-        LoadBuildButtons();
+        LoadPlantButtons();
     }
 
-    private void LoadBuildButtons()
+    private void LoadPlantButtons()
     {
         int index = 0;
 
@@ -24,11 +25,12 @@ public class BuildingUI : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        foreach (BuildingSO building in BuildManager.instance.GetBuildingList())
+        foreach (PlantSO plant in PlantingManager.instance.GetPlantList())
         {
             Transform button = Instantiate(buttonPrefab, buttonContainerTransform);
-            button.GetComponent<SelectBuilding>().SetIndex(index);
-            button.GetComponentInChildren<TMP_Text>().text = building.name;
+            button.GetComponent<SelectPlant>().SetIndex(index);
+            button.GetComponentInChildren<TMP_Text>().text = plant.name;
+            button.GetComponent<Button>().interactable = plant.unlocked;
             index++;
         }
     }

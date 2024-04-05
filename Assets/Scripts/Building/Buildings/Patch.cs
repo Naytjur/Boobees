@@ -22,7 +22,7 @@ public class Patch : Building
 
     private void PlantOnPatch()
     {
-        PlantingManager.currentPlot = plot;
+        PlantingManager.instance.currentPlot = plot;
         GameManager.instance.UpdateGameState(GameState.Planting);
         FocusCamera();
         plantingSurface.SetActive(true);
