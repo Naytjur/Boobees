@@ -31,4 +31,9 @@ public class SelectBuilding : MonoBehaviour
     {
         buildManager.SetCurrentBuilding(index);
     }
+
+    public void SetIndex(int index)
+    {
+        this.index = index;
+    }
 }

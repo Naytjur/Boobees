@@ -20,7 +20,7 @@ public class BuildManager : MonoBehaviour
 
     [Header("Buildings")]
     [SerializeField]
-    private BuildingSO[] buildings;
+    private List<BuildingSO> buildings =  new List<BuildingSO>();
 
     //Internal Variables
     public Grid buildGrid;
@@ -90,7 +90,7 @@ public class BuildManager : MonoBehaviour
     //Getters and Setters
     public void SetCurrentBuilding(int index)
     {
-        if(index < buildings.Length)
+        if(index < buildings.Count)
         {
             currentBuilding = buildings[index];
             onBuildingChanged?.Invoke();
@@ -100,6 +100,11 @@ public class BuildManager : MonoBehaviour
     public BuildingSO GetCurrentBuilding()
     {
         return currentBuilding;
+    }
+
+    public List<BuildingSO> GetBuildingList()
+    {
+        return buildings;
     }
 
     public bool GetMouseGridPosition(out Vector3 hit)
@@ -117,6 +122,11 @@ public class BuildManager : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public void AddBuilding(BuildingSO building)
+    {
+        buildings.Add(building);
     }
 
     //Hovering visual
