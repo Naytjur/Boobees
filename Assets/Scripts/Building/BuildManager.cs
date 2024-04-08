@@ -61,11 +61,11 @@ public class BuildManager : MonoBehaviour
         if (visual != null)
         {
             UpdateVisual();
-        }
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            visual.gameObject.SetActive(true);
+            if (Input.GetMouseButtonUp(0))
+            {
+                visual.gameObject.SetActive(true);
+            }
         }
     }
 
