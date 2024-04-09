@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8854510613899600965}
-  - component: {fileID: 1508760462951444534}
+  - component: {fileID: -6996839763924180205}
   m_Layer: 0
-  m_Name: Flower2_GB
+  m_Name: Flower3_GB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 448445980157687024}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1508760462951444534
+--- !u!114 &-6996839763924180205
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,9 +42,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1496624959173627803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad3103c9eb18d1a4f8e8a2faf0e213bf, type: 3}
+  m_Script: {fileID: 11500000, guid: e636c982ef6c1974481e3aef800e3cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  insects: []
 --- !u!1 &5022597447180741950
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +141,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c53f0e8e6bb5c4b48b1b7b82a3b7cdbf, type: 2}
+  - {fileID: 2100000, guid: 905d15d9a3e007241909dea6af119f7d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -223,7 +224,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 092ca97c14fa14349ae672fb00276a97, type: 2}
+  - {fileID: 2100000, guid: c53f0e8e6bb5c4b48b1b7b82a3b7cdbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -306,7 +307,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8033450aa75e1204e8ce7244b035302e, type: 2}
+  - {fileID: 2100000, guid: 092ca97c14fa14349ae672fb00276a97, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
