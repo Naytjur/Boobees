@@ -30,7 +30,6 @@ public class InsectManager : MonoBehaviour
 
     private void Start()
     {
-        CreateCombinedLists();
         maxHoneyScore = maxHoneyScoreBase;
         maxPollenScore = maxPollenScoreBase;
 
@@ -39,6 +38,8 @@ public class InsectManager : MonoBehaviour
         levelText.text = "Level: " + playerLevel;
 
         InvokeRepeating(nameof(UpdateScores), updateInterval, updateInterval);
+
+        PlantingManager.instance.PlantPlanted += OnPlantPlanted;
     }
 
     private void UpdateScores()
@@ -120,36 +121,23 @@ public class InsectManager : MonoBehaviour
         Destroy(newInsect);
     }
 
+    private void OnPlantPlanted()
+    {
+        allPlants.Clear();
+        allInsects.Clear();
+        foreach (Plant plant in PlantingManager.instance.plantList)
+        {
+            allPlants.Add(plant);
+            foreach (GameObject insectPrefab in plant.insects)
+            {
+                allInsects.Add(insectPrefab);
+            }
+        }
+    }
     private void LevelUp()
     {
         playerLevel++;
         maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
         maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
-    }
-
-    public void UpdateLists(Plant newPlant)
-    {
-        allInsects.AddRange(newPlant.insects);
-        allPlants.Add(newPlant);
-    }
-
-    private void CreateCombinedLists()
-    {
-        List<Plant> plantList = new List<Plant>(FindObjectsOfType<Plant>());
-        UpdateInsectList(plantList);
-    }
-
-    private void UpdateInsectList(IEnumerable<Plant> plantList)
-    {
-        allInsects.Clear();
-        allPlants.Clear();
-        foreach (Plant plantScript in plantList)
-        {
-            foreach (GameObject insect in plantScript.insects)
-            {
-                allInsects.Add(insect);
-            }
-            allPlants.Add(plantScript);
-        }
     }
 }
