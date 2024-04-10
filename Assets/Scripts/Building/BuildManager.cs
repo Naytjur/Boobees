@@ -27,10 +27,17 @@ public class BuildManager : MonoBehaviour
     private bool isActive;
     private BuildingSO currentBuilding;
 
+    [Header("Build Hovering")]
     //Hovering visuals
     private bool hasPositionOnGrid = false;
     private Vector3 lastTarget;
     private Transform visual;
+    private List<MeshRenderer> visualRenderers;
+    [SerializeField]
+    private Color ableColor;
+    [SerializeField]
+    private Color unableColor;
+    private BuildingSO.Dir direction = BuildingSO.Dir.Down;
 
     public static event Action onBuildingChanged;
 
@@ -53,6 +60,11 @@ public class BuildManager : MonoBehaviour
         if(Input.GetMouseButtonDown(0) && isActive)
         {
             PlaceBuilding();
+        }
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            direction = BuildingSO.GetNextDir(direction);
         }
     }
 
@@ -79,15 +91,16 @@ public class BuildManager : MonoBehaviour
             {
                 return;
             }
-            
-            Building buildObject = Building.Create(buildGrid.GetWorldPosition(x, z), new Vector2Int(x, z), currentBuilding, gridCellSize);
+
+            Vector2Int rotationOffset = currentBuilding.GetRotationOffset(direction);
+            Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), currentBuilding, gridCellSize, Quaternion.Euler(0, currentBuilding.GetRotationDegrees(direction), 0));
 
             if(visual != null)
             {
                 visual.gameObject.SetActive(false);
             }
 
-            foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z)))
+            foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z), direction))
             {
                 buildGrid.SetValue(cell.x, cell.y, buildObject);
             }
@@ -96,7 +109,7 @@ public class BuildManager : MonoBehaviour
 
     private bool CheckValidBuildPosition(BuildingSO building, int x, int z)
     {
-        foreach (Vector2Int cell in building.GetGridPositions(new Vector2Int(x, z)))
+        foreach (Vector2Int cell in building.GetGridPositions(new Vector2Int(x, z), direction))
         {
             if (!buildGrid.IsPositionOnGrid(cell.x, cell.y) || buildGrid.GetGridObject(cell.x, cell.y).building != null)
             {
@@ -163,20 +176,29 @@ public class BuildManager : MonoBehaviour
 
         if (buildingObject != null && GameManager.instance.state == GameState.Building)
         {
+            if(visualRenderers != null)
+            {
+                visualRenderers.Clear();
+            }
+
             visual = Instantiate(buildingObject.visual, new Vector3(-1000, -1000, -1000), Quaternion.identity);
+            visualRenderers = new List<MeshRenderer>(visual.GetComponentsInChildren<MeshRenderer>());
             visual.localScale = new Vector3(gridCellSize, gridCellSize, gridCellSize);
         }
     }
 
     private void UpdateVisual()
     {
-        visual.transform.position = Vector3.Lerp(visual.transform.position, lastTarget, Time.deltaTime * 20f);
+        Vector2Int rotationOffset = currentBuilding.GetRotationOffset(direction);
+
+        visual.transform.position = Vector3.Lerp(visual.transform.position, lastTarget + new Vector3(rotationOffset.x, 0, rotationOffset.y), Time.deltaTime * 20f);
+        visual.transform.rotation = Quaternion.Euler(0, currentBuilding.GetRotationDegrees(direction), 0);
 
         if (GetMouseGridPosition(out Vector3 hit))
         {
             buildGrid.GetXZ(hit, out int x, out int z);
 
-            foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z)))
+            foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z), direction))
             {
                 if (!buildGrid.IsPositionOnGrid(cell.x, cell.y))
                 {
@@ -185,6 +207,21 @@ public class BuildManager : MonoBehaviour
             }
 
             lastTarget = hit;
+
+            if(!CheckValidBuildPosition(currentBuilding, x, z))
+            {
+                foreach(MeshRenderer renderer in visualRenderers)
+                {
+                    renderer.material.SetColor("_Color", unableColor);
+                }
+            }
+            else
+            {
+                foreach (MeshRenderer renderer in visualRenderers)
+                {
+                    renderer.material.SetColor("_Color", ableColor);
+                }
+            }
 
             if (!hasPositionOnGrid)
             {

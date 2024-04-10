@@ -12,7 +12,7 @@ using UnityEngine.Rendering;
 
 public class BarcodeReaderSample : MonoBehaviour
 {
-    [SerializeField]
+    /*[SerializeField]
     private ARSession session;
     [SerializeField]
     private XROrigin sessionOrigin;
@@ -107,5 +107,5 @@ public class BarcodeReaderSample : MonoBehaviour
     public void ToggleScanning()
     {
         scanningEnabled = !scanningEnabled;
-    }
+    }*/
 }

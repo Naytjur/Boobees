@@ -10,6 +10,8 @@ public class Patch : Building
     private GameObject plantingSurface;
     [SerializeField]
     private Transform cameraPosition;
+    [SerializeField]
+    private Transform center;
 
     private void Start()
     {
@@ -32,8 +34,8 @@ public class Patch : Building
 
     private void FocusCamera()
     {
-        Camera.main.transform.position = cameraPosition.position;
-        Camera.main.transform.rotation = cameraPosition.rotation;
+        Camera.main.transform.position = center.position + new Vector3(-1.2f, 1.2f, -1.2f);
+        //Camera.main.transform.rotation = cameraPosition.rotation;
     }
 
     private void OnGameStateChange(GameState state)

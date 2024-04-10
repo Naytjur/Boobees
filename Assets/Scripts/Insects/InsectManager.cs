@@ -91,6 +91,7 @@ public class InsectManager : MonoBehaviour
     private void UpdateInsectList(IEnumerable<Plant> plantList)
     {
         allInsects.Clear();
+
         foreach (Plant plantScript in plantList)
         {
             foreach (GameObject insect in plantScript.insects)
@@ -99,5 +100,4 @@ public class InsectManager : MonoBehaviour
             }
         }
     }
-
 }
