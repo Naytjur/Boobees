@@ -61,6 +61,11 @@ public class BuildManager : MonoBehaviour
         if (visual != null)
         {
             UpdateVisual();
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                visual.gameObject.SetActive(true);
+            }
         }
     }
 
@@ -70,21 +75,35 @@ public class BuildManager : MonoBehaviour
         {
             buildGrid.GetXZ(pos, out int x, out int z);
 
-            foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z)))
+            if (!CheckValidBuildPosition(currentBuilding, x, z))
             {
-                if(!buildGrid.IsPositionOnGrid(cell.x, cell.y) || buildGrid.GetGridObject(cell.x, cell.y).building != null)
-                {
-                    return;
-                }
+                return;
             }
             
             Building buildObject = Building.Create(buildGrid.GetWorldPosition(x, z), new Vector2Int(x, z), currentBuilding, gridCellSize);
 
-            foreach(Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z)))
+            if(visual != null)
+            {
+                visual.gameObject.SetActive(false);
+            }
+
+            foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z)))
             {
                 buildGrid.SetValue(cell.x, cell.y, buildObject);
             }
         }
+    }
+
+    private bool CheckValidBuildPosition(BuildingSO building, int x, int z)
+    {
+        foreach (Vector2Int cell in building.GetGridPositions(new Vector2Int(x, z)))
+        {
+            if (!buildGrid.IsPositionOnGrid(cell.x, cell.y) || buildGrid.GetGridObject(cell.x, cell.y).building != null)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     //Getters and Setters
@@ -159,7 +178,7 @@ public class BuildManager : MonoBehaviour
 
             foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z)))
             {
-                if (!buildGrid.IsPositionOnGrid(cell.x, cell.y) || buildGrid.GetGridObject(cell.x, cell.y).building != null)
+                if (!buildGrid.IsPositionOnGrid(cell.x, cell.y))
                 {
                     return;
                 }

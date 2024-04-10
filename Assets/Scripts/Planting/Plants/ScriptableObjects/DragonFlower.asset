@@ -15,6 +15,6 @@ MonoBehaviour:
   id: 2
   plantName: Dragon Flower
   description: A fiery flower that weirdly does not burn it's surroundings.
-  unlocked: 0
+  unlocked: 1
   prefab: {fileID: 8854510613899600965, guid: 02019efb30fb6c34a8d8b56ffaac23cd, type: 3}
   visual: {fileID: 8854510613899600965, guid: 02019efb30fb6c34a8d8b56ffaac23cd, type: 3}

@@ -11,6 +11,11 @@ public class PlantingUI : MonoBehaviour
     [SerializeField]
     private Transform buttonContainerTransform;
 
+    private void Awake()
+    {
+        PlantingManager.instance.onPlantUnlocked += LoadPlantButtons;
+    }
+
     private void OnEnable()
     {
         LoadPlantButtons();

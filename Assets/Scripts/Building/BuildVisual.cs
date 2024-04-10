@@ -24,6 +24,7 @@ public class BuildVisual : MonoBehaviour
         if(visual != null)
         {
             UpdateVisual();
+            HideVisual();
         }
     }
 
@@ -41,6 +42,11 @@ public class BuildVisual : MonoBehaviour
         }
 
         visual.transform.position = Vector3.Lerp(visual.transform.position, lastTarget, Time.deltaTime * 20f);
+    }
+
+    private void HideVisual()
+    {
+        visual.gameObject.SetActive(!Input.GetMouseButton(0));
     }
 
     private void ChangeVisual()

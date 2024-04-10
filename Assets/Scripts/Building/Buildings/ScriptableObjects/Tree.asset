@@ -15,5 +15,5 @@ MonoBehaviour:
   buildingName: Tree
   prefab: {fileID: 5749581333223817254, guid: d4b19bf2770d5c64285a1274527eac28, type: 3}
   visual: {fileID: 5749581333223817254, guid: 56e0fe6b88af97f4e962524b2b4a3584, type: 3}
-  width: 2
-  height: 2
+  width: 1
+  height: 1
