@@ -622,7 +622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &189620603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,7 +681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &324656379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1116,7 +1116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &531146489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,9 +1785,8 @@ MonoBehaviour:
   gridOrigin: {fileID: 1360973203}
   gridWidth: 20
   gridHeight: 20
-  gridCellSize: 0.5
+  gridCellSize: 1
   buildings:
-  - {fileID: 11400000, guid: 5fd190c73d061b3488570d2338a33b28, type: 2}
   - {fileID: 11400000, guid: cb59d03f186cc1c42a3dff04548b0083, type: 2}
   - {fileID: 11400000, guid: 85a738da479a84f4c9867221f3716fd1, type: 2}
   - {fileID: 11400000, guid: 6a7ed196b723ee647859298347bf36e3, type: 2}
@@ -2586,7 +2585,7 @@ Transform:
   m_GameObject: {fileID: 1360973202}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: -5}
+  m_LocalPosition: {x: -10, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3680,7 +3679,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.01, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

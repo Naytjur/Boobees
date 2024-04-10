@@ -82,7 +82,10 @@ public class BuildManager : MonoBehaviour
             
             Building buildObject = Building.Create(buildGrid.GetWorldPosition(x, z), new Vector2Int(x, z), currentBuilding, gridCellSize);
 
-            visual.gameObject.SetActive(false);
+            if(visual != null)
+            {
+                visual.gameObject.SetActive(false);
+            }
 
             foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z)))
             {
