@@ -155,7 +155,7 @@ public class PlantingManager : MonoBehaviour
     {
         isPlanting = false;
 
-        if (plantState != PlantState.Unselected)
+        if (plantState != PlantState.Unselected && hoverVisual != null)
         {
             Destroy(hoverVisual.gameObject);
         }
