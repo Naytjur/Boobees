@@ -37,7 +37,7 @@ public class PlantingManager : MonoBehaviour
     private PlantState plantState = PlantState.Unselected;
 
     //events
-    public event Action onPlantUnlocked;
+    public event Action<PlantSO> onPlantUnlocked;
     public event Action PlantPlanted;
 
 
@@ -206,7 +206,7 @@ public class PlantingManager : MonoBehaviour
     public void UnlockPlant(PlantSO plant)
     {
         plant.unlocked = true;
-        onPlantUnlocked?.Invoke();
+        onPlantUnlocked?.Invoke(plant);
     }
 
     private void UpdateActiveState(GameState state)
@@ -229,5 +229,10 @@ public class PlantingManager : MonoBehaviour
     public List<PlantSO> GetPlantList()
     {
         return allPlants;
+    }
+
+    public PlantSO GetPlantByIndex(int index)
+    {
+        return allPlants[index];
     }
 }

@@ -36,4 +36,9 @@ public class SelectPlant : MonoBehaviour
     {
         this.index = index;
     }
+
+    public int GetIndex()
+    {
+        return index;
+    }
 }

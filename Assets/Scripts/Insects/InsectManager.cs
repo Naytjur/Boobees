@@ -40,6 +40,8 @@ public class InsectManager : MonoBehaviour
         InvokeRepeating(nameof(UpdateScores), updateInterval, updateInterval);
 
         PlantingManager.instance.PlantPlanted += OnPlantPlanted;
+
+        PlantingManager.instance.onPlantUnlocked += Test;
     }
 
     private void UpdateScores()
@@ -139,5 +141,10 @@ public class InsectManager : MonoBehaviour
         playerLevel++;
         maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
         maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
+    }
+
+    private void Test(PlantSO plant)
+    {
+        Debug.Log(plant.name);
     }
 }

@@ -13,7 +13,7 @@ public class PlantingUI : MonoBehaviour
 
     private void Awake()
     {
-        PlantingManager.instance.onPlantUnlocked += LoadPlantButtons;
+        PlantingManager.instance.onPlantUnlocked += UpdatePlantButtons;
     }
 
     private void OnEnable()
@@ -35,6 +35,18 @@ public class PlantingUI : MonoBehaviour
             Transform button = Instantiate(buttonPrefab, buttonContainerTransform);
             button.GetComponent<SelectPlant>().SetIndex(index);
             button.GetComponentInChildren<TMP_Text>().text = plant.name;
+            button.GetComponent<Button>().interactable = plant.unlocked;
+            index++;
+        }
+    }
+
+    private void UpdatePlantButtons(PlantSO unlockedPlant)
+    {
+        int index = 0;
+
+        foreach (Transform button in buttonContainerTransform)
+        {
+            var plant = PlantingManager.instance.GetPlantByIndex(button.GetComponent<SelectPlant>().GetIndex());
             button.GetComponent<Button>().interactable = plant.unlocked;
             index++;
         }
