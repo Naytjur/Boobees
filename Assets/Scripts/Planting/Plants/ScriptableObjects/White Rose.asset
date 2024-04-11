@@ -16,6 +16,7 @@ MonoBehaviour:
   plantName: White Rose
   description: Leaches the souls of those nearby. You will wither so it won't have
     to.
-  unlocked: 0
+  unlocked: 1
   prefab: {fileID: 8854510613899600965, guid: e8c43fd28ab24834eb460834d2218969, type: 3}
   visual: {fileID: 8854510613899600965, guid: e8c43fd28ab24834eb460834d2218969, type: 3}
+  sprite: {fileID: 0}
