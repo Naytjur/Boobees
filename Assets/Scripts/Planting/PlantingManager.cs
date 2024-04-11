@@ -25,7 +25,6 @@ public class PlantingManager : MonoBehaviour
 
     public Plot currentPlot;
     public List<Plant> plantList = new List<Plant>();
-    public InsectManager insectManager;
 
     //UI
     public Button confirmButton;
@@ -39,6 +38,7 @@ public class PlantingManager : MonoBehaviour
 
     //events
     public event Action onPlantUnlocked;
+    public event Action PlantPlanted;
 
 
     private void Awake()
@@ -116,13 +116,7 @@ public class PlantingManager : MonoBehaviour
             Destroy(hoverVisual.gameObject);
             isPlanting = false;
             UpdateAmountUI();
-
-            // Check if the current plant has not been added to the InsectManager before
-            if (!insectManager.allPlants.Contains(plant))
-            {
-                // Update the InsectManager with the new plant
-                insectManager.UpdateLists(plant);
-            }
+            PlantPlanted?.Invoke();
         }
 
         StartPlanting();

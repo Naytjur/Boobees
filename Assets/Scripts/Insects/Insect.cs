@@ -6,4 +6,6 @@ public abstract class Insect : MonoBehaviour
 {
     public int PollenP;
     public int HoneyP;
+    public int Rarity;
+
 }
