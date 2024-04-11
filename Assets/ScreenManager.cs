@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class ScreenManager : MonoBehaviour
 {
-    public GameObject collectionBook;
-    public GameObject beeScreen;
-    public GameObject beeInformationScreen;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
-    public void BeeScreen();
-    
-    
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
