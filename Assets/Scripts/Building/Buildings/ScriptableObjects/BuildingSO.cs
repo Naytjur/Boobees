@@ -14,22 +14,87 @@ public class BuildingSO : ScriptableObject
 
     public enum Dir
     {
-        Front,
+        Down,
         Left,
-        Back,
+        Up,
         Right
     }
 
-    public List<Vector2Int> GetGridPositions(Vector2Int offset)
+    public static Dir GetNextDir(Dir dir)
+    {
+        switch (dir)
+        {
+            default: 
+            case Dir.Down:
+                return Dir.Left;
+            case Dir.Left:
+                return Dir.Up;
+            case Dir.Up:
+                return Dir.Right;
+            case Dir.Right:
+                return Dir.Down;
+        }
+    }
+
+    public int GetRotationDegrees(Dir dir)
+    {
+        switch (dir)
+        {
+            default:
+            case Dir.Down:
+                return 0;
+            case Dir.Left:
+                return 90;
+            case Dir.Up:
+                return 180;
+            case Dir.Right:
+                return 270;
+        }
+    }
+
+    public Vector2Int GetRotationOffset(Dir dir)
+    {
+        switch (dir)
+        {
+            default:
+            case Dir.Down:
+                return new Vector2Int(0, 0);
+            case Dir.Left:
+                return new Vector2Int(0, width);
+            case Dir.Up:
+                return new Vector2Int(width, height);
+            case Dir.Right:
+                return new Vector2Int(height, 0);
+        }
+    }
+
+    public List<Vector2Int> GetGridPositions(Vector2Int offset, Dir dir)
     {
         List<Vector2Int> gridPositionsList = new List<Vector2Int>();
 
-        for(int i = 0; i < width; i++)
+        switch (dir)
         {
-            for(int j = 0; j < height; j++)
-            {
-                gridPositionsList.Add(offset + new Vector2Int(i, j));
-            }
+            default:
+            case Dir.Down:
+            case Dir.Up:
+                for (int i = 0; i < width; i++)
+                {
+                    for (int j = 0; j < height; j++)
+                    {
+                        gridPositionsList.Add(offset + new Vector2Int(i, j));
+                    }
+                }
+                break;
+            case Dir.Left:
+            case Dir.Right:
+                for(int i = 0; i < height; i++)
+                {
+                    for(int j = 0; j < width; j++)
+                    {
+                        gridPositionsList.Add(offset + new Vector2Int(i, j));
+                    }
+                }
+                break;
         }
 
         return gridPositionsList;
