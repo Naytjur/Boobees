@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e70cd28153b65d4ea95c85cf8a409e2, type: 3}
-  m_Name: DragonFlower
+  m_Name: WildPansy
   m_EditorClassIdentifier: 
   id: 2
-  plantName: Dragon Flower
+  plantName: Wild Pansy
   description: A fiery flower that weirdly does not burn it's surroundings.
   unlocked: 1
-  prefab: {fileID: 8854510613899600965, guid: 02019efb30fb6c34a8d8b56ffaac23cd, type: 3}
-  visual: {fileID: 8854510613899600965, guid: 02019efb30fb6c34a8d8b56ffaac23cd, type: 3}
+  prefab: {fileID: 3523959829202924707, guid: 812665bfe64b27c4cb143b943e1e91c5, type: 3}
+  visual: {fileID: 3523959829202924707, guid: 812665bfe64b27c4cb143b943e1e91c5, type: 3}

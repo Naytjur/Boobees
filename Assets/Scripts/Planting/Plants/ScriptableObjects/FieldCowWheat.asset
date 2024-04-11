@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e70cd28153b65d4ea95c85cf8a409e2, type: 3}
-  m_Name: Daisy
+  m_Name: FieldCowWheat
   m_EditorClassIdentifier: 
   id: 1
-  plantName: Daisy
+  plantName: Field Cow Wheat
   description: This is a Daisy.
   unlocked: 1
-  prefab: {fileID: 8854510613899600965, guid: e9db67d3fe8933b4fa53c27062bf7ea0, type: 3}
-  visual: {fileID: 8854510613899600965, guid: e9db67d3fe8933b4fa53c27062bf7ea0, type: 3}
+  prefab: {fileID: 7800843598508841643, guid: 2837c299f0400b749b8f86973f9e588b, type: 3}
+  visual: {fileID: 7800843598508841643, guid: 2837c299f0400b749b8f86973f9e588b, type: 3}
