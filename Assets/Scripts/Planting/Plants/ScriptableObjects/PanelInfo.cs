@@ -14,7 +14,7 @@ public class PanelInfo : MonoBehaviour
     private int index;
     public TextMeshProUGUI PlantName;
     public TextMeshProUGUI PlantDescription;
-    public GameObject PlantModel;
+    public Image PlantModel;
 
     // Start is called before the first frame update
     void Start()
