@@ -19,3 +19,4 @@ MonoBehaviour:
   unlocked: 0
   prefab: {fileID: 8854510613899600965, guid: e8c43fd28ab24834eb460834d2218969, type: 3}
   visual: {fileID: 8854510613899600965, guid: e8c43fd28ab24834eb460834d2218969, type: 3}
+  sprite: {fileID: 0}
