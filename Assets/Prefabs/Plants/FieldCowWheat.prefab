@@ -85,6 +85,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &5565290983728331313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1614152186764801810}
+  m_Layer: 0
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1614152186764801810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5565290983728331313}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.393, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7800843598508841643}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7874898171718648221
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,11 +142,12 @@ Transform:
   m_GameObject: {fileID: 7874898171718648221}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 696.6492, y: 526.99963, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 440318193594887162}
+  - {fileID: 1614152186764801810}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1541622879071953409
@@ -130,7 +162,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3103c9eb18d1a4f8e8a2faf0e213bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insects: []
+  insects:
+  - {fileID: 2567843266469457321, guid: e952a9e27a335bd479fd35e4e43bde95, type: 3}
+  - {fileID: 2567843266469457321, guid: fb905be2ce0cd9943904a8a2480e24f1, type: 3}
   plantSO: {fileID: 11400000, guid: bc415727e4347414ba21c58e03b563a4, type: 2}
   plot: 0
   isOnCorrectPlot: 0
+  baseSpawnRate: 10
+  targetTransform: {fileID: 1614152186764801810}

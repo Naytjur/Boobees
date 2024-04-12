@@ -31,6 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4116660252547882511}
+  - {fileID: 4328269771116940733}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &835666260658816250
@@ -47,10 +48,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   insects:
   - {fileID: 2567843266469457321, guid: e952a9e27a335bd479fd35e4e43bde95, type: 3}
-  - {fileID: 2567843266469457321, guid: fb905be2ce0cd9943904a8a2480e24f1, type: 3}
+  - {fileID: 4354604764026543138, guid: 296214c8615effd47a35e418391977ab, type: 3}
   plantSO: {fileID: 11400000, guid: 8f86b53a5520b3241a2e056af231f393, type: 2}
   plot: 0
   isOnCorrectPlot: 0
+  baseSpawnRate: 10
+  targetTransform: {fileID: 4328269771116940733}
+--- !u!1 &1481470153172708011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4328269771116940733}
+  m_Layer: 0
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4328269771116940733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481470153172708011}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0117, y: 0.1267, z: -0.00078451633}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3523959829202924707}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3632856910742832309
 GameObject:
   m_ObjectHideFlags: 0
