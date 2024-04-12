@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fence
   m_EditorClassIdentifier: 
   buildingName: Fence
-  prefab: {fileID: 5749581333223817254, guid: 356ef947ae6467740a8e2691653a1c9c, type: 3}
-  visual: {fileID: 5749581333223817254, guid: 9319b2a0064ffaa419edd146031a1b0d, type: 3}
+  prefab: {fileID: 4195216918634333592, guid: 0ed19c8dfb4a6a24ca6fcb8e35f03818, type: 3}
+  visual: {fileID: 1194263165967490117, guid: 9c0cf775121800c4887f5f36af3fbc56, type: 3}
   width: 1
   height: 2

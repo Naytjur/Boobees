@@ -7,7 +7,8 @@ public enum GameState
 {
     Viewing,
     Planting,
-    Building
+    Building,
+    Catalogue
 }
 
 public class GameManager : MonoBehaviour
@@ -50,9 +51,17 @@ public class GameManager : MonoBehaviour
             case GameState.Building:
                 HandleBuilding();
                 break;
+            case GameState.Catalogue:
+                HandleCatalogue();
+                break;
         }
 
         onStateChange?.Invoke(newState);
+    }
+
+    private void HandleCatalogue()
+    {
+
     }
 
     private void HandleViewing()
