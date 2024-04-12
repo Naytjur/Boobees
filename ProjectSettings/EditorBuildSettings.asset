@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BuildTesting.unity
     guid: f8448281f4b3b694e846c426dd1f1cea
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: 2c3f6abaa5483f54685be4aada830c61
+  - enabled: 0
+    path: Assets/Scenes/PlotsTesting.unity
+    guid: 8fdaf601ad7c26c4a98f8efa83ebef8c
+  - enabled: 1
+    path: Assets/Scenes/Build.unity
+    guid: f9964873a6f7eae4db31ae864239dd78
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6c762fe545d1a1f42b0f879d761d18e0,
       type: 2}

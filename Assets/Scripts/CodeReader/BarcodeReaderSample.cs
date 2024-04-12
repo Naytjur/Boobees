@@ -1,14 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.XR.CoreUtils;
-using UnityEngine.XR.ARFoundation;
-using UnityEngine.XR.ARSubsystems;
-using ZXing;
-using UnityEngine.AdaptivePerformance.Provider;
-using System;
-using Unity.Collections.LowLevel.Unsafe;
-using UnityEngine.Rendering;
 
 public class BarcodeReaderSample : MonoBehaviour
 {

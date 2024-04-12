@@ -58,6 +58,7 @@ public class PlantingManager : MonoBehaviour
         {
             CheckHover();
         }
+
         confirmButton.gameObject.SetActive(plantState != PlantState.Unselected);
     }
 
