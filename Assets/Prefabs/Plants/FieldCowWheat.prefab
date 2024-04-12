@@ -131,3 +131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   insects: []
+  plantSO: {fileID: 11400000, guid: bc415727e4347414ba21c58e03b563a4, type: 2}
+  plot: 0
+  isOnCorrectPlot: 0

@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum PlotType 
+{ 
+    Plot1, 
+    Plot2, 
+    Plot3
+}
+
 public class Plot : MonoBehaviour
 {
     public int plantAmount;
@@ -9,6 +17,7 @@ public class Plot : MonoBehaviour
 
     public List<Plant> plants = new List<Plant>();
 
+    public PlotType type;
     public void AddPlant(Plant plant)
     {
         plants.Add(plant);

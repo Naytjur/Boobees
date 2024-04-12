@@ -48,6 +48,9 @@ MonoBehaviour:
   insects:
   - {fileID: 2567843266469457321, guid: e952a9e27a335bd479fd35e4e43bde95, type: 3}
   - {fileID: 2567843266469457321, guid: fb905be2ce0cd9943904a8a2480e24f1, type: 3}
+  plantSO: {fileID: 11400000, guid: 8f86b53a5520b3241a2e056af231f393, type: 2}
+  plot: 0
+  isOnCorrectPlot: 0
 --- !u!1 &3632856910742832309
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,4 +14,6 @@ public class PlantSO : ScriptableObject
     public Transform visual;
 
     public Texture2D sprite;
+
+    public PlotType[] correctPlots;
 }

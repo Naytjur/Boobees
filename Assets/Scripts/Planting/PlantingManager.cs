@@ -114,6 +114,7 @@ public class PlantingManager : MonoBehaviour
             plantList.Add(plant);
             currentPlot.AddPlant(plant);
             Destroy(hoverVisual.gameObject);
+            plant.AssignPlot(currentPlot.type);
             isPlanting = false;
             UpdateAmountUI();
             PlantPlanted?.Invoke();
@@ -121,8 +122,6 @@ public class PlantingManager : MonoBehaviour
 
         StartPlanting();
     }
-
-
     private void Hover(Vector3 location)
     {
         if (hoverVisual == null)

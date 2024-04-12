@@ -65,6 +65,7 @@ MonoBehaviour:
   plantAmount: 0
   maxPlants: 16
   plants: []
+  type: 0
 --- !u!1 &5151309299136146207
 GameObject:
   m_ObjectHideFlags: 0
