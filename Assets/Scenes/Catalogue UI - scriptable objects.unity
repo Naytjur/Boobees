@@ -8543,18 +8543,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275526515}
   m_CullTransparentMesh: 1
---- !u!1 &1289626094 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 836955819547824398, guid: 26b526341735eba49a3b362e5894211f,
-    type: 3}
-  m_PrefabInstance: {fileID: 613154999454403290}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1289626095 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3938936883816291564, guid: 26b526341735eba49a3b362e5894211f,
     type: 3}
   m_PrefabInstance: {fileID: 613154999454403290}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1289626096 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 971222372445503077, guid: 26b526341735eba49a3b362e5894211f,
+    type: 3}
+  m_PrefabInstance: {fileID: 613154999454403290}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1289818417 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5749581333223817254, guid: 356ef947ae6467740a8e2691653a1c9c,
@@ -13742,7 +13748,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ae32266179493af46890853f0bb7728a, type: 2}
   PlantName: {fileID: 2101667521}
   PlantDescription: {fileID: 1009041910}
-  PlantModel: {fileID: 1289626094}
+  PlantModel: {fileID: 1289626096}
 --- !u!4 &2131050630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5749581333223817254, guid: d4b19bf2770d5c64285a1274527eac28,
