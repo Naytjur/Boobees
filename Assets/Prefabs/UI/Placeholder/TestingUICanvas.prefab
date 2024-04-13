@@ -789,7 +789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 7070170093813569381}
   unlockButton: {fileID: 93319697490697156}
-  catalogueButton: {fileID: 0}
+  catalogueButton: {fileID: 5681043349726288172}
 --- !u!1 &2661066555551407401
 GameObject:
   m_ObjectHideFlags: 0

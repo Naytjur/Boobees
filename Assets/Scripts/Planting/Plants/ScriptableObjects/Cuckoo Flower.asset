@@ -15,8 +15,8 @@ MonoBehaviour:
   id: 1
   plantName: Cuckoo Flower
   description: 
-  unlocked: 0
-  prefab: {fileID: 0}
-  visual: {fileID: 0}
+  unlocked: 1
+  prefab: {fileID: 2860897861073008635, guid: de89799583073124b99b6feb81c31539, type: 3}
+  visual: {fileID: 2860897861073008635, guid: de89799583073124b99b6feb81c31539, type: 3}
   sprite: {fileID: 0}
   correctPlots: 

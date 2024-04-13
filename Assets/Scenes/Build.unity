@@ -2051,6 +2051,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bc415727e4347414ba21c58e03b563a4, type: 2}
   - {fileID: 11400000, guid: 8f86b53a5520b3241a2e056af231f393, type: 2}
   - {fileID: 11400000, guid: e7f3171f7aa444a4192a94984079105f, type: 2}
+  - {fileID: 11400000, guid: 175d4618a28e6c24bafcd601478e69f8, type: 2}
   currentPlot: {fileID: 0}
   plantList: []
   confirmButton: {fileID: 1878045906}
@@ -8793,6 +8794,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 794042875476879159, guid: 4849bb5a32627d7419e4378c6cb013c1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12.927124
       objectReference: {fileID: 0}
     - target: {fileID: 2949858158943474853, guid: 4849bb5a32627d7419e4378c6cb013c1,
         type: 3}
