@@ -10912,6 +10912,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerStatsUI
       objectReference: {fileID: 0}
+    - target: {fileID: 3882676276484532516, guid: 75478f0e9f1d3ce418cd78a9b1fc5dec,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4591482949028560534, guid: 75478f0e9f1d3ce418cd78a9b1fc5dec,
         type: 3}
       propertyPath: m_Pivot.x
@@ -11010,6 +11015,11 @@ PrefabInstance:
     - target: {fileID: 4591482949028560534, guid: 75478f0e9f1d3ce418cd78a9b1fc5dec,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219402793966099013, guid: 75478f0e9f1d3ce418cd78a9b1fc5dec,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

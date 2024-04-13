@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tree
   m_EditorClassIdentifier: 
   buildingName: Tree
-  prefab: {fileID: 5749581333223817254, guid: d4b19bf2770d5c64285a1274527eac28, type: 3}
-  visual: {fileID: 5749581333223817254, guid: 56e0fe6b88af97f4e962524b2b4a3584, type: 3}
+  prefab: {fileID: 2131101707176980842, guid: 8bf9d7ecaf54e324bb979d66f1930dfc, type: 3}
+  visual: {fileID: 2131101707176980842, guid: de321717540293e48b0af88fa283fc86, type: 3}
   width: 1
   height: 1
