@@ -4203,6 +4203,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 85a738da479a84f4c9867221f3716fd1, type: 2}
   - {fileID: 11400000, guid: 6a7ed196b723ee647859298347bf36e3, type: 2}
   - {fileID: 11400000, guid: c5e7afb82b8da7e43a605712bb05c913, type: 2}
+  - {fileID: 11400000, guid: b1b52200b98fad540a4142a322fea0f3, type: 2}
   ableColor: {r: 0.28627455, g: 0.75824773, b: 1, a: 0.5019608}
   unableColor: {r: 1, g: 0.28773582, b: 0.28773582, a: 0.5019608}
   confirmButton: {fileID: 1874327081}
