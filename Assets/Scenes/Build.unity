@@ -6953,6 +6953,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestingUI
       objectReference: {fileID: 0}
+    - target: {fileID: 3328119063126377959, guid: 7c6f5151f1932cb48a9c278a36d7b889,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4019184337297655451, guid: 7c6f5151f1932cb48a9c278a36d7b889,
         type: 3}
       propertyPath: m_Pivot.x
@@ -8798,7 +8803,7 @@ PrefabInstance:
     - target: {fileID: 794042875476879159, guid: 4849bb5a32627d7419e4378c6cb013c1,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12.927124
+      value: -12.927307
       objectReference: {fileID: 0}
     - target: {fileID: 2949858158943474853, guid: 4849bb5a32627d7419e4378c6cb013c1,
         type: 3}
@@ -9000,6 +9005,11 @@ PrefabInstance:
       propertyPath: plantButtonContainer
       value: 
       objectReference: {fileID: 1342956756}
+    - target: {fileID: 8327800030686195758, guid: 4849bb5a32627d7419e4378c6cb013c1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -11.668762
+      objectReference: {fileID: 0}
     - target: {fileID: 8760102270643841662, guid: 4849bb5a32627d7419e4378c6cb013c1,
         type: 3}
       propertyPath: m_Name
