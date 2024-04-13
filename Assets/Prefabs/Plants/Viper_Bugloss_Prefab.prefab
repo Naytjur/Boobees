@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6687389069166768158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1006128566038475824}
+  m_Layer: 0
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1006128566038475824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6687389069166768158}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0093, y: 0.1541, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5353643379180379608}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7809098784108644215
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,6 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5353643379180379608}
+  - component: {fileID: 8415993658175039924}
   m_Layer: 0
   m_Name: Viper_Bugloss_Prefab
   m_TagString: Untagged
@@ -114,5 +146,24 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6293579096036497976}
+  - {fileID: 1006128566038475824}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8415993658175039924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8478305405722912041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092dfbcc24cf18647a3e952e9efdb66e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  insects: []
+  plantSO: {fileID: 11400000, guid: e7f3171f7aa444a4192a94984079105f, type: 2}
+  plot: 0
+  isOnCorrectPlot: 0
+  baseSpawnRate: 10
+  targetTransform: {fileID: 1006128566038475824}

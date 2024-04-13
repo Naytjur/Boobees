@@ -125,7 +125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7800843598508841643}
-  - component: {fileID: 1541622879071953409}
+  - component: {fileID: 7303047037435296916}
   m_Layer: 0
   m_Name: FieldCowWheat
   m_TagString: Untagged
@@ -150,7 +150,7 @@ Transform:
   - {fileID: 1614152186764801810}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1541622879071953409
+--- !u!114 &7303047037435296916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,12 +159,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7874898171718648221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad3103c9eb18d1a4f8e8a2faf0e213bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 81834f1ca1dce594d87d4c4efb7fe899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insects:
-  - {fileID: 2567843266469457321, guid: e952a9e27a335bd479fd35e4e43bde95, type: 3}
-  - {fileID: 2567843266469457321, guid: fb905be2ce0cd9943904a8a2480e24f1, type: 3}
+  insects: []
   plantSO: {fileID: 11400000, guid: bc415727e4347414ba21c58e03b563a4, type: 2}
   plot: 0
   isOnCorrectPlot: 0
