@@ -11,7 +11,7 @@ public class PlantingUI : MonoBehaviour
     [SerializeField]
     private Transform buttonContainerTransform;
 
-    private void Awake()
+    private void Start()
     {
         PlantingManager.instance.onPlantUnlocked += UpdatePlantButtons;
     }

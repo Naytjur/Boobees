@@ -31,7 +31,7 @@ public class BuildingUI : MonoBehaviour
         {
             Transform button = Instantiate(buttonPrefab, buttonContainerTransform);
             button.GetComponent<SelectBuilding>().SetIndex(index);
-            button.GetComponentInChildren<TMP_Text>().text = building.name;
+            button.GetComponentInChildren<TMP_Text>().text = building.buildingName;
             index++;
         }
     }

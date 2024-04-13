@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e70cd28153b65d4ea95c85cf8a409e2, type: 3}
   m_Name: Field Cow Wheat
   m_EditorClassIdentifier: 
-  id: 2
+  id: 183759
   plantName: Field Cow Wheat
   description: Field Cow-wheat, boasts pink or purple flowers atop tall stems.  Blooming
     from June to September, it thrives in dry, chalky habitats across Western Europe.
     This rare plant relies on grass roots for nutrients and attracts bumblebees for
     pollination.
-  unlocked: 1
+  unlocked: 0
   prefab: {fileID: 7800843598508841643, guid: 2837c299f0400b749b8f86973f9e588b, type: 3}
   visual: {fileID: 7800843598508841643, guid: 2837c299f0400b749b8f86973f9e588b, type: 3}
   sprite: {fileID: 0}

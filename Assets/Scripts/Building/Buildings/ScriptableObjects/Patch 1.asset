@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Patch 1
   m_EditorClassIdentifier: 
-  buildingName: Patch 1
+  buildingName: Flower Patch
   prefab: {fileID: 5749581333223817254, guid: c6f2cab750dfef542ba651f88cf7d352, type: 3}
   visual: {fileID: 5749581333223817254, guid: 002bd411a7620be439069f3e09eb7b15, type: 3}
   width: 1
