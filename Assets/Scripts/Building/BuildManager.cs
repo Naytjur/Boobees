@@ -91,6 +91,7 @@ public class BuildManager : MonoBehaviour
         }
     }
 
+    //Building Placement
     private void PlaceBuilding()
     {
         buildGrid.GetXZ(lastTarget, out int x, out int z);
@@ -263,7 +264,7 @@ public class BuildManager : MonoBehaviour
     private void UpdateActiveState(GameState state)
     {
         isActive = state == GameState.Building;
-        ChangeVisual();
+        //ChangeVisual();
         confirmButton.gameObject.SetActive(false);
         rotateButton.gameObject.SetActive(false);
         buildingSelectMenu.gameObject.SetActive(true);
