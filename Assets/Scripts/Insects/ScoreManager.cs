@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,9 +9,9 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager instance;
 
     [SerializeField] private float updateInterval = 5f;
-    [SerializeField] private float scoreCapModifier = 2f;
+    [SerializeField] private float scoreCapModifier = 1.6f;
     [SerializeField] private int maxHoneyScoreBase = 100;
-    [SerializeField] private int maxPollenScoreBase = 100;
+    [SerializeField] private int maxPollenScoreBase = 20;
     [SerializeField] private int playerLevel = 1;
 
     public TMP_Text honeyText;
@@ -21,6 +22,8 @@ public class ScoreManager : MonoBehaviour
     private int pollenScore = 0;
     private int maxHoneyScore;
     private int maxPollenScore;
+
+    public static event Action<int> onLevelUp;
 
     private void Awake()
     {
@@ -35,6 +38,7 @@ public class ScoreManager : MonoBehaviour
         honeyText.text = "Honey: " + honeyScore;
         pollenText.text = "Pollen: " + pollenScore;
         levelText.text = "Level: " + playerLevel;
+        onLevelUp?.Invoke(1);
     }
 
     public void UpdateScores(int pollen, int honey)
@@ -59,7 +63,8 @@ public class ScoreManager : MonoBehaviour
     {
         playerLevel++;
         maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
-        maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
+        maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
+        onLevelUp?.Invoke(playerLevel);
     }
 
     private void Test(PlantSO plant)

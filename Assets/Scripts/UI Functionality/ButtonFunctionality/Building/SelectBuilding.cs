@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SelectBuilding : MonoBehaviour
 {
@@ -10,8 +11,11 @@ public class SelectBuilding : MonoBehaviour
     private int index;
 
     [Tooltip("Not required if button is on the same gameobject")]
-    [SerializeField]
-    private Button button;
+    public Button button;
+    public TMP_Text buildingNameText;
+    public TMP_Text buildingAmountText;
+
+    public BuildingSO building;
 
     private BuildManager buildManager;
 

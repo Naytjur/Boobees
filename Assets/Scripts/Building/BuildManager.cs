@@ -20,7 +20,7 @@ public class BuildManager : MonoBehaviour
 
     [Header("Buildings")]
     [SerializeField]
-    private List<BuildingSO> buildings =  new List<BuildingSO>();
+    private List<BuildingSO> allBuildings =  new List<BuildingSO>();
 
     //Internal Variables
     public Grid buildGrid;
@@ -50,6 +50,7 @@ public class BuildManager : MonoBehaviour
 
 
     public static event Action onBuildingChanged;
+    public static event Action onBuildingPlaced;
 
     private void Awake()
     {
@@ -61,9 +62,15 @@ public class BuildManager : MonoBehaviour
     private void Start()
     {
         GameManager.instance.onStateChange += UpdateActiveState;
+        ScoreManager.onLevelUp += OnLeveledUp;
         onBuildingChanged += ChangeVisual;
         UpdateActiveState(GameManager.instance.state);
         buildGrid = new Grid(gridWidth, gridHeight, gridCellSize, gridOrigin.position);
+
+        foreach(BuildingSO building in allBuildings)
+        {
+            building.RemoveCount(building.count);
+        }
     }
 
     private void Update()
@@ -109,6 +116,9 @@ public class BuildManager : MonoBehaviour
         confirmButton.gameObject.SetActive(false);
         rotateButton.gameObject.SetActive(false);
         buildingSelectMenu.gameObject.SetActive(true);
+        currentBuilding.AddCount(1);
+
+        onBuildingPlaced?.Invoke();
     }
 
     private bool CheckValidBuildPosition(BuildingSO building, int x, int z)
@@ -126,9 +136,9 @@ public class BuildManager : MonoBehaviour
     //Getters and Setters
     public void SetCurrentBuilding(int index)
     {
-        if(index < buildings.Count)
+        if(index < allBuildings.Count)
         {
-            currentBuilding = buildings[index];
+            currentBuilding = allBuildings[index];
             onBuildingChanged?.Invoke();
         }
     }
@@ -140,7 +150,7 @@ public class BuildManager : MonoBehaviour
 
     public List<BuildingSO> GetBuildingList()
     {
-        return buildings;
+        return allBuildings;
     }
 
     public bool GetMouseGridPosition(out Vector3 hit)
@@ -162,7 +172,7 @@ public class BuildManager : MonoBehaviour
 
     public void AddBuilding(BuildingSO building)
     {
-        buildings.Add(building);
+        allBuildings.Add(building);
     }
 
     //Hovering visual
@@ -257,5 +267,14 @@ public class BuildManager : MonoBehaviour
         confirmButton.gameObject.SetActive(false);
         rotateButton.gameObject.SetActive(false);
         buildingSelectMenu.gameObject.SetActive(true);
+    }
+
+    private void OnLeveledUp(int level)
+    {
+        foreach(BuildingSO building in allBuildings)
+        {
+            building.TryUnlock(level);
+            building.TryAdjustMaxCount(level);
+        }
     }
 }

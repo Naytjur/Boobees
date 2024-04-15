@@ -12,6 +12,12 @@ public class BuildingSO : ScriptableObject
     public int width;
     public int height;
 
+    public bool unlocked = false;
+    public int unlockLevel;
+
+    public int maxCount { get; private set; }
+    public int count { get; private set; }
+
     public enum Dir
     {
         Down,
@@ -98,5 +104,38 @@ public class BuildingSO : ScriptableObject
         }
 
         return gridPositionsList;
+    }
+
+    public void TryUnlock(int level)
+    {
+        if(level == unlockLevel)
+        {
+            Unlock();
+        }
+    }
+
+    private void Unlock()
+    {
+        unlocked = true;
+    }
+
+    public void AddCount(int amount)
+    {
+        count += amount;
+    }
+
+    public void RemoveCount(int amount)
+    {
+        count -= amount;
+    }
+
+    public bool HasCountLeft()
+    {
+        return count < maxCount;
+    }
+
+    public void TryAdjustMaxCount(int level)
+    {
+        maxCount = Mathf.Max(0, level - unlockLevel);
     }
 }

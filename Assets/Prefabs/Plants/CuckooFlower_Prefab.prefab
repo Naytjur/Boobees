@@ -245,13 +245,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   insects:
   - {fileID: 2567843266469457321, guid: fb905be2ce0cd9943904a8a2480e24f1, type: 3}
-  - {fileID: 2567843266469457321, guid: e952a9e27a335bd479fd35e4e43bde95, type: 3}
   - {fileID: 4354604764026543138, guid: 296214c8615effd47a35e418391977ab, type: 3}
+  - {fileID: 527792908067504651, guid: 51b699860d7dda24a88f9d48ee48af91, type: 3}
   plantSO: {fileID: 11400000, guid: 175d4618a28e6c24bafcd601478e69f8, type: 2}
   plot: 1
   isOnCorrectPlot: 0
   baseSpawnRate: 10
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 6413256862853343618}
 --- !u!1 &1979808629981504076
 GameObject:
   m_ObjectHideFlags: 0
