@@ -225,7 +225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6397094274939905064
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3378,8 +3378,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 251.29956, y: -41.73292}
-  m_SizeDelta: {x: 279.3386, y: 161.1569}
+  m_AnchoredPosition: {x: 251.29956, y: -41.00367}
+  m_SizeDelta: {x: 279.3386, y: 162.103}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3348616703899325663
 CanvasRenderer:
@@ -3409,9 +3409,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Description
-
-'
+  m_text: "Field Cow-wheat, boasts pink or purple flowers atop tall stems. \nBlooming
+    from June to September, it thrives in dry, chalky habitats across Western Europe.\nThis
+    rare plant relies on grass roots for nutrients and attracts bumblebees for pollination.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 148352c064693264f937e45256c6facc, type: 2}
   m_sharedMaterial: {fileID: 4195866624319128012, guid: 148352c064693264f937e45256c6facc,
@@ -3631,7 +3631,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6967795491278113802
 RectTransform:
   m_ObjectHideFlags: 0
