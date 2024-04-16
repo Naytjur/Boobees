@@ -1394,6 +1394,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8f86b53a5520b3241a2e056af231f393, type: 2}
   - {fileID: 11400000, guid: e7f3171f7aa444a4192a94984079105f, type: 2}
   - {fileID: 11400000, guid: 175d4618a28e6c24bafcd601478e69f8, type: 2}
+  - {fileID: 11400000, guid: 16f562297a88a1540adcd6562b889647, type: 2}
   currentPlot: {fileID: 0}
   plantList: []
   confirmButton: {fileID: 1878045906}
