@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CommonBrimstone_Antenna
+  m_Name: CommonBrimstone_antenna
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -26,7 +26,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 2b2038f6e34345c4481a250e760110ef, type: 3}
+        m_Texture: {fileID: 2800000, guid: f7ce5a776a5d15345acb9b3ad97f4d6d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -46,11 +46,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: bb0a78ae5eedefc48a90bfed984560b8, type: 3}
+        m_Texture: {fileID: 2800000, guid: e5b5d062c0d666e40a3f16d3b2d887e6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 51e41d6cb2ca87249b7a5c559ceace85, type: 3}
+        m_Texture: {fileID: 2800000, guid: b3d512f455b178542b6f871d1a3abd91, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
