@@ -1,12 +1,22 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
+
+    private enum BuildState
+    {
+        Unselected,
+        Placing,
+        Moving
+    }
+
+    private BuildState state;
 
     [Header("Grid Configuration")]
     [SerializeField]
@@ -26,6 +36,7 @@ public class BuildManager : MonoBehaviour
     public Grid buildGrid;
     private bool isActive;
     private BuildingSO currentBuilding;
+    private GameObject currentMover;
 
     [Header("Build Hovering")]
     //Hovering visuals
@@ -51,6 +62,8 @@ public class BuildManager : MonoBehaviour
 
     public static event Action onBuildingChanged;
     public static event Action onBuildingPlaced;
+    public static event Action onBuildingMoved;
+    public static event Action onBuildingRemoved;
 
     private void Awake()
     {
@@ -75,7 +88,7 @@ public class BuildManager : MonoBehaviour
 
     private void Update()
     {
-        if (visual != null && lastTarget != null)
+        if (visual != null && lastTarget != null && isActive)
         {
             buildGrid.GetXZ(lastTarget, out int x, out int z);
             confirmButton.interactable = CheckValidBuildPosition(currentBuilding, x, z);
@@ -85,7 +98,7 @@ public class BuildManager : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (Input.GetMouseButton(0) && visual != null)
+        if (Input.GetMouseButton(0) && state != BuildState.Unselected && isActive)
         {
             UpdateVisualPosition();
         }
@@ -114,9 +127,8 @@ public class BuildManager : MonoBehaviour
             buildGrid.SetValue(cell.x, cell.y, buildObject);
         }
 
-        confirmButton.gameObject.SetActive(false);
-        rotateButton.gameObject.SetActive(false);
-        buildingSelectMenu.gameObject.SetActive(true);
+        ToggleHoveringUI(false);
+
         currentBuilding.AddCount(1);
 
         onBuildingPlaced?.Invoke();
@@ -135,13 +147,20 @@ public class BuildManager : MonoBehaviour
     }
 
     //Getters and Setters
-    public void SetCurrentBuilding(int index)
+    public void SetBuildingByIndex(int index)
     {
-        if(index < allBuildings.Count)
+        if (index < allBuildings.Count)
         {
-            currentBuilding = allBuildings[index];
-            onBuildingChanged?.Invoke();
+            SetCurrentBuilding(allBuildings[index]);
+            state = BuildState.Placing;
         }
+    }
+
+    public void SetCurrentBuilding(BuildingSO building)
+    {
+        currentBuilding = building;
+        onBuildingChanged?.Invoke();
+
     }
 
     public BuildingSO GetCurrentBuilding()
@@ -201,9 +220,7 @@ public class BuildManager : MonoBehaviour
             visual.localScale = new Vector3(gridCellSize, gridCellSize, gridCellSize);
         }
 
-        confirmButton.gameObject.SetActive(true);
-        rotateButton.gameObject.SetActive(true);
-        buildingSelectMenu.gameObject.SetActive(false);
+        ToggleHoveringUI(true);
     }
 
     private void UpdateVisual()
@@ -260,11 +277,37 @@ public class BuildManager : MonoBehaviour
         UpdateVisual();
     }
 
+    private void HandleClick()
+    {
+        if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("BuildSurface"), out Vector3 pos))
+        {       
+            buildGrid.GetXZ(pos, out int x, out int z);
+
+            if (buildGrid.IsPositionOnGrid(x, z) && buildGrid.GetGridObject(x, z).building != null)
+            {
+                MoveBuilding(buildGrid.GetGridObject(x, z).building.buildingSO);
+            }
+        }
+    }
+
+    private void MoveBuilding(BuildingSO building)
+    {
+        state = BuildState.Moving;
+        SetCurrentBuilding(building);
+    }
+
+    private void ToggleHoveringUI(bool val)
+    {
+        confirmButton.gameObject.SetActive(val);
+        rotateButton.gameObject.SetActive(val);
+        buildingSelectMenu.gameObject.SetActive(!val);
+    }
+
     //GameFlow
     private void UpdateActiveState(GameState state)
     {
         isActive = state == GameState.Building;
-        //ChangeVisual();
+        this.state = BuildState.Unselected;
         confirmButton.gameObject.SetActive(false);
         rotateButton.gameObject.SetActive(false);
         buildingSelectMenu.gameObject.SetActive(true);

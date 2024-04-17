@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-    private BuildingSO buildingSO;
+    public BuildingSO buildingSO;
     private Vector2Int origin;
 
     public static Building Create(Vector3 worldPosition, Vector2Int origin, BuildingSO buildingSO, float size, Quaternion rotation)

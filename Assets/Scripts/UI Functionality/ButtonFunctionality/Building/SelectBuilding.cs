@@ -33,7 +33,7 @@ public class SelectBuilding : MonoBehaviour
 
     private void Select(int index)
     {
-        buildManager.SetCurrentBuilding(index);
+        buildManager.SetBuildingByIndex(index);
     }
 
     public void SetIndex(int index)
