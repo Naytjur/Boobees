@@ -2846,12 +2846,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3176849466595214957}
   m_Layer: 5
-  m_Name: infoflower
+  m_Name: plantspage2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3176849466595214957
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6525,7 +6525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.3739624, y: -12.439392}
+  m_AnchoredPosition: {x: -0.37402344, y: -12.439392}
   m_SizeDelta: {x: -358.91284, y: -157.95392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8015031280009512557
