@@ -1106,7 +1106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 252, y: 13}
+  m_AnchoredPosition: {x: 252, y: -9.999981}
   m_SizeDelta: {x: 217.5119, y: 217.5119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2450504376285472248
@@ -2649,7 +2649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 236, y: -143}
+  m_AnchoredPosition: {x: 236, y: -224}
   m_SizeDelta: {x: 66.8668, y: 66.867}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &821118261228123942
@@ -2851,7 +2851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3176849466595214957
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2953,7 +2953,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1065, y: -275}
+  m_AnchoredPosition: {x: 1065, y: -353}
   m_SizeDelta: {x: 200, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2607385626325961700
@@ -3091,7 +3091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.959}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 588, y: -379}
+  m_AnchoredPosition: {x: 588, y: -457}
   m_SizeDelta: {x: 226.7026, y: 228.9517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7325028505517720038
@@ -3401,7 +3401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -268.22, y: 25}
+  m_AnchoredPosition: {x: -268.22, y: 2}
   m_SizeDelta: {x: 221.8144, y: 221.8144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6546797748127852498
@@ -3804,7 +3804,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 862, y: -373}
+  m_AnchoredPosition: {x: 862, y: -451}
   m_SizeDelta: {x: 226.7026, y: 228.9517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1335233964503257198
@@ -4015,7 +4015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 237, y: -142}
+  m_AnchoredPosition: {x: 237, y: -219.99998}
   m_SizeDelta: {x: 66.8668, y: 66.867}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &8473021933634431479
@@ -4432,7 +4432,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 318.59778, y: -46.305225}
+  m_AnchoredPosition: {x: 319, y: -37}
   m_SizeDelta: {x: 279.3386, y: 162.103}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3348616703899325663
@@ -4463,9 +4463,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Field Cow-wheat, boasts pink or purple flowers atop tall stems. \nBlooming
-    from June to September, it thrives in dry, chalky habitats across Western Europe.\nThis
-    rare plant relies on grass roots for nutrients and attracts bumblebees for pollination.\n"
+  m_text: "The colour of the flowers of dead-nettle varies from white, yellow and
+    purple to a deep purple. \r\nThe flowers form a calyx with the petals fused into
+    a smaller upper lip and a larger, sometimes patterned lower lip. The leaves are
+    heart-shaped to ovoid and serrated at the edges."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 148352c064693264f937e45256c6facc, type: 2}
   m_sharedMaterial: {fileID: 4195866624319128012, guid: 148352c064693264f937e45256c6facc,
@@ -4493,8 +4494,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4748,7 +4749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.526}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 364, y: -324}
+  m_AnchoredPosition: {x: 364, y: -402}
   m_SizeDelta: {x: 226.7026, y: 228.9517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4815922221447593560
@@ -5380,7 +5381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6626597911186292120
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5738,6 +5739,7 @@ GameObject:
   - component: {fileID: 5387471322155401802}
   - component: {fileID: 5009628520152291409}
   - component: {fileID: 4277573128534840363}
+  - component: {fileID: 2444941909346498819}
   m_Layer: 5
   m_Name: Dead-nettles
   m_TagString: Untagged
@@ -5803,6 +5805,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2444941909346498819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6714964797425586472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87124193ed8b8614189b8fa9b07ca8d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plant: {fileID: 11400000, guid: 16f562297a88a1540adcd6562b889647, type: 2}
+  nav: {fileID: 6128025462400264148}
 --- !u!1 &6942757837894933168
 GameObject:
   m_ObjectHideFlags: 0
@@ -6363,7 +6379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3849668638394215937
 RectTransform:
   m_ObjectHideFlags: 0

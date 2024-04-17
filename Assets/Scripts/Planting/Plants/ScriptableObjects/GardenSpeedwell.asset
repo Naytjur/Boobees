@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 824711
   plantName: Garden Speedwell
-  description: He swaggin on em
+  description: The colour of the flowers of dead-nettle varies from white, yellow
+    and purple to a deep purple.  The zygomorphic flowers form a calyx with the petals
+    fused into a smaller upper lip and a larger,  sometimes patterned lower lip.
+    The leaves are heart-shaped to ovoid and serrated at the edges.
   unlocked: 1
   prefab: {fileID: 7378541901793563536, guid: d9c926e3a7b000a48b2a355ce4f24401, type: 3}
   visual: {fileID: 7378541901793563536, guid: d9c926e3a7b000a48b2a355ce4f24401, type: 3}
