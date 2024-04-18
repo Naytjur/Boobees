@@ -12,11 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e70cd28153b65d4ea95c85cf8a409e2, type: 3}
   m_Name: Trefoil
   m_EditorClassIdentifier: 
-  id: 628359
+  id: 
   plantName: Trefoil
-  description: It's a plant.
-  unlocked: 1
-  prefab: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac, type: 3}
-  visual: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac, type: 3}
+  description: 'Attracts: red-tailed bumblebee, kirbys mason bee, clover melitta/
+    This short lived perennial legume is adapted to humid, temperate regions. Adapted
+    to a wide range of soils. Birdsfoot trefoil tolerates acidity, alkalinity, low
+    fertility, drought Prostrate or upright growth. Grows 12 to 30 inches tall, depending
+    on whether it is a prostrate or erect variety. Types with prostrate stems are
+    more winter hardy and are better adapted for grazing, while upright types make
+    better hay. and poor drainage.'
+  unlocked: 0
+  prefab: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
+  visual: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
   sprite: {fileID: 0}
-  correctPlots: 01000000
+  correctPlots: 00000000

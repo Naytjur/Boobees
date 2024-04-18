@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 183759
   plantName: Field Cow Wheat
-  description: Field Cow-wheat, boasts pink or purple flowers atop tall stems.  Blooming
-    from June to September, it thrives in dry, chalky habitats across Western Europe.
-    This rare plant relies on grass roots for nutrients and attracts bumblebees for
-    pollination.
+  description: 'Attracts: bumblebees (only with long tongues to reach nectar), common
+    carder bee, small garden bumblebee, buff-tailed bumblebees sometimes gnaw a hole
+    in the side of the flower to acces the nectar/ boasts pink or purple flowers
+    atop tall stems. Blooming from June to September, it thrives in dry, chalky habitats
+    across Western Europe. This rare plant relies on grass roots for nutrients and
+    attracts bumblebees for pollination.'
   unlocked: 1
   prefab: {fileID: 7800843598508841643, guid: 2837c299f0400b749b8f86973f9e588b, type: 3}
   visual: {fileID: 7800843598508841643, guid: 2837c299f0400b749b8f86973f9e588b, type: 3}
