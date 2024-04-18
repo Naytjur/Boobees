@@ -23,7 +23,7 @@ MonoBehaviour:
     can be hairy or smooth. The flower heads have many crowded, small, five-lobed,
     mostly bisexual blooms.'
   unlocked: 0
-  prefab: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
-  visual: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
+  prefab: {fileID: 1332294455114525558, guid: 6cd8d54efa7cea04fa7294cfe2514ca7, type: 3}
+  visual: {fileID: 1332294455114525558, guid: 6cd8d54efa7cea04fa7294cfe2514ca7, type: 3}
   sprite: {fileID: 0}
   correctPlots: 00000000

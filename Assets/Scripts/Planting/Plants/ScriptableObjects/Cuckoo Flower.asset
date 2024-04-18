@@ -20,7 +20,7 @@ MonoBehaviour:
     spikes close to water, it''s a charming sight in spring. Its name, pratensis,
     means ''meadow'' in Latin.'
   unlocked: 1
-  prefab: {fileID: 2860897861073008635, guid: de89799583073124b99b6feb81c31539, type: 3}
-  visual: {fileID: 2860897861073008635, guid: de89799583073124b99b6feb81c31539, type: 3}
+  prefab: {fileID: 1081788682774422257, guid: 8a9b68f7c2d7e1448a9b72b710909c54, type: 3}
+  visual: {fileID: 1081788682774422257, guid: 8a9b68f7c2d7e1448a9b72b710909c54, type: 3}
   sprite: {fileID: 0}
   correctPlots: 01000000
