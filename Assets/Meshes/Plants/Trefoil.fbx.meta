@@ -3,7 +3,57 @@ guid: 301f2752994b3684cb43ddc6597c5b32
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BigPettal
+    second: {fileID: 2100000, guid: 9dac3c14bc5e5304db4f839a984bb18e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BigPettal.002
+    second: {fileID: 2100000, guid: 9dac3c14bc5e5304db4f839a984bb18e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floopie
+    second: {fileID: 2100000, guid: 28e98c86725da5f4fa87bb9c17f2eb1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floopie.002
+    second: {fileID: 2100000, guid: 28e98c86725da5f4fa87bb9c17f2eb1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaf
+    second: {fileID: 2100000, guid: aca9b586c864dd046affaeea44870e0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaf.003
+    second: {fileID: 2100000, guid: aca9b586c864dd046affaeea44870e0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaf.004
+    second: {fileID: 2100000, guid: aca9b586c864dd046affaeea44870e0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmallPetal
+    second: {fileID: 2100000, guid: dcd899c9da1c51e4b82c462da6ae8188, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmallPetal.002
+    second: {fileID: 2100000, guid: dcd899c9da1c51e4b82c462da6ae8188, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stem
+    second: {fileID: 2100000, guid: 220f37e1e18e4ab4a884ce92040531fb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

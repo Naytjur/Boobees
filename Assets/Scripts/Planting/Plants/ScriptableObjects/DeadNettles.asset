@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 752391
   plantName: Purple dead Nettle
   description: No Description yet
-  unlocked: 0
+  unlocked: 1
   prefab: {fileID: 9187378265724472716, guid: b5e7920ae917a4348a6dd1c5555e4e58, type: 3}
   visual: {fileID: 9187378265724472716, guid: b5e7920ae917a4348a6dd1c5555e4e58, type: 3}
   sprite: {fileID: 0}
