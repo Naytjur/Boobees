@@ -16,12 +16,8 @@ MonoBehaviour:
   plantName: Trefoil
   description: 'Attracts: red-tailed bumblebee, kirbys mason bee, clover melitta/
     This short lived perennial legume is adapted to humid, temperate regions. Adapted
-    to a wide range of soils. Birdsfoot trefoil tolerates acidity, alkalinity, low
-    fertility, drought Prostrate or upright growth. Grows 12 to 30 inches tall, depending
-    on whether it is a prostrate or erect variety. Types with prostrate stems are
-    more winter hardy and are better adapted for grazing, while upright types make
-    better hay. and poor drainage.'
-  unlocked: 0
+    to a wide range of soils.'
+  unlocked: 1
   prefab: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
   visual: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
   sprite: {fileID: 0}

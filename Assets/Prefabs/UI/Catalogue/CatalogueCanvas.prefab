@@ -822,11 +822,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8930588067342632762}
-  m_Father: {fileID: 7600269425248266836}
+  m_Father: {fileID: 3801703373605495920}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 425.6, y: -142.6}
+  m_AnchoredPosition: {x: 425.6, y: -199.59998}
   m_SizeDelta: {x: 130, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &42990696209583291
@@ -2581,11 +2581,13 @@ RectTransform:
   - {fileID: 7671204084371524606}
   - {fileID: 7991037440041286395}
   - {fileID: 652294421545300013}
+  - {fileID: 4932728534345440438}
+  - {fileID: 2457632093869076437}
   m_Father: {fileID: 7600269425248266836}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 57}
+  m_AnchoredPosition: {x: 0, y: -0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6545201557141500505
@@ -4011,11 +4013,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7598437997963774638}
-  m_Father: {fileID: 7600269425248266836}
+  m_Father: {fileID: 3801703373605495920}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 237, y: -163}
+  m_AnchoredPosition: {x: 237.00012, y: -219.99997}
   m_SizeDelta: {x: 66.8668, y: 66.867}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &8473021933634431479
@@ -4104,6 +4106,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: CollectionNavigation, Assembly-CSharp
         m_MethodName: ToMainPage
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3328855551466968124}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5418,7 +5432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7600269425248266836
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5433,8 +5447,6 @@ RectTransform:
   m_Children:
   - {fileID: 794042875476879159}
   - {fileID: 3801703373605495920}
-  - {fileID: 2457632093869076437}
-  - {fileID: 4932728534345440438}
   m_Father: {fileID: 3906625653216126716}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

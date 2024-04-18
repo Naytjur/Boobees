@@ -14,12 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 493749
   plantName: Viper's Bugloss
-  description: 'Attracts: common brimstone, fork-tailed flower bee, rare vipers bugloss
+  description: 'Attracts; common brimstone, fork-tailed flower bee, rare vipers bugloss
     mason bee, painted lady, blue mason bee, old world swallowtail, bumble bees /
     Viper''s bugloss, or Echium vulgare, is a striking plant with rough, hairy leaves
-    and vibrant blue flowers that start pink. Native to Europe, western and central
-    Asia, it''s also found in other regions as an introduced species. It blooms from
-    May to September.'
+    and vibrant blue flowers that start pink.  '
   unlocked: 0
   prefab: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
   visual: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
