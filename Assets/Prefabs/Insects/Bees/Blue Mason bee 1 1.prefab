@@ -25,9 +25,9 @@ Transform:
   m_GameObject: {fileID: 729567701997438647}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1600647, y: -0.045100793, z: -0.017700195}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5187736789678228648}
   - {fileID: 3088620558942871963}
@@ -629,6 +629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3611198201999882327}
+  - component: {fileID: 8587441816155976524}
   m_Layer: 0
   m_Name: Blue Mason bee 1 1
   m_TagString: Untagged
@@ -645,13 +646,32 @@ Transform:
   m_GameObject: {fileID: 7947722901994516784}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 379.77048, y: 0, z: -289.92322}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8865660461233766849}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8587441816155976524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7947722901994516784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cd49d7b016416b4cac644ebc83f430a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pollenP: 3
+  honeyP: 5
+  rarity: 2
+  insectFlySpeed: 1
+  insectStayDuration: 6
+  flyAwayDuration: 2
+  RotationSpeed: 100
 --- !u!1 &7995396835419892248
 GameObject:
   m_ObjectHideFlags: 0

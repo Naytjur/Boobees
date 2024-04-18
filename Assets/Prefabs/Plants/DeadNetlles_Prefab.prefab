@@ -135,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   insects:
   - {fileID: 1746090739354495089, guid: 56ded1886417a314a88161b4c90e3f2e, type: 3}
-  - {fileID: 4354604764026543138, guid: 296214c8615effd47a35e418391977ab, type: 3}
+  - {fileID: 1881815881844240462, guid: b9c76f866c3112d45bdf60a38cfcd803, type: 3}
   plantSO: {fileID: 11400000, guid: 16f562297a88a1540adcd6562b889647, type: 2}
   plot: 1
   isOnCorrectPlot: 0

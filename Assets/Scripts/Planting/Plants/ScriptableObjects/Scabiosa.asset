@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e70cd28153b65d4ea95c85cf8a409e2, type: 3}
   m_Name: Scabiosa
   m_EditorClassIdentifier: 
-  id: 
+  id: 241377
   plantName: Scabiosa
   description: 'Attracts: painted lady, Comma, Willughby''s Leafcutter Bee, red mason
     Bee, Large Scabious Mining Bee, Armed Nomad Bee/ Pincushion flower, also called

@@ -46,8 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c1bfe237c98e3e468f90adb2f10c371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insects: []
-  plantSO: {fileID: 0}
+  insects:
+  - {fileID: 2567843266469457321, guid: fb905be2ce0cd9943904a8a2480e24f1, type: 3}
+  - {fileID: 7947722901994516784, guid: df37df460e372c345bcd3cb025f31999, type: 3}
+  plantSO: {fileID: 11400000, guid: ad2df3ecc1ef8a640bcbb6da5b83e480, type: 2}
   plot: 0
   isOnCorrectPlot: 0
   baseSpawnRate: 10

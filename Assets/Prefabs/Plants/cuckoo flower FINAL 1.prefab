@@ -772,7 +772,7 @@ Transform:
   m_GameObject: {fileID: 5788022064273438051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.48, z: 0}
+  m_LocalPosition: {x: 0, y: 0.189, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -803,9 +803,9 @@ Transform:
   m_GameObject: {fileID: 6456313014877128338}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.464, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0.187, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7717526555692010493}
   - {fileID: 1498130077101958606}
@@ -1012,7 +1012,7 @@ Transform:
   m_GameObject: {fileID: 8764270734705277468}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.41567466, y: 0.46144533, z: 1.0869387}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1032,9 +1032,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32dcc00b706ca248bb5b27848540882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insects: []
+  insects:
+  - {fileID: 527792908067504651, guid: 51b699860d7dda24a88f9d48ee48af91, type: 3}
+  - {fileID: 1881815881844240462, guid: b9c76f866c3112d45bdf60a38cfcd803, type: 3}
+  - {fileID: 6359667776464545350, guid: 71d1f3882d72c6649bc92880d32d0771, type: 3}
   plantSO: {fileID: 11400000, guid: 175d4618a28e6c24bafcd601478e69f8, type: 2}
   plot: 1
   isOnCorrectPlot: 0
   baseSpawnRate: 10
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 945337109171437695}

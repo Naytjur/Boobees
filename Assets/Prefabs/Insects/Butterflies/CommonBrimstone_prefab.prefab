@@ -136,7 +136,7 @@ MonoBehaviour:
   pollenP: 2
   honeyP: 5
   rarity: 0
-  insectFlySpeed: 1
+  insectFlySpeed: 0.7
   insectStayDuration: 6
   flyAwayDuration: 2
   RotationSpeed: 100

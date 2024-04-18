@@ -10,7 +10,7 @@ public enum Rarity
     Epic
 }
 
-public abstract class Insect : MonoBehaviour
+public class Insect : MonoBehaviour
 {
     public int pollenP;
     public int honeyP;
