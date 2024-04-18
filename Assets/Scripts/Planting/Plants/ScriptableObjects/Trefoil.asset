@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e70cd28153b65d4ea95c85cf8a409e2, type: 3}
-  m_Name: Viper's Bugloss
+  m_Name: Trefoil
   m_EditorClassIdentifier: 
-  id: 493749
-  plantName: Viper's Bugloss
-  description: 'Attracts: common brimstone, fork-tailed flower bee, rare vipers bugloss
-    mason bee, painted lady, blue mason bee, old world swallowtail, bumble bees /
-    Viper''s bugloss, or Echium vulgare, is a striking plant with rough, hairy leaves
-    and vibrant blue flowers that start pink. Native to Europe, western and central
-    Asia, it''s also found in other regions as an introduced species. It blooms from
-    May to September.'
+  id: 
+  plantName: Trefoil
+  description: 'Attracts: red-tailed bumblebee, kirbys mason bee, clover melitta/
+    This short lived perennial legume is adapted to humid, temperate regions. Adapted
+    to a wide range of soils. Birdsfoot trefoil tolerates acidity, alkalinity, low
+    fertility, drought Prostrate or upright growth. Grows 12 to 30 inches tall, depending
+    on whether it is a prostrate or erect variety. Types with prostrate stems are
+    more winter hardy and are better adapted for grazing, while upright types make
+    better hay. and poor drainage.'
   unlocked: 0
   prefab: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
   visual: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
