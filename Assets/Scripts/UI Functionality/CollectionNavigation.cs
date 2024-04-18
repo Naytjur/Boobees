@@ -48,6 +48,7 @@ public class CollectionNavigation : MonoBehaviour
     {
         currentPage.SetActive(false);
         mainPage.SetActive(true);
+        plantsPage.SetActive(false); //idk why its enabling this the first time catolog is opened, but adding this fixed it * Luiz Band-Aid TM
         currentPage = mainPage;
     }
 
