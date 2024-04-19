@@ -18,7 +18,7 @@ MonoBehaviour:
     long tongues hoverflies, The cuckoo flower, also known as Cardamine pratensis,
     is a lovely perennial herb found across Europe and western Asia.  Blooming on
     spikes close to water, it''s a charming sight in spring. '
-  unlocked: 0
+  unlocked: 1
   prefab: {fileID: 1081788682774422257, guid: 8a9b68f7c2d7e1448a9b72b710909c54, type: 3}
   visual: {fileID: 1081788682774422257, guid: 8a9b68f7c2d7e1448a9b72b710909c54, type: 3}
   sprite: {fileID: 0}

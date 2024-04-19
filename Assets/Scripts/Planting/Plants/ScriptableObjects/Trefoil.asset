@@ -17,8 +17,8 @@ MonoBehaviour:
   description: 'Attracts: red-tailed bumblebee, kirbys mason bee, clover melitta/
     This short lived perennial legume is adapted to humid, temperate regions. Adapted
     to a wide range of soils.'
-  unlocked: 0
-  prefab: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
-  visual: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
+  unlocked: 1
+  prefab: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac, type: 3}
+  visual: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac, type: 3}
   sprite: {fileID: 0}
   correctPlots: 00000000

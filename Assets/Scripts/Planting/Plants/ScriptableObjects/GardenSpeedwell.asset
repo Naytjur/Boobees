@@ -17,7 +17,7 @@ MonoBehaviour:
   description: 'Attracts: red admiral, common brimstone, aethes triangulana / ranging
     from groundcovers only a few inches tall to upright plants with tall, spikey
     blooms.'
-  unlocked: 0
+  unlocked: 1
   prefab: {fileID: 7378541901793563536, guid: d9c926e3a7b000a48b2a355ce4f24401, type: 3}
   visual: {fileID: 7378541901793563536, guid: d9c926e3a7b000a48b2a355ce4f24401, type: 3}
   sprite: {fileID: 0}
