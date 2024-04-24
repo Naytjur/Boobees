@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Viper\xB4s Buglossssssssss_Flower Leaves_AlbedoTransparency"
+  m_Name: "Viper\xB4s Bugloss Re-dooo_Leaves_AlbedoTransparency"
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: d0d87148e038ac940a69c1d56793b3d2, type: 3}
+        m_Texture: {fileID: 2800000, guid: eea5d6d0447e3744193f21af15aa1292, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
