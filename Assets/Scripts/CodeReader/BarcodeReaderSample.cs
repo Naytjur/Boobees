@@ -1,10 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
+using Unity.Collections;
+using Unity.XR.CoreUtils;
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
+using ZXing;
+using TMPro;
 
 public class BarcodeReaderSample : MonoBehaviour
 {
-    /*[SerializeField]
+    [SerializeField]
     private ARSession session;
     [SerializeField]
     private XROrigin sessionOrigin;
@@ -22,7 +30,9 @@ public class BarcodeReaderSample : MonoBehaviour
     };
 
     private Result result;
+    [SerializeField]
     private string lastResult;
+    private Texture2D texture;
 
     private void OnEnable()
     {
@@ -34,70 +44,70 @@ public class BarcodeReaderSample : MonoBehaviour
         cameraManager.frameReceived -= OnCameraFrameReceived;
     }
 
-    private void OnCameraFrameReceived(ARCameraFrameEventArgs eventArgs)
+    unsafe void OnCameraFrameReceived(ARCameraFrameEventArgs eventArgs)
     {
-        //Check if scanning is enabled
-        if(!scanningEnabled)
-        {
-            return;
-        }
-
-        // Acquire an XRCpuImage
         if (!cameraManager.TryAcquireLatestCpuImage(out XRCpuImage image))
             return;
 
-        // Set up our conversion params
         var conversionParams = new XRCpuImage.ConversionParams
         {
-            // Convert the entire image
+            // Get the entire image.
             inputRect = new RectInt(0, 0, image.width, image.height),
 
-            // Output at full resolution
-            outputDimensions = new Vector2Int(image.width, image.height),
+            // Downsample by 2.
+            outputDimensions = new Vector2Int(image.width / 2, image.height / 2),
 
-            // Convert to RGBA format
+            // Choose RGBA format.
             outputFormat = TextureFormat.RGBA32,
 
-            // Flip across the vertical axis (mirror image)
+            // Flip across the vertical axis (mirror image).
             transformation = XRCpuImage.Transformation.MirrorY
         };
 
-        // Create a Texture2D to store the converted image
-        var texture = new Texture2D(image.width, image.height, TextureFormat.RGBA32, false);
+        // See how many bytes you need to store the final image.
+        int size = image.GetConvertedDataSize(conversionParams);
 
-        // Texture2D allows us write directly to the raw texture data as an optimization
-        var rawTextureData = texture.GetRawTextureData<byte>();
+        // Allocate a buffer to store the image.
+        var buffer = new NativeArray<byte>(size, Allocator.Temp);
 
-        try
-        {
-            unsafe
-            {
-                // Synchronously convert to the desired TextureFormat
-                image.Convert(
-                    conversionParams,
-                    new IntPtr(rawTextureData.GetUnsafePtr()),
-                    rawTextureData.Length);
-            }
-        }
-        finally
-        {
-            // Dispose the XRCpuImage after we're finished to prevent any memory leaks
-            image.Dispose();
-        }
+        // Extract the image data
+        image.Convert(conversionParams, new IntPtr(buffer.GetUnsafePtr()), buffer.Length);
+
+        // The image was converted to RGBA32 format and written into the provided buffer
+        // so you can dispose of the XRCpuImage. You must do this or it will leak resources.
+        image.Dispose();
+
+        // At this point, you can process the image, pass it to a computer vision algorithm, etc.
+        // In this example, you apply it to a texture to visualize it.
+
+        // You've got the data; let's put it into a texture so you can visualize it.
+        texture = new Texture2D(
+            conversionParams.outputDimensions.x,
+            conversionParams.outputDimensions.y,
+            conversionParams.outputFormat,
+            false);
+
+        texture.LoadRawTextureData(buffer);
+        texture.Apply();
+
+        // Done with your temporary data, so you can dispose it.
+        buffer.Dispose();
 
         result = reader.Decode(texture.GetPixels32(), texture.width, texture.height);
+
         if(result != null)
         {
             lastResult = result.Text;
-            Debug.Log(lastResult);
         }
-
-        // Apply the converted pixel data to our texture
-        texture.Apply();
     }
 
     public void ToggleScanning()
     {
         scanningEnabled = !scanningEnabled;
-    }*/
+    }
+
+    private void OnGUI()
+    {
+        GUI.TextField(new Rect(10, 10, 256, 25), lastResult);
+    }
 }
