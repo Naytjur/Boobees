@@ -9,6 +9,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using ZXing;
 using TMPro;
+using UnityEngine.UI;
 
 public class BarcodeReaderSample : MonoBehaviour
 {
@@ -97,7 +98,11 @@ public class BarcodeReaderSample : MonoBehaviour
 
         if(result != null)
         {
-            lastResult = result.Text;
+            if (PlantingManager.instance.TryUnlockPlant(result.Text, out string name))
+            {
+                SceneManager.instance.ToggleAR();
+                return;
+            }
         }
     }
 

@@ -8,7 +8,8 @@ public enum GameState
     Viewing,
     Planting,
     Building,
-    Catalogue
+    Catalogue,
+    Scanning
 }
 
 public class GameManager : MonoBehaviour
@@ -54,6 +55,9 @@ public class GameManager : MonoBehaviour
             case GameState.Catalogue:
                 HandleCatalogue();
                 break;
+            case GameState.Scanning:
+                HandleScanning();
+                break;
         }
 
         onStateChange?.Invoke(newState);
@@ -77,6 +81,11 @@ public class GameManager : MonoBehaviour
     private void HandleBuilding()
     {
         cameraPositon.SetCameraDefaultPosition();
+    }
+
+    private void HandleScanning()
+    {
+
     }
 }
 

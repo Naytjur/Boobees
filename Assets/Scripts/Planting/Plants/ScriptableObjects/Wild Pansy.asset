@@ -18,7 +18,7 @@ MonoBehaviour:
     known as wild pansy, is a charming European wildflower that Wild Pansy - can
     also be found in North America. These flowers come in various colors, including
     purple, blue, yellow, or white, often with a sought-after tricolor pattern.'
-  unlocked: 1
+  unlocked: 0
   prefab: {fileID: 3523959829202924707, guid: 812665bfe64b27c4cb143b943e1e91c5, type: 3}
   visual: {fileID: 3523959829202924707, guid: 812665bfe64b27c4cb143b943e1e91c5, type: 3}
   sprite: {fileID: 0}

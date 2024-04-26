@@ -21,7 +21,7 @@ MonoBehaviour:
     produces fragrant 5-cm (2-inch) flower heads in white, rose, crimson, blue, or
     deep mahogany purple, All species have basal leaf rosettes and leafy stems that
     can be hairy or smooth.'
-  unlocked: 1
+  unlocked: 0
   prefab: {fileID: 1332294455114525558, guid: 6cd8d54efa7cea04fa7294cfe2514ca7, type: 3}
   visual: {fileID: 1332294455114525558, guid: 6cd8d54efa7cea04fa7294cfe2514ca7, type: 3}
   sprite: {fileID: 0}

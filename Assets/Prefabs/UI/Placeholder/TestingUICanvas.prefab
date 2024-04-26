@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 7802122461185566653}
   - component: {fileID: 7196263854445888528}
   - component: {fileID: 8902503450542094715}
-  - component: {fileID: 1446045265561714583}
+  - component: {fileID: 2600693899415109273}
   m_Layer: 5
   m_Name: UnlockButton
   m_TagString: Untagged
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1446045265561714583
+--- !u!114 &2600693899415109273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,10 +267,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 93319697490697156}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 748784e7023c6a8459e328c0a3a0e15c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ed6618c4e3918c44b2ca1f4a8b8bfb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiElement: {fileID: 423823772004871893}
 --- !u!1 &107340350417465875
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +401,7 @@ MonoBehaviour:
   inputField: {fileID: 1147746703552889400}
   confirmButton: {fileID: 5927764547578047970}
   confirmInputText: {fileID: 8094133086564362084}
+  plants: []
 --- !u!1 &1488562052631263983
 GameObject:
   m_ObjectHideFlags: 0

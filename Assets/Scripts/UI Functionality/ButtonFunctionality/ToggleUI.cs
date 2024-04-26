@@ -9,7 +9,7 @@ public class ToggleUI : MonoBehaviour
     [SerializeField]
     private GameObject uiElement;
 
-    private void Start()
+    private void Awake()
     {
         GetComponent<Button>().onClick.AddListener(Toggle);
     }
