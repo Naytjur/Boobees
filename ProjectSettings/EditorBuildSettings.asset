@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PlotsTesting.unity
     guid: 8fdaf601ad7c26c4a98f8efa83ebef8c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Build.unity
     guid: f9964873a6f7eae4db31ae864239dd78
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ARTest.unity
     guid: d39b52426cd9fe6498422844fe2e92c3
   m_configObjects:

@@ -13,6 +13,9 @@ public class UnlockPlant : MonoBehaviour
     [SerializeField]
     private TMP_Text confirmInputText;
 
+    [SerializeField]
+    private PlantSO[] plants;
+
     private void Start()
     {
         confirmButton.onClick.AddListener(ConfirmInput);
@@ -24,6 +27,7 @@ public class UnlockPlant : MonoBehaviour
         {
             confirmInputText.text = name;
             gameObject.SetActive(false);
+            SceneManager.instance.ToggleAR();
             return;
         }
         confirmInputText.text = "Invalid code!";
