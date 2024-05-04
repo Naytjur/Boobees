@@ -103,6 +103,7 @@ public class BarcodeReaderSample : MonoBehaviour
                 SceneManager.instance.ToggleAR();
                 return;
             }
+            lastResult = result.Text;
         }
     }
 

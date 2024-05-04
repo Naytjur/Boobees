@@ -2684,6 +2684,7 @@ Transform:
   m_Children:
   - {fileID: 138788459}
   - {fileID: 1272322965}
+  - {fileID: 1914505819}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &650541700
@@ -2900,7 +2901,7 @@ PrefabInstance:
     - target: {fileID: 8780272914902735164, guid: 1488dd5e95c1bed41b8c005ad66ecc4d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8780272914902735164, guid: 1488dd5e95c1bed41b8c005ad66ecc4d,
         type: 3}
@@ -6223,7 +6224,6 @@ Transform:
   - {fileID: 1296215948}
   - {fileID: 822211151}
   - {fileID: 1923518457}
-  - {fileID: 1914505819}
   - {fileID: 1159300775}
   - {fileID: 966712546}
   - {fileID: 2000126506}
@@ -8099,7 +8099,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1476751590}
+  m_Father: {fileID: 637247720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1916173599
 PrefabInstance:

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class SceneManager : MonoBehaviour
 {
+#if UNITY_ANDROID || UNITY_IOS 
     public static SceneManager instance;
 
     [SerializeField]
@@ -23,6 +24,8 @@ public class SceneManager : MonoBehaviour
         {
             arScene.SetActive(!arScene.activeSelf);
             mainScene.SetActive(!mainScene.activeSelf);
+            Debug.Log(arScene.activeSelf);
         }
     }
+#endif
 }

@@ -13,5 +13,6 @@ public class ToggleAR : MonoBehaviour
     private void ToggleARFunction()
     {
         SceneManager.instance.ToggleAR();
+        Debug.Log("Toggled");
     }
 }
