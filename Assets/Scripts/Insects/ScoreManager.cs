@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ScoreManager : MonoBehaviour
+public class ScoreManager : MonoBehaviour, IDataPersistence
 {
     public static ScoreManager instance;
 
@@ -30,6 +30,20 @@ public class ScoreManager : MonoBehaviour
         instance = this;
     }
 
+    public void LoadData(GameData data)
+    {
+        this.playerLevel = data.playerLevel;
+        this.honeyScore = data.playerHoney;
+        this.pollenScore = data.playerPollen;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.playerLevel = this.playerLevel;
+        data.playerHoney = this.honeyScore;
+        data.playerPollen = this.pollenScore;
+    }
+
     private void Start()
     {
         maxHoneyScore = maxHoneyScoreBase;
@@ -38,7 +52,7 @@ public class ScoreManager : MonoBehaviour
         honeyText.text = "Honey: " + honeyScore;
         pollenText.text = "Pollen: " + pollenScore;
         levelText.text = "Level: " + playerLevel;
-        onLevelUp?.Invoke(1);
+        onLevelUp?.Invoke(playerLevel);
     }
 
     public void UpdateScores(int pollen, int honey)
