@@ -7,7 +7,7 @@ public class Building : MonoBehaviour
 
     [SerializeField] private string id;
 
-    private BuildingSO buildingSO;
+    public BuildingSO buildingSO;
     private Vector2Int origin;
 
     [ContextMenu("Generate gui for id")]
