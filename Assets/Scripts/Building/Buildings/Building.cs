@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-    public BuildingSO buildingSO;
+
+    [SerializeField] private string id;
+
+    private BuildingSO buildingSO;
     private Vector2Int origin;
 
+    [ContextMenu("Generate gui for id")]
+    private void GenerateGuid()
+    {
+        id = System.Guid.NewGuid().ToString();
+    }
+    
     public static Building Create(Vector3 worldPosition, Vector2Int origin, BuildingSO buildingSO, float size, Quaternion rotation)
     {
         Transform buildingTransform = Instantiate(buildingSO.prefab, worldPosition, rotation);

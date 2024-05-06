@@ -1,11 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using Unity.VisualScripting;
 using UnityEngine;
+
 
 [CreateAssetMenu(fileName = "New Building", menuName = "Create Building")]
 public class BuildingSO : ScriptableObject
 {
+    //Luiz Garbage
+    // private ShopItem item;
+    // [ReadOnly()] public PlaceableObjectData data = new PlaceableObjectData();
+
+
+    //Luiz Garbage
+
     public string buildingName;
     public Transform prefab;
     public Transform visual;
@@ -138,4 +148,23 @@ public class BuildingSO : ScriptableObject
     {
         maxCount = Mathf.Max(0, level - unlockLevel);
     }
+    //More Luiz Garbage
+    // public void Initialize(ShopItem shopItem)
+    // {
+    //     item = shopItem;
+    //     data.assetName = item.Name;
+    //     data.ID = SaveData.GenerateId();
+    // }
+
+    // public void Initialize(ShopItem shopItem, PlaceableObjectData objectData)
+    // {
+    //     item = shopItem;
+    //     data = objectData;
+    // }
+
+    // private void OnApplicationQuit()
+    // {
+    //     data.position = transform.postion;
+
+    // }
 }
