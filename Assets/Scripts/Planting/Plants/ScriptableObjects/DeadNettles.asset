@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 752391
   plantName: Purple dead Nettle
-  description: 'Attracts: red mason bee / The colour of the flowers of dead-nettle
-    varies from white, yellow and purple to a deep purple.'
-  unlocked: 0
+  description: "\u2022\tcolour of the flowers of dead-nettle varies  \u2022\twhite,
+    yellow and purple to a deep purple. "
+  unlocked: 1
   prefab: {fileID: 9187378265724472716, guid: b5e7920ae917a4348a6dd1c5555e4e58, type: 3}
   visual: {fileID: 9187378265724472716, guid: b5e7920ae917a4348a6dd1c5555e4e58, type: 3}
   sprite: {fileID: 21300000, guid: 302c54296eb84594db6213a2feadb017, type: 3}

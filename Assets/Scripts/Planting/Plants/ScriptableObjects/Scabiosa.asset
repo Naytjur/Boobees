@@ -14,13 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 241377
   plantName: Scabiosa
-  description: 'Attracts: painted lady, Comma, Willughby''s Leafcutter Bee, red mason
-    Bee, Large Scabious Mining Bee, Armed Nomad Bee/ Pincushion flower, also called
-    sweet scabious, mourning bride, or garden scabious (Scabiosa atropurpurea), a
-    southern European annual with deeply cut basal leaves and feathery stem leaves,
-    produces fragrant 5-cm (2-inch) flower heads in white, rose, crimson, blue, or
-    deep mahogany purple, All species have basal leaf rosettes and leafy stems that
-    can be hairy or smooth.'
+  description: "\u2022\tSouthern European annual  \u2022\tdeeply cut basal leaves
+    and feathery stem leaves \u2022\tproduces fragrant 5-cm flower heads  \u2022\twhite,
+    rose, crimson, blue, or deep mahogany purple "
   unlocked: 0
   prefab: {fileID: 1332294455114525558, guid: 6cd8d54efa7cea04fa7294cfe2514ca7, type: 3}
   visual: {fileID: 1332294455114525558, guid: 6cd8d54efa7cea04fa7294cfe2514ca7, type: 3}

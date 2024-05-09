@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 824711
   plantName: Garden Speedwell
-  description: 'Attracts: red admiral, common brimstone, aethes triangulana / ranging
-    from groundcovers only a few inches tall to upright plants with tall, spikey
-    blooms.'
+  description: "\u2022\tranging from groundcovers only a few inches tall to upright
+    plants \u2022\ttall, spikey blooms "
   unlocked: 0
   prefab: {fileID: 7378541901793563536, guid: d9c926e3a7b000a48b2a355ce4f24401, type: 3}
   visual: {fileID: 7378541901793563536, guid: d9c926e3a7b000a48b2a355ce4f24401, type: 3}

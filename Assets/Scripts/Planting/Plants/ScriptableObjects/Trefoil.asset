@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 141825
   plantName: Trefoil
-  description: 'Attracts: red-tailed bumblebee, kirbys mason bee, clover melitta/
-    This short lived perennial legume is adapted to humid, temperate regions. Adapted
-    to a wide range of soils.'
+  description: "\u2022\tshort lived perennial legume \u2022\tAdapted to humid, temperate
+    regions \u2022\tAdapted to a wide range of soils. "
   unlocked: 0
   prefab: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac, type: 3}
   visual: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac, type: 3}
