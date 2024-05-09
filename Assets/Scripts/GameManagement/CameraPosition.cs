@@ -8,7 +8,7 @@ public class CameraPosition : MonoBehaviour
     private Vector3 defaultPosition;
     private Vector3 defaultRotation;
 
-    private void Start()
+    private void Awake()
     {
         defaultPosition = transform.position;
         defaultRotation = transform.eulerAngles;
@@ -21,12 +21,12 @@ public class CameraPosition : MonoBehaviour
 
     public void SetCameraPosition(Vector3 position)
     {
-        Camera.main.transform.position = position;
+        transform.position = position;
     }
 
     public void SetCameraPosition(Vector3 position, Vector3 rotation)
     {
-        Camera.main.transform.position = position;
-        Camera.main.transform.eulerAngles = rotation;
+        transform.position = position;
+        transform.eulerAngles = rotation;
     }
 }
