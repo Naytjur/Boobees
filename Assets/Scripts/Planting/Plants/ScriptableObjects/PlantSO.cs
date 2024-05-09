@@ -13,7 +13,7 @@ public class PlantSO : ScriptableObject
     public Transform prefab;
     public Transform visual;
 
-    public Texture2D sprite;
+    public Sprite sprite;
 
     public PlotType[] correctPlots;
 }

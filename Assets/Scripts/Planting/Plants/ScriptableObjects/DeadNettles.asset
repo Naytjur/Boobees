@@ -19,5 +19,5 @@ MonoBehaviour:
   unlocked: 0
   prefab: {fileID: 9187378265724472716, guid: b5e7920ae917a4348a6dd1c5555e4e58, type: 3}
   visual: {fileID: 9187378265724472716, guid: b5e7920ae917a4348a6dd1c5555e4e58, type: 3}
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 302c54296eb84594db6213a2feadb017, type: 3}
   correctPlots: 01000000
