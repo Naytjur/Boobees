@@ -28,6 +28,8 @@ public class BuildingSO : ScriptableObject
     public int maxCount { get; private set; }
     public int count { get; private set; }
 
+    public Sprite sprite;
+
     public enum Dir
     {
         Down,

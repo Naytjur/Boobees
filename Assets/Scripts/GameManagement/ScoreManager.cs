@@ -23,9 +23,6 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
     private int maxHoneyScore;
     private int maxPollenScore;
 
-    [SerializeField]
-    private GameObject levelUpPopUp;
-
     public static event Action<int> onLevelUp;
 
     private void Awake()
@@ -82,7 +79,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
         maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
         onLevelUp?.Invoke(playerLevel);
-        levelUpPopUp.SetActive(true);
+        
     }
 
     private void Test(PlantSO plant)

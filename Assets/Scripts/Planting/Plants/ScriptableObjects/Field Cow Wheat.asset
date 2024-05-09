@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 183759
   plantName: Field Cow Wheat
-  description: 'Attracts: bumblebees (only with long tongues to reach nectar), common
-    carder bee, small garden bumblebee, buff-tailed bumblebees sometimes gnaw a hole
-    in the side of the flower to acces the nectar/ boasts pink or purple flowers
-    atop tall stems. '
+  description: "\u2022\tBuff-tailed bumblebees sometimes gnaw a hole in the side
+    of the flower to access the nectar \u2022\tBoasts pink or purple flowers atop
+    tall stems.  \u2022\tBlooming from June to September \u2022\tThrives in dry,
+    chalky habitats across Western Europe. "
   unlocked: 0
   prefab: {fileID: 7800843598508841643, guid: 2837c299f0400b749b8f86973f9e588b, type: 3}
   visual: {fileID: 7800843598508841643, guid: 2837c299f0400b749b8f86973f9e588b, type: 3}
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: f898232e224e49b40afcb7a907b1434d, type: 3}
   correctPlots: 00000000
