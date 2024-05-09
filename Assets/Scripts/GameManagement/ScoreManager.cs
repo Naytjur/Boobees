@@ -35,6 +35,8 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         this.playerLevel = data.playerLevel;
         this.honeyScore = data.playerHoney;
         this.pollenScore = data.playerPollen;
+        UpdateScores(pollenScore, honeyScore);
+        Debug.Log ("Loading GameData");
     }
 
     public void SaveData(ref GameData data)

@@ -69,6 +69,14 @@ public class DataPersistenceManager : MonoBehaviour
         SaveGame();
     }
 
+    #if UNITY_ANDROID && !UNITY_EDITOR
+    private void OnApplicationPause()
+    {
+        SaveGame();
+    }
+    #endif
+
+
     private List<IDataPersistence> FindAllDataPersistenceObjects()
     {
         IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<MonoBehaviour>().OfType<IDataPersistence>();
