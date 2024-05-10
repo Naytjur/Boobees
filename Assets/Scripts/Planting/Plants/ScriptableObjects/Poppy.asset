@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 724487
   plantName: Poppy
   description: IDK
-  unlocked: 0
+  unlocked: 1
   prefab: {fileID: 3523959829202924707, guid: b2525b567e9063e46bbf22620c924839, type: 3}
   visual: {fileID: 3523959829202924707, guid: b2525b567e9063e46bbf22620c924839, type: 3}
   sprite: {fileID: 21300000, guid: 58fbe682be6fbe34baa6a2c666710c83, type: 3}

@@ -18,5 +18,5 @@ MonoBehaviour:
   width: 1
   height: 1
   unlocked: 1
-  unlockLevel: 2
+  unlockLevel: 8
   sprite: {fileID: 21300000, guid: c76def1eb8c1a7343bce901c3c4418a5, type: 3}

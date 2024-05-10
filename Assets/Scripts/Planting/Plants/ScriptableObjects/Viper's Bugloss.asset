@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 493749
   plantName: Viper's Bugloss
-  description: "\u2022\tEuropean wildflower \u2022\tAlso found in North America \u2022\tvarious
-    colors, including purple, blue, yellow, or white \u2022\toften with a sought-after
-    tricolor pattern.  "
+  description: "\u2022\tEuropean wildflower \n\u2022\tAlso found in North America
+    \n\u2022\tvarious colors, including purple, blue, yellow, or white \n\u2022\toften
+    with a sought-after tricolor pattern.  "
   unlocked: 1
   prefab: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
   visual: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}

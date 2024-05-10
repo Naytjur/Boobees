@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 141825
   plantName: Trefoil
-  description: "\u2022\tshort lived perennial legume \u2022\tAdapted to humid, temperate
-    regions \u2022\tAdapted to a wide range of soils. "
-  unlocked: 0
+  description: "\u2022\tshort lived perennial legume \n\u2022\tAdapted to humid,
+    temperate regions \n\u2022\tAdapted to a wide range of soils. "
+  unlocked: 1
   prefab: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac, type: 3}
   visual: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac, type: 3}
   sprite: {fileID: 21300000, guid: 4136bef108bf72d4c81e05ae9a8ab5f6, type: 3}

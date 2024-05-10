@@ -98,22 +98,12 @@ public class BarcodeReaderSample : MonoBehaviour
 
         if(result != null)
         {
-            if (PlantingManager.instance.TryUnlockPlant(result.Text, out string name))
-            {
-                SceneManager.instance.ToggleAR();
-                return;
-            }
-            lastResult = result.Text;
+            PlantingManager.instance.TryUnlockPlant(result.Text, out string name);
         }
     }
 
     public void ToggleScanning()
     {
         scanningEnabled = !scanningEnabled;
-    }
-
-    private void OnGUI()
-    {
-        GUI.TextField(new Rect(10, 10, 256, 25), lastResult);
     }
 }

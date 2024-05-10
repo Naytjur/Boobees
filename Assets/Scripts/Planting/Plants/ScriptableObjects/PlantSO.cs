@@ -7,6 +7,7 @@ public class PlantSO : ScriptableObject
 {
     public string id;
     public string plantName;
+    [TextArea(10, 20)]
     public string description;
     public bool unlocked;
 
