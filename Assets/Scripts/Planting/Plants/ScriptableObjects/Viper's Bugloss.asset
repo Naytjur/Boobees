@@ -18,7 +18,7 @@ MonoBehaviour:
     colors, including purple, blue, yellow, or white \u2022\toften with a sought-after
     tricolor pattern.  "
   unlocked: 1
-  prefab: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
-  visual: {fileID: 5353643379180379608, guid: 86fb99ad94c101d40916d153e5302233, type: 3}
+  prefab: {fileID: 8391304303747840104, guid: 23b79293d9008534da2fa3f9ec1f957f, type: 3}
+  visual: {fileID: 8391304303747840104, guid: 23b79293d9008534da2fa3f9ec1f957f, type: 3}
   sprite: {fileID: 21300000, guid: 94ac8778e45c1b34498223feca3e1bb1, type: 3}
   correctPlots: 00000000
