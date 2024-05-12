@@ -17,4 +17,6 @@ public class PlantSO : ScriptableObject
     public Sprite sprite;
 
     public PlotType[] correctPlots;
+    public GameObject[] insects;
+    public float baseSpawnRate;
 }

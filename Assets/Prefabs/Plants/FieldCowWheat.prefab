@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7800843598508841643}
-  - component: {fileID: 7303047037435296916}
+  - component: {fileID: 7513815190840227852}
   m_Layer: 0
   m_Name: FieldCowWheat
   m_TagString: Untagged
@@ -65,7 +65,7 @@ Transform:
   - {fileID: 7268829043501949449}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7303047037435296916
+--- !u!114 &7513815190840227852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,17 +74,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7874898171718648221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81834f1ca1dce594d87d4c4efb7fe899, type: 3}
+  m_Script: {fileID: 11500000, guid: 0563c378470b11542883a9f70c2dce0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insects:
-  - {fileID: 6846323684437359680, guid: 1ced17f26f1215b4aa3a8ae5be253602, type: 3}
-  - {fileID: 527792908067504651, guid: 51b699860d7dda24a88f9d48ee48af91, type: 3}
-  - {fileID: 1881815881844240462, guid: b9c76f866c3112d45bdf60a38cfcd803, type: 3}
   plantSO: {fileID: 11400000, guid: bc415727e4347414ba21c58e03b563a4, type: 2}
   plot: 0
   isOnCorrectPlot: 0
-  baseSpawnRate: 10
   targetTransform: {fileID: 1614152186764801810}
 --- !u!1 &8046737555364362419
 GameObject:

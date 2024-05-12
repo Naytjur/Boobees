@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c822e7f279714a4585ab9d2cd5a9f82, type: 3}
+  m_Name: Viper's Bugloss Mason Bee
+  m_EditorClassIdentifier: 
+  rarity: 0
+  pollenProduction: 0
+  honeyProduction: 0
+  insectFlySpeed: 1
+  insectStayDuration: 6
+  flyAwayDuration: 2
+  rotationSpeed: 100

@@ -2,19 +2,19 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public abstract class Plant : MonoBehaviour
+public class Plant : MonoBehaviour
 {
-    public List<GameObject> insects = new List<GameObject>();
     public PlantSO plantSO;
+    [HideInInspector]
     public PlotType plot;
+    [HideInInspector]
     public bool isOnCorrectPlot;
-    public float baseSpawnRate = 10f;
 
     public Transform targetTransform;
 
     private void Start()
     {
-        float spawnRate = baseSpawnRate;
+        float spawnRate = plantSO.baseSpawnRate;
 
         if(isOnCorrectPlot == false)
         {
@@ -44,7 +44,7 @@ public abstract class Plant : MonoBehaviour
 
     private void TrySpawnInsect()
     {
-        foreach (GameObject insectPrefab in insects)
+        foreach (GameObject insectPrefab in plantSO.insects)
         {
             Insect insectScript = insectPrefab.GetComponent<Insect>();
 
