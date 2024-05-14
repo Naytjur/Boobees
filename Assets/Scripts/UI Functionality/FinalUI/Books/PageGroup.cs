@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PageGroup : MonoBehaviour
 {
@@ -10,16 +11,33 @@ public class PageGroup : MonoBehaviour
 
     private int displayCount;
     private int totalPages;
-    private int currentPage;
+    private int currentPage = 0;
 
+    [SerializeField]
     private GameObject previousButton;
+    [SerializeField]
     private GameObject nextButton;
 
     private void Awake()
     {
         itemDisplays = GetComponentsInChildren<ItemDisplay>();
+
         displayCount = itemDisplays.Length;
-        totalPages = itemsToDisplay.Count/displayCount;
+        totalPages = (int) Mathf.Ceil((float) itemsToDisplay.Count/(float) displayCount);
+
+        if(previousButton != null)
+        {
+            previousButton.GetComponent<Button>().onClick.AddListener(PreviousPage);
+        }
+        if (nextButton != null)
+        {
+            nextButton.GetComponent<Button>().onClick.AddListener(NextPage);
+        }
+    }
+
+    private void OnEnable()
+    {
+        OpenPageByIndex(currentPage);
     }
 
     public void OpenPageByIndex(int index)
@@ -33,7 +51,7 @@ public class PageGroup : MonoBehaviour
         int count = 0;
         foreach(ItemDisplay display in itemDisplays)
         {
-            if((index * displayCount) + count > itemsToDisplay.Count)
+            if((index * displayCount) + count >= itemsToDisplay.Count)
             {
                 display.HideDisplay();
             }
