@@ -45,10 +45,10 @@ public class PanelInfo : MonoBehaviour
 
     public void ChangePlantName()
     {
-        PlantName.text = plantInfo[index].plantName;
+        PlantName.text = plantInfo[index].itemName;
         PlantDescription.text = plantInfo[index].description;
         Debug.Log(plantInfo.Count);
-        Debug.Log(plantInfo[index].plantName);
+        Debug.Log(plantInfo[index].itemName);
         Debug.Log(plantInfo[index].description);
         Debug.Log(index);
     }

@@ -11,7 +11,7 @@ public enum Rarity
 }
 
 [CreateAssetMenu(fileName = "New Insect", menuName = "Create Insect")]
-public class InsectSO : ScriptableObject
+public class InsectSO : ItemInfo
 {
     public Rarity rarity;
     public int pollenProduction;

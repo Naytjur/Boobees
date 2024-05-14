@@ -32,6 +32,6 @@ public class Building : MonoBehaviour
 
     public virtual void OnClick()
     {
-        Debug.Log("Clicked: " + buildingSO.buildingName);
+        Debug.Log("Clicked: " + buildingSO.itemName);
     }
 }

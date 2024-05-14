@@ -19,7 +19,7 @@ public class ScanPopUp : MonoBehaviour
     {
         GameObject popUp = Instantiate(popUpPrefab, popUpCanvas.transform);
         ScanPopUpInfo scanPopUpInfo = popUp.GetComponent<ScanPopUpInfo>();
-        scanPopUpInfo.scanText.text = "You have unlocked " + plant.plantName + "!";
+        scanPopUpInfo.scanText.text = "You have unlocked " + plant.itemName + "!";
         scanPopUpInfo.flowerImage.sprite = plant.sprite;
     }
 }
