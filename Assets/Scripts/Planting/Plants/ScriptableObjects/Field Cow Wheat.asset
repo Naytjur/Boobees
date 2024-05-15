@@ -18,7 +18,7 @@ MonoBehaviour:
     of the flower to access the nectar \u2022\tBoasts pink or purple flowers atop
     tall stems.  \u2022\tBlooming from June to September \u2022\tThrives in dry,
     chalky habitats across Western Europe. "
-  unlocked: 0
+  unlocked: 1
   prefab: {fileID: 7800843598508841643, guid: 2837c299f0400b749b8f86973f9e588b, type: 3}
   visual: {fileID: 7800843598508841643, guid: 2837c299f0400b749b8f86973f9e588b, type: 3}
   sprite: {fileID: 21300000, guid: f898232e224e49b40afcb7a907b1434d, type: 3}

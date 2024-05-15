@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Plant", menuName = "Create Plant")]
+[System.Serializable]
 public class PlantSO : ScriptableObject
 {
     public string id;
