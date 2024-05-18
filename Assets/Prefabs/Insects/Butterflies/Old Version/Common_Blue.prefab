@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 984121214691764115}
-  - component: {fileID: 6018534362472283918}
   m_Layer: 0
   m_Name: Common_Blue
   m_TagString: Untagged
@@ -33,25 +32,6 @@ Transform:
   - {fileID: 5962581757807693615}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6018534362472283918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2567843266469457321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61812db8205d28945a1d884db29f4ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pollenP: 6
-  honeyP: 0
-  rarity: 0
-  insectFlySpeed: 1
-  insectStayDuration: 6
-  flyAwayDuration: 2
-  RotationSpeed: 100
 --- !u!1001 &6140062130795669700
 PrefabInstance:
   m_ObjectHideFlags: 0
