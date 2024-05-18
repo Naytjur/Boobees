@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3523959829202924707}
-  - component: {fileID: 6740090500148981038}
+  - component: {fileID: 2484426633937410889}
   m_Layer: 0
   m_Name: WildPansy_prefab
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 4328269771116940733}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6740090500148981038
+--- !u!114 &2484426633937410889
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,17 +43,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 688385098554215099}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77f5e7c867f3d9d428d54829685eb6dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 0563c378470b11542883a9f70c2dce0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insects:
-  - {fileID: 1881815881844240462, guid: b9c76f866c3112d45bdf60a38cfcd803, type: 3}
-  - {fileID: 6846323684437359680, guid: 1ced17f26f1215b4aa3a8ae5be253602, type: 3}
-  - {fileID: 2567843266469457321, guid: fb905be2ce0cd9943904a8a2480e24f1, type: 3}
   plantSO: {fileID: 11400000, guid: 8f86b53a5520b3241a2e056af231f393, type: 2}
-  plot: 2
+  plot: 0
   isOnCorrectPlot: 0
-  baseSpawnRate: 10
   targetTransform: {fileID: 4328269771116940733}
 --- !u!1 &1481470153172708011
 GameObject:
