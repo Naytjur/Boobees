@@ -24,6 +24,10 @@ public class ItemDisplay : MonoBehaviour
         this.item = item;
         displayImage.sprite = item.sprite;
         displayName.text = item.itemName;
+        if(!item.unlocked)
+        {
+            displayName.text = "not discovered";
+        }
         button.interactable = item.unlocked;
         
         button.onClick.AddListener(OpenPage);
