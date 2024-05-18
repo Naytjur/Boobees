@@ -127,7 +127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1332294455114525558}
-  - component: {fileID: 750082359213754001}
+  - component: {fileID: 4281521589399011070}
   m_Layer: 0
   m_Name: Scabiosa
   m_TagString: Untagged
@@ -152,7 +152,7 @@ Transform:
   - {fileID: 705484907884313574}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &750082359213754001
+--- !u!114 &4281521589399011070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,14 +161,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5384362708800730457}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b65c15bf85a3dd549bc26ab8f37acce6, type: 3}
+  m_Script: {fileID: 11500000, guid: 0563c378470b11542883a9f70c2dce0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insects:
-  - {fileID: 7327812189593277124, guid: 5a91e69cefc4b5149ab7038223aabff0, type: 3}
-  - {fileID: 1746090739354495089, guid: 56ded1886417a314a88161b4c90e3f2e, type: 3}
-  plantSO: {fileID: 11400000, guid: 9a9749b9ceabf8a45984f92674aa74fc, type: 2}
+  plantSO: {fileID: 0}
   plot: 0
   isOnCorrectPlot: 0
-  baseSpawnRate: 10
   targetTransform: {fileID: 705484907884313574}

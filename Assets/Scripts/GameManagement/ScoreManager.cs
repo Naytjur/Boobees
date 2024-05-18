@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEditor;
 
 public class ScoreManager : MonoBehaviour, IDataPersistence
 {
     public static ScoreManager instance;
 
+    [SerializeField] private float updateInterval = 5f;
     [SerializeField] private float scoreCapModifier = 1.6f;
     [SerializeField] private int maxHoneyScoreBase = 100;
     [SerializeField] private int maxPollenScoreBase = 20;
@@ -25,8 +25,6 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
     public static event Action<int> onLevelUp;
 
-    public List<PlantSO> allPlants;
-
     private void Awake()
     {
         instance = this;
@@ -37,19 +35,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         this.playerLevel = data.playerLevel;
         this.honeyScore = data.playerHoney;
         this.pollenScore = data.playerPollen;
-        this.maxHoneyScore = data.playerHoneyCap;
-        this.maxPollenScore = data.playerPollenCap;
         UpdateScores(pollenScore, honeyScore);
-
-        foreach (string plantID in data.unlockedPlantIDs)
-        {
-            PlantSO plant = FindPlantByID(plantID);
-            if (plant != null)
-            {
-                plant.unlocked = true;
-            }
-        }
-
         Debug.Log ("Loading GameData");
     }
 
@@ -58,18 +44,6 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         data.playerLevel = this.playerLevel;
         data.playerHoney = this.honeyScore;
         data.playerPollen = this.pollenScore;
-        data.playerHoneyCap = this.maxHoneyScore;
-        data.playerPollenCap = this.maxPollenScore;
-
-        data.unlockedPlantIDs.Clear();
-
-       foreach (PlantSO plant in allPlants)
-        {
-            if (plant.unlocked)
-            {
-                data.unlockedPlantIDs.Add(plant.id);
-            }
-        }
     }
 
     private void Start()
@@ -107,17 +81,11 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
         maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
         onLevelUp?.Invoke(playerLevel);
+        
     }
 
-    private PlantSO FindPlantByID(string id)
+    private void Test(PlantSO plant)
     {
-        foreach (PlantSO plant in allPlants)
-        {
-            if (plant.id == id)
-            {
-                return plant;
-            }
-        }
-        return null;
+        Debug.Log(plant.name);
     }
 }
