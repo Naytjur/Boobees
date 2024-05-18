@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e70cd28153b65d4ea95c85cf8a409e2, type: 3}
   m_Name: Common Columbine
   m_EditorClassIdentifier: 
-  id: 
+  id: 635328
   itemName: Common Columbine
   description: 
   unlocked: 0
