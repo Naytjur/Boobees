@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SceneManager : MonoBehaviour
 {
-#if UNITY_ANDROID || UNITY_IOS
+#if UNITY_ANDROID || UNITY_IOS 
     public static SceneManager instance;
 
     [SerializeField]
@@ -28,5 +28,4 @@ public class SceneManager : MonoBehaviour
         }
     }
 #endif
-    internal static object instance;
 }
