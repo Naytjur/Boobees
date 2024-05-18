@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 2360268664081002697}
   - component: {fileID: 3077809025110688199}
   m_Layer: 0
-  m_Name: TabButton
+  m_Name: UITabButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

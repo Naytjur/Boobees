@@ -3,26 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Button))]
 public class UITabButton : MonoBehaviour
 {
     [SerializeField]
-    private TabGroup tabGroup;
-
+    private UIBook tabGroup;
     private Button button;
+    public PageInfo page;
 
     private void Awake()
     {
         if (tabGroup == null)
         {
-            tabGroup = GetComponentInParent<TabGroup>();
+            tabGroup = GetComponentInParent<UIBook>();
         }
         button = GetComponent<Button>();
         button.onClick.AddListener(OnClick);
-    }
-
-    private void Start()
-    {
-        tabGroup.Subscribe(this); 
     }
 
     private void OnClick()

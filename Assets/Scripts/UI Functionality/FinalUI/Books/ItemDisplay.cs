@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent (typeof(Button))]
 public class ItemDisplay : MonoBehaviour
 {
     [HideInInspector]
@@ -14,6 +15,8 @@ public class ItemDisplay : MonoBehaviour
     private TMP_Text displayName;
     [SerializeField]
     private Button button;
+    [SerializeField]
+    private UICatalogue catalogue;
 
     public void UpdateDisplay(ItemInfo item)
     {
@@ -22,10 +25,20 @@ public class ItemDisplay : MonoBehaviour
         displayImage.sprite = item.sprite;
         displayName.text = item.itemName;
         button.interactable = item.unlocked;
+        
+        button.onClick.AddListener(OpenPage);
     }
 
     public void HideDisplay()
     {
         this.gameObject.SetActive(false);
+    }
+
+    private void OpenPage()
+    {
+        if (item is CatalogueItemInfo catalogueItem)
+        {
+            catalogue.OpenInfoPage(catalogueItem);
+        }
     }
 }

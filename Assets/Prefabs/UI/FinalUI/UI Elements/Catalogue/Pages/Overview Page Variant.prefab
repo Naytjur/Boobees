@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Previous
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -320,7 +320,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'Next
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -778,7 +780,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6610691916835926689, guid: d5352da4f0baa0d42a7238127536115c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5900241088454048681}
+      addedObject: {fileID: 1905620768447718359}
   m_SourcePrefab: {fileID: 100100000, guid: d5352da4f0baa0d42a7238127536115c, type: 3}
 --- !u!224 &1750943901829392948 stripped
 RectTransform:
@@ -792,7 +794,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2148584611424609506}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5900241088454048681
+--- !u!114 &1905620768447718359
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -801,12 +803,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5074618999629190723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44bec1faf5543dd46a1e3a9e5f3819fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5963594a5913c7c4097e55658353f76d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemsToDisplay: []
   previousButton: {fileID: 5537501006736723600}
   nextButton: {fileID: 6999597177447330552}
+  itemsToDisplay: []
 --- !u!224 &7905558743309678899 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8099549762998590929, guid: d5352da4f0baa0d42a7238127536115c,

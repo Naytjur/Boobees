@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public GameState state { private set; get; }
+    private GameState previousState;
 
     public event Action<GameState> onStateChange;
 
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         state =  GameState.Viewing;
+        previousState = GameState.Viewing;
     }
 
     public void UpdateGameState(GameState newState)
@@ -39,6 +41,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        previousState = state;
         state = newState;
 
         switch (newState)
@@ -61,6 +64,14 @@ public class GameManager : MonoBehaviour
         }
 
         onStateChange?.Invoke(newState);
+    }
+
+    public void ReturnToPreviousState()
+    {
+        if(previousState != state)
+        {
+            UpdateGameState(previousState);
+        }
     }
 
     private void HandleCatalogue()

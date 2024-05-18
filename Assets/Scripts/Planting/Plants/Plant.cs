@@ -44,18 +44,19 @@ public class Plant : MonoBehaviour
 
     private void TrySpawnInsect()
     {
-        foreach (GameObject insectPrefab in plantSO.insects)
+        foreach (ItemInfo item in plantSO.attractions)
         {
-            Insect insectScript = insectPrefab.GetComponent<Insect>();
-
-            if (insectScript != null && Random.Range(1, 101) <= insectScript.GetRarityPercentage())
-            {
-                SpawnInsect(insectPrefab);
+            if (item is InsectSO insect)
+            { 
+                if ( Random.Range(1, 101) <= insect.GetRarityPercentage())
+                {
+                    SpawnInsect(item.prefab);
+                }
             }
         }
     }
     
-    private void SpawnInsect(GameObject prefab)
+    private void SpawnInsect(Transform prefab)
     {
         Vector3 spawnPosition = targetTransform.position + Vector3.up * Random.Range(1f, 3f) + Random.insideUnitSphere * 2f;
         Insect newInsect = Instantiate(prefab, spawnPosition, Quaternion.identity).GetComponent<Insect>();

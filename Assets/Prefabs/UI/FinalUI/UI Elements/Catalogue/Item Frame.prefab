@@ -229,6 +229,7 @@ MonoBehaviour:
   displayImage: {fileID: 6708622766639383082}
   displayName: {fileID: 2845226992105695236}
   button: {fileID: 29233562731105898}
+  catalogue: {fileID: 0}
 --- !u!114 &29233562731105898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,7 +308,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.0178986, y: 43.91333}
+  m_AnchoredPosition: {x: -6.0178833, y: 43.91333}
   m_SizeDelta: {x: 224.3705, y: 168.2032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3732436160375086260

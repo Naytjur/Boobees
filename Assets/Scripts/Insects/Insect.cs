@@ -51,26 +51,4 @@ public class Insect : MonoBehaviour
         }
         Destroy(this.gameObject);
     }
-
-    public int GetRarityPercentage()
-    {
-        int percentage = 0;
-        switch (insectSO.rarity)
-        {
-            case Rarity.Common:
-                percentage = 20;
-                break;
-            case Rarity.Uncommon:
-                percentage = 10;
-                break;
-            case Rarity.Rare:
-                percentage = 5;
-                break;
-            case Rarity.Epic:
-                percentage = 1;
-                break;
-        }
-
-        return percentage;
-    }
 }

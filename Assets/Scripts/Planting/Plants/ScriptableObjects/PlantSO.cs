@@ -4,9 +4,8 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Plant", menuName = "Create Plant")]
 [System.Serializable]
-public class PlantSO : ItemInfo
+public class PlantSO : CatalogueItemInfo
 {
     public PlotType[] correctPlots;
-    public GameObject[] insects;
     public float baseSpawnRate;
 }
