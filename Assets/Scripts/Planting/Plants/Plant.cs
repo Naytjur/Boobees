@@ -50,7 +50,7 @@ public class Plant : MonoBehaviour
             { 
                 if ( Random.Range(1, 101) <= insect.GetRarityPercentage())
                 {
-                    SpawnInsect(item.prefab);
+                    SpawnInsect(item.gardenPrefab);
                 }
             }
         }
