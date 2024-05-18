@@ -18,7 +18,7 @@ public class Building : MonoBehaviour
     
     public static Building Create(Vector3 worldPosition, Vector2Int origin, BuildingSO buildingSO, float size, Quaternion rotation)
     {
-        Transform buildingTransform = Instantiate(buildingSO.prefab, worldPosition, rotation);
+        Transform buildingTransform = Instantiate(buildingSO.gardenPrefab, worldPosition, rotation);
 
         Building building  = buildingTransform.GetComponent<Building>();
 

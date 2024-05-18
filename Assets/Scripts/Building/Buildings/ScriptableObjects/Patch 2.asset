@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Patch 2
   m_EditorClassIdentifier: 
-  buildingName: Patch 2
-  prefab: {fileID: 5749581333223817254, guid: 3204a34591ea54444a2b35cb44d4c002, type: 3}
-  visual: {fileID: 5749581333223817254, guid: 002bd411a7620be439069f3e09eb7b15, type: 3}
+  id: 
+  itemName: plot 2
+  description: 
+  unlocked: 0
+  gardenPrefab: {fileID: 5749581333223817254, guid: 3204a34591ea54444a2b35cb44d4c002,
+    type: 3}
+  gardenVisual: {fileID: 5749581333223817254, guid: 002bd411a7620be439069f3e09eb7b15,
+    type: 3}
+  cataloguePrefab: {fileID: 5749581333223817254, guid: 3204a34591ea54444a2b35cb44d4c002,
+    type: 3}
+  sprite: {fileID: 0}
   width: 1
   height: 1
-  unlocked: 0
   unlockLevel: 0

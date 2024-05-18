@@ -10,8 +10,9 @@ public class ItemInfo : ScriptableObject
     public string description;
     public bool unlocked;
 
-    public Transform prefab;
-    public Transform visual;
+    public Transform gardenPrefab;
+    public Transform gardenVisual;
+    public Transform cataloguePrefab;
 
     public Sprite sprite;
 }

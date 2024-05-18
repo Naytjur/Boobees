@@ -13,12 +13,18 @@ MonoBehaviour:
   m_Name: Scabiosa
   m_EditorClassIdentifier: 
   id: 241377
-  plantName: Scabiosa
+  itemName: 
   description: "\u2022\tSouthern European annual  \n\u2022\tdeeply cut basal leaves
     and feathery stem leaves \n\u2022\tproduces fragrant 5-cm flower heads  \n\u2022\twhite,
     rose, crimson, blue, or deep mahogany purple "
   unlocked: 0
-  prefab: {fileID: 1332294455114525558, guid: 6cd8d54efa7cea04fa7294cfe2514ca7, type: 3}
-  visual: {fileID: 1332294455114525558, guid: 6cd8d54efa7cea04fa7294cfe2514ca7, type: 3}
+  gardenPrefab: {fileID: 3102992664574367547, guid: e35aed3eacb70a14ea8957ef41fd62b3,
+    type: 3}
+  gardenVisual: {fileID: 3102992664574367547, guid: e35aed3eacb70a14ea8957ef41fd62b3,
+    type: 3}
+  cataloguePrefab: {fileID: 3102992664574367547, guid: e35aed3eacb70a14ea8957ef41fd62b3,
+    type: 3}
   sprite: {fileID: 21300000, guid: 319bca93c31ab324588f4e022546c0ae, type: 3}
   correctPlots: 00000000
+  insects: []
+  baseSpawnRate: 0

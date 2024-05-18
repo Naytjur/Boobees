@@ -63,7 +63,7 @@ public class BuildVisual : MonoBehaviour
 
         if(buildingObject != null && GameManager.instance.state == GameState.Building)
         {
-            visual = Instantiate(buildingObject.visual, new Vector3(-1000, -1000, -1000), Quaternion.identity);
+            visual = Instantiate(buildingObject.gardenVisual, new Vector3(-1000, -1000, -1000), Quaternion.identity);
             visual.localScale = new Vector3(scale, scale, scale);
         }
     }

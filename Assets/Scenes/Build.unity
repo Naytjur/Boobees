@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1363,6 +1363,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9a9749b9ceabf8a45984f92674aa74fc, type: 2}
   - {fileID: 11400000, guid: 11b13cb280409f44f8d2446eff3b57af, type: 2}
   - {fileID: 11400000, guid: 87514f25ea41a8e42addb721f9dd9f77, type: 2}
+  - {fileID: 11400000, guid: 080dc4f5c417c9a4fb706a4c5713e728, type: 2}
+  - {fileID: 11400000, guid: 5c312add34da3d84883adc51a2fe3a4c, type: 2}
+  - {fileID: 11400000, guid: f8e75f3fc2826e04397825c104b8f86b, type: 2}
   currentPlot: {fileID: 0}
   plantList: []
   confirmButton: {fileID: 1878045906}
@@ -2406,6 +2409,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2cc2595b2fb0a394d8ec0782da36a12c, type: 2}
   - {fileID: 11400000, guid: b1b52200b98fad540a4142a322fea0f3, type: 2}
   - {fileID: 11400000, guid: 85a738da479a84f4c9867221f3716fd1, type: 2}
+  - {fileID: 11400000, guid: 25217dbd663c47b4bb5ae17b30826b6a, type: 2}
+  - {fileID: 11400000, guid: 495cef77f4871ea489d269a17d3266b3, type: 2}
   ableColor: {r: 0.28627455, g: 0.75824773, b: 1, a: 0.5019608}
   unableColor: {r: 1, g: 0.28773582, b: 0.28773582, a: 0.5019608}
   confirmButton: {fileID: 1874327081}
