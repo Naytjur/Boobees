@@ -2,25 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class TabGroup : MonoBehaviour
 {
-    private List<TabButton> buttons;
+    private List<UITabButton> buttons;
     [SerializeField]
     private List<GameObject> tabObjects;
 
-    private TabButton selectedTab;
+    private UITabButton selectedTab;
 
-    public void Subscribe(TabButton button)
+    public void Subscribe(UITabButton button)
     {
         if (buttons == null)
         {
-            buttons = new List<TabButton>();
+            buttons = new List<UITabButton>();
         }
 
         buttons.Add(button);
     }
 
-    public void OnTabSelected(TabButton button)
+    public void OnTabSelected(UITabButton button)
     {
         selectedTab = button;
 
