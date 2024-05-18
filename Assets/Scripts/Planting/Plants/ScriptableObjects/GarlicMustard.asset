@@ -13,10 +13,16 @@ MonoBehaviour:
   m_Name: GarlicMustard
   m_EditorClassIdentifier: 
   id: 635274
-  plantName: Garlic Mustard
+  itemName: Garlic Mustard
   description: No description yet
   unlocked: 0
-  prefab: {fileID: 7636367637897617607, guid: 5aa77dc9a1f3aed449d0a2a4c4afc782, type: 3}
-  visual: {fileID: 7636367637897617607, guid: 5aa77dc9a1f3aed449d0a2a4c4afc782, type: 3}
+  gardenPrefab: {fileID: 7636367637897617607, guid: 5aa77dc9a1f3aed449d0a2a4c4afc782,
+    type: 3}
+  gardenVisual: {fileID: 7636367637897617607, guid: 5aa77dc9a1f3aed449d0a2a4c4afc782,
+    type: 3}
+  cataloguePrefab: {fileID: 7636367637897617607, guid: 5aa77dc9a1f3aed449d0a2a4c4afc782,
+    type: 3}
   sprite: {fileID: 21300000, guid: bcdc094e4dd05094aa62770933cd9b0d, type: 3}
   correctPlots: 02000000
+  insects: []
+  baseSpawnRate: 0

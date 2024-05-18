@@ -12,9 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c822e7f279714a4585ab9d2cd5a9f82, type: 3}
   m_Name: Common Brimstone
   m_EditorClassIdentifier: 
+  id: 
+  itemName: Common Brimstone
+  description: 
+  unlocked: 0
+  gardenPrefab: {fileID: 4956082533760744419, guid: 125eb5c7944d94044a93f392b87c72c4,
+    type: 3}
+  gardenVisual: {fileID: 4956082533760744419, guid: 125eb5c7944d94044a93f392b87c72c4,
+    type: 3}
+  cataloguePrefab: {fileID: 1845595262676596583, guid: 296214c8615effd47a35e418391977ab,
+    type: 3}
+  sprite: {fileID: 21300000, guid: 5bf28aee9835f2542a16139d6e402626, type: 3}
   rarity: 0
-  pollenProduction: 0
-  honeyProduction: 0
+  pollenProduction: 3
+  honeyProduction: 6
   insectFlySpeed: 1
   insectStayDuration: 6
   flyAwayDuration: 2

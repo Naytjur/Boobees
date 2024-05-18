@@ -108,7 +108,7 @@ public class PlantingManager : MonoBehaviour
 
         if (plantState == PlantState.Planting && !currentPlot.IsFull())
         {
-            Transform plantTransform = Instantiate(currentPlant.prefab);
+            Transform plantTransform = Instantiate(currentPlant.gardenPrefab);
             plantTransform.position = hoverPosition;
 
             Plant plant = plantTransform.GetComponent<Plant>();
@@ -127,7 +127,7 @@ public class PlantingManager : MonoBehaviour
     {
         if (hoverVisual == null)
         {
-            hoverVisual = Instantiate(currentPlant.visual);
+            hoverVisual = Instantiate(currentPlant.gardenVisual);
         }
 
         hoverVisual.transform.position = location;
@@ -181,7 +181,7 @@ public class PlantingManager : MonoBehaviour
             if(hoverVisual != null)
             {
                 Destroy(hoverVisual.gameObject);
-                hoverVisual = Instantiate(allPlants[index].visual);
+                hoverVisual = Instantiate(allPlants[index].gardenVisual);
                 hoverVisual.position = hoverPosition;
             }
         }

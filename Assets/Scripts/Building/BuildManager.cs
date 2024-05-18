@@ -215,7 +215,7 @@ public class BuildManager : MonoBehaviour
                 visualRenderers.Clear();
             }
 
-            visual = Instantiate(buildingObject.visual, lastTarget, Quaternion.identity);
+            visual = Instantiate(buildingObject.gardenVisual, lastTarget, Quaternion.identity);
             visualRenderers = new List<MeshRenderer>(visual.GetComponentsInChildren<MeshRenderer>());
             visual.localScale = new Vector3(gridCellSize, gridCellSize, gridCellSize);
         }
