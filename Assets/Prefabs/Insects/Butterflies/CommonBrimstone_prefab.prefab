@@ -130,13 +130,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4354604764026543138}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf755e7a60ccbc6419bbffd64f92b597, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cd49d7b016416b4cac644ebc83f430a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pollenP: 2
-  honeyP: 5
-  rarity: 0
-  insectFlySpeed: 0.7
-  insectStayDuration: 6
-  flyAwayDuration: 2
-  RotationSpeed: 100
+  insectSO: {fileID: 11400000, guid: 8a8531d69422c3d498377e61ea42de98, type: 2}

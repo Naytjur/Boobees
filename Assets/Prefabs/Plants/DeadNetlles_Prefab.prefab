@@ -96,7 +96,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9187378265724472716}
-  - component: {fileID: 2915624559129140964}
+  - component: {fileID: 4170815421250360211}
   m_Layer: 0
   m_Name: DeadNetlles_Prefab
   m_TagString: Untagged
@@ -121,7 +121,7 @@ Transform:
   - {fileID: 2078277145992138874}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2915624559129140964
+--- !u!114 &4170815421250360211
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,16 +130,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7639605609342498776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 953327bf0e405e3488eee51836a88b3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0563c378470b11542883a9f70c2dce0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insects:
-  - {fileID: 1746090739354495089, guid: 56ded1886417a314a88161b4c90e3f2e, type: 3}
-  - {fileID: 1881815881844240462, guid: b9c76f866c3112d45bdf60a38cfcd803, type: 3}
   plantSO: {fileID: 11400000, guid: 16f562297a88a1540adcd6562b889647, type: 2}
-  plot: 1
+  plot: 0
   isOnCorrectPlot: 0
-  baseSpawnRate: 10
   targetTransform: {fileID: 2078277145992138874}
 --- !u!1 &8834289389291331257
 GameObject:

@@ -52,7 +52,7 @@ public class BuildingUI : MonoBehaviour
         foreach (Transform button in buildButtons)
         {
             SelectBuilding select = button.GetComponent<SelectBuilding>();
-            select.buildingNameText.text = select.building.buildingName;
+            select.buildingNameText.text = select.building.itemName;
             select.button.interactable = select.building.unlocked && select.building.HasCountLeft();
             select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
 
@@ -64,7 +64,7 @@ public class BuildingUI : MonoBehaviour
         foreach (Transform button in buildButtons)
         {
             SelectBuilding select = button.GetComponent<SelectBuilding>();
-            select.buildingNameText.text = select.building.buildingName;
+            select.buildingNameText.text = select.building.itemName;
             select.button.interactable = select.building.unlocked && select.building.HasCountLeft();
             select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
 

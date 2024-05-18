@@ -414,13 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd49d7b016416b4cac644ebc83f430a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pollenP: 12
-  honeyP: 0
-  rarity: 2
-  insectFlySpeed: 0.7
-  insectStayDuration: 6
-  flyAwayDuration: 2
-  RotationSpeed: 100
+  insectSO: {fileID: 11400000, guid: 240290f74e275fc4abbed3687cac3660, type: 2}
 --- !u!1 &8824746928946654868
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +476,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: -6290986277093886562, guid: 3e446239269ecc143bd400c63de8ab34, type: 3}
   - {fileID: -6290986277093886562, guid: 3e446239269ecc143bd400c63de8ab34, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0

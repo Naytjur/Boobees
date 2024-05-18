@@ -21,7 +21,7 @@ public class TextUpdater : MonoBehaviour
     {
         if(connectedPlant == plant)
         {
-            nameText.text = plant.plantName;
+            nameText.text = plant.itemName;
             descriptionText.text = plant.description;
 
             //image = plant.sprite;

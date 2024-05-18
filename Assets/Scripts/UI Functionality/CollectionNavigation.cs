@@ -72,7 +72,7 @@ public class CollectionNavigation : MonoBehaviour
         plantPage.SetActive(true);
         currentPage = plantPage;
 
-        plantName.text = plant.plantName;
+        plantName.text = plant.itemName;
         plantDescription.text = plant.description;
     }
 

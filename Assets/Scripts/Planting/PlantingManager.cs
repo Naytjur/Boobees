@@ -192,7 +192,7 @@ public class PlantingManager : MonoBehaviour
     {
         foreach(PlantSO plant in allPlants)
         {
-            if (plant.id == id)
+            if (plant.id == id && !plant.unlocked)
             {
                 UnlockPlant(plant);
                 name = plant.name;

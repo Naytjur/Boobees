@@ -406,15 +406,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4608165092742212594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9ec91a2e6f23a24ca76906f42c23a3e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0563c378470b11542883a9f70c2dce0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insects:
-  - {fileID: 6359667776464545350, guid: 71d1f3882d72c6649bc92880d32d0771, type: 3}
   plantSO: {fileID: 11400000, guid: 11b13cb280409f44f8d2446eff3b57af, type: 2}
-  plot: 2
+  plot: 0
   isOnCorrectPlot: 0
-  baseSpawnRate: 10
   targetTransform: {fileID: 354499938482771653}
 --- !u!1 &6643913043568990013
 GameObject:

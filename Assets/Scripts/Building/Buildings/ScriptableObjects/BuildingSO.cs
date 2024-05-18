@@ -7,7 +7,7 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "New Building", menuName = "Create Building")]
-public class BuildingSO : ScriptableObject
+public class BuildingSO : ItemInfo
 {
     //Luiz Garbage
     // private ShopItem item;
@@ -15,20 +15,13 @@ public class BuildingSO : ScriptableObject
 
 
     //Luiz Garbage
-
-    public string buildingName;
-    public Transform prefab;
-    public Transform visual;
     public int width;
     public int height;
 
-    public bool unlocked = false;
     public int unlockLevel;
 
     public int maxCount { get; private set; }
     public int count { get; private set; }
-
-    public Sprite sprite;
 
     public enum Dir
     {

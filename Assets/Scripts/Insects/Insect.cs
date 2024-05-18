@@ -2,24 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Rarity
-{
-    Common,
-    Uncommon,
-    Rare,
-    Epic
-}
 
 public class Insect : MonoBehaviour
 {
-    public int pollenP;
-    public int honeyP;
-    public Rarity rarity;
-
-    [SerializeField] private float insectFlySpeed = 1f;
-    [SerializeField] private float insectStayDuration = 6f;
-    [SerializeField] private float flyAwayDuration = 2f;
-    [SerializeField] private float RotationSpeed = 100f;
+    [SerializeField]
+    private InsectSO insectSO;
 
     public void Spawn(Vector3 target)
     {
@@ -33,9 +20,9 @@ public class Insect : MonoBehaviour
         float journeyLength = Vector3.Distance(initialPosition, targetPosition);
         float startTime = Time.time;
 
-        while ((Time.time - startTime) < insectStayDuration)
+        while ((Time.time - startTime) < insectSO.insectStayDuration)
         {
-            float distanceCovered = (Time.time - startTime) * insectFlySpeed;
+            float distanceCovered = (Time.time - startTime) * insectSO.insectFlySpeed;
             float journeyFraction = distanceCovered / journeyLength;
             transform.position = Vector3.Lerp(initialPosition, targetPosition, journeyFraction);
 
@@ -45,7 +32,7 @@ public class Insect : MonoBehaviour
             if (direction != Vector3.zero)
             {
                 targetRotation = Quaternion.LookRotation(direction);
-                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * RotationSpeed);
+                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * insectSO.rotationSpeed);
             }
 
             yield return null;
@@ -54,12 +41,12 @@ public class Insect : MonoBehaviour
         Quaternion flyAwayRotation = Quaternion.LookRotation(initialPosition - targetPosition);
         float flyAwayStartTime = Time.time;
 
-        ScoreManager.instance.UpdateScores(pollenP, honeyP);
+        ScoreManager.instance.UpdateScores(insectSO.pollenProduction, insectSO.honeyProduction);
 
-        while ((Time.time - flyAwayStartTime) < flyAwayDuration)
+        while ((Time.time - flyAwayStartTime) < insectSO.flyAwayDuration)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, flyAwayRotation, Time.deltaTime * RotationSpeed);
-            transform.Translate(Vector3.forward * insectFlySpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, flyAwayRotation, Time.deltaTime * insectSO.rotationSpeed);
+            transform.Translate(Vector3.forward * insectSO.insectFlySpeed * Time.deltaTime);
             yield return null;
         }
         Destroy(this.gameObject);
@@ -68,7 +55,7 @@ public class Insect : MonoBehaviour
     public int GetRarityPercentage()
     {
         int percentage = 0;
-        switch (rarity)
+        switch (insectSO.rarity)
         {
             case Rarity.Common:
                 percentage = 20;

@@ -27,7 +27,6 @@ public class UnlockPlant : MonoBehaviour
         {
             confirmInputText.text = name;
             gameObject.SetActive(false);
-            SceneManager.instance.ToggleAR();
             return;
         }
         confirmInputText.text = "Invalid code!";

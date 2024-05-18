@@ -995,7 +995,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1081788682774422257}
-  - component: {fileID: 3467231257145376048}
+  - component: {fileID: 380733417421907250}
   m_Layer: 0
   m_Name: cuckoo flower FINAL 1
   m_TagString: Untagged
@@ -1020,7 +1020,7 @@ Transform:
   - {fileID: 945337109171437695}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3467231257145376048
+--- !u!114 &380733417421907250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1029,15 +1029,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8764270734705277468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f32dcc00b706ca248bb5b27848540882, type: 3}
+  m_Script: {fileID: 11500000, guid: 0563c378470b11542883a9f70c2dce0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insects:
-  - {fileID: 527792908067504651, guid: 51b699860d7dda24a88f9d48ee48af91, type: 3}
-  - {fileID: 1881815881844240462, guid: b9c76f866c3112d45bdf60a38cfcd803, type: 3}
-  - {fileID: 6359667776464545350, guid: 71d1f3882d72c6649bc92880d32d0771, type: 3}
   plantSO: {fileID: 11400000, guid: 175d4618a28e6c24bafcd601478e69f8, type: 2}
-  plot: 1
+  plot: 0
   isOnCorrectPlot: 0
-  baseSpawnRate: 10
   targetTransform: {fileID: 945337109171437695}

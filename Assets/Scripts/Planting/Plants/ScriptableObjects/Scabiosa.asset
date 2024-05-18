@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 241377
   plantName: Scabiosa
-  description: "\u2022\tSouthern European annual  \u2022\tdeeply cut basal leaves
-    and feathery stem leaves \u2022\tproduces fragrant 5-cm flower heads  \u2022\twhite,
+  description: "\u2022\tSouthern European annual  \n\u2022\tdeeply cut basal leaves
+    and feathery stem leaves \n\u2022\tproduces fragrant 5-cm flower heads  \n\u2022\twhite,
     rose, crimson, blue, or deep mahogany purple "
   unlocked: 0
   prefab: {fileID: 1332294455114525558, guid: 6cd8d54efa7cea04fa7294cfe2514ca7, type: 3}
