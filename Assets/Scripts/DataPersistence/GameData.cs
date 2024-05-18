@@ -8,19 +8,17 @@ public class GameData
     public int playerLevel;
     public int playerHoney;
     public int playerPollen;
-    public int playerHoneyCap;
-    public int playerPollenCap;
 
-    [SerializeField]
-    public List<string> unlockedPlantIDs;
+    public SerializableDictionary<string, bool> currentPatches;
     
+
     public GameData()
     {
         this.playerLevel = 0;
         this.playerHoney = 0;
         this.playerPollen = 0;
-        this.playerPollenCap = 0;
-        this.playerHoneyCap = 0;
-        unlockedPlantIDs = new List<string>();
+
+        currentPatches = new SerializableDictionary<string, bool>();
+
     }
 }
