@@ -35,7 +35,7 @@ public class InfoPageGroup : PageGroup
             int count = 0;
             foreach (ItemDisplay display in references)
             {
-                if (info.attractions.Length >= count)
+                if (count >= info.attractions.Length)
                 {
                     display.HideDisplay();
                 }

@@ -25,6 +25,7 @@ MonoBehaviour:
   cataloguePrefab: {fileID: 1081788682774422257, guid: 8a9b68f7c2d7e1448a9b72b710909c54,
     type: 3}
   sprite: {fileID: 21300000, guid: 57f1d8a0269ad30499cd761a22582cc0, type: 3}
+  attractions:
+  - {fileID: 11400000, guid: 75d96da0270fc5e49b36903aad489000, type: 2}
   correctPlots: 01000000
-  insects: []
   baseSpawnRate: 0

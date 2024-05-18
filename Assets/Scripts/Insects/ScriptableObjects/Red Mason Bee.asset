@@ -23,6 +23,10 @@ MonoBehaviour:
   cataloguePrefab: {fileID: 7436579170595587751, guid: 4abf6521c6e024c44bc859eaa725167e,
     type: 3}
   sprite: {fileID: 21300000, guid: 064532f8224daa2429c06ee9d067b55e, type: 3}
+  attractions:
+  - {fileID: 11400000, guid: 16f562297a88a1540adcd6562b889647, type: 2}
+  - {fileID: 11400000, guid: 9a9749b9ceabf8a45984f92674aa74fc, type: 2}
+  type: 0
   rarity: 0
   pollenProduction: 3
   honeyProduction: 2
