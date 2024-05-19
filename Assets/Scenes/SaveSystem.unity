@@ -2288,6 +2288,28 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 26460268}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &723979255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2661066555551407401, guid: 7c6f5151f1932cb48a9c278a36d7b889,
+    type: 3}
+  m_PrefabInstance: {fileID: 1243154013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &723979257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723979255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: In building mode you can select a structure, place it where you want it
+    to be and confirm your choice! For now, try it by placing your first plot.
 --- !u!1001 &731291508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4210,6 +4232,41 @@ PrefabInstance:
       propertyPath: mainScene
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2619918483037893686, guid: 7c6f5151f1932cb48a9c278a36d7b889,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619918483037893686, guid: 7c6f5151f1932cb48a9c278a36d7b889,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619918483037893686, guid: 7c6f5151f1932cb48a9c278a36d7b889,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 723979257}
+    - target: {fileID: 2619918483037893686, guid: 7c6f5151f1932cb48a9c278a36d7b889,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619918483037893686, guid: 7c6f5151f1932cb48a9c278a36d7b889,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowTutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619918483037893686, guid: 7c6f5151f1932cb48a9c278a36d7b889,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TutorialMessage, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619918483037893686, guid: 7c6f5151f1932cb48a9c278a36d7b889,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3328119063126377959, guid: 7c6f5151f1932cb48a9c278a36d7b889,
         type: 3}
       propertyPath: m_MatchWidthOrHeight
@@ -4318,7 +4375,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2661066555551407401, guid: 7c6f5151f1932cb48a9c278a36d7b889,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 723979257}
   m_SourcePrefab: {fileID: 100100000, guid: 7c6f5151f1932cb48a9c278a36d7b889, type: 3}
 --- !u!1 &1256366451 stripped
 GameObject:
@@ -5710,7 +5771,7 @@ PrefabInstance:
     - target: {fileID: 573692129250978078, guid: 4849bb5a32627d7419e4378c6cb013c1,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12.439453
+      value: -12.439484
       objectReference: {fileID: 0}
     - target: {fileID: 794042875476879159, guid: 4849bb5a32627d7419e4378c6cb013c1,
         type: 3}
