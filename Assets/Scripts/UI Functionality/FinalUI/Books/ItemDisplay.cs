@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -13,10 +14,8 @@ public class ItemDisplay : MonoBehaviour
     private Image displayImage;
     [SerializeField]
     private TMP_Text displayName;
-    [SerializeField]
-    private Button button;
-    [SerializeField]
-    private UICatalogue catalogue;
+
+    public event Action<ItemInfo> onItemUpdate;
 
     public void UpdateDisplay(ItemInfo item)
     {
@@ -28,21 +27,11 @@ public class ItemDisplay : MonoBehaviour
         {
             displayName.text = "not discovered";
         }
-        button.interactable = item.unlocked;
-        
-        button.onClick.AddListener(OpenPage);
+        onItemUpdate?.Invoke(item);
     }
 
     public void HideDisplay()
     {
         this.gameObject.SetActive(false);
-    }
-
-    private void OpenPage()
-    {
-        if (item is CatalogueItemInfo catalogueItem)
-        {
-            catalogue.OpenInfoPage(catalogueItem);
-        }
     }
 }
