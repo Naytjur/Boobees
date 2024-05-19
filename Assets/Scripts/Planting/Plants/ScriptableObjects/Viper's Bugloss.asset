@@ -30,5 +30,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 240290f74e275fc4abbed3687cac3660, type: 2}
   - {fileID: 11400000, guid: 1c06f057f73f85b48923f73886c0fd23, type: 2}
   - {fileID: 11400000, guid: f78e8b971c8104d489063a076b1dda52, type: 2}
+  - {fileID: 11400000, guid: 495e116121ebcc5418722cec3d675bf9, type: 2}
   correctPlots: 00000000
   baseSpawnRate: 0
