@@ -32,11 +32,30 @@ public class PlantingUI : MonoBehaviour
 
         foreach (PlantSO plant in PlantingManager.instance.GetPlantList())
         {
-            Transform button = Instantiate(buttonPrefab, buttonContainerTransform);
-            button.GetComponent<SelectPlant>().SetIndex(index);
-            button.GetComponentInChildren<TMP_Text>().text = plant.name;
-            button.GetComponent<Button>().interactable = plant.unlocked;
-            index++;
+            if (plant.unlocked)
+            {
+                Transform button = Instantiate(buttonPrefab, buttonContainerTransform);
+                SelectPlant buttonInfo = button.GetComponent<SelectPlant>();
+                buttonInfo.Setup();
+                buttonInfo.SetIndex(PlantingManager.instance.GetPlantList().IndexOf(plant));
+                buttonInfo.text.text = plant.name;
+                buttonInfo.image.sprite = plant.sprite;
+                button.GetComponent<Button>().interactable = plant.unlocked;
+                index++;
+            }
+        }
+        foreach (PlantSO plant in PlantingManager.instance.GetPlantList())
+        {
+            if (!plant.unlocked)
+            {
+                Transform button = Instantiate(buttonPrefab, buttonContainerTransform);
+                SelectPlant buttonInfo = button.GetComponent<SelectPlant>();
+                buttonInfo.SetIndex(PlantingManager.instance.GetPlantList().IndexOf(plant));
+                buttonInfo.text.text = plant.name;
+                buttonInfo.image.sprite = plant.sprite;
+                button.GetComponent<Button>().interactable = plant.unlocked;
+                index++;
+            }
         }
     }
 

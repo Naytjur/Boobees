@@ -76,9 +76,11 @@ public class PlantingManager : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Vector3 screenPosition = Input.mousePosition;
+            Debug.Log("click");
 
             if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("PlantSurface"), out Vector3 pos))
             {
+                Debug.Log("plot click");
                 hoverPosition = pos;
                 Hover(hoverPosition);
                 plantState = PlantState.Hovering;

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SelectPlant : MonoBehaviour
 {
@@ -10,12 +11,13 @@ public class SelectPlant : MonoBehaviour
     private int index;
 
     [Tooltip("Not required if button is on the same gameobject")]
-    [SerializeField]
-    private Button button;
+    public Button button;
+    public Image image;
+    public TMP_Text text;
 
     private PlantingManager plantingManager;
 
-    private void Start()
+    public void Setup()
     {
         plantingManager = Object.FindObjectOfType<PlantingManager>();
 
@@ -29,6 +31,7 @@ public class SelectPlant : MonoBehaviour
 
     private void Select(int index)
     {
+        Debug.Log(index);
         plantingManager.SwitchPlant(index);
     }
 

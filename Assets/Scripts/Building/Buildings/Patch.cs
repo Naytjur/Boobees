@@ -26,10 +26,13 @@ public class Patch : Building
 
     private void PlantOnPatch()
     {
-        PlantingManager.instance.currentPlot = plot;
-        GameManager.instance.UpdateGameState(GameState.Planting);
-        FocusCamera();
-        plantingSurface.SetActive(true);
+        if(GameManager.instance.state == GameState.PlotSelect)
+        {
+            PlantingManager.instance.currentPlot = plot;
+            GameManager.instance.UpdateGameState(GameState.Planting);
+            FocusCamera();
+            plantingSurface.SetActive(true);
+        }
     }
 
     private void FocusCamera()
