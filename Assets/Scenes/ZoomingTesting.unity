@@ -7450,12 +7450,11 @@ MonoBehaviour:
   mainCamera: {fileID: 1111252207}
   navSpeed: 1
   zoomSpeed: 1
+  startPos: {x: 0, y: 0, z: 0}
   xLimitPos: 4
   xLimitNeg: -4
-  yLimitPos: 8
-  yLimitNeg: 1.5
-  zLimitPos: 1.5
-  zLimitNeg: -15
+  zoomLimit: 6.5
+  depthLimit: 15
 --- !u!64 &1762365401
 MeshCollider:
   m_ObjectHideFlags: 0
