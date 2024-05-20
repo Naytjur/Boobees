@@ -1792,6 +1792,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bf0eeafdb2c06d4196f474a0de8df60, type: 3}
+--- !u!1 &583863358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 22789928709837756, guid: 7c6f5151f1932cb48a9c278a36d7b889,
+    type: 3}
+  m_PrefabInstance: {fileID: 1243154013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &583863364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583863358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 1504662006}
+  message: Now if you press the unlock button the top left you will open the barcode
+    scanner, and from there all you need to do is point your camera at the barcodes
+    next to the flower plots!
 --- !u!1001 &584710341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4380,6 +4402,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 723979257}
+    - targetCorrespondingSourceObject: {fileID: 22789928709837756, guid: 7c6f5151f1932cb48a9c278a36d7b889,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 583863364}
   m_SourcePrefab: {fileID: 100100000, guid: 7c6f5151f1932cb48a9c278a36d7b889, type: 3}
 --- !u!1 &1256366451 stripped
 GameObject:
@@ -5528,6 +5554,143 @@ Transform:
   - {fileID: 1111252208}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1504662006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504662007}
+  - component: {fileID: 1504662009}
+  - component: {fileID: 1504662011}
+  - component: {fileID: 1504662010}
+  - component: {fileID: 1504662008}
+  - component: {fileID: 1504662012}
+  - component: {fileID: 1504662013}
+  m_Layer: 0
+  m_Name: TutorialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1504662007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504662006}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.999961, y: 2.0223627, z: -4.8786745}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2000126506}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1504662008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504662006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: Now that you have an empty plot you can press the View button to go back
+    to the viewing mode, and from there to scan your first flower.
+--- !u!114 &1504662009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504662006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ad06d98cf815b49a8312e9353fb944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialMessageStart: {fileID: 1504662011}
+  tutorialMessageStart2: {fileID: 1504662010}
+  tutorialMessagePlot: {fileID: 1504662008}
+  tutorialMessageScore: {fileID: 1504662013}
+--- !u!114 &1504662010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504662006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: First let's place your first plot, so you can get to gardening! Tap on
+    the Building button on the right side of your screen to enter the building mode.
+--- !u!114 &1504662011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504662006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: Welcome to your virtual garden, here you will be able to place your plots,
+    plant your flowers, decorate and watch the insects buzz around your garden! Tap
+    this message to start the tutorial.
+--- !u!114 &1504662012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504662006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: The insects are buzzing and the flowers are blooming, insects will earn
+    you pollen and honey, pollen will increase your level and unlock new decorations
+    and more plots as your levels increase, and honey can be used to buy the decorations
+    you unlocked in the shop!
+--- !u!114 &1504662013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504662006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: "You\u2019ve got the hang of things, now you can scan more flowers to
+    increase and decorate your garden to your heart's content! Once you tap this
+    message the tutorial will finish. "
 --- !u!1001 &1505046099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5771,7 +5934,7 @@ PrefabInstance:
     - target: {fileID: 573692129250978078, guid: 4849bb5a32627d7419e4378c6cb013c1,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12.439484
+      value: -12.439423
       objectReference: {fileID: 0}
     - target: {fileID: 794042875476879159, guid: 4849bb5a32627d7419e4378c6cb013c1,
         type: 3}
@@ -7455,6 +7618,7 @@ Transform:
   - {fileID: 734601602}
   - {fileID: 1813021035}
   - {fileID: 1306566630}
+  - {fileID: 1504662007}
   m_Father: {fileID: 1476751590}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2003980452

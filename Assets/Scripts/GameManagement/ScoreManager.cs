@@ -24,6 +24,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
     private int maxPollenScore;
 
     public static event Action<int> onLevelUp;
+    public static event Action<int, int> onScoreChanged;
 
     public List<PlantSO> allPlants;
 
@@ -99,6 +100,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         honeyText.text = $"Honey: {honeyScore} / {maxHoneyScore}";
         pollenText.text = $"Pollen: {pollenScore} / {maxPollenScore}";
         levelText.text = "Level: " + playerLevel;
+        onScoreChanged?.Invoke(pollen, honey);
     }
 
     private void LevelUp()
