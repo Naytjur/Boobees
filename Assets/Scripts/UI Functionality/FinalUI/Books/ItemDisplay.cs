@@ -15,10 +15,22 @@ public class ItemDisplay : MonoBehaviour
     [SerializeField]
     private TMP_Text displayName;
 
-    public event Action<ItemInfo> onItemUpdate;
+    private ItemDisplayButton button;
 
     public void UpdateDisplay(ItemInfo item)
     {
+        if(button == null)
+        {
+            if(GetComponent<ItemDisplayButton>())
+            {
+                button = GetComponent<ItemDisplayButton>();
+            }
+        }
+        if(button != null) 
+        {
+            button.UpdateButton(item);
+        }
+
         this.gameObject.SetActive(true);
         this.item = item;
         displayImage.sprite = item.sprite;
@@ -27,7 +39,6 @@ public class ItemDisplay : MonoBehaviour
         {
             displayName.text = "not discovered";
         }
-        onItemUpdate?.Invoke(item);
     }
 
     public void HideDisplay()

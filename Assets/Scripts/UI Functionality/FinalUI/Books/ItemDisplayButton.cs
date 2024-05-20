@@ -13,15 +13,18 @@ public class ItemDisplayButton : MonoBehaviour
     [SerializeField]
     private UICatalogue catalogue;
 
-    private void Start()
-    {
-        button = GetComponent<Button>();
-        display = GetComponent<ItemDisplay>();
-        display.onItemUpdate += UpdateButton;
-    }
 
-    private void UpdateButton(ItemInfo item)
+    public void UpdateButton(ItemInfo item)
     {
+        if (display == null)
+        {
+            display = GetComponent<ItemDisplay>();
+        }
+        if (button == null)
+        {
+            button = GetComponent<Button>();
+        }
+
         button.interactable = item.unlocked;
         button.onClick.AddListener(delegate { OpenPage(item); }) ;
     }

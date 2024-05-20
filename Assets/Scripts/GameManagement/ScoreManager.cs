@@ -53,7 +53,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
         honeyText.text = "Honey: " + honeyScore;
         pollenText.text = "Pollen: " + pollenScore;
-        levelText.text = "Level: " + playerLevel;
+        levelText.text = playerLevel.ToString();
         onLevelUp?.Invoke(playerLevel);
     }
 
@@ -70,9 +70,9 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
             LevelUp();
         }
 
-        honeyText.text = $"Honey: {honeyScore} / {maxHoneyScore}";
-        pollenText.text = $"Pollen: {pollenScore} / {maxPollenScore}";
-        levelText.text = "Level: " + playerLevel;
+        honeyText.text = $"{honeyScore} / {maxHoneyScore}";
+        pollenText.text = $"{pollenScore} / {maxPollenScore}";
+        levelText.text = playerLevel.ToString();
     }
 
     private void LevelUp()
