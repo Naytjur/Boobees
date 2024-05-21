@@ -21,7 +21,7 @@ public class Plant : MonoBehaviour
             spawnRate *= 2;
         }
 
-        InvokeRepeating(nameof(TrySpawnInsect), spawnRate, spawnRate);
+        InvokeRepeating(nameof(TrySpawnInsect), Random.Range(3, spawnRate), spawnRate);
 
         if(targetTransform == null)
         {

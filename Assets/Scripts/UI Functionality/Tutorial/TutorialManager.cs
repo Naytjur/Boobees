@@ -34,12 +34,12 @@ public class TutorialManager : MonoBehaviour
 
     private void Start()
     {
-        tutorialMessageStart.ShowTutorial();
-        firstMessage = true;
         BuildManager.onBuildingPlaced += OnBuildingPlaced;
         ScoreManager.onScoreChanged += OnScoreChanged;
         ScoreManager.onLevelUp += OnLevelUp;
         PlantingManager.instance.onPlantUnlocked += OnPlantUnlocked;
+        tutorialMessageStart.ShowTutorial();
+        firstMessage = true;
     } 
 
     private void Update()

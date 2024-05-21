@@ -10,7 +10,7 @@ public class TutorialMessage : MonoBehaviour
     private TextMeshProUGUI textBox;
     private bool beenSeen;
 
-    private void Start()
+    private void Awake()
     {
         // Instantiate the tutorial UI prefab
         instantiatedUI = Instantiate(tutorialUIPrefab);

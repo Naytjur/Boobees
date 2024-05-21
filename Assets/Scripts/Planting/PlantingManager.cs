@@ -76,11 +76,9 @@ public class PlantingManager : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Vector3 screenPosition = Input.mousePosition;
-            Debug.Log("click");
 
             if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("PlantSurface"), out Vector3 pos))
             {
-                Debug.Log("plot click");
                 hoverPosition = pos;
                 Hover(hoverPosition);
                 plantState = PlantState.Hovering;
@@ -165,7 +163,7 @@ public class PlantingManager : MonoBehaviour
 
     private void UpdateAmountUI()
     {
-        plantAmount.text = "(" + currentPlot.plantAmount.ToString() + "/" + currentPlot.maxPlants.ToString() + ")" + " plants";
+        plantAmount.text = currentPlot.plantAmount.ToString() + "/" + currentPlot.maxPlants.ToString();
 
         if (currentPlot.plantAmount >= currentPlot.maxPlants)
         {

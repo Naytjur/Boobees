@@ -6059,8 +6059,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  message: Now that you have an empty plot you can press the exit button to go back
-    to the viewing mode, and from there to scan your first flower.
+  message: Now that you have an empty plot, press the exit button to go back to viewing
+    mode.
 --- !u!114 &996628310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6075,8 +6075,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  message: First let's place your first plot, so you can get to gardening! Tap on
-    the Building button on the right side of your screen to enter the building mode.
+  message: To start of, let's place your first plot, so you can get to gardening!
+    Tap on the Building button on the top right of your screen to enter building
+    mode.
 --- !u!114 &996628311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6092,8 +6093,7 @@ MonoBehaviour:
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
   message: Welcome to your virtual garden, here you will be able to place your plots,
-    plant your flowers, decorate and watch the insects buzz around your garden! Tap
-    this message to start the tutorial.
+    plant your flowers, decorate and watch the insects buzz around your garden!
 --- !u!114 &996628312
 MonoBehaviour:
   m_ObjectHideFlags: 0

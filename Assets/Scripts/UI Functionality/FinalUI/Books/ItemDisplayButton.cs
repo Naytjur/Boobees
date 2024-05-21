@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
+
 
 [RequireComponent(typeof(ItemDisplay))]
 public class ItemDisplayButton : MonoBehaviour

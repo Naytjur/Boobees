@@ -11,6 +11,11 @@ public class Insect : MonoBehaviour
     public void Spawn(Vector3 target)
     {
         StartCoroutine(MoveInsectToPlant(target));
+
+        if(!insectSO.unlocked)
+        {
+            insectSO.unlocked = true;
+        }
     }
 
     private IEnumerator MoveInsectToPlant(Vector3 targetPosition)
