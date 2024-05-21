@@ -14,6 +14,7 @@ public class SelectBuilding : MonoBehaviour
     public Button button;
     public TMP_Text buildingNameText;
     public TMP_Text buildingAmountText;
+    public TMP_Text buildingCostText;
 
     public BuildingSO building;
 
@@ -33,6 +34,7 @@ public class SelectBuilding : MonoBehaviour
 
     private void Select(int index)
     {
+        ScoreManager.instance.UpdateScores(0, -building.cost);
         buildManager.SetBuildingByIndex(index);
     }
 

@@ -86,8 +86,12 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         
     }
 
-    private void Test(PlantSO plant)
+    public bool CanAfford(int cost)
     {
-        Debug.Log(plant.name);
+        if(cost <= honeyScore)
+        {
+            return true;
+        }
+        return false;
     }
 }

@@ -311,6 +311,11 @@ public class BuildManager : MonoBehaviour
         confirmButton.gameObject.SetActive(false);
         rotateButton.gameObject.SetActive(false);
         buildingSelectMenu.gameObject.SetActive(true);
+        if (visual != null)
+        {
+            Destroy(visual.gameObject);
+            visual = null;
+        }
     }
 
     private void OnLeveledUp(int level)

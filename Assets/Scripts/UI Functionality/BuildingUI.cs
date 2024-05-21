@@ -53,9 +53,13 @@ public class BuildingUI : MonoBehaviour
         {
             SelectBuilding select = button.GetComponent<SelectBuilding>();
             select.buildingNameText.text = select.building.itemName;
-            select.button.interactable = select.building.unlocked && select.building.HasCountLeft();
+            select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
             select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
-
+            select.buildingCostText.text = "Cost: " + select.building.cost.ToString();
+            if(select.building.cost == 0)
+            {
+                select.buildingCostText.text = "Free!";
+            }
         }
     }
 
@@ -65,9 +69,13 @@ public class BuildingUI : MonoBehaviour
         {
             SelectBuilding select = button.GetComponent<SelectBuilding>();
             select.buildingNameText.text = select.building.itemName;
-            select.button.interactable = select.building.unlocked && select.building.HasCountLeft();
+            select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
             select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
-
+            select.buildingCostText.text = "Cost: " + select.building.cost.ToString();
+            if (select.building.cost == 0)
+            {
+                select.buildingCostText.text = "Free!";
+            }
         }
     }
 }

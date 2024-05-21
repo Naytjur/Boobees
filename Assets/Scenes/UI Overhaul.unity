@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2268,7 +2268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e570cebad2434c44becd62326e7a301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: 4
+  state: 5
   button: {fileID: 0}
 --- !u!4 &349737726 stripped
 Transform:
@@ -2357,7 +2357,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2000126506}
+  m_Father: {fileID: 637247720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &409546156 stripped
 Transform:
@@ -3785,6 +3785,9 @@ Transform:
   - {fileID: 138788459}
   - {fileID: 1272322965}
   - {fileID: 1914505819}
+  - {fileID: 996628305}
+  - {fileID: 734601602}
+  - {fileID: 404056034}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &655068640
@@ -4278,7 +4281,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1360973203}
-  m_Father: {fileID: 2000126506}
+  m_Father: {fileID: 637247720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &748789691 stripped
 Transform:
@@ -5779,6 +5782,7 @@ GameObject:
   - component: {fileID: 984146036}
   - component: {fileID: 984146035}
   - component: {fileID: 984146039}
+  - component: {fileID: 984146040}
   m_Layer: 0
   m_Name: Build Button
   m_TagString: Untagged
@@ -5868,7 +5872,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 984146037}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 984146040}
+        m_TargetAssemblyTypeName: TutorialMessage, Assembly-CSharp
+        m_MethodName: ShowTutorial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &984146037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5921,6 +5937,181 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   button: {fileID: 0}
+--- !u!114 &984146040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984146033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: In building mode you can buy a structure, place it where you want it to
+    be and confirm your choice! For now, try it by placing your first plot. Plots
+    are free, but limited!
+--- !u!1 &996628304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 996628305}
+  - component: {fileID: 996628306}
+  - component: {fileID: 996628311}
+  - component: {fileID: 996628310}
+  - component: {fileID: 996628309}
+  - component: {fileID: 996628308}
+  - component: {fileID: 996628307}
+  - component: {fileID: 996628312}
+  m_Layer: 0
+  m_Name: TutorialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &996628305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996628304}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 637247720}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &996628306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996628304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ad06d98cf815b49a8312e9353fb944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialMessageStart: {fileID: 996628311}
+  tutorialMessageStart2: {fileID: 996628310}
+  tutorialMessagePlot: {fileID: 996628309}
+  tutorialMessageUnlock: {fileID: 996628308}
+  tutorialMessageScore: {fileID: 996628307}
+  tutorialMessageLevel: {fileID: 996628312}
+--- !u!114 &996628307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996628304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: The insects are buzzing and the flowers are blooming, insects will earn
+    you pollen and honey, pollen will increase your level and unlock new decorations
+    and more plots as your levels increase, and honey can be used to buy the decorations
+    you unlocked in building mode!
+--- !u!114 &996628308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996628304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: You have unlocked your first flower! Now if you tap on the planting button
+    in viewing mode and select a plot you can start placing flowers just like placing
+    structures in build mode!
+--- !u!114 &996628309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996628304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: Now that you have an empty plot you can press the exit button to go back
+    to the viewing mode, and from there to scan your first flower.
+--- !u!114 &996628310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996628304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: First let's place your first plot, so you can get to gardening! Tap on
+    the Building button on the right side of your screen to enter the building mode.
+--- !u!114 &996628311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996628304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: Welcome to your virtual garden, here you will be able to place your plots,
+    plant your flowers, decorate and watch the insects buzz around your garden! Tap
+    this message to start the tutorial.
+--- !u!114 &996628312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996628304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: "You\u2019ve got the hang of things, now you can scan more flowers to
+    increase and decorate your garden to your heart's content! You can see all your
+    unlocked plants and insects by pressing on the catalogue button on the top right.
+    Once you tap this message the tutorial will finish."
 --- !u!1 &997646974
 GameObject:
   m_ObjectHideFlags: 0
@@ -12876,8 +13067,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1090473309}
-  - {fileID: 404056034}
-  - {fileID: 734601602}
   - {fileID: 1813021035}
   - {fileID: 1306566630}
   m_Father: {fileID: 1476751590}
@@ -13909,6 +14098,7 @@ GameObject:
   - component: {fileID: 2134829031}
   - component: {fileID: 2134829030}
   - component: {fileID: 2134829029}
+  - component: {fileID: 2134829033}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -13992,7 +14182,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2134829031}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2134829033}
+        m_TargetAssemblyTypeName: TutorialMessage, Assembly-CSharp
+        m_MethodName: ShowTutorial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2134829031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14031,6 +14233,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134829027}
   m_CullTransparentMesh: 1
+--- !u!114 &2134829033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134829027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  message: Now if you press the camera button in the bottom left you will open the
+    barcode scanner, and from there all you need to do is point your camera at the
+    barcodes next to the flower plots!
 --- !u!114 &40606165224211412
 MonoBehaviour:
   m_ObjectHideFlags: 0
