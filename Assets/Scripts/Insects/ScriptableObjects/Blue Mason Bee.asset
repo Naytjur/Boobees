@@ -31,6 +31,6 @@ MonoBehaviour:
   pollenProduction: 5
   honeyProduction: 2
   insectFlySpeed: 1
-  insectStayDuration: 6
-  flyAwayDuration: 2
+  insectStayDuration: 4
+  flyAwayDuration: 1.5
   rotationSpeed: 100

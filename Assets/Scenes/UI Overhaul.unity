@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9052,7 +9052,7 @@ GameObject:
   - component: {fileID: 1306566630}
   - component: {fileID: 1306566629}
   m_Layer: 0
-  m_Name: InsectManager
+  m_Name: ScoreManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9070,10 +9070,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c100fbd7a2fc13458f5a0edf9df64ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  updateInterval: 5
-  scoreCapModifier: 1.6
+  scoreCapModifier: 2
   maxHoneyScoreBase: 100
-  maxPollenScoreBase: 20
+  maxPollenScoreBase: 30
   playerLevel: 1
   honeyText: {fileID: 5980329567232051196}
   pollenText: {fileID: 1457950358}

@@ -8,7 +8,6 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 {
     public static ScoreManager instance;
 
-    [SerializeField] private float updateInterval = 5f;
     [SerializeField] private float scoreCapModifier = 1.6f;
     [SerializeField] private int maxHoneyScoreBase = 100;
     [SerializeField] private int maxPollenScoreBase = 20;

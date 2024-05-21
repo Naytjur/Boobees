@@ -26,3 +26,4 @@ MonoBehaviour:
   width: 1
   height: 2
   unlockLevel: 2
+  cost: 50

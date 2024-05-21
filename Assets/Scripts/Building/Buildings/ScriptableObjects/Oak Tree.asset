@@ -25,4 +25,5 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: c76def1eb8c1a7343bce901c3c4418a5, type: 3}
   width: 1
   height: 1
-  unlockLevel: 8
+  unlockLevel: 3
+  cost: 400

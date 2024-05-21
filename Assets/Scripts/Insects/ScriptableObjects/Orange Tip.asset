@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 
   itemName: Orange Tip
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4032609055323066662, guid: 71d1f3882d72c6649bc92880d32d0771,
     type: 3}
   gardenVisual: {fileID: 4032609055323066662, guid: 71d1f3882d72c6649bc92880d32d0771,
@@ -27,10 +27,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 175d4618a28e6c24bafcd601478e69f8, type: 2}
   - {fileID: 11400000, guid: 11b13cb280409f44f8d2446eff3b57af, type: 2}
   type: 1
-  rarity: 0
-  pollenProduction: 4
-  honeyProduction: 1
-  insectFlySpeed: 1
+  rarity: 1
+  pollenProduction: 3
+  honeyProduction: 2
+  insectFlySpeed: 0.5
   insectStayDuration: 6
   flyAwayDuration: 2
   rotationSpeed: 100
