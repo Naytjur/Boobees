@@ -27,4 +27,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f9233c432cde4b04895d3832e045bc07, type: 2}
   - {fileID: 11400000, guid: a8cb83f01fe168d49a40bfe43bbe2198, type: 2}
   correctPlots: 01000000
-  baseSpawnRate: 20
+  baseSpawnRate: 10
