@@ -24,6 +24,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
     private int maxPollenScore;
 
     public static event Action<int> onLevelUp;
+    public static event Action<int, int> onScoreChanged;
 
     private void Awake()
     {
@@ -73,6 +74,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         honeyText.text = $"{honeyScore} / {maxHoneyScore}";
         pollenText.text = $"{pollenScore} / {maxPollenScore}";
         levelText.text = playerLevel.ToString();
+        onScoreChanged?.Invoke(pollen, honey);
     }
 
     private void LevelUp()
