@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 
   itemName: Oak Tree
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 4495814638416489810, guid: df6b042e167437e49a7de60b40199810,
     type: 3}
   gardenVisual: {fileID: 4495814638416489810, guid: 69a497e849e98c94e80e34f90e891fcc,
@@ -25,5 +25,5 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: c76def1eb8c1a7343bce901c3c4418a5, type: 3}
   width: 1
   height: 1
-  unlockLevel: 3
+  unlockLevel: 7
   cost: 400

@@ -142,7 +142,7 @@ public class BuildingSO : ItemInfo
 
     public void TryAdjustMaxCount(int level)
     {
-        maxCount = Mathf.Max(0, level - unlockLevel);
+        maxCount = Mathf.Max(0, 1 + (level - unlockLevel));
     }
     //More Luiz Garbage
     // public void Initialize(ShopItem shopItem)

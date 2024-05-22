@@ -60,6 +60,10 @@ public class BuildingUI : MonoBehaviour
             {
                 select.buildingCostText.text = "Free!";
             }
+            if (!select.building.unlocked)
+            {
+                select.buildingAmountText.text = "Unlocks at level " + select.building.unlockLevel.ToString();
+            }
         }
     }
 
@@ -75,6 +79,10 @@ public class BuildingUI : MonoBehaviour
             if (select.building.cost == 0)
             {
                 select.buildingCostText.text = "Free!";
+            }
+            if (!select.building.unlocked)
+            {
+                select.buildingAmountText.text = "Unlocks at level " + select.building.unlockLevel.ToString();
             }
         }
     }

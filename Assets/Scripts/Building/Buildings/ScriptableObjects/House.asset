@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: House
   m_EditorClassIdentifier: 
-  buildingName: House
-  prefab: {fileID: 5749581333223817254, guid: 0deb14f719abeb74ea425dc18560271c, type: 3}
-  visual: {fileID: 5749581333223817254, guid: 3b277f2691fa5c34d9179be7de87d138, type: 3}
+  id: 
+  itemName: 
+  description: 
+  unlocked: 0
+  gardenPrefab: {fileID: 0}
+  gardenVisual: {fileID: 0}
+  cataloguePrefab: {fileID: 0}
+  sprite: {fileID: 0}
   width: 4
   height: 4
-  unlocked: 0
   unlockLevel: 0
+  cost: 0

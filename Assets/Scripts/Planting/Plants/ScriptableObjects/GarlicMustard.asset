@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 635274
   itemName: Garlic Mustard
   description: No description yet
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 7636367637897617607, guid: 5aa77dc9a1f3aed449d0a2a4c4afc782,
     type: 3}
   gardenVisual: {fileID: 7636367637897617607, guid: 5aa77dc9a1f3aed449d0a2a4c4afc782,

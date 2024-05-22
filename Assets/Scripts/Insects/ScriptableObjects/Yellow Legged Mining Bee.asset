@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 
   itemName: Yellow Legged Minning Bee
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 755692287732588772, guid: 42402c1fbaba80844b6574a99a669d46,
     type: 3}
   gardenVisual: {fileID: 755692287732588772, guid: 42402c1fbaba80844b6574a99a669d46,

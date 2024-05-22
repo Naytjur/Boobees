@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 
   itemName: Bench
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 4138045857846625545, guid: 9ff32137ff07dca4a88da4bc1e47ae24,
     type: 3}
   gardenVisual: {fileID: 4138045857846625545, guid: 7e1fd97f729914d4a95e48590cc7784e,
@@ -25,5 +25,5 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: f7f499f727741d04688501653a0a0aab, type: 3}
   width: 1
   height: 2
-  unlockLevel: 2
-  cost: 20
+  unlockLevel: 5
+  cost: 50
