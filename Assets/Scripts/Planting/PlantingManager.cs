@@ -167,7 +167,6 @@ public class PlantingManager : MonoBehaviour
 
         if (currentPlot.plantAmount >= currentPlot.maxPlants)
         {
-
             plantAmount.text = "Full!";
         }
     }
@@ -192,11 +191,20 @@ public class PlantingManager : MonoBehaviour
     {
         foreach(PlantSO plant in allPlants)
         {
-            if (plant.id == id && !plant.unlocked)
+            if (plant.id == id)
             {
-                UnlockPlant(plant);
-                name = plant.name;
-                return true;
+                if(!plant.unlocked)
+                {
+                    UnlockPlant(plant);
+                    name = plant.name;
+                    return true;   
+                }
+                else
+                {
+                    GetSeeds(plant);
+                    name = plant.name;
+                    return true;
+                }
             }
         }
         name = "Invalid ID";
@@ -207,6 +215,11 @@ public class PlantingManager : MonoBehaviour
     {
         plant.unlocked = true;
         onPlantUnlocked?.Invoke(plant);
+    }
+
+    private void GetSeeds(PlantSO plant)
+    {
+        plant.seedAmount += Random.Range(2, 5);
     }
 
     private void UpdateActiveState(GameState state)
