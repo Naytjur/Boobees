@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class ZoomAndNavigation : MonoBehaviour
@@ -23,6 +24,9 @@ public class ZoomAndNavigation : MonoBehaviour
     private float zoomLimit = 6.5f;
     [SerializeField]
     private float depthLimit = 15f;
+
+    [SerializeField]
+    private Collider boundingBox;
 
 
     private void Awake()
@@ -83,12 +87,7 @@ public class ZoomAndNavigation : MonoBehaviour
                 mainCamera.transform.position = Vector3.LerpUnclamped(pos1Old, mainCamera.transform.position, 1/ zoom);
               
             }
-
-            mainCamera.transform.position = new Vector3(
-                Mathf.Clamp(mainCamera.transform.position.x, startPos.x + xLimitNeg, startPos.x + xLimitPos),
-                Mathf.Clamp(mainCamera.transform.position.y, startPos.y - zoomLimit, startPos.y),
-                Mathf.Clamp(mainCamera.transform.position.z, startPos.z, startPos.z + depthLimit)
-                );
+            ContrainCamera();
         }
 
     }
@@ -124,6 +123,15 @@ public class ZoomAndNavigation : MonoBehaviour
         return Vector3.zero;
     }
 
+    private void ContrainCamera()
+    {
+        mainCamera.transform.localPosition = new Vector3(
+                Mathf.Clamp(mainCamera.transform.localPosition.x, boundingBox.bounds.min.x, boundingBox.bounds.max.x),
+                Mathf.Clamp(mainCamera.transform.localPosition.y, boundingBox.bounds.min.y, boundingBox.bounds.max.y),
+                Mathf.Clamp(mainCamera.transform.localPosition.z, boundingBox.bounds.min.z, boundingBox.bounds.max.z)
+                );
+
+    }
     
 
 #endif
