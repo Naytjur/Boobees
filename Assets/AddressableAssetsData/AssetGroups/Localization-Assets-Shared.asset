@@ -28,6 +28,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f08b529ce8dc4a540a33a3f34c2ce43a
+    m_Address: Assets/Localization/LocalizationTables/Tutorial Messages Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 64b33db1c0324944ca2667b152dd57be, type: 2}
   m_SchemaSet:

@@ -14,6 +14,7 @@ public class LevelPopUp : MonoBehaviour
     private GameObject unlockedImagePrefab;
 
 
+
     private void Start()
     {
         ScoreManager.onLevelUp += ShowLevelPopUp;
@@ -27,7 +28,6 @@ public class LevelPopUp : MonoBehaviour
         }
         GameObject popUp = Instantiate(popUpPrefab, popUpCanvas.transform);
         LevelPopUpInfo popUpInfo = popUp.GetComponent<LevelPopUpInfo>();
-        popUpInfo.levelUpText.text = "You have reached level " + level + "!";
 
         foreach (BuildingSO building in BuildManager.instance.GetBuildingList())
         {

@@ -7160,9 +7160,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  message: In building mode you can buy a structure, place it where you want it to
-    be and confirm your choice! For now, try it by placing your first plot. Plots
-    are free, but limited!
+  message:
+    m_TableReference:
+      m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
+    m_TableEntryReference:
+      m_KeyId: 6253247922176
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &996628304
 GameObject:
   m_ObjectHideFlags: 0
@@ -7233,10 +7242,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  message: The insects are buzzing and the flowers are blooming, insects will earn
-    you pollen and honey, pollen will increase your level and unlock new decorations
-    and more plots as your levels increase, and honey can be used to buy the decorations
-    you unlocked in building mode!
+  message:
+    m_TableReference:
+      m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
+    m_TableEntryReference:
+      m_KeyId: 6737438375936
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &996628308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7251,9 +7268,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  message: You have unlocked your first flower! Now if you tap on the planting button
-    in viewing mode and select a plot you can start placing flowers just like placing
-    structures in build mode!
+  message:
+    m_TableReference:
+      m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
+    m_TableEntryReference:
+      m_KeyId: 6590511906816
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &996628309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7268,8 +7294,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  message: Now that you have an empty plot, press the exit button to go back to viewing
-    mode.
+  message:
+    m_TableReference:
+      m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
+    m_TableEntryReference:
+      m_KeyId: 6359988764672
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &996628310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7284,9 +7320,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  message: To start of, let's place your first plot, so you can get to gardening!
-    Tap on the Building button on the top right of your screen to enter building
-    mode.
+  message:
+    m_TableReference:
+      m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
+    m_TableEntryReference:
+      m_KeyId: 6110616420352
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &996628311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7301,8 +7346,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  message: Welcome to your virtual garden, here you will be able to place your plots,
-    plant your flowers, decorate and watch the insects buzz around your garden!
+  message:
+    m_TableReference:
+      m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
+    m_TableEntryReference:
+      m_KeyId: 31371231232
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &996628312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7317,10 +7372,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  message: "You\u2019ve got the hang of things, now you can scan more flowers to
-    increase and decorate your garden to your heart's content! You can see all your
-    unlocked plants and insects by pressing on the catalogue button on the top right.
-    Once you tap this message the tutorial will finish."
+  message:
+    m_TableReference:
+      m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
+    m_TableEntryReference:
+      m_KeyId: 6866786516992
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &997646974
 GameObject:
   m_ObjectHideFlags: 0
@@ -16118,9 +16181,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  message: Now if you press the camera button in the bottom left you will open the
-    barcode scanner, and from there all you need to do is point your camera at the
-    barcodes next to the flower plots!
+  message:
+    m_TableReference:
+      m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
+    m_TableEntryReference:
+      m_KeyId: 6434597044224
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &40606165224211412
 MonoBehaviour:
   m_ObjectHideFlags: 0

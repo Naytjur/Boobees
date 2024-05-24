@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tutorial Messages_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: f08b529ce8dc4a540a33a3f34c2ce43a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 31371231232
+    m_Localized: Welcome to your virtual garden, here you will be able to place your
+      plots, plant your flowers, decorate and watch the insects buzz around your
+      garden!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6110616420352
+    m_Localized: First let's place your first plot, so you can get to gardening!
+      Tap on the Building button on the right side of your screen to enter the building
+      mode.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6253247922176
+    m_Localized: "In building mode you can select a structure, place it where you
+      want it to be and confirm your choice! For now, try it by placing your first
+      plot.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6359988764672
+    m_Localized: "Now that you have an empty plot you can press the View button to
+      go back to the viewing mode to scan your first flower.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6434597044224
+    m_Localized: 'Now if you press the camera button in the bottom left you will
+      open the barcode scanner, and from there all you need to do is point your camera
+      at the barcodes next to the flower plots!
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6590511906816
+    m_Localized: "You have unlocked your first flower! Now if you tap on the planting
+      button in viewing mode and select a plot you can start placing flowers just
+      like placing structures in build mode!\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6737438375936
+    m_Localized: The insects are buzzing and the flowers are blooming, insects will
+      earn you pollen and honey, pollen will increase your level and unlock new decorations
+      and more plots as your levels increase, and honey can be used to buy the decorations
+      you unlocked in the shop!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6866786516992
+    m_Localized: "You\u2019ve got the hang of things, now you can scan more flowers
+      to increase and decorate your garden to your heart's content! You can see all
+      your unlocked plants and insects by pressing on the catalogue button on the
+      top right. Once you tap this message the tutorial will finish."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

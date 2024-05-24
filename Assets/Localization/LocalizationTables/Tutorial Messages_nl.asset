@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tutorial Messages_nl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: nl
+  m_SharedData: {fileID: 11400000, guid: f08b529ce8dc4a540a33a3f34c2ce43a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 31371231232
+    m_Localized: Welkom in je virtuele tuin, hier zal je vakken kunnen plaatsen,
+      bloemen kunnen planten, versieren en insecten voor bij zien vliegen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6110616420352
+    m_Localized: "Laten we eerst uw eerste vak plaatsen, zodat u aan de slag kunt
+      met tuinieren! Tik op de knop Bouwen aan de rechterkant van uw scherm om naar
+      de bouwmodus te gaan.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6253247922176
+    m_Localized: "In de bouwmodus kun je een structuur selecteren, deze plaatsen
+      waar je hem wilt hebben en je keuze bevestigen! Probeer het voorlopig door
+      uw eerste vak te plaatsen.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6359988764672
+    m_Localized: "Nu dat je een leeg vak heeft, kunt u op de knop Bekijken drukken
+      om terug te gaan naar de weergavemodus en van daaruit uw eerste bloem te scannen\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6434597044224
+    m_Localized: 'Als u nu op de ontgrendelingsknop linksboven drukt, opent u de
+      streepjescodescanner en hoeft u vanaf daar alleen maar uw camera op de streepjescodes
+      naast de bloemen vakken te richten!
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6590511906816
+    m_Localized: "Je hebt je eerste bloem ontgrendeld! Als u nu in de weergavemodus
+      op uw vak tikt, kunt u beginnen met het plaatsen van bloemen, net zoals u gebouwen
+      plaatst in de bouwmodus!\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6737438375936
+    m_Localized: De insecten zoemen en de bloemen bloeien, insecten leveren stuifmeel
+      en honing op, stuifmeel verhoogt je niveau en ontgrendelt nieuwe decoraties
+      en meer percelen naarmate je niveaus stijgen, en honing kan worden gebruikt
+      om de decoraties te kopen die je in de winkel hebt ontgrendeld!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6866786516992
+    m_Localized: Je hebt het onder de knie, nu kun je meer bloemen scannen om je
+      tuin naar hartenlust te vergroten en te versieren! Zodra u op dit bericht tikt,
+      wordt de tutorial voltooid.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

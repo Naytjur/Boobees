@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: a976c210a69094941bd0250d22978374, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 8168968436361986050
   m_TableData:
   - m_Id: 9271443456
     m_Localized: Building Mode
@@ -46,6 +47,23 @@ MonoBehaviour:
     m_Localized: Use Code
     m_Metadata:
       m_Items: []
+  - m_Id: 33450511761408
+    m_Localized: 'Unlocked: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34600074018816
+    m_Localized: You have reached level {level-component.displayLevel} !
+    m_Metadata:
+      m_Items:
+      - rid: 8168968436361986050
+  - m_Id: 51157160361984
+    m_Localized: Click to continue
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 8168968436361986050
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00001ff5771f0000
