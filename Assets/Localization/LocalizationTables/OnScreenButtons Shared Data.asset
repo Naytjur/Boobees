@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: OnScreenButtons Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: OnScreenButtons
+  m_TableCollectionNameGuidString: a976c210a69094941bd0250d22978374
+  m_Entries:
+  - m_Id: 9271443456
+    m_Key: Building Mode Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2153395453952
+    m_Key: English Language Settings Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2261537193984
+    m_Key: Dutch Language Settings Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28801935278080
+    m_Key: Planting Mode Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28990423105536
+    m_Key: Confirm Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29098422239232
+    m_Key: Back Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30006765879296
+    m_Key: Use Code Button
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8168968433979097117
+  references:
+    version: 2
+    RefIds:
+    - rid: 8168968433979097117
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1716573594411
