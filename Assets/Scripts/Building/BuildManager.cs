@@ -83,6 +83,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         foreach(BuildingSO building in allBuildings)
         {
             building.RemoveCount(building.count);
+
         }
     }
 
