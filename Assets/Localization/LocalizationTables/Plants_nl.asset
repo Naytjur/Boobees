@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Plants_nl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: nl
+  m_SharedData: {fileID: 11400000, guid: 5d0db34fa9ee9cf49bb21cf4ec1fc93e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 70705414144
+    m_Localized: Grote Klaproos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244243413008384
+    m_Localized: nog geen omschrijving
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244376129175552
+    m_Localized: Wilde Akelei
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244424611135488
+    m_Localized: nog geen omschrijving
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244622829748224
+    m_Localized: Pinkesterbloem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244934642696192
+    m_Localized: "\u2022\tOok bekend als Cardamine pratensis\r\n\u2022\tMeerjarig
+      kruid die gevonden kan worden in heel Europa en West-Azi\xEB\n\u2022\tBloeit
+      op stekels dichtbij water\n\u2022\tDe naam, pratensis, betekend 'weide' in
+      Latijn.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246163615711232
+    m_Localized: Paarse Dovenetel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246386417139712
+    m_Localized: "\u2022\tDe bloemen van de dovenetels kunnen verschillende kleuren
+      hebben\n\u2022\tWit, geel en paars"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246707335921664
+    m_Localized: Wilde Weit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246830581350400
+    m_Localized: "\u2022\tAardhommels knagen soms een gat in de zijkant van de bloem
+      om bij de nectar te komen\n\u2022\tHeeft roze of paarse bloemen bovenop hoge
+      stelen\n\u2022\tBloeit van juni tot september\n\u2022\tBloeit best in droge,
+      kalkrijke habitats in heel West-Europa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 247911445102592
+    m_Localized: Lange Ereprijs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 247988779679744
+    m_Localized: "\u2022 vari\xEBrend van bodembedekkers van slechts enkele centimeters
+      hoog tot rechtopstaande planten \n\u2022 hoge, stekelige bloemen\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248526187462656
+    m_Localized: Look-Zonder-Look
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248555061051392
+    m_Localized: nog geen omschrijving
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248714025172992
+    m_Localized: Grote kattenstaart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248832648478720
+    m_Localized: nog geen omschrijving
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248941658439680
+    m_Localized: Beemdkroon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249011434881024
+    m_Localized: "\u2022 Zuid-Europese eenjaars bloemen\n\u2022 diep ingesneden basale
+      bladeren en geveerde stengelbladeren\r\n\u2022 produceert geurige bloemhoofdjes
+      van 5 cm\r\n\u2022 wit, roze, karmozijnrood, blauw of diep mahoniepaars."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249951630065664
+    m_Localized: Boerenwormkruid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249994005118976
+    m_Localized: nog geen omschrijving
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250202617217024
+    m_Localized: Moerasrolklaver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250275908485120
+    m_Localized: "\u2022 kortlevende meerjarige peulvruchten\r\n\u2022 Aangepast
+      aan vochtige, gematigde streken\r\n\u2022 Aangepast aan een breed scala aan
+      bodems"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250925287407616
+    m_Localized: Slangenkruid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251009370619904
+    m_Localized: "\u2022 Opvallende plant met ruwe, behaarde bladeren en felblauwe
+      bloemen die roze beginnen\r\n\u2022 Inheems in Europa, West- en Centraal-Azi\xEB\r\n\u2022
+      Bloeit van mei tot september"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251287054516224
+    m_Localized: Vlasbekje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251329807056896
+    m_Localized: nog geen omschrijving
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251874995273728
+    m_Localized: Driekleurig Viooltje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251905659830272
+    m_Localized: "\u2022 Europese wilde bloem\r\n\u2022 Komt ook voor in Noord-Amerika\r\n\u2022
+      verschillende kleuren, waaronder paars, blauw, geel of wit\r\n\u2022 vaak met
+      een gewild driekleurig patroon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252320203866112
+    m_Localized: Planten
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

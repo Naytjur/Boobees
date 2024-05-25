@@ -1,21 +1,26 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 
 public class TutorialMessage : MonoBehaviour
 {
     public GameObject tutorialUIPrefab; // Reference to the Tutorial UI prefab
-    public string message; // Message to display in the text box
+    public LocalizedString message; // Message to display in the text box
 
     private GameObject instantiatedUI;
     private TextMeshProUGUI textBox;
     private bool beenSeen;
+
+    private LocalizeStringEvent localizeStringEvent; 
 
     private void Awake()
     {
         // Instantiate the tutorial UI prefab
         instantiatedUI = Instantiate(tutorialUIPrefab);
         textBox = instantiatedUI.GetComponentInChildren<TextMeshProUGUI>();
-        textBox.text = message;
+        localizeStringEvent = instantiatedUI.GetComponent<TutorialMessageInfo>().localizeStringEvent;
+        localizeStringEvent.StringReference = message;
         instantiatedUI.SetActive(false); // Start with the UI hidden
 
         // Add the TutorialUIClickHandler component and set it up

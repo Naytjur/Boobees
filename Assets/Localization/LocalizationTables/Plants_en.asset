@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Plants_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 5d0db34fa9ee9cf49bb21cf4ec1fc93e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 70705414144
+    m_Localized: Common Poppy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244243413008384
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244424611135488
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244376129175552
+    m_Localized: Common Columbine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244622829748224
+    m_Localized: Cuckoo Flower
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244934642696192
+    m_Localized: "\u2022\tAlso known as Cardamine pratensis\r\n\u2022\tPerennial
+      herb found across Europe and western Asia\r\n\u2022\tBlooming on spikes close
+      to water\r\n\u2022\tIts name, pratensis, means 'meadow' in Latin.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246163615711232
+    m_Localized: Red Deadnettle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246386417139712
+    m_Localized: "\u2022\tcolour of the flowers of dead-nettles varies \r\n\u2022\twhite,
+      yellow and purple to a deep purple."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246707335921664
+    m_Localized: Field Cow-Wheat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246830581350400
+    m_Localized: "\u2022\tBuff-tailed bumblebees sometimes gnaw a hole in the side
+      of the flower to access the nectar\r\n\u2022\tBoasts pink or purple flowers
+      atop tall stems\n\u2022\tBlooming from June to September\r\n\u2022\tThrives
+      in dry, chalky habitats across Western Europe.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 247911445102592
+    m_Localized: Garden Speedwell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 247988779679744
+    m_Localized: "\u2022\tranging from groundcovers only a few inches tall to upright
+      plants\r\n\u2022\ttall, spiky blooms\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248526187462656
+    m_Localized: Garlic Mustard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248555061051392
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248714025172992
+    m_Localized: Purple LooseStrife
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248832648478720
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248941658439680
+    m_Localized: Scabiosa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249011434881024
+    m_Localized: "\u2022\tSouthern European annual \r\n\u2022\tdeeply cut basal leaves
+      and feathery stem leaves\r\n\u2022\tproduces fragrant 5-cm flower heads \r\n\u2022\twhite,
+      rose, crimson, blue, or deep mahogany purple.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249951630065664
+    m_Localized: Tansy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249994005118976
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250202617217024
+    m_Localized: Greater bird's-foot-trefoil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250275908485120
+    m_Localized: "\u2022\tshort lived perennial legume\r\n\u2022\tAdapted to humid,
+      temperate regions\r\n\u2022\tAdapted to a wide range of soils."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250925287407616
+    m_Localized: Viper's-bugloss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251009370619904
+    m_Localized: "\u2022\tStriking plant with rough, hairy leaves and vibrant blue
+      flowers that start pink\r\n\u2022\tNative to Europe, western and central Asia\r\n\u2022\tBlooms
+      from May to September"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251287054516224
+    m_Localized: Yellow Toadflax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251329807056896
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251874995273728
+    m_Localized: Wild Pansy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251905659830272
+    m_Localized: "\u2022\tEuropean wildflower\r\n\u2022\tAlso found in North America\r\n\u2022\tvarious
+      colors, including purple, blue, yellow, or white\r\n\u2022\toften with a sought-after
+      tricolor pattern. \r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252320203866112
+    m_Localized: Plants
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

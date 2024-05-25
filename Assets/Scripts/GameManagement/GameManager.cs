@@ -118,13 +118,16 @@ public class GameManager : MonoBehaviour
 
     private void HandleClick()
     {
-        if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("BuildSurface"), out Vector3 pos))
+        if (state != GameState.Scanning)
         {
-            Grid grid = BuildManager.instance.buildGrid;
-            grid.GetXZ(pos, out int x, out int z);
-            if (grid.IsPositionOnGrid(x, z) && grid.GetGridObject(x, z).building != null)
+            if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("BuildSurface"), out Vector3 pos))
             {
-                grid.GetGridObject(x, z).building.OnClick();
+                Grid grid = BuildManager.instance.buildGrid;
+                grid.GetXZ(pos, out int x, out int z);
+                if (grid.IsPositionOnGrid(x, z) && grid.GetGridObject(x, z).building != null)
+                {
+                    grid.GetGridObject(x, z).building.OnClick();
+                }
             }
         }
     }

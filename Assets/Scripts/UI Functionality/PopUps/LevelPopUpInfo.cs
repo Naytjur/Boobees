@@ -8,5 +8,11 @@ public class LevelPopUpInfo : MonoBehaviour
 {
     public TMP_Text levelUpText;
     public Transform unlockedImagesTransform;
+    public int displayLevel;
+
+    private void Awake()
+    {
+        displayLevel = ScoreManager.instance.playerLevel;
+    }
 
 }
