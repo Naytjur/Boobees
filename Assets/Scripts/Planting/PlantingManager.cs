@@ -219,7 +219,7 @@ public class PlantingManager : MonoBehaviour
 
     private void GetSeeds(PlantSO plant)
     {
-        plant.seedAmount += Random.Range(2, 5);
+        plant.seedAmount += UnityEngine.Random.Range(2, 5);
     }
 
     private void UpdateActiveState(GameState state)

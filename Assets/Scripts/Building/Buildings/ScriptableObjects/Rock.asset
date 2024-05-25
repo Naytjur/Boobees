@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Rock
   m_EditorClassIdentifier: 
-  id: 
+  id: 9
   itemName: rock
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 3496962742392625404, guid: 01a92fa8a183d1c4d8369e068f939135,
     type: 3}
   gardenVisual: {fileID: 3496962742392625404, guid: df5d8e9a214f9cf49985a89bd2994eef,

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Fence
   m_EditorClassIdentifier: 
-  id: 
+  id: 5
   itemName: Fence
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4195216918634333592, guid: 0ed19c8dfb4a6a24ca6fcb8e35f03818,
     type: 3}
   gardenVisual: {fileID: 1194263165967490117, guid: 9c0cf775121800c4887f5f36af3fbc56,
@@ -25,5 +25,5 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 52e0a4f02aecd4944af223aa3ff9aa23, type: 3}
   width: 1
   height: 2
-  unlockLevel: 2
-  cost: 10
+  unlockLevel: 1
+  cost: 0

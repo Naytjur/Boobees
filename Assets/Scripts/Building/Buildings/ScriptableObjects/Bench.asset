@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Bench
   m_EditorClassIdentifier: 
-  id: 
+  id: 2
   itemName: Bench
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4138045857846625545, guid: 9ff32137ff07dca4a88da4bc1e47ae24,
     type: 3}
   gardenVisual: {fileID: 4138045857846625545, guid: 7e1fd97f729914d4a95e48590cc7784e,
