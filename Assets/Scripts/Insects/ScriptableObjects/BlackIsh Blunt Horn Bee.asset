@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: BlackIsh Blunt Horn Bee
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: fd1b2abab0d7e6545be42a27ac6da5e4,
+    type: 3}
   itemName: Blackish Blunthorn
   description: 
   unlocked: 0

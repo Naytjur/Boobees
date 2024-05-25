@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Patch 3
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: d317ad52475558441963527cfda9019e,
+    type: 3}
   itemName: plot 3
   description: 
   unlocked: 0

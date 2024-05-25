@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Davies Colletes
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 77e680b77161b9e4cb577c925cb8853c,
+    type: 3}
   itemName: Davies Colletes
   description: 
   unlocked: 0

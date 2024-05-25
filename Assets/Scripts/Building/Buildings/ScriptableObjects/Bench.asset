@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Bench
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: d3bf349ea3d120e4e8eb85fed16f051d,
+    type: 3}
   itemName: Bench
   description: 
   unlocked: 0

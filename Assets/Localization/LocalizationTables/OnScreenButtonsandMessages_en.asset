@@ -92,6 +92,10 @@ MonoBehaviour:
     m_Localized: Input plant unlock code
     m_Metadata:
       m_Items: []
+  - m_Id: 338413267910656
+    m_Localized: Click on a plot to start planting!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

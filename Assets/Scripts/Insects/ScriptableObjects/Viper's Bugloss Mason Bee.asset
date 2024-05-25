@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Viper's Bugloss Mason Bee
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 46fe157411a67d9419e66759e5494fb3,
+    type: 3}
   itemName: Viper's Bugloss Mason Bee
   description: 
   unlocked: 0

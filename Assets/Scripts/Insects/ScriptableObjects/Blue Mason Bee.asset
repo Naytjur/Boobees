@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Blue Mason Bee
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: d94e884bed25e6e4aadbbdd247b54603,
+    type: 3}
   itemName: Blue Mason Bee
   description: 
   unlocked: 0

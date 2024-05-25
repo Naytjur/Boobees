@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Common Brimstone
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 29586da43b400554da1d27ebbc29e5be,
+    type: 3}
   itemName: Common Brimstone
   description: 
   unlocked: 0

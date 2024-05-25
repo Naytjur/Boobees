@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Buff Tailed Bumblebee
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: f9956ba3b39a88746ab3a2b5d349259e,
+    type: 3}
   itemName: buff tailed bumble bee
   description: 
   unlocked: 0

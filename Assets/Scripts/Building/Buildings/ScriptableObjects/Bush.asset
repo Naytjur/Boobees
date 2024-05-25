@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Bush
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: fc18dcbacd4a90544a7675836daf1bc2,
+    type: 3}
   itemName: Bush
   description: 
   unlocked: 0

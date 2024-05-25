@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Oak Tree
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 071ca6e033ec1bb418ae31d0fc7681ef,
+    type: 3}
   itemName: Oak Tree
   description: 
   unlocked: 0

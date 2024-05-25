@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Orange Tip
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 3bdd70fbf31e80b41bc8ed5455c48552,
+    type: 3}
   itemName: Orange Tip
   description: 
   unlocked: 0

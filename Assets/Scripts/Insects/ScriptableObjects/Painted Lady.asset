@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Painted Lady
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: f9a2cf7ced3138546ac072a33e4f851e,
+    type: 3}
   itemName: Painted Lady
   description: 
   unlocked: 0

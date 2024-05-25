@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: SmallGardenBumbleBee
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: da945fd5fd749f8479dcd21b97e5e721,
+    type: 3}
   itemName: Small Garden BumbleBee
   description: 
   unlocked: 0

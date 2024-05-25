@@ -87,6 +87,10 @@ MonoBehaviour:
     m_Key: Input plant code message
     m_Metadata:
       m_Items: []
+  - m_Id: 338413267910656
+    m_Key: Plot Selection Message
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

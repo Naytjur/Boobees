@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Large Skipper
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 371f6867c3dc5db49a2431d21b38ef88,
+    type: 3}
   itemName: Large Skipper
   description: 
   unlocked: 0

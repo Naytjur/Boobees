@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Buildings Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Buildings
+  m_TableCollectionNameGuidString: 491342107c14a9c4291c824a9d542725
+  m_Entries:
+  - m_Id: 18754764800
+    m_Key: Beehive Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78506819584
+    m_Key: Bench Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92914253824
+    m_Key: Birch Tree Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118411427840
+    m_Key: Bush Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138296623104
+    m_Key: Fence Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164938842112
+    m_Key: OakTree Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 191627198464
+    m_Key: Plot 1 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 224623788032
+    m_Key: Plot 2 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 236527222784
+    m_Key: Plot 3 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 286460411904
+    m_Key: Rock Name
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8168968454328025091
+  references:
+    version: 2
+    RefIds:
+    - rid: 8168968454328025091
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1716651867903

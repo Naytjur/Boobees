@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Beehive
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: f3d5172d4adf6c341a2d22f19190c838,
+    type: 3}
   itemName: Beehive
   description: 
   unlocked: 0

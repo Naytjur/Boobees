@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Birch Tree
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 52c2af1c4ba2aea43a1775aa23ceed45,
+    type: 3}
   itemName: Birch Tree
   description: 
   unlocked: 0

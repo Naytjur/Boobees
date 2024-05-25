@@ -92,6 +92,10 @@ MonoBehaviour:
     m_Localized: Voer plant-vrijspeel code in
     m_Metadata:
       m_Items: []
+  - m_Id: 338413267910656
+    m_Localized: Klik op een vak om te beginnen met planten!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Fence
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: cbdd82d5a072144448beddac2897ef4e,
+    type: 3}
   itemName: Fence
   description: 
   unlocked: 0
