@@ -60,6 +60,26 @@ MonoBehaviour:
     m_Localized: Click to continue
     m_Metadata:
       m_Items: []
+  - m_Id: 251840555843584
+    m_Localized: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251888479961088
+    m_Localized: Previous
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257921063518208
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257958564790272
+    m_Localized: Go to Catalogue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257957088395264
+    m_Localized: Go to Homepage
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

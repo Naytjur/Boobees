@@ -55,6 +55,26 @@ MonoBehaviour:
     m_Key: Click to continue button
     m_Metadata:
       m_Items: []
+  - m_Id: 251840555843584
+    m_Key: Next Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251888479961088
+    m_Key: Previous Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257921063518208
+    m_Key: Close Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257957088395264
+    m_Key: Go Home Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257958564790272
+    m_Key: Go to Catalogue Button
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

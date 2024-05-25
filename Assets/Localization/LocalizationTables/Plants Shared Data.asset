@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Plants Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Plants
+  m_TableCollectionNameGuidString: 5d0db34fa9ee9cf49bb21cf4ec1fc93e
+  m_Entries:
+  - m_Id: 70705414144
+    m_Key: Common Poppy Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244243413008384
+    m_Key: Common Poppy Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244376129175552
+    m_Key: Common Columbine Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244424611135488
+    m_Key: Common Columbine Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244622829748224
+    m_Key: Cuckoo Flower Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244934642696192
+    m_Key: Cuckoo Flower Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246163615711232
+    m_Key: Purple Dead Nettle Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246386417139712
+    m_Key: Purple Deadnettle Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246707335921664
+    m_Key: Field Cow-Wheat Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246830581350400
+    m_Key: Field Cow-Wheat Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 247911445102592
+    m_Key: Garden Speedwell Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 247988779679744
+    m_Key: Garden Speedwell Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248526187462656
+    m_Key: Garlic Mustard Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248555061051392
+    m_Key: Garlic Mustard Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248714025172992
+    m_Key: Purple LooseStrife Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248832648478720
+    m_Key: Purple LooseStrife Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248941658439680
+    m_Key: Scabiosa Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249011434881024
+    m_Key: Scabiosa Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249951630065664
+    m_Key: Tansy Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249994005118976
+    m_Key: Tansy Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250202617217024
+    m_Key: Greater bird's-foot-trefoil Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250275908485120
+    m_Key: Greater bird's-foot-trefoil Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250925287407616
+    m_Key: Viper's-bugloss Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251009370619904
+    m_Key: Viper's-bugloss Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251287054516224
+    m_Key: Yellow Toadflax Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251329807056896
+    m_Key: Yellow Toadflax Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251874995273728
+    m_Key: Wild Pansy Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251905659830272
+    m_Key: Wild Pansy Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252320203866112
+    m_Key: Plants
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8168968433979097112
+  references:
+    version: 2
+    RefIds:
+    - rid: 8168968433979097112
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1716573107215

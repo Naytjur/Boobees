@@ -60,6 +60,26 @@ MonoBehaviour:
     m_Localized: Klik om verder te gaan
     m_Metadata:
       m_Items: []
+  - m_Id: 251840555843584
+    m_Localized: Volgende
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251888479961088
+    m_Localized: Vorige
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257921063518208
+    m_Localized: Sluiten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257958564790272
+    m_Localized: Ga naar Catalogus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257957088395264
+    m_Localized: Ga naar Startpagina
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

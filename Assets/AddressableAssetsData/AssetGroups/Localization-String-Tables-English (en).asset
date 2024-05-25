@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: bec518ef8fbeac44581768976117f015
   m_SerializeEntries:
   - m_GUID: b1badac4f1539594e8dc72eefb91f667
-    m_Address: Plants and Catalogue_en
+    m_Address: Plants_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
@@ -31,6 +31,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: edf30defd10175548acf09255994eb78
     m_Address: Tutorial Messages_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4145f988a6f751c49969ec78a500d7b4
+    m_Address: Insects_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
