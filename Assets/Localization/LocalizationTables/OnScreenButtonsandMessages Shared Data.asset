@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: OnScreenButtons Shared Data
+  m_Name: OnScreenButtonsandMessages Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: OnScreenButtons
+  m_TableCollectionName: OnScreenButtonsandMessages
   m_TableCollectionNameGuidString: a976c210a69094941bd0250d22978374
   m_Entries:
   - m_Id: 9271443456
@@ -73,6 +73,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 257958564790272
     m_Key: Go to Catalogue Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269742315077632
+    m_Key: Enter Code Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281907453427712
+    m_Key: You've Unlocked Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320343619076096
+    m_Key: Input plant code message
     m_Metadata:
       m_Items: []
   m_Metadata:

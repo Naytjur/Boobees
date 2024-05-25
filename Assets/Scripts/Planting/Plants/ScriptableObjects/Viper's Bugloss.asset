@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Viper's Bugloss
   m_EditorClassIdentifier: 
   id: 493749
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: ac6bdb55bdde2594fafdb0e91a12a059,
+    type: 3}
   itemName: Viper's Bugloss
   description: "\u2022\tEuropean wildflower \u2022\tAlso found in North America \u2022\tvarious
     colors, including purple, blue, yellow, or white \u2022\toften with a sought-after

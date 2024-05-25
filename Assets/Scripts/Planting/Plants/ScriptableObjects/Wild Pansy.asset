@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: Wild Pansy
   m_EditorClassIdentifier: 
   id: 284574
+  itemNameStringEvent: {fileID: 8088117045877321667, guid: a9c039f1dfdd337419428e0a38875a4a,
+    type: 3}
   itemName: Wild Pansy
   description: "\u2022\tEuropean wildflower \n\u2022\tAlso found in North America
     \n\u2022\tvarious colors, including purple, blue, yellow, or white \n\u2022\toften
     with a sought-after tricolor pattern.  "
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 3523959829202924707, guid: 812665bfe64b27c4cb143b943e1e91c5,
     type: 3}
   gardenVisual: {fileID: 3523959829202924707, guid: 812665bfe64b27c4cb143b943e1e91c5,

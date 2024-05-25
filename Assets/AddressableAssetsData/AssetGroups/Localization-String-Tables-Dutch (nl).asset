@@ -24,7 +24,7 @@ MonoBehaviour:
     - Locale-nl
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c690c6d2f1fa79e4586510aa65f24df7
-    m_Address: OnScreenButtons_nl
+    m_Address: OnScreenButtonsandMessages_nl
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-nl

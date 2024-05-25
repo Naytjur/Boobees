@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: OnScreenButtons_nl
+  m_Name: OnScreenButtonsandMessages_nl
   m_EditorClassIdentifier: 
   m_LocaleId:
     m_Code: nl
@@ -78,6 +78,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 257957088395264
     m_Localized: Ga naar Startpagina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269742315077632
+    m_Localized: Voer code in..
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281907453427712
+    m_Localized: 'Vrijgespeelde Bloem:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320343619076096
+    m_Localized: Voer plant-vrijspeel code in
     m_Metadata:
       m_Items: []
   references:

@@ -24,7 +24,7 @@ MonoBehaviour:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e7ba9b9fa48a1b742b340db20f665028
-    m_Address: OnScreenButtons_en
+    m_Address: OnScreenButtonsandMessages_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

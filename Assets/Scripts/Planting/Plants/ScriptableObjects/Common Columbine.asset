@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Common Columbine
   m_EditorClassIdentifier: 
   id: 635328
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 03d0c6b8fb77e6b429c78159ff1687a4,
+    type: 3}
   itemName: Common Columbine
   description: 
   unlocked: 1

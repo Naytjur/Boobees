@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Field Cow Wheat
   m_EditorClassIdentifier: 
   id: 183759
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: f29ae62ed29466749a1c655e501d3b8b,
+    type: 3}
   itemName: Field Cow Wheat
   description: "\u2022\tBuff-tailed bumblebees sometimes gnaw a hole in the side
     of the flower to access the nectar \n\u2022\tBoasts pink or purple flowers atop

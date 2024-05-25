@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
@@ -12,9 +13,9 @@ public class ScanPopUp : MonoBehaviour
     private GameObject popUpPrefab;
     [SerializeField]
     private GameObject popUpCanvas;
+    public LocalizedString plantName;
 
-    public LocalizedString message; // Scan pop up message that lets you know what you've scannedS
-    private LocalizeStringEvent localizeStringEvent; // the event that where the message will be inserted
+    private LocalizeStringEvent localizeStringEvent;
 
     private void Start()
     {
@@ -25,10 +26,11 @@ public class ScanPopUp : MonoBehaviour
         GameObject popUp = Instantiate(popUpPrefab, popUpCanvas.transform);
         ScanPopUpInfo scanPopUpInfo = popUp.GetComponent<ScanPopUpInfo>();
         //scanPopUpInfo.scanText.text = "You have unlocked " + plant.itemName + "!";
-        scanPopUpInfo.flowerImage.sprite = plant.sprite;
-
+        plantName = plant.itemNameStringEvent.StringReference;
         localizeStringEvent = popUp.GetComponent<ScanPopUpInfo>().localizeStringEvent;
-        localizeStringEvent.StringReference = message;
+        localizeStringEvent.StringReference = plantName;
+        scanPopUpInfo.flowerImage.sprite = plant.sprite;
+        //scanPopUpInfo.unlockedPlant = plantName;
     }
 
 

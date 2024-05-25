@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Tansy
   m_EditorClassIdentifier: 
   id: 746735
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 49303ad2df4aa2443b0653ce262fb1da,
+    type: 3}
   itemName: Tansy
   description: 
   unlocked: 1

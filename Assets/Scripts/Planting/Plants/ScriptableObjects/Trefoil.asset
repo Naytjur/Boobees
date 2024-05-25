@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Trefoil
   m_EditorClassIdentifier: 
   id: 141825
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 58f4ef47f32ce674abc5b043ec9ad207,
+    type: 3}
   itemName: Trefoil
   description: "\u2022\tshort lived perennial legume \n\u2022\tAdapted to humid,
     temperate regions \n\u2022\tAdapted to a wide range of soils. "

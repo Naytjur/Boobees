@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Scabiosa
   m_EditorClassIdentifier: 
   id: 241377
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 583879725a04258498e50781c84d4586,
+    type: 3}
   itemName: Scabiosa
   description: "\u2022\tSouthern European annual  \n\u2022\tdeeply cut basal leaves
     and feathery stem leaves \n\u2022\tproduces fragrant 5-cm flower heads  \n\u2022\twhite,
