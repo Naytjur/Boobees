@@ -91,6 +91,30 @@ MonoBehaviour:
     m_Key: Plot Selection Message
     m_Metadata:
       m_Items: []
+  - m_Id: 346203344535552
+    m_Key: Unlock level Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346225268162560
+    m_Key: Free Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346262823960576
+    m_Key: Full Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348291973709824
+    m_Key: Attractions text plants
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348796535898112
+    m_Key: Attractions text insects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351107450601472
+    m_Key: Cost message
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

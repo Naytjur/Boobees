@@ -96,10 +96,35 @@ MonoBehaviour:
     m_Localized: Klik op een vak om te beginnen met planten!
     m_Metadata:
       m_Items: []
+  - m_Id: 346262823960576
+    m_Localized: Vol!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346225268162560
+    m_Localized: Gratis!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346203344535552
+    m_Localized: Speel vrij op level {unlockLevel-component.select.building.unlockLevel}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348291973709824
+    m_Localized: 'Aangetrokkenen:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348796535898112
+    m_Localized: 'Aantrekkingen:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351107450601472
+    m_Localized: 'Prijs: {cost-component.buildingCost}'
+    m_Metadata:
+      m_Items:
+      - rid: 8168968436361986049
   references:
     version: 2
     RefIds:
     - rid: 8168968436361986049
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00001ff5771f0000
+        m_Entries: 00001ff5771f00000000df92543f0100

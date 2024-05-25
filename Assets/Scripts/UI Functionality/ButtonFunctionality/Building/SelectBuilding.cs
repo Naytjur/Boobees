@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Localization.Components;
 
 public class SelectBuilding : MonoBehaviour
 {
@@ -12,14 +13,16 @@ public class SelectBuilding : MonoBehaviour
 
     [Tooltip("Not required if button is on the same gameobject")]
     public Button button;
-    public TMP_Text buildingNameText;
+    //public TMP_Text buildingNameText;
+    public LocalizeStringEvent buildNameLocalizeStringEvent;
+    public LocalizeStringEvent buildCostLocalizationEvent;
     public TMP_Text buildingAmountText;
     public TMP_Text buildingCostText;
+    public int buildingCost;
 
     public BuildingSO building;
 
     private BuildManager buildManager;
-
     private void Start()
     {
         buildManager = Object.FindObjectOfType<BuildManager>();

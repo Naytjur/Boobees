@@ -96,10 +96,35 @@ MonoBehaviour:
     m_Localized: Click on a plot to start planting!
     m_Metadata:
       m_Items: []
+  - m_Id: 346262823960576
+    m_Localized: Full!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346225268162560
+    m_Localized: Free!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346203344535552
+    m_Localized: Unlocks at level {unlockLevel-component.select.building.unlockLevel}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348291973709824
+    m_Localized: 'Attractions: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348796535898112
+    m_Localized: 'Attractions: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351107450601472
+    m_Localized: 'Cost: {cost-component.buildingCost}'
+    m_Metadata:
+      m_Items:
+      - rid: 8168968436361986050
   references:
     version: 2
     RefIds:
     - rid: 8168968436361986050
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00001ff5771f0000
+        m_Entries: 00001ff5771f00000000df92543f0100

@@ -4,6 +4,8 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System;
+using UnityEngine.Localization.Components;
+using UnityEngine.Localization;
 
 public class BuildingUI : MonoBehaviour
 {
@@ -13,6 +15,11 @@ public class BuildingUI : MonoBehaviour
     private Transform buttonContainerTransform;
 
     private List<Transform> buildButtons = new List<Transform>();
+
+    public LocalizeStringEvent buildingNameEvent;
+    public LocalizedString buildingName;
+
+    public int selectBuildCost;
 
     void Start()
     {
@@ -41,6 +48,7 @@ public class BuildingUI : MonoBehaviour
             SelectBuilding select = button.GetComponent<SelectBuilding>();
             select.SetIndex(index);
             select.building = building;
+            select.buildingCost = building.cost;
             index++;
             buildButtons.Add(button);
         }
@@ -52,11 +60,19 @@ public class BuildingUI : MonoBehaviour
         foreach (Transform button in buildButtons)
         {
             SelectBuilding select = button.GetComponent<SelectBuilding>();
-            select.buildingNameText.text = select.building.itemName;
+            //select.buildingNameText.text = select.building.itemName;
+
+            buildingName = select.building.itemNameStringEvent.StringReference;
+            buildingNameEvent = select.buildNameLocalizeStringEvent;
+            buildingNameEvent.StringReference = buildingName;
+
             select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
             select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
-            select.buildingCostText.text = "Cost: " + select.building.cost.ToString();
-            if(select.building.cost == 0)
+            //select.buildingCostText.text = "Cost: " + select.building.cost.ToString();
+
+            select.buildCostLocalizationEvent.RefreshString();
+
+            if (select.building.cost == 0)
             {
                 select.buildingCostText.text = "Free!";
             }
@@ -72,10 +88,18 @@ public class BuildingUI : MonoBehaviour
         foreach (Transform button in buildButtons)
         {
             SelectBuilding select = button.GetComponent<SelectBuilding>();
-            select.buildingNameText.text = select.building.itemName;
+            //select.buildingNameText.text = select.building.itemName;
+
+            buildingName = select.building.itemNameStringEvent.StringReference;
+            buildingNameEvent = select.GetComponent<SelectBuilding>().buildNameLocalizeStringEvent;
+            buildingNameEvent.StringReference = buildingName;
+
             select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
             select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
-            select.buildingCostText.text = "Cost: " + select.building.cost.ToString();
+            //select.buildingCostText.text = "Cost: " + select.building.cost.ToString();
+
+            select.buildCostLocalizationEvent.RefreshString();
+
             if (select.building.cost == 0)
             {
                 select.buildingCostText.text = "Free!";
