@@ -8,15 +8,16 @@ public class TutorialMessage : MonoBehaviour
     public GameObject tutorialUIPrefab; // Reference to the Tutorial UI prefab
     public LocalizedString message; // Message to display in the text box
 
+    [SerializeField]
+    public bool beenSeen = false;
+
     private GameObject instantiatedUI;
     private TextMeshProUGUI textBox;
-    private bool beenSeen;
 
     private LocalizeStringEvent localizeStringEvent; 
 
-    private void Awake()
+    private void Start()
     {
-        // Instantiate the tutorial UI prefab
         instantiatedUI = Instantiate(tutorialUIPrefab);
         textBox = instantiatedUI.GetComponentInChildren<TextMeshProUGUI>();
         localizeStringEvent = instantiatedUI.GetComponent<TutorialMessageInfo>().localizeStringEvent;
@@ -30,7 +31,7 @@ public class TutorialMessage : MonoBehaviour
 
     public void ShowTutorial()
     {
-        if (instantiatedUI != null && !instantiatedUI.activeSelf && beenSeen != true)
+        if (instantiatedUI != null && !instantiatedUI.activeSelf && !beenSeen)
         {
             instantiatedUI.SetActive(true);
             beenSeen = true;
@@ -43,5 +44,10 @@ public class TutorialMessage : MonoBehaviour
         {
             instantiatedUI.SetActive(false);
         }
+    }
+
+    public bool HasBeenSeen()
+    {
+        return beenSeen;
     }
 }

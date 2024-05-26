@@ -14,6 +14,8 @@ public class GameData
     [SerializeField]
     public List<string> unlockedPlantIDs;
     [SerializeField]
+    public List<bool> seenTutorials;
+    [SerializeField]
     public BuildData[] buildGrid;
     
     public GameData()
@@ -24,6 +26,7 @@ public class GameData
         this.playerPollenCap = 0;
         this.playerHoneyCap = 0;
         unlockedPlantIDs = new List<string>();
+        seenTutorials = new List<bool>();
         buildGrid = new BuildData[100];
 
         for(int i = 0; i < buildGrid.Length; i++)

@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using System.Collections.Generic;
+
 
 public class TutorialManager : MonoBehaviour
 {
@@ -11,36 +13,33 @@ public class TutorialManager : MonoBehaviour
     public TutorialMessage tutorialMessageLevel;
 
     private bool firstMessage = false;
-    /*private bool plotPlaced = false;
-    private bool secondMessage = false;
-    private bool scoreTutorialShown = false;*/
 
-    /*private void OnEnable()
+    public List<TutorialMessage> tutorialMessages = new List<TutorialMessage>();
+
+    private void Awake()
     {
         BuildManager.onBuildingPlaced += OnBuildingPlaced;
         ScoreManager.onScoreChanged += OnScoreChanged;
         ScoreManager.onLevelUp += OnLevelUp;
         PlantingManager.instance.onPlantUnlocked += OnPlantUnlocked;
+
+        TutorialMessage[] messages = FindObjectsOfType<TutorialMessage>();
+        foreach (TutorialMessage message in messages)
+        {
+            tutorialMessages.Add(message);
+        }
+
+        if (tutorialMessages.Count > 0)
+        {
+            tutorialMessages[0].ShowTutorial();
+        }
     }
-
-
-    private void OnDisable()
-    {
-        BuildManager.onBuildingPlaced -= OnBuildingPlaced;
-        ScoreManager.onScoreChanged -= OnScoreChanged;
-        ScoreManager.onLevelUp -= OnLevelUp;
-        PlantingManager.instance.onPlantUnlocked -= OnPlantUnlocked;
-    }*/
 
     private void Start()
     {
-        BuildManager.onBuildingPlaced += OnBuildingPlaced;
-        ScoreManager.onScoreChanged += OnScoreChanged;
-        ScoreManager.onLevelUp += OnLevelUp;
-        PlantingManager.instance.onPlantUnlocked += OnPlantUnlocked;
         tutorialMessageStart.ShowTutorial();
         firstMessage = true;
-    } 
+    }
 
     private void Update()
     {
@@ -48,6 +47,32 @@ public class TutorialManager : MonoBehaviour
         {
             tutorialMessageStart2.ShowTutorial();
         }
+    }
+
+    public void LoadData(GameData data)
+    {
+        // Load seen tutorials
+        List<bool> seenTutorials = data.seenTutorials;
+
+        // Set seen tutorials
+        for (int i = 0; i < tutorialMessages.Count; i++)
+        {
+            if (i < seenTutorials.Count)
+            {
+                tutorialMessages[i].beenSeen = seenTutorials[i];
+            }
+        }
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        // Save seen tutorials
+        List<bool> seenTutorials = new List<bool>();
+        foreach (var tutorialMessage in tutorialMessages)
+        {
+            seenTutorials.Add(tutorialMessage.HasBeenSeen());
+        }
+        data.seenTutorials = seenTutorials;
     }
 
     private void OnBuildingPlaced()

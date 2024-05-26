@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6260,6 +6260,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: 0
   references:
     version: 2
     RefIds: []
@@ -6319,6 +6320,7 @@ MonoBehaviour:
   tutorialMessageUnlock: {fileID: 996628308}
   tutorialMessageScore: {fileID: 996628307}
   tutorialMessageLevel: {fileID: 996628312}
+  tutorialMessages: []
 --- !u!114 &996628307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6342,6 +6344,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: 0
   references:
     version: 2
     RefIds: []
@@ -6368,6 +6371,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: 0
   references:
     version: 2
     RefIds: []
@@ -6394,6 +6398,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: 0
   references:
     version: 2
     RefIds: []
@@ -6420,6 +6425,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: 0
   references:
     version: 2
     RefIds: []
@@ -6446,6 +6452,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: 0
   references:
     version: 2
     RefIds: []
@@ -6472,6 +6479,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: 0
   references:
     version: 2
     RefIds: []
@@ -15206,6 +15214,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: 0
   references:
     version: 2
     RefIds: []
