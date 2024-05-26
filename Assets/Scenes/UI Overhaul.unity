@@ -6260,7 +6260,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  beenSeen: 0
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -6344,7 +6344,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  beenSeen: 0
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -6371,7 +6371,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  beenSeen: 0
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -6398,7 +6398,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  beenSeen: 0
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -6425,7 +6425,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  beenSeen: 0
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -6452,7 +6452,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  beenSeen: 0
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -6479,7 +6479,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  beenSeen: 0
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -15214,7 +15214,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  beenSeen: 0
+  beenSeen: 
   references:
     version: 2
     RefIds: []

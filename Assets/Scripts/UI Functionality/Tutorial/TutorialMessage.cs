@@ -9,12 +9,12 @@ public class TutorialMessage : MonoBehaviour
     public LocalizedString message; // Message to display in the text box
 
     [SerializeField]
-    public bool beenSeen = false;
+    public string beenSeen = "false";
 
     private GameObject instantiatedUI;
     private TextMeshProUGUI textBox;
 
-    private LocalizeStringEvent localizeStringEvent; 
+    private LocalizeStringEvent localizeStringEvent;
 
     private void Start()
     {
@@ -31,10 +31,11 @@ public class TutorialMessage : MonoBehaviour
 
     public void ShowTutorial()
     {
-        if (instantiatedUI != null && !instantiatedUI.activeSelf && !beenSeen)
+        if (instantiatedUI != null && !instantiatedUI.activeSelf && beenSeen == "false")
         {
             instantiatedUI.SetActive(true);
-            beenSeen = true;
+            beenSeen = "true";
+            Debug.Log($"Showing tutorial: {message}, beenSeen set to true");
         }
     }
 
@@ -46,7 +47,7 @@ public class TutorialMessage : MonoBehaviour
         }
     }
 
-    public bool HasBeenSeen()
+    public string HasBeenSeen()
     {
         return beenSeen;
     }
