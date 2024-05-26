@@ -3706,7 +3706,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &533379325
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3752,6 +3752,16 @@ MonoBehaviour:
       m_TableCollectionName: 
     m_TableEntryReference:
       m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  buildingCostEvent: {fileID: 0}
+  buildCostFree:
+    m_TableReference:
+      m_TableCollectionName: GUID:a976c210a69094941bd0250d22978374
+    m_TableEntryReference:
+      m_KeyId: 346225268162560
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -22004,6 +22014,16 @@ MonoBehaviour:
   buttonContainerTransform: {fileID: 9115402579861430104}
   buildingNameEvent: {fileID: 0}
   buildingName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  buildingCostEvent: {fileID: 0}
+  buildCostFree:
     m_TableReference:
       m_TableCollectionName: 
     m_TableEntryReference:

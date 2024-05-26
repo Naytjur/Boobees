@@ -18,6 +18,8 @@ public class BuildingUI : MonoBehaviour
 
     public LocalizeStringEvent buildingNameEvent;
     public LocalizedString buildingName;
+    public LocalizeStringEvent buildingCostEvent;
+    public LocalizedString buildCostFree;
 
     public int selectBuildCost;
 
@@ -91,7 +93,7 @@ public class BuildingUI : MonoBehaviour
             //select.buildingNameText.text = select.building.itemName;
 
             buildingName = select.building.itemNameStringEvent.StringReference;
-            buildingNameEvent = select.GetComponent<SelectBuilding>().buildNameLocalizeStringEvent;
+            buildingNameEvent = select.buildNameLocalizeStringEvent;
             buildingNameEvent.StringReference = buildingName;
 
             select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
@@ -102,7 +104,9 @@ public class BuildingUI : MonoBehaviour
 
             if (select.building.cost == 0)
             {
-                select.buildingCostText.text = "Free!";
+                //select.buildingCostText.text = "Free!";
+                buildingCostEvent = select.buildCostLocalizationEvent;
+                buildingCostEvent.StringReference = buildCostFree;
             }
             if (!select.building.unlocked)
             {
