@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 241377
   itemNameStringEvent: {fileID: 6551094353028546393, guid: 583879725a04258498e50781c84d4586,
     type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 248941658439680
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Scabiosa
   description: "\u2022\tSouthern European annual  \n\u2022\tdeeply cut basal leaves
     and feathery stem leaves \n\u2022\tproduces fragrant 5-cm flower heads  \n\u2022\twhite,
@@ -33,3 +42,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 240290f74e275fc4abbed3687cac3660, type: 2}
   correctPlots: 00000000
   baseSpawnRate: 10
+  references:
+    version: 2
+    RefIds: []

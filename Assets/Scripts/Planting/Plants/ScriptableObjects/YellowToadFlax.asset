@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 535912
   itemNameStringEvent: {fileID: 6551094353028546393, guid: 534b7d82aafa14f449834dc978fc397f,
     type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 251287054516224
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: YellowToadflax
   description: 
   unlocked: 0
@@ -26,3 +35,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d7eb532e82d4ddd4fa8735b4dadc9c1e, type: 2}
   correctPlots: 01000000
   baseSpawnRate: 0
+  references:
+    version: 2
+    RefIds: []

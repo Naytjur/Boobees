@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 
   itemNameStringEvent: {fileID: 6551094353028546393, guid: d317ad52475558441963527cfda9019e,
     type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
+    m_TableEntryReference:
+      m_KeyId: 236527222784
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: plot 3
   description: 
   unlocked: 0
@@ -29,3 +38,6 @@ MonoBehaviour:
   height: 1
   unlockLevel: 0
   cost: 0
+  references:
+    version: 2
+    RefIds: []

@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 
   itemNameStringEvent: {fileID: 6551094353028546393, guid: fd1b2abab0d7e6545be42a27ac6da5e4,
     type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 72458172301312
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Blackish Blunthorn
   description: 
   unlocked: 0
@@ -35,3 +44,6 @@ MonoBehaviour:
   insectStayDuration: 4
   flyAwayDuration: 1.5
   rotationSpeed: 100
+  references:
+    version: 2
+    RefIds: []

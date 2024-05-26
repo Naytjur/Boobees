@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 
   itemNameStringEvent: {fileID: 6551094353028546393, guid: f9a2cf7ced3138546ac072a33e4f851e,
     type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 74365599154176
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Painted Lady
   description: 
   unlocked: 0
@@ -36,3 +45,6 @@ MonoBehaviour:
   insectStayDuration: 6
   flyAwayDuration: 2
   rotationSpeed: 100
+  references:
+    version: 2
+    RefIds: []

@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 752391
   itemNameStringEvent: {fileID: 6551094353028546393, guid: a57f41d3233bc0e4283643a9958af451,
     type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 246163615711232
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Purple Dead Nettle
   description: "\u2022\tcolour of the flowers of dead-nettle varies  \n\u2022\twhite,
     yellow and purple to a deep purple. "
@@ -30,3 +39,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e5d3f7bd23e62ef44b45e02917799113, type: 2}
   correctPlots: 01000000
   baseSpawnRate: 10
+  references:
+    version: 2
+    RefIds: []

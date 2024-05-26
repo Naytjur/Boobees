@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 
   itemNameStringEvent: {fileID: 6551094353028546393, guid: fc18dcbacd4a90544a7675836daf1bc2,
     type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
+    m_TableEntryReference:
+      m_KeyId: 118411427840
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Bush
   description: 
   unlocked: 0
@@ -29,3 +38,6 @@ MonoBehaviour:
   height: 1
   unlockLevel: 4
   cost: 15
+  references:
+    version: 2
+    RefIds: []

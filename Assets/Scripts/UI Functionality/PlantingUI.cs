@@ -46,7 +46,7 @@ public class PlantingUI : MonoBehaviour
                 buttonInfo.SetIndex(PlantingManager.instance.GetPlantList().IndexOf(plant));
                 //buttonInfo.text.text = plant.name;
 
-                plantName = plant.itemNameStringEvent.StringReference;
+                plantName = plant.itemNameLocalizedString;
                 plantNameEvent = buttonInfo.plantNameLocalizeStringEvent;
                 plantNameEvent.StringReference = plantName;
 

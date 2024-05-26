@@ -64,7 +64,7 @@ public class BuildingUI : MonoBehaviour
         {
             SelectBuilding select = button.GetComponent<SelectBuilding>();
 
-            buildingName = select.building.itemNameStringEvent.StringReference;
+            buildingName = select.building.itemNameLocalizedString;
             buildingNameEvent = select.buildNameLocalizeStringEvent;
             buildingNameEvent.StringReference = buildingName;
 
@@ -91,7 +91,7 @@ public class BuildingUI : MonoBehaviour
         {
             SelectBuilding select = button.GetComponent<SelectBuilding>();
 
-            buildingName = select.building.itemNameStringEvent.StringReference;
+            buildingName = select.building.itemNameLocalizedString;
             buildingNameEvent = select.buildNameLocalizeStringEvent;
             buildingNameEvent.StringReference = buildingName;
 

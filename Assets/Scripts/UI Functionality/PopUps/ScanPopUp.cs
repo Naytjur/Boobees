@@ -26,7 +26,7 @@ public class ScanPopUp : MonoBehaviour
         GameObject popUp = Instantiate(popUpPrefab, popUpCanvas.transform);
         ScanPopUpInfo scanPopUpInfo = popUp.GetComponent<ScanPopUpInfo>();
         //scanPopUpInfo.scanText.text = "You have unlocked " + plant.itemName + "!";
-        plantName = plant.itemNameStringEvent.StringReference;
+        plantName = plant.itemNameLocalizedString;
         localizeStringEvent = popUp.GetComponent<ScanPopUpInfo>().localizeStringEvent;
         localizeStringEvent.StringReference = plantName;
         scanPopUpInfo.flowerImage.sprite = plant.sprite;

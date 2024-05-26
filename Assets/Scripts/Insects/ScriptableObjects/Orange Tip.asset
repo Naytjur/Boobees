@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 
   itemNameStringEvent: {fileID: 6551094353028546393, guid: 3bdd70fbf31e80b41bc8ed5455c48552,
     type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 74173437116416
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Orange Tip
   description: 
   unlocked: 0
@@ -36,3 +45,6 @@ MonoBehaviour:
   insectStayDuration: 6
   flyAwayDuration: 2
   rotationSpeed: 100
+  references:
+    version: 2
+    RefIds: []

@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 
   itemNameStringEvent: {fileID: 6551094353028546393, guid: d3bf349ea3d120e4e8eb85fed16f051d,
     type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
+    m_TableEntryReference:
+      m_KeyId: 78506819584
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Bench
   description: 
   unlocked: 0
@@ -29,3 +38,6 @@ MonoBehaviour:
   height: 2
   unlockLevel: 5
   cost: 50
+  references:
+    version: 2
+    RefIds: []

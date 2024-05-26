@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 141825
   itemNameStringEvent: {fileID: 6551094353028546393, guid: 58f4ef47f32ce674abc5b043ec9ad207,
     type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 250202617217024
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Trefoil
   description: "\u2022\tshort lived perennial legume \n\u2022\tAdapted to humid,
     temperate regions \n\u2022\tAdapted to a wide range of soils. "
@@ -30,3 +39,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f78e8b971c8104d489063a076b1dda52, type: 2}
   correctPlots: 00000000
   baseSpawnRate: 10
+  references:
+    version: 2
+    RefIds: []

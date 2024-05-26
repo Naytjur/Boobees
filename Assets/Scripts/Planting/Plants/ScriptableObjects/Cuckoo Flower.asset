@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 836293
   itemNameStringEvent: {fileID: 6551094353028546393, guid: fcdc52b87cc647d41833a8e4989a117b,
     type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 244622829748224
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Cuckoo Flower
   description: "\u2022\tAlso known as Cardamine pratensis \n\u2022\tPerennial herb
     found across Europe and western Asia \n\u2022\tBlooming on spikes close to water
@@ -31,3 +40,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 75d96da0270fc5e49b36903aad489000, type: 2}
   correctPlots: 01000000
   baseSpawnRate: 10
+  references:
+    version: 2
+    RefIds: []

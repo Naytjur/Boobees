@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 635274
   itemNameStringEvent: {fileID: 6551094353028546393, guid: 32b78488f6dd653459a41d2269b95459,
     type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 248526187462656
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Garlic Mustard
   description: No description yet
   unlocked: 1
@@ -29,3 +38,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 75d96da0270fc5e49b36903aad489000, type: 2}
   correctPlots: 02000000
   baseSpawnRate: 10
+  references:
+    version: 2
+    RefIds: []

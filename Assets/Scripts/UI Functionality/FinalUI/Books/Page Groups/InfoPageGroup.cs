@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using static UnityEditor.Progress;
+using UnityEngine.Localization.Components;
+using UnityEngine.Localization;
 
 public class InfoPageGroup : PageGroup
 {
@@ -12,11 +15,13 @@ public class InfoPageGroup : PageGroup
     [SerializeField]
     private Image image;
     [SerializeField]
-    private TMP_Text title;
-    [SerializeField]
-    private TMP_Text description;
-    [SerializeField]
     private ItemDisplay[] references;
+
+    public LocalizedString itemDescriptionCatalogue;
+    public LocalizeStringEvent itemDescriptionEventCatalogue;
+
+    public LocalizedString itemNameCatalogue;
+    public LocalizeStringEvent itemNameEventCatalogue;
 
     protected override void Awake()
     {
@@ -27,10 +32,15 @@ public class InfoPageGroup : PageGroup
     public void UpdateInfo(CatalogueItemInfo info)
     {
         image.sprite = info.sprite;
-        title.text = info.itemName;
-        description.text = info.description;
+        //title.text = info.itemName;
+        //description.text = info.description;
+        itemDescriptionCatalogue = info.itemDescriptionLocalizedString;
+        itemDescriptionEventCatalogue.StringReference = itemDescriptionCatalogue;
 
-        if(info.attractions.Length > 0)
+        itemNameCatalogue = info.itemNameLocalizedString;
+        itemNameEventCatalogue.StringReference = itemNameCatalogue;
+
+        if (info.attractions.Length > 0)
         {
             int count = 0;
             foreach (ItemDisplay display in references)
