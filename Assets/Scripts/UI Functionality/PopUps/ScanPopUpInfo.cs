@@ -10,6 +10,6 @@ public class ScanPopUpInfo : MonoBehaviour
 {
     public Image flowerImage;
     //public TMP_Text scanText;
-    public LocalizeStringEvent localizeStringEvent; // where the message gets inserted, a reference to which text box needs changing
-
+    public LocalizeStringEvent localizeStringEvent;
+    //public LocalizedString unlockedPlant;
 }

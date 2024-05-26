@@ -13,6 +13,17 @@ MonoBehaviour:
   m_Name: Old World Swallowtail
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: e14b84cee98ea934f806a461d9f23aae,
+    type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 74020122722304
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Old world Swallowtail
   description: 
   unlocked: 0
@@ -34,3 +45,6 @@ MonoBehaviour:
   insectStayDuration: 6
   flyAwayDuration: 2
   rotationSpeed: 100
+  references:
+    version: 2
+    RefIds: []

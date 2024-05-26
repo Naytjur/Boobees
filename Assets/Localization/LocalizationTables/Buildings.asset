@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
-  m_Name: OnScreenButtons
+  m_Name: Buildings
   m_EditorClassIdentifier: 
-  m_SharedTableData: {fileID: 11400000, guid: a976c210a69094941bd0250d22978374, type: 2}
+  m_SharedTableData: {fileID: 11400000, guid: 491342107c14a9c4291c824a9d542725, type: 2}
   m_Tables:
-  - {fileID: 11400000, guid: c690c6d2f1fa79e4586510aa65f24df7, type: 2}
-  - {fileID: 11400000, guid: e7ba9b9fa48a1b742b340db20f665028, type: 2}
+  - {fileID: 11400000, guid: 0cf2013b0e08b034b9b533e2db47f097, type: 2}
+  - {fileID: 11400000, guid: f5c78591a2abbc047ab2db519f6de01f, type: 2}
   m_Extensions: []
   m_Group: String Table
   references:

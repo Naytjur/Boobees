@@ -13,6 +13,17 @@ MonoBehaviour:
   m_Name: Fence
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: cbdd82d5a072144448beddac2897ef4e,
+    type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
+    m_TableEntryReference:
+      m_KeyId: 138296623104
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Fence
   description: 
   unlocked: 0
@@ -27,3 +38,6 @@ MonoBehaviour:
   height: 2
   unlockLevel: 2
   cost: 10
+  references:
+    version: 2
+    RefIds: []

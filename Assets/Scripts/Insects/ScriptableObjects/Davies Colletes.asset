@@ -13,6 +13,17 @@ MonoBehaviour:
   m_Name: Davies Colletes
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 77e680b77161b9e4cb577c925cb8853c,
+    type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 73517557022720
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Davies Colletes
   description: 
   unlocked: 0
@@ -34,3 +45,6 @@ MonoBehaviour:
   insectStayDuration: 4
   flyAwayDuration: 1.5
   rotationSpeed: 100
+  references:
+    version: 2
+    RefIds: []

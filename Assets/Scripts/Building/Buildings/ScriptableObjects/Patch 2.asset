@@ -13,6 +13,17 @@ MonoBehaviour:
   m_Name: Patch 2
   m_EditorClassIdentifier: 
   id: 
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 1eab29a94af829744bd4817aa80e5177,
+    type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
+    m_TableEntryReference:
+      m_KeyId: 224623788032
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: plot 2
   description: 
   unlocked: 0
@@ -27,3 +38,6 @@ MonoBehaviour:
   height: 1
   unlockLevel: 0
   cost: 0
+  references:
+    version: 2
+    RefIds: []

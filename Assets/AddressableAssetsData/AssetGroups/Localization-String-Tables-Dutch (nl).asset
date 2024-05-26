@@ -24,7 +24,7 @@ MonoBehaviour:
     - Locale-nl
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c690c6d2f1fa79e4586510aa65f24df7
-    m_Address: OnScreenButtons_nl
+    m_Address: OnScreenButtonsandMessages_nl
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-nl
@@ -37,6 +37,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 17482aa6b7517b646a91fc0cc641e445
     m_Address: Insects_nl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-nl
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0cf2013b0e08b034b9b533e2db47f097
+    m_Address: Buildings_nl
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-nl

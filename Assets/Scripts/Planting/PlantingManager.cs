@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 public class PlantingManager : MonoBehaviour
@@ -39,6 +41,9 @@ public class PlantingManager : MonoBehaviour
     //events
     public event Action<PlantSO> onPlantUnlocked;
     public event Action PlantPlanted;
+
+    public LocalizeStringEvent plotFullEvent;
+    public LocalizedString plotFullMessage;
 
 
     private void Awake()
@@ -167,7 +172,8 @@ public class PlantingManager : MonoBehaviour
 
         if (currentPlot.plantAmount >= currentPlot.maxPlants)
         {
-            plantAmount.text = "Full!";
+            plotFullEvent.StringReference = plotFullMessage;
+            //plantAmount.text = "Full!";
         }
     }
 

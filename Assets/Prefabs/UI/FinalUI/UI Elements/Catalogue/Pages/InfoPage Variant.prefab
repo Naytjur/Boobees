@@ -1063,6 +1063,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Item Frame
       objectReference: {fileID: 0}
+    - target: {fileID: 6615573630823925257, guid: 71e2a0d9eeeedb3429c5526378675e06,
+        type: 3}
+      propertyPath: plantNameEvent
+      value: 
+      objectReference: {fileID: 2929816429923222879}
+    - target: {fileID: 6615573630823925257, guid: 71e2a0d9eeeedb3429c5526378675e06,
+        type: 3}
+      propertyPath: plantNotDiscoveredMessage.m_TableEntryReference.m_KeyId
+      value: 634263730847744
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615573630823925257, guid: 71e2a0d9eeeedb3429c5526378675e06,
+        type: 3}
+      propertyPath: plantNotDiscoveredMessage.m_TableReference.m_TableCollectionName
+      value: GUID:a976c210a69094941bd0250d22978374
+      objectReference: {fileID: 0}
     - target: {fileID: 7134938670931863330, guid: 71e2a0d9eeeedb3429c5526378675e06,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1191,15 +1206,77 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4640779496006328789, guid: 71e2a0d9eeeedb3429c5526378675e06,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2929816429923222879}
   m_SourcePrefab: {fileID: 100100000, guid: 71e2a0d9eeeedb3429c5526378675e06, type: 3}
+--- !u!114 &2401358199509628517 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2845226992105695236, guid: 71e2a0d9eeeedb3429c5526378675e06,
+    type: 3}
+  m_PrefabInstance: {fileID: 445592827505548897}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5064381403080277940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4640779496006328789, guid: 71e2a0d9eeeedb3429c5526378675e06,
+    type: 3}
+  m_PrefabInstance: {fileID: 445592827505548897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2929816429923222879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5064381403080277940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2401358199509628517}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &6764456643651278952 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6615573630823925257, guid: 71e2a0d9eeeedb3429c5526378675e06,
     type: 3}
   m_PrefabInstance: {fileID: 445592827505548897}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 5064381403080277940}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f0dc473b1d18eb4f800d6f557ce198a, type: 3}
@@ -2012,14 +2089,25 @@ MonoBehaviour:
   - {fileID: 592167849281835063}
   - {fileID: 4384200141092083568}
   image: {fileID: 8601192210485619404}
-  title: {fileID: 0}
-  description: {fileID: 1496745454665819880}
   references:
   - {fileID: 6764456643651278952}
   - {fileID: 7313641658968989095}
   - {fileID: 6266711848141415626}
   - {fileID: 5627593110478261890}
   - {fileID: 3004088810237948814}
+  _itemDescriptionCatalogue:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _itemDescriptionEventCatalogue: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!224 &9115231269803247603 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 404713057562447574, guid: d5352da4f0baa0d42a7238127536115c,

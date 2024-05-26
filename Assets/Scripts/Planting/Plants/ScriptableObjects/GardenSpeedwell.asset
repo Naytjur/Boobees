@@ -13,6 +13,17 @@ MonoBehaviour:
   m_Name: GardenSpeedwell
   m_EditorClassIdentifier: 
   id: 824711
+  itemNameStringEvent: {fileID: 6551094353028546393, guid: 633c0ba61a01b7e41821b8d38f4c3065,
+    type: 3}
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 247911445102592
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Garden Speedwell
   description: "\u2022\tranging from groundcovers only a few inches tall to upright
     plants \n\u2022\ttall, spikey blooms "
@@ -29,3 +40,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1532bdf8fb83c914fbaa3c86c2d96c2e, type: 2}
   correctPlots: 01000000
   baseSpawnRate: 10
+  references:
+    version: 2
+    RefIds: []

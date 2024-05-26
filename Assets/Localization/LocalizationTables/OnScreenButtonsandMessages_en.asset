@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: OnScreenButtons_en
+  m_Name: OnScreenButtonsandMessages_en
   m_EditorClassIdentifier: 
   m_LocaleId:
     m_Code: en
@@ -80,10 +80,56 @@ MonoBehaviour:
     m_Localized: Go to Homepage
     m_Metadata:
       m_Items: []
+  - m_Id: 269742315077632
+    m_Localized: Enter Code...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281907453427712
+    m_Localized: 'Unlocked Flower:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320343619076096
+    m_Localized: Input plant unlock code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338413267910656
+    m_Localized: Click on a plot to start planting!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346262823960576
+    m_Localized: Full!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346225268162560
+    m_Localized: Free!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346203344535552
+    m_Localized: Unlocks at level {unlockLevel-component.buildingUnlockLevel}
+    m_Metadata:
+      m_Items:
+      - rid: 8168968436361986050
+  - m_Id: 348291973709824
+    m_Localized: 'Attractions: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348796535898112
+    m_Localized: 'Attractions: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351107450601472
+    m_Localized: 'Cost: {cost-component.buildingCost}'
+    m_Metadata:
+      m_Items:
+      - rid: 8168968436361986050
+  - m_Id: 634263730847744
+    m_Localized: Not Discovered!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
     - rid: 8168968436361986050
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00001ff5771f0000
+        m_Entries: 00001ff5771f00000000df92543f010000005fbfde3a0100

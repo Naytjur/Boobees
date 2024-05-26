@@ -30,6 +30,134 @@ MonoBehaviour:
     m_Localized: Butterflies
     m_Metadata:
       m_Items: []
+  - m_Id: 72458172301312
+    m_Localized: Blackish Blunthorn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72643535372288
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72724418330624
+    m_Localized: Blue Mason Bee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72883176931328
+    m_Localized: Buff-tailed bumblebee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72856652152832
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73038840135680
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73105722507264
+    m_Localized: Common Brimstone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73159740948480
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73304176001024
+    m_Localized: Common Blue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73517557022720
+    m_Localized: Davies' Colletes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73673086009344
+    m_Localized: Grey-patched Mining Bee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73813154791424
+    m_Localized: Large Skipper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74020122722304
+    m_Localized: Old World Swallowtail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74173437116416
+    m_Localized: Orange-Tip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74365599154176
+    m_Localized: Painted Lady
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74653613621248
+    m_Localized: Red Admiral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74866050924544
+    m_Localized: Red Mason Bee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75004957884416
+    m_Localized: Small Garden Bumblebee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75166690246656
+    m_Localized: Viper's Bugloss Mason Bee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75362245476352
+    m_Localized: Yellow Legged Mining bee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73383603535872
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73614055374848
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73744326262784
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73859782868992
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74129648582656
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74255188295680
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74408565604352
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74830671970304
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74923840045056
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75074117763072
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75226622656512
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75457179353088
+    m_Localized: no description yet
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
