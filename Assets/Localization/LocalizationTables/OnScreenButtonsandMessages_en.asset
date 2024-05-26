@@ -105,9 +105,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 346203344535552
-    m_Localized: Unlocks at level {unlockLevel-component.select.building.unlockLevel}
+    m_Localized: Unlocks at level {unlockLevel-component.buildingUnlockLevel}
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 8168968436361986050
   - m_Id: 348291973709824
     m_Localized: 'Attractions: '
     m_Metadata:
@@ -127,4 +128,4 @@ MonoBehaviour:
     - rid: 8168968436361986050
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00001ff5771f00000000df92543f0100
+        m_Entries: 00001ff5771f00000000df92543f010000005fbfde3a0100

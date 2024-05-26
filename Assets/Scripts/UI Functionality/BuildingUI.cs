@@ -20,8 +20,8 @@ public class BuildingUI : MonoBehaviour
     public LocalizedString buildingName;
     public LocalizeStringEvent buildingCostEvent;
     public LocalizedString buildCostFree;
-
-    public int selectBuildCost;
+    public LocalizeStringEvent buildingUnlockEvent;
+    public LocalizedString buildUnlocklevel;
 
     void Start()
     {
@@ -51,6 +51,7 @@ public class BuildingUI : MonoBehaviour
             select.SetIndex(index);
             select.building = building;
             select.buildingCost = building.cost;
+            select.buildingUnlockLevel = building.unlockLevel;
             index++;
             buildButtons.Add(button);
         }
@@ -62,25 +63,24 @@ public class BuildingUI : MonoBehaviour
         foreach (Transform button in buildButtons)
         {
             SelectBuilding select = button.GetComponent<SelectBuilding>();
-            //select.buildingNameText.text = select.building.itemName;
 
             buildingName = select.building.itemNameStringEvent.StringReference;
             buildingNameEvent = select.buildNameLocalizeStringEvent;
             buildingNameEvent.StringReference = buildingName;
 
             select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
-            select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
-            //select.buildingCostText.text = "Cost: " + select.building.cost.ToString();
 
             select.buildCostLocalizationEvent.RefreshString();
+            select.buildUnlockLocalizationEvent.RefreshString();
 
             if (select.building.cost == 0)
             {
-                select.buildingCostText.text = "Free!";
+                buildingCostEvent = select.buildCostLocalizationEvent;
+                buildingCostEvent.StringReference = buildCostFree;
             }
-            if (!select.building.unlocked)
+            if (select.building.unlocked)
             {
-                select.buildingAmountText.text = "Unlocks at level " + select.building.unlockLevel.ToString();
+                select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
             }
         }
     }
@@ -90,27 +90,24 @@ public class BuildingUI : MonoBehaviour
         foreach (Transform button in buildButtons)
         {
             SelectBuilding select = button.GetComponent<SelectBuilding>();
-            //select.buildingNameText.text = select.building.itemName;
 
             buildingName = select.building.itemNameStringEvent.StringReference;
             buildingNameEvent = select.buildNameLocalizeStringEvent;
             buildingNameEvent.StringReference = buildingName;
 
             select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
-            select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
-            //select.buildingCostText.text = "Cost: " + select.building.cost.ToString();
 
             select.buildCostLocalizationEvent.RefreshString();
+            select.buildUnlockLocalizationEvent.RefreshString();
 
             if (select.building.cost == 0)
             {
-                //select.buildingCostText.text = "Free!";
                 buildingCostEvent = select.buildCostLocalizationEvent;
                 buildingCostEvent.StringReference = buildCostFree;
             }
-            if (!select.building.unlocked)
+            if (select.building.unlocked)
             {
-                select.buildingAmountText.text = "Unlocks at level " + select.building.unlockLevel.ToString();
+                select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
             }
         }
     }

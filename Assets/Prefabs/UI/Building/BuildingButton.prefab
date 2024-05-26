@@ -425,6 +425,7 @@ GameObject:
   - component: {fileID: 9184631073214284183}
   - component: {fileID: 8813423186032835451}
   - component: {fileID: 6541472346980921552}
+  - component: {fileID: 3896762821351362886}
   m_Layer: 0
   m_Name: BuildingButton
   m_TagString: Untagged
@@ -552,9 +553,10 @@ MonoBehaviour:
   button: {fileID: 2720518785452823661}
   buildNameLocalizeStringEvent: {fileID: 6541472346980921552}
   buildCostLocalizationEvent: {fileID: 8813423186032835451}
+  buildUnlockLocalizationEvent: {fileID: 3896762821351362886}
   buildingAmountText: {fileID: 2292790693808781092}
-  buildingCostText: {fileID: 3895680856540610937}
   buildingCost: 0
+  buildingUnlockLevel: 0
   building: {fileID: 0}
 --- !u!114 &9184631073214284183
 MonoBehaviour:
@@ -664,3 +666,51 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &3896762821351362886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725169348972814169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:a976c210a69094941bd0250d22978374
+    m_TableEntryReference:
+      m_KeyId: 346203344535552
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables:
+    - name: unlockLevel-component
+      variable:
+        rid: 8168968472471011330
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2292790693808781092}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds:
+    - rid: 8168968472471011330
+      type: {class: ObjectVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables,
+        asm: Unity.Localization}
+      data:
+        m_Value: {fileID: 8757845559520470056}
