@@ -12,21 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Rock
   m_EditorClassIdentifier: 
-  id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: a455f4a6a08269f4c9477e595cc65f07,
-    type: 3}
-  itemNameLocalizedString:
-    m_TableReference:
-      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
-    m_TableEntryReference:
-      m_KeyId: 286460411904
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  id: 9
   itemName: rock
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 3496962742392625404, guid: 01a92fa8a183d1c4d8369e068f939135,
     type: 3}
   gardenVisual: {fileID: 3496962742392625404, guid: df5d8e9a214f9cf49985a89bd2994eef,
@@ -38,6 +27,3 @@ MonoBehaviour:
   height: 1
   unlockLevel: 4
   cost: 25
-  references:
-    version: 2
-    RefIds: []

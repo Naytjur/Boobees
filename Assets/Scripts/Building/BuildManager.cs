@@ -5,7 +5,7 @@ using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BuildManager : MonoBehaviour
+public class BuildManager : MonoBehaviour, IDataPersistence
 {
     public static BuildManager instance;
 
@@ -70,6 +70,7 @@ public class BuildManager : MonoBehaviour
         instance = this;
         confirmButton.onClick.AddListener(PlaceBuilding);
         rotateButton.onClick.AddListener(RotateBuilding);
+        buildGrid = new Grid(gridWidth, gridHeight, gridCellSize, gridOrigin.position);
     }
 
     private void Start()
@@ -78,11 +79,11 @@ public class BuildManager : MonoBehaviour
         ScoreManager.onLevelUp += OnLeveledUp;
         onBuildingChanged += ChangeVisual;
         UpdateActiveState(GameManager.instance.state);
-        buildGrid = new Grid(gridWidth, gridHeight, gridCellSize, gridOrigin.position);
 
         foreach(BuildingSO building in allBuildings)
         {
             building.RemoveCount(building.count);
+
         }
     }
 
@@ -93,6 +94,41 @@ public class BuildManager : MonoBehaviour
             buildGrid.GetXZ(lastTarget, out int x, out int z);
             confirmButton.interactable = CheckValidBuildPosition(currentBuilding, x, z);
             UpdateVisual();
+        }
+    }
+
+    public void LoadData(GameData data)
+    {
+        for(int i = 0; i < buildGrid.GetGridWidth(); i++)
+        {
+            for(int j = 0; j < buildGrid.GetGridHeight(); j++)
+            {
+                if(buildGrid.GetGridObject(i, j).building == null && data.buildGrid[GetBuildIndex(i, j)].buildingID != "empty")
+                {
+                    PlaceBuilding(i, j, data.buildGrid[GetBuildIndex(i, j)].buildingID, data.buildGrid[GetBuildIndex(i, j)].buildingRotation);
+                }
+            }
+        }
+    }
+
+    private int GetBuildIndex(int x, int y)
+    {
+        int index = y * buildGrid.GetGridWidth() + x;
+        return index;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        for(int i = 0; i < buildGrid.GetGridWidth(); i++)
+        {
+            for(int j = 0; j < buildGrid.GetGridHeight(); j++)
+            {
+                if(buildGrid.GetGridObject(i, j).building != null)
+                {
+                    data.buildGrid[GetBuildIndex(i, j)] = new BuildData(buildGrid.GetGridObject(i, j).building.buildingSO.id, buildGrid.GetGridObject(i, j).rotation);
+                    Debug.Log(buildGrid.GetGridObject(i, j).building.buildingSO.id);
+                }
+            }
         }
     }
 
@@ -124,12 +160,33 @@ public class BuildManager : MonoBehaviour
 
         foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z), direction))
         {
-            buildGrid.SetValue(cell.x, cell.y, buildObject);
+            buildGrid.SetValue(cell.x, cell.y, buildObject, (int) direction);
         }
 
         ToggleHoveringUI(false);
 
         currentBuilding.AddCount(1);
+
+        onBuildingPlaced?.Invoke();
+    }
+
+    private void PlaceBuilding(int x, int z, string id, int rotation)
+    {
+        BuildingSO cur = GetBuildingByID(id);
+        Vector2Int rotationOffset = cur.GetRotationOffset((BuildingSO.Dir) rotation);
+        Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), cur, gridCellSize, Quaternion.Euler(0, cur.GetRotationDegrees((BuildingSO.Dir) rotation), 0));
+
+        if(visual != null)
+        {
+            visual.gameObject.SetActive(false);
+        }
+
+        foreach (Vector2Int cell in cur.GetGridPositions(new Vector2Int(x, z), direction))
+        {
+            buildGrid.SetValue(cell.x, cell.y, buildObject, rotation);
+        }
+
+        cur.AddCount(1);
 
         onBuildingPlaced?.Invoke();
     }
@@ -193,6 +250,21 @@ public class BuildManager : MonoBehaviour
     public void AddBuilding(BuildingSO building)
     {
         allBuildings.Add(building);
+    }
+
+    private BuildingSO GetBuildingByID(string id)
+    {
+        BuildingSO build = allBuildings[0];
+
+        foreach(BuildingSO building in allBuildings)
+        {
+            if(building.id == id)
+            {
+                build = building;
+                return build;
+            }
+        } 
+        return build;
     }
 
     //Hovering visual

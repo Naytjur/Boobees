@@ -12,18 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Patch 1
   m_EditorClassIdentifier: 
-  id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: e93bfce0a90d92c44a46ef68e66bc292,
-    type: 3}
-  itemNameLocalizedString:
-    m_TableReference:
-      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
-    m_TableEntryReference:
-      m_KeyId: 191627198464
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  id: 420
   itemName: plot 1
   description: 
   unlocked: 1
@@ -38,6 +27,3 @@ MonoBehaviour:
   height: 1
   unlockLevel: 1
   cost: 0
-  references:
-    version: 2
-    RefIds: []

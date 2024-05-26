@@ -12,21 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Bench
   m_EditorClassIdentifier: 
-  id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: d3bf349ea3d120e4e8eb85fed16f051d,
-    type: 3}
-  itemNameLocalizedString:
-    m_TableReference:
-      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
-    m_TableEntryReference:
-      m_KeyId: 78506819584
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  id: 2
   itemName: Bench
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4138045857846625545, guid: 9ff32137ff07dca4a88da4bc1e47ae24,
     type: 3}
   gardenVisual: {fileID: 4138045857846625545, guid: 7e1fd97f729914d4a95e48590cc7784e,
@@ -38,6 +27,3 @@ MonoBehaviour:
   height: 2
   unlockLevel: 5
   cost: 50
-  references:
-    version: 2
-    RefIds: []

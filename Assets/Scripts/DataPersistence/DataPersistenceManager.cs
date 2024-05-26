@@ -30,6 +30,7 @@ public class DataPersistenceManager : MonoBehaviour
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         LoadGame();
+        ScoreManager.onLevelUp += OnLevelUp;
     }
 
     public void NewGame()
@@ -50,7 +51,7 @@ public class DataPersistenceManager : MonoBehaviour
         
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
-            dataPersistenceObj.LoadData(gameData);
+            dataPersistenceObj.LoadData(this.gameData);
         }
     }
 
@@ -62,6 +63,11 @@ public class DataPersistenceManager : MonoBehaviour
         }
 
         dataHandler.Save(gameData);
+    }
+
+    private void OnLevelUp(int level)
+    {
+        SaveGame();
     }
 
     private void OnApplicationQuit()
