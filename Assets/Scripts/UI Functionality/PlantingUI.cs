@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 public class PlantingUI : MonoBehaviour
@@ -10,6 +12,10 @@ public class PlantingUI : MonoBehaviour
     private Transform buttonPrefab;
     [SerializeField]
     private Transform buttonContainerTransform;
+
+    public LocalizeStringEvent plantNameEvent;
+    public LocalizedString plantName;
+    public LocalizedString plantNotDiscoveredMessage;
 
     private void Start()
     {
@@ -38,7 +44,12 @@ public class PlantingUI : MonoBehaviour
                 SelectPlant buttonInfo = button.GetComponent<SelectPlant>();
                 buttonInfo.Setup();
                 buttonInfo.SetIndex(PlantingManager.instance.GetPlantList().IndexOf(plant));
-                buttonInfo.text.text = plant.name;
+                //buttonInfo.text.text = plant.name;
+
+                plantName = plant.itemNameStringEvent.StringReference;
+                plantNameEvent = buttonInfo.plantNameLocalizeStringEvent;
+                plantNameEvent.StringReference = plantName;
+
                 buttonInfo.image.sprite = plant.sprite;
                 button.GetComponent<Button>().interactable = plant.unlocked;
                 index++;
@@ -51,7 +62,16 @@ public class PlantingUI : MonoBehaviour
                 Transform button = Instantiate(buttonPrefab, buttonContainerTransform);
                 SelectPlant buttonInfo = button.GetComponent<SelectPlant>();
                 buttonInfo.SetIndex(PlantingManager.instance.GetPlantList().IndexOf(plant));
-                buttonInfo.text.text = plant.name;
+                //buttonInfo.text.text = plant.name;
+
+                /*plantName = plant.itemNameStringEvent.StringReference;
+                plantNameEvent = buttonInfo.plantNameLocalizeStringEvent;
+                plantNameEvent.StringReference = plantName;*/
+
+                plantNameEvent = buttonInfo.plantNameLocalizeStringEvent;
+                plantNameEvent.StringReference = plantNotDiscoveredMessage;
+
+
                 buttonInfo.image.sprite = plant.sprite;
                 button.GetComponent<Button>().interactable = plant.unlocked;
                 index++;

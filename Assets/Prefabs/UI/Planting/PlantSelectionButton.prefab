@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 280018971490239773}
   - component: {fileID: 4695075431021197673}
   - component: {fileID: 1064869463345869514}
+  - component: {fileID: 8512728420980216132}
   m_Layer: 0
   m_Name: PlantSelectionButton
   m_TagString: Untagged
@@ -350,6 +351,7 @@ MonoBehaviour:
   button: {fileID: 280018971490239773}
   image: {fileID: 8784896493687021685}
   text: {fileID: 318446025413827118}
+  plantNameLocalizeStringEvent: {fileID: 8512728420980216132}
 --- !u!114 &1064869463345869514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,3 +372,43 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &8512728420980216132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8304457203273278623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 318446025413827118}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []

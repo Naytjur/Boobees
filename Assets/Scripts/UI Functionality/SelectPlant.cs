@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Localization.Components;
 
 public class SelectPlant : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class SelectPlant : MonoBehaviour
     public TMP_Text text;
 
     private PlantingManager plantingManager;
+
+    public LocalizeStringEvent plantNameLocalizeStringEvent;
 
     public void Setup()
     {

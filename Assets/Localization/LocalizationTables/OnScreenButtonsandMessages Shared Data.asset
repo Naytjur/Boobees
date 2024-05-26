@@ -115,6 +115,10 @@ MonoBehaviour:
     m_Key: Cost message
     m_Metadata:
       m_Items: []
+  - m_Id: 634263730847744
+    m_Key: Not Discovered Message
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

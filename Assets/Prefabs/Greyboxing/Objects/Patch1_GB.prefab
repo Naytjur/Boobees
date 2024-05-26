@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e5f7316f06a724e9e1721324471ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
+  id: 095153ec-ba00-4cde-9d5a-87abe865a31a
   buildingSO: {fileID: 11400000, guid: 53bb82be724ad604382c0c3d11afa3de, type: 2}
   plantingSurface: {fileID: 7875253852593115268}
   cameraPosition: {fileID: 4646407711429172150}
