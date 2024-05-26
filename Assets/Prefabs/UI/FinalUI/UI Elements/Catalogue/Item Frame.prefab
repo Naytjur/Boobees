@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 6615573630823925257}
   - component: {fileID: 29233562731105898}
   - component: {fileID: 5235324339603636393}
+  - component: {fileID: 4610578985320639049}
   m_Layer: 0
   m_Name: Item Frame
   m_TagString: Untagged
@@ -228,8 +229,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   displayImage: {fileID: 6708622766639383082}
-  displayName: {fileID: 2845226992105695236}
-  catalogue: {fileID: 0}
+  plantNameEvent: {fileID: 4610578985320639049}
+  plantName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  plantNotDiscoveredMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:a976c210a69094941bd0250d22978374
+    m_TableEntryReference:
+      m_KeyId: 634263730847744
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &29233562731105898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +308,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   catalogue: {fileID: 0}
+--- !u!114 &4610578985320639049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640779496006328789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2845226992105695236}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &5861914071887578144
 GameObject:
   m_ObjectHideFlags: 0
