@@ -13,9 +13,27 @@ MonoBehaviour:
   m_Name: Birch Tree
   m_EditorClassIdentifier: 
   id: 3
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
+    m_TableEntryReference:
+      m_KeyId: 92914253824
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Birch Tree
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4192051278206427102, guid: fbdafe99f042ec24aa77899a968643b5,
     type: 3}
   gardenVisual: {fileID: 4192051278206427102, guid: 6cd338f3a65821f4d9e95f049df87ba0,
@@ -27,3 +45,6 @@ MonoBehaviour:
   height: 1
   unlockLevel: 11
   cost: 400
+  references:
+    version: 2
+    RefIds: []

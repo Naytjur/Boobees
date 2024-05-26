@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: Scabiosa
   m_EditorClassIdentifier: 
   id: 241377
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: 583879725a04258498e50781c84d4586,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
     m_TableEntryReference:
       m_KeyId: 248941658439680
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 249011434881024
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -42,6 +49,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 240290f74e275fc4abbed3687cac3660, type: 2}
   correctPlots: 00000000
   baseSpawnRate: 10
+  seedAmount: 0
   references:
     version: 2
     RefIds: []

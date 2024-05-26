@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: Cuckoo Flower
   m_EditorClassIdentifier: 
   id: 836293
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: fcdc52b87cc647d41833a8e4989a117b,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
     m_TableEntryReference:
       m_KeyId: 244622829748224
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 244934642696192
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -40,6 +47,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 75d96da0270fc5e49b36903aad489000, type: 2}
   correctPlots: 01000000
   baseSpawnRate: 10
+  seedAmount: 0
   references:
     version: 2
     RefIds: []

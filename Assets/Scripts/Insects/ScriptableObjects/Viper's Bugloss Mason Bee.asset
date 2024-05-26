@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: Viper's Bugloss Mason Bee
   m_EditorClassIdentifier: 
   id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: 46fe157411a67d9419e66759e5494fb3,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
     m_TableEntryReference:
       m_KeyId: 75166690246656
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 75226622656512
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

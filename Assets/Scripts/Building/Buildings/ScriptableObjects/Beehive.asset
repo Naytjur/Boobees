@@ -13,9 +13,27 @@ MonoBehaviour:
   m_Name: Beehive
   m_EditorClassIdentifier: 
   id: 1
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
+    m_TableEntryReference:
+      m_KeyId: 18754764800
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Beehive
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 1730592248008074945, guid: a2ebe3d1b36a7f64d80021d61ab2bc2e,
     type: 3}
   gardenVisual: {fileID: 1730592248008074945, guid: 222f38bcc75bf7744b17ff69c49c220d,
@@ -27,3 +45,6 @@ MonoBehaviour:
   height: 1
   unlockLevel: 9
   cost: 150
+  references:
+    version: 2
+    RefIds: []

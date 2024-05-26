@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: Field Cow Wheat
   m_EditorClassIdentifier: 
   id: 183759
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: f29ae62ed29466749a1c655e501d3b8b,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
     m_TableEntryReference:
       m_KeyId: 246707335921664
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 246830581350400
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -42,6 +49,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d7eb532e82d4ddd4fa8735b4dadc9c1e, type: 2}
   correctPlots: 00000000
   baseSpawnRate: 10
+  seedAmount: 0
   references:
     version: 2
     RefIds: []
