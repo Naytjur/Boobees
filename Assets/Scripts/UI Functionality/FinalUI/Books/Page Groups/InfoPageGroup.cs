@@ -16,7 +16,7 @@ public class InfoPageGroup : PageGroup
     [SerializeField]
     private TMP_Text description;
     [SerializeField]
-    private ItemDisplay[] references;
+    private ItemDisplay[] itemReferences;
 
     protected override void Awake()
     {
@@ -33,7 +33,7 @@ public class InfoPageGroup : PageGroup
         if(info.attractions.Length > 0)
         {
             int count = 0;
-            foreach (ItemDisplay display in references)
+            foreach (ItemDisplay display in itemReferences)
             {
                 if (count >= info.attractions.Length)
                 {
