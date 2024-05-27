@@ -31,7 +31,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
     [Header("Buildings")]
     [SerializeField]
-    private List<BuildingSO> allBuildings = new List<BuildingSO>();
+    private List<BuildingSO> allBuildings =  new List<BuildingSO>();
     private List<BuildData> buildings = new List<BuildData>();
 
     //Internal Variables
@@ -117,6 +117,11 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     public void SaveData(ref GameData data)
     {
         data.buildingList.Clear();
+        foreach(BuildData building in buildings)
+        {
+            data.buildingList.Add(building);
+        }
+    }
 
         foreach (BuildData building in buildings)
         {
@@ -178,6 +183,8 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
         currentBuilding.AddCount(1);
 
+        buildings.Add(new BuildData(currentBuilding.id, x, z, (int) direction));
+
         onBuildingPlaced?.Invoke();
         UpdateBuildState(BuildState.Unselected);
     }
@@ -201,6 +208,8 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         }
 
         cur.AddCount(1);
+
+        buildings.Add(new BuildData(id, x, z, rotation));
 
         onBuildingPlaced?.Invoke();
     }
