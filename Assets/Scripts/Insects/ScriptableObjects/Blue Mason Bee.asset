@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: Blue Mason Bee
   m_EditorClassIdentifier: 
   id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: d94e884bed25e6e4aadbbdd247b54603,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
     m_TableEntryReference:
       m_KeyId: 72724418330624
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 72856652152832
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

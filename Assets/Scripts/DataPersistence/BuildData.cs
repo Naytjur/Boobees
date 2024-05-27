@@ -6,11 +6,15 @@ using UnityEngine;
 public class BuildData
 {
     public string buildingID;
+    public int gridX;
+    public int gridZ;
     public int buildingRotation; 
 
-    public BuildData(string id, int rot)
+    public BuildData(string id, int gridX, int gridZ, int rot)
     {
         this.buildingID = id;
         this.buildingRotation = rot;
+        this.gridX = gridX;
+        this.gridZ = gridZ;
     }
 }

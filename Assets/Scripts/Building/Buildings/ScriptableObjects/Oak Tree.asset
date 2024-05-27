@@ -13,6 +13,24 @@ MonoBehaviour:
   m_Name: Oak Tree
   m_EditorClassIdentifier: 
   id: 7
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
+    m_TableEntryReference:
+      m_KeyId: 164938842112
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Oak Tree
   description: 
   unlocked: 0
@@ -27,3 +45,6 @@ MonoBehaviour:
   height: 1
   unlockLevel: 7
   cost: 400
+  references:
+    version: 2
+    RefIds: []

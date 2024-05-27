@@ -31,6 +31,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     [Header("Buildings")]
     [SerializeField]
     private List<BuildingSO> allBuildings =  new List<BuildingSO>();
+    private List<BuildData> buildings = new List<BuildData>();
 
     //Internal Variables
     public Grid buildGrid;
@@ -99,15 +100,9 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
     public void LoadData(GameData data)
     {
-        for(int i = 0; i < buildGrid.GetGridWidth(); i++)
+        foreach(BuildData building in data.buildingList)
         {
-            for(int j = 0; j < buildGrid.GetGridHeight(); j++)
-            {
-                if(buildGrid.GetGridObject(i, j).building == null && data.buildGrid[GetBuildIndex(i, j)].buildingID != "empty")
-                {
-                    PlaceBuilding(i, j, data.buildGrid[GetBuildIndex(i, j)].buildingID, data.buildGrid[GetBuildIndex(i, j)].buildingRotation);
-                }
-            }
+            PlaceBuilding(building.gridX, building.gridZ, building.buildingID, building.buildingRotation);
         }
     }
 
@@ -119,16 +114,9 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
     public void SaveData(ref GameData data)
     {
-        for(int i = 0; i < buildGrid.GetGridWidth(); i++)
+        foreach(BuildData building in buildings)
         {
-            for(int j = 0; j < buildGrid.GetGridHeight(); j++)
-            {
-                if(buildGrid.GetGridObject(i, j).building != null)
-                {
-                    data.buildGrid[GetBuildIndex(i, j)] = new BuildData(buildGrid.GetGridObject(i, j).building.buildingSO.id, buildGrid.GetGridObject(i, j).rotation);
-                    Debug.Log(buildGrid.GetGridObject(i, j).building.buildingSO.id);
-                }
-            }
+            data.buildingList.Add(building);
         }
     }
 
@@ -167,6 +155,8 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
         currentBuilding.AddCount(1);
 
+        buildings.Add(new BuildData(currentBuilding.id, x, z, (int) direction));
+
         onBuildingPlaced?.Invoke();
     }
 
@@ -187,6 +177,8 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         }
 
         cur.AddCount(1);
+
+        buildings.Add(new BuildData(id, x, z, rotation));
 
         onBuildingPlaced?.Invoke();
     }

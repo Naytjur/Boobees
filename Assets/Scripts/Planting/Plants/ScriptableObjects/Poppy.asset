@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: Poppy
   m_EditorClassIdentifier: 
   id: 724487
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: 11493fbab7d1c4c4e88ceaa236cbc62b,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
     m_TableEntryReference:
       m_KeyId: 70705414144
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 244243413008384
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -39,6 +46,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 933e21aca1eb4594d94b9d06f59ed46e, type: 2}
   correctPlots: 00000000
   baseSpawnRate: 10
+  seedAmount: 0
   references:
     version: 2
     RefIds: []

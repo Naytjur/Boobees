@@ -13,6 +13,24 @@ MonoBehaviour:
   m_Name: Rock
   m_EditorClassIdentifier: 
   id: 9
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
+    m_TableEntryReference:
+      m_KeyId: 286460411904
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: rock
   description: 
   unlocked: 1
@@ -27,3 +45,6 @@ MonoBehaviour:
   height: 1
   unlockLevel: 4
   cost: 25
+  references:
+    version: 2
+    RefIds: []

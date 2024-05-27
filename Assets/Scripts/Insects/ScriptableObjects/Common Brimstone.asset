@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: Common Brimstone
   m_EditorClassIdentifier: 
   id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: 29586da43b400554da1d27ebbc29e5be,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
     m_TableEntryReference:
       m_KeyId: 73105722507264
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 73159740948480
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
