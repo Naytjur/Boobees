@@ -18,6 +18,12 @@ public class TutorialMessage : MonoBehaviour
 
     private void Start()
     {
+        
+    }
+
+    public void ShowTutorial()
+    {
+
         instantiatedUI = Instantiate(tutorialUIPrefab);
         textBox = instantiatedUI.GetComponentInChildren<TextMeshProUGUI>();
         localizeStringEvent = instantiatedUI.GetComponent<TutorialMessageInfo>().localizeStringEvent;
@@ -27,10 +33,7 @@ public class TutorialMessage : MonoBehaviour
         // Add the TutorialUIClickHandler component and set it up
         TutorialUIClickHandler clickHandler = instantiatedUI.GetComponent<Canvas>().gameObject.AddComponent<TutorialUIClickHandler>();
         clickHandler.Setup(HideTutorialUI);
-    }
 
-    public void ShowTutorial()
-    {
         if (instantiatedUI != null && !instantiatedUI.activeSelf && beenSeen == "false")
         {
             instantiatedUI.SetActive(true);

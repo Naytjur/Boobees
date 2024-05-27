@@ -82,7 +82,6 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
         if (pollenScore >= maxPollenScore)
         {
-            pollenScore = 0;
             LevelUp();
         }
 
