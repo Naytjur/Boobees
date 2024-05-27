@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
 
 public class DataPersistenceManager : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     public static DataPersistenceManager instance {get; private set;}
 
+    public static event Action postLoad;
     private void Awake()
     {
         if (instance != null)
@@ -53,6 +55,8 @@ public class DataPersistenceManager : MonoBehaviour
         {
             dataPersistenceObj.LoadData(this.gameData);
         }
+
+        postLoad?.Invoke();
     }
 
     public void SaveGame()

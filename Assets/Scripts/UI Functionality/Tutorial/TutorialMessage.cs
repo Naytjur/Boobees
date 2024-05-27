@@ -20,6 +20,12 @@ public class TutorialMessage : MonoBehaviour
 
     private void Start()
     {
+        
+    }
+
+    public void ShowTutorial()
+    {
+
         instantiatedUI = Instantiate(tutorialUIPrefab);
         textBox = instantiatedUI.GetComponentInChildren<TextMeshProUGUI>();
 
@@ -64,10 +70,7 @@ public class TutorialMessage : MonoBehaviour
                 }
             }
         }
-    }
 
-    public void ShowTutorial()
-    {
         if (instantiatedUI != null && !instantiatedUI.activeSelf && beenSeen == "false")
         {
             instantiatedUI.SetActive(true);
