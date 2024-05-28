@@ -43,6 +43,9 @@ public class Patch : Building
 
     private void OnGameStateChange(GameState state)
     {
-        plantingSurface.SetActive(false);
+        if(plantingSurface != null)
+        {
+            plantingSurface.SetActive(false);
+        }
     }
 }

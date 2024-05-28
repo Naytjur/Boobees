@@ -39,7 +39,7 @@ public class SelectBuilding : MonoBehaviour
     private void Select(int index)
     {
         ScoreManager.instance.UpdateScores(0, -building.cost);
-        buildManager.SetBuildingByIndex(index);
+        buildManager.StartPlacing(index);
     }
 
     public void SetIndex(int index)
