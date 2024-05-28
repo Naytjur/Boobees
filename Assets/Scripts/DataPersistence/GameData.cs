@@ -20,7 +20,7 @@ public class GameData
 
     public GameData()
     {
-        this.playerLevel = 0;
+        this.playerLevel = 1;
         this.playerHoney = 0;
         this.playerPollen = 0;
         this.playerPollenCap = 0;
