@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Red Mason Bee
   m_EditorClassIdentifier: 
   id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: 2131f8c764164984e91b1563e71a6ee5,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
@@ -24,9 +22,18 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 74923840045056
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Red Mason Bee
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 7436579170595587751, guid: 4abf6521c6e024c44bc859eaa725167e,
     type: 3}
   gardenVisual: {fileID: 7436579170595587751, guid: 4abf6521c6e024c44bc859eaa725167e,

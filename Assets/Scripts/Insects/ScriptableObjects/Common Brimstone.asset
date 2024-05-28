@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Common Brimstone
   m_EditorClassIdentifier: 
   id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: 29586da43b400554da1d27ebbc29e5be,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
@@ -24,9 +22,18 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 73159740948480
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Common Brimstone
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4956082533760744419, guid: 125eb5c7944d94044a93f392b87c72c4,
     type: 3}
   gardenVisual: {fileID: 4956082533760744419, guid: 125eb5c7944d94044a93f392b87c72c4,

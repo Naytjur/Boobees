@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Localization;
 
 public class LevelPopUp : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class LevelPopUp : MonoBehaviour
     private GameObject popUpCanvas;
     [SerializeField]
     private GameObject unlockedImagePrefab;
+
+    public LocalizedString unlockedLocalizedString;
+    public LocalizedString emptyLocalizedString;
 
 
 
@@ -28,14 +32,23 @@ public class LevelPopUp : MonoBehaviour
         }
         GameObject popUp = Instantiate(popUpPrefab, popUpCanvas.transform);
         LevelPopUpInfo popUpInfo = popUp.GetComponent<LevelPopUpInfo>();
+        var unlockText = popUpInfo.unlockText;
+        bool unlockedItems = false;
 
         foreach (BuildingSO building in BuildManager.instance.GetBuildingList())
         {
             if (building.unlockLevel == level)
             {
                 ShowImage(popUpInfo.unlockedImagesTransform, building.sprite);
+                unlockedItems = true;
             }
         }
+
+        if (!unlockedItems)
+        {
+            unlockText.SetActive(false);
+        }
+
     }
 
     private void ShowImage(Transform parent, Sprite sprite)

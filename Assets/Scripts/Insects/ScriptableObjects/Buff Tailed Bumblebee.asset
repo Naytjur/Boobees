@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Buff Tailed Bumblebee
   m_EditorClassIdentifier: 
   id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: f9956ba3b39a88746ab3a2b5d349259e,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
@@ -24,9 +22,18 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 73038840135680
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: buff tailed bumble bee
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4643288565277106895, guid: 1ced17f26f1215b4aa3a8ae5be253602,
     type: 3}
   gardenVisual: {fileID: 4643288565277106895, guid: 1ced17f26f1215b4aa3a8ae5be253602,

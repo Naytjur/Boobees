@@ -20,9 +20,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ARTest.unity
     guid: d39b52426cd9fe6498422844fe2e92c3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/UI Overhaul.unity
-    guid: 8aad2d023c5e6a841980ced23856af61
+    guid: 8d7dd3837cb4ed94a97185229542149f
+  - enabled: 1
+    path: Assets/Scenes/Language Testing.unity
+    guid: 78ad68234db92554fab1d072e78454b3
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6c762fe545d1a1f42b0f879d761d18e0,
       type: 2}

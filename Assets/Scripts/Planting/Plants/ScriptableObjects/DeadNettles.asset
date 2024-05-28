@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: DeadNettles
   m_EditorClassIdentifier: 
   id: 752391
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: a57f41d3233bc0e4283643a9958af451,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
     m_TableEntryReference:
       m_KeyId: 246163615711232
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 246386417139712
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -39,6 +46,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e5d3f7bd23e62ef44b45e02917799113, type: 2}
   correctPlots: 01000000
   baseSpawnRate: 10
+  seedAmount: 0
   references:
     version: 2
     RefIds: []

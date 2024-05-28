@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Orange Tip
   m_EditorClassIdentifier: 
   id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: 3bdd70fbf31e80b41bc8ed5455c48552,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
@@ -24,9 +22,18 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 74255188295680
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: Orange Tip
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4032609055323066662, guid: 71d1f3882d72c6649bc92880d32d0771,
     type: 3}
   gardenVisual: {fileID: 4032609055323066662, guid: 71d1f3882d72c6649bc92880d32d0771,

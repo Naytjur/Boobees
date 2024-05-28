@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: Tansy
   m_EditorClassIdentifier: 
   id: 746735
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: 49303ad2df4aa2443b0653ce262fb1da,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
     m_TableEntryReference:
       m_KeyId: 249951630065664
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 249994005118976
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -39,6 +46,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a8cb83f01fe168d49a40bfe43bbe2198, type: 2}
   correctPlots: 01000000
   baseSpawnRate: 10
+  seedAmount: 0
   references:
     version: 2
     RefIds: []

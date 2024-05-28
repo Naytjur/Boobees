@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: Wild Pansy
   m_EditorClassIdentifier: 
   id: 284574
-  itemNameStringEvent: {fileID: 8088117045877321667, guid: a9c039f1dfdd337419428e0a38875a4a,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
     m_TableEntryReference:
       m_KeyId: 251874995273728
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:5d0db34fa9ee9cf49bb21cf4ec1fc93e
+    m_TableEntryReference:
+      m_KeyId: 251905659830272
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -40,6 +47,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d7eb532e82d4ddd4fa8735b4dadc9c1e, type: 2}
   correctPlots: 02000000
   baseSpawnRate: 10
+  seedAmount: 0
   references:
     version: 2
     RefIds: []

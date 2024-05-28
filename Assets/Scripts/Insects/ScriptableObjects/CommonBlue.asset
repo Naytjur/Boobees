@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: CommonBlue
   m_EditorClassIdentifier: 
   id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: f85ed8fec32d7324e8d27e7242cccfc7,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
     m_TableEntryReference:
       m_KeyId: 73304176001024
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 73383603535872
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

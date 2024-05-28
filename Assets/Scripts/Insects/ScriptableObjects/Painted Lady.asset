@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: Painted Lady
   m_EditorClassIdentifier: 
   id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: f9a2cf7ced3138546ac072a33e4f851e,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
     m_TableEntryReference:
       m_KeyId: 74365599154176
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 74408565604352
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

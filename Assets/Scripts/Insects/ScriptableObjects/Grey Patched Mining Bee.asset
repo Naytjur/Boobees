@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Grey Patched Mining Bee
   m_EditorClassIdentifier: 
   id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: ba1b0a2dfa244a04ba38947982509afe,
-    type: 3}
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
@@ -24,9 +22,18 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
+    m_TableEntryReference:
+      m_KeyId: 73744326262784
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: grey patched mining bee
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 2181564641421094069, guid: ba852e3a5726a8c4d9fb3b8511baee58,
     type: 3}
   gardenVisual: {fileID: 2181564641421094069, guid: ba852e3a5726a8c4d9fb3b8511baee58,
