@@ -16,11 +16,6 @@ public class TutorialMessage : MonoBehaviour
 
     private LocalizeStringEvent localizeStringEvent;
 
-    private void Start()
-    {
-        
-    }
-
     public void ShowTutorial()
     {
 

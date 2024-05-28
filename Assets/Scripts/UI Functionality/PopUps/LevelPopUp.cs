@@ -13,19 +13,27 @@ public class LevelPopUp : MonoBehaviour
     [SerializeField]
     private GameObject unlockedImagePrefab;
 
+    private bool isInitialized = false;
 
-
-    private void Start()
+    private void OnEnable()
     {
         ScoreManager.onLevelUp += ShowLevelPopUp;
+        DataPersistenceManager.postLoad += OnGameLoaded;
+    }
+
+    private void OnDisable()
+    {
+        ScoreManager.onLevelUp -= ShowLevelPopUp;
+        DataPersistenceManager.postLoad -= OnGameLoaded;
     }
 
     private void ShowLevelPopUp(int level)
     {
-        if (level <= 1)
+        if (!isInitialized || level <= 1)
         {
             return;
         }
+
         GameObject popUp = Instantiate(popUpPrefab, popUpCanvas.transform);
         LevelPopUpInfo popUpInfo = popUp.GetComponent<LevelPopUpInfo>();
 
@@ -45,4 +53,8 @@ public class LevelPopUp : MonoBehaviour
         unlockedImage.sprite = sprite;
     }
 
+    private void OnGameLoaded()
+    {
+        isInitialized = true;
+    }
 }
