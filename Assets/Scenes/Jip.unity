@@ -6162,6 +6162,8 @@ MonoBehaviour:
   gridCellSize: 1
   allBuildings:
   - {fileID: 11400000, guid: 53bb82be724ad604382c0c3d11afa3de, type: 2}
+  - {fileID: 11400000, guid: 0c3a0fae48b15cf41be2ba713c98b649, type: 2}
+  - {fileID: 11400000, guid: cb59d03f186cc1c42a3dff04548b0083, type: 2}
   - {fileID: 11400000, guid: 6a7ed196b723ee647859298347bf36e3, type: 2}
   - {fileID: 11400000, guid: 2cc2595b2fb0a394d8ec0782da36a12c, type: 2}
   - {fileID: 11400000, guid: b1b52200b98fad540a4142a322fea0f3, type: 2}
@@ -9857,6 +9859,27 @@ MonoBehaviour:
   popUpCanvas: {fileID: 1024896039}
   unlockedImagePrefab: {fileID: 4298775786114744174, guid: 6bbab292162807e489fb8661e2ab4bb0,
     type: 3}
+  unlockedLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  emptyLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &1024896042
 MonoBehaviour:
   m_ObjectHideFlags: 0
