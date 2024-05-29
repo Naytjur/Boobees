@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Patch 1
   m_EditorClassIdentifier: 
-  id: 420
+  id: 
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
@@ -34,11 +34,11 @@ MonoBehaviour:
   itemName: plot 1
   description: 
   unlocked: 1
-  gardenPrefab: {fileID: 5749581333223817254, guid: c6f2cab750dfef542ba651f88cf7d352,
+  gardenPrefab: {fileID: 4809308039066899216, guid: eb156276a504f5942af80f79900f43fe,
     type: 3}
-  gardenVisual: {fileID: 5749581333223817254, guid: 002bd411a7620be439069f3e09eb7b15,
+  gardenVisual: {fileID: 4809308039066899216, guid: 803127189890e58448fc4b0d5f0d3803,
     type: 3}
-  cataloguePrefab: {fileID: 5749581333223817254, guid: c6f2cab750dfef542ba651f88cf7d352,
+  cataloguePrefab: {fileID: 4809308039066899216, guid: eb156276a504f5942af80f79900f43fe,
     type: 3}
   sprite: {fileID: 21300000, guid: 6994f15e5e018c8428cac9d68ade1162, type: 3}
   width: 1

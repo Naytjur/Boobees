@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Orange Tip
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4032609055323066662, guid: 71d1f3882d72c6649bc92880d32d0771,
     type: 3}
   gardenVisual: {fileID: 4032609055323066662, guid: 71d1f3882d72c6649bc92880d32d0771,

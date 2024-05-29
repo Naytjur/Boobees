@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Small Garden BumbleBee
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4526560040097895035, guid: 86fbcd523b64167488f80b6a66d8aa19,
     type: 3}
   gardenVisual: {fileID: 4526560040097895035, guid: 86fbcd523b64167488f80b6a66d8aa19,
