@@ -5,9 +5,7 @@ using UnityEngine;
 public class Plant : MonoBehaviour
 {
     public PlantSO plantSO;
-    [HideInInspector]
     public PlotType plot;
-    [HideInInspector]
     public bool isOnCorrectPlot;
 
     public Transform targetTransform;
