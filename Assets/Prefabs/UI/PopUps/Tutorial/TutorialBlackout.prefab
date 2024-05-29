@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 6565564355630075674}
   - component: {fileID: 1055442396204802297}
   - component: {fileID: 4974609741235011159}
-  - component: {fileID: 1093439419330596241}
-  - component: {fileID: 7168508367415758924}
   m_Layer: 5
   m_Name: TutorialBlackout
   m_TagString: Untagged
@@ -103,32 +101,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &1093439419330596241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512821267306866775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4362dcde8a8295347bc8059e6f679f03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7168508367415758924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512821267306866775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1526cd44ecc74e4294b7a65f1610820, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  localizeStringEvent: {fileID: 0}
+    m_Bits: 0
 --- !u!1 &3299114136914310021
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +189,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 80f90eb8dcc1e6540aa42b0a121076af, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78039217}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

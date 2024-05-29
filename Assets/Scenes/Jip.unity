@@ -8282,6 +8282,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 996628310}
+        m_TargetAssemblyTypeName: TutorialMessage, Assembly-CSharp
+        m_MethodName: HideTutorialUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &984146037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8348,7 +8360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  spriteRendererPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
+  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
     type: 3}
   message:
     m_TableReference:
@@ -8360,8 +8372,8 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   beenSeen: 
-  closeButton: {fileID: 0}
-  useButtonToClose: 0
+  useClickHandler: 1
+  targetButton: {fileID: 0}
   references:
     version: 2
     RefIds: []
@@ -8436,7 +8448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  spriteRendererPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
+  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
     type: 3}
   message:
     m_TableReference:
@@ -8448,8 +8460,8 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   beenSeen: 
-  closeButton: {fileID: 0}
-  useButtonToClose: 0
+  useClickHandler: 1
+  targetButton: {fileID: 0}
   references:
     version: 2
     RefIds: []
@@ -8467,7 +8479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  spriteRendererPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
+  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
     type: 3}
   message:
     m_TableReference:
@@ -8479,8 +8491,8 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   beenSeen: 
-  closeButton: {fileID: 345850340}
-  useButtonToClose: 1
+  useClickHandler: 1
+  targetButton: {fileID: 0}
   references:
     version: 2
     RefIds: []
@@ -8498,7 +8510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  spriteRendererPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
+  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
     type: 3}
   message:
     m_TableReference:
@@ -8510,8 +8522,8 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   beenSeen: 
-  closeButton: {fileID: 0}
-  useButtonToClose: 0
+  useClickHandler: 1
+  targetButton: {fileID: 0}
   references:
     version: 2
     RefIds: []
@@ -8529,7 +8541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  spriteRendererPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
+  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
     type: 3}
   message:
     m_TableReference:
@@ -8541,8 +8553,8 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   beenSeen: 
-  closeButton: {fileID: 984146036}
-  useButtonToClose: 1
+  useClickHandler: 0
+  targetButton: {fileID: 984146036}
   references:
     version: 2
     RefIds: []
@@ -8560,7 +8572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  spriteRendererPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
+  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
     type: 3}
   message:
     m_TableReference:
@@ -8572,8 +8584,8 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   beenSeen: 
-  closeButton: {fileID: 0}
-  useButtonToClose: 0
+  useClickHandler: 1
+  targetButton: {fileID: 0}
   references:
     version: 2
     RefIds: []
@@ -8591,7 +8603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  spriteRendererPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
+  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
     type: 3}
   message:
     m_TableReference:
@@ -8603,8 +8615,8 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   beenSeen: 
-  closeButton: {fileID: 0}
-  useButtonToClose: 0
+  useClickHandler: 1
+  targetButton: {fileID: 0}
   references:
     version: 2
     RefIds: []
@@ -18432,7 +18444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  spriteRendererPrefab: {fileID: 0}
+  uiPanelPrefab: {fileID: 0}
   message:
     m_TableReference:
       m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
@@ -18443,8 +18455,8 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   beenSeen: 
-  closeButton: {fileID: 0}
-  useButtonToClose: 0
+  useClickHandler: 1
+  targetButton: {fileID: 0}
   references:
     version: 2
     RefIds: []
