@@ -10,7 +10,8 @@ public enum GameState
     Planting,
     Building,
     Catalogue,
-    Scanning
+    Scanning,
+    Map
 }
 
 public class GameManager : MonoBehaviour
@@ -73,9 +74,17 @@ public class GameManager : MonoBehaviour
             case GameState.PlotSelect:
                 HandlePlotSelect();
                 break;
+            case GameState.Map:
+                HandleMap();
+                break;
         }
 
         onStateChange?.Invoke(newState);
+    }
+
+    private void HandleMap()
+    {
+        
     }
 
     private void HandlePlotSelect()

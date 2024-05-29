@@ -1,14 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Reflection;
-using System.Runtime.ConstrainedExecution;
-using UnityEditor.Build.Pipeline.Utilities;
-using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.FilePathAttribute;
-using static UnityEngine.Rendering.VolumeComponent;
 
 public class BuildManager : MonoBehaviour, IDataPersistence
 {

@@ -16,6 +16,8 @@ public class UISwitcher : MonoBehaviour
     private GameObject scanningUI;
     [SerializeField]
     private GameObject selectionUI;
+    [SerializeField]
+    private GameObject mapUI;
 
     private void Start()
     {
@@ -45,6 +47,9 @@ public class UISwitcher : MonoBehaviour
             case GameState.PlotSelect:
                 selectionUI.SetActive(true);
                 break;
+            case GameState.Map:
+                mapUI.SetActive(true);
+                break;
         }
     }
 
@@ -56,5 +61,6 @@ public class UISwitcher : MonoBehaviour
         overviewUI.SetActive(false);
         scanningUI.SetActive(false);
         selectionUI.SetActive(false);
+        mapUI.SetActive(false);
     }
 }
