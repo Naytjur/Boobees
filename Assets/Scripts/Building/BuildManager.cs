@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build.Pipeline.Utilities;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.FilePathAttribute;
 
 public class BuildManager : MonoBehaviour, IDataPersistence
 {
@@ -144,6 +146,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         SetCurrentMover(build);
         direction = (BuildingSO.Dir) build.buildData.buildingRotation;
         build.Hide();
+        RemoveFromGrid(build);
         UpdateBuildState(BuildState.Moving);
     }
 
@@ -357,15 +360,18 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         if(state == BuildState.Moving)
         {
             currentMover.Show();
-        }
 
+            foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(currentMover.buildData.gridX, currentMover.buildData.gridZ), (BuildingSO.Dir)currentMover.buildData.buildingRotation))
+            {
+                buildGrid.SetValue(cell.x, cell.y, currentMover, currentMover.buildData.buildingRotation);
+            }
+        }
         if (visual != null)
         {
             Destroy(visual.gameObject);
             visual = null;
         }
     }
-
     private void UpdateBuildState(BuildState state)
     {
         this.state = state;

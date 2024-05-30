@@ -64,4 +64,46 @@ public class Building : MonoBehaviour
             BuildManager.instance.StartMoving(this);
         }
     }
+
+    public List<Vector2Int> GetSurroundingTiles()
+    {
+        List<Vector2Int> tiles = new List<Vector2Int>();
+        List<Vector2Int> gridPositions = buildingSO.GetGridPositions(new Vector2Int(buildData.gridX, buildData.gridZ), (BuildingSO.Dir)buildData.buildingRotation);
+
+        foreach (Vector2Int tile in gridPositions)
+        {
+            for(int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Vector2Int current = tile + new Vector2Int(i - 1, j - 1);
+
+                    if(current == tile)
+                    {
+                        continue;
+                    }
+
+                    foreach(Vector2Int pos in gridPositions)
+                    {
+                        if(current == pos)
+                        {
+                            continue;
+                        }
+                    }
+
+                    foreach (Vector2Int pos in tiles)
+                    {
+                        if (current == pos)
+                        {
+                            continue;
+                        }
+                    }
+
+                    tiles.Add(current);
+                }
+            }
+        }
+
+        return tiles;
+    }
 }

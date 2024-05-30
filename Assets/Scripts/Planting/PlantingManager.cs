@@ -132,7 +132,7 @@ public class PlantingManager : MonoBehaviour
     {
         if (hoverVisual == null)
         {
-            hoverVisual = Instantiate(currentPlant.gardenVisual);
+            hoverVisual = Instantiate(currentPlant.gardenVisual, currentPlot.transform);
         }
 
         hoverVisual.transform.position = location;
