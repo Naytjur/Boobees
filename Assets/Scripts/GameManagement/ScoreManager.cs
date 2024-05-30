@@ -69,6 +69,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         honeyText.text = "Honey: " + honeyScore;
         pollenText.text = "Pollen: " + pollenScore;
         levelText.text = playerLevel.ToString();
+        onLevelUp?.Invoke(playerLevel);
     }
 
     public void UpdateScores(int pollen, int honey)
