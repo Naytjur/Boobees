@@ -14,33 +14,22 @@ public class LevelPopUp : MonoBehaviour
     [SerializeField]
     private GameObject unlockedImagePrefab;
 
-<<<<<<< HEAD
     public LocalizedString unlockedLocalizedString;
     public LocalizedString emptyLocalizedString;
 
-=======
-    private bool isInitialized = false;
->>>>>>> Luiz_Adding_Insects
 
-    private void OnEnable()
+
+    private void Start()
     {
         ScoreManager.onLevelUp += ShowLevelPopUp;
-        DataPersistenceManager.postLoad += OnGameLoaded;
-    }
-
-    private void OnDisable()
-    {
-        ScoreManager.onLevelUp -= ShowLevelPopUp;
-        DataPersistenceManager.postLoad -= OnGameLoaded;
     }
 
     private void ShowLevelPopUp(int level)
     {
-        if (!isInitialized || level <= 1)
+        if (level <= 1)
         {
             return;
         }
-
         GameObject popUp = Instantiate(popUpPrefab, popUpCanvas.transform);
         LevelPopUpInfo popUpInfo = popUp.GetComponent<LevelPopUpInfo>();
         var unlockText = popUpInfo.unlockText;
@@ -69,8 +58,4 @@ public class LevelPopUp : MonoBehaviour
         unlockedImage.sprite = sprite;
     }
 
-    private void OnGameLoaded()
-    {
-        isInitialized = true;
-    }
 }

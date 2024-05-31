@@ -21,7 +21,6 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
         BuildManager.onBuildingPlaced += OnBuildingPlaced;
         ScoreManager.onScoreChanged += OnScoreChanged;
         ScoreManager.onLevelUp += OnLevelUp;
-        DataPersistenceManager.postLoad += PostLoad;
         PlantingManager.instance.onPlantUnlocked += OnPlantUnlocked;
 
         TutorialMessage[] messages = FindObjectsOfType<TutorialMessage>();
@@ -56,10 +55,7 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
             }
             Debug.Log($"Tutorial {i} beenSeen: {tutorialMessages[i].beenSeen}");
         }
-<<<<<<< HEAD
         LanguageTutorial();
-=======
->>>>>>> Luiz_Adding_Insects
     }
     public void SaveData(ref GameData data)
     {
@@ -72,10 +68,6 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
         Debug.Log("Saving seen tutorials: " + string.Join(", ", seenTutorials));  // Debug log to check values
     }
 
-    private void PostLoad()
-    {
-        PlayFirstTutorial();
-    }
     private void OnBuildingPlaced()
     {
         tutorialMessagePlot.ShowTutorial();
@@ -104,9 +96,8 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
 
     public void PlayFirstTutorial()
     {
-        if (tutorialMessageStart.beenSeen != "true")
+        if (tutorialMessageStart.beenSeen == "false")
         {
-            Debug.Log("PeeperSweeper");
             tutorialMessageStart.ShowTutorial();
         }
     }
