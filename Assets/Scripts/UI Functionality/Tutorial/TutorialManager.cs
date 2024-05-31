@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class TutorialManager : MonoBehaviour, IDataPersistence
 {
+    public TutorialMessage tutorialMessageLanguage;
     public TutorialMessage tutorialMessageStart;
     public TutorialMessage tutorialMessageStart2;
     public TutorialMessage tutorialMessagePlot;
@@ -11,9 +12,9 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     public TutorialMessage tutorialMessageScore;
     public TutorialMessage tutorialMessageLevel;
 
-    private bool firstMessage = false;
-
     public List<TutorialMessage> tutorialMessages = new List<TutorialMessage>();
+
+    public LanguageManager languageManager;
 
     private void Awake()
     {
@@ -24,19 +25,28 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
         PlantingManager.instance.onPlantUnlocked += OnPlantUnlocked;
 
         TutorialMessage[] messages = FindObjectsOfType<TutorialMessage>();
+
         foreach (TutorialMessage message in messages)
         {
             tutorialMessages.Add(message);
+            message.manager = this;
         }
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && firstMessage)
+        if(Input.GetMouseButtonDown(0))
         {
-            tutorialMessageStart2.ShowTutorial();
-            firstMessage = false; // Reset to avoid repeatedly showing the second tutorial
+            if (tutorialMessageStart2.beenSeen == "false" && tutorialMessageStart.beenSeen == "false")
+            {
+                PlayFirstTutorial();
+            }
+            if (tutorialMessageStart2.beenSeen == "false" && tutorialMessageStart.beenSeen == "true")
+            {
+                tutorialMessageStart2.ShowTutorial();
+            }
         }
     }
+    
 
     public void LoadData(GameData data)
     {
@@ -51,6 +61,7 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
             }
             Debug.Log($"Tutorial {i} beenSeen: {tutorialMessages[i].beenSeen}");
         }
+        
     }
     public void SaveData(ref GameData data)
     {
@@ -65,7 +76,8 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
 
     private void PostLoad()
     {
-        PlayFirstTutorial();
+        
+        LanguageTutorial();
     }
     private void OnBuildingPlaced()
     {
@@ -99,7 +111,14 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
         {
             Debug.Log("PeeperSweeper");
             tutorialMessageStart.ShowTutorial();
-            firstMessage = true; // This ensures the second message shows up correctly
+        }
+    }
+
+    public void LanguageTutorial()
+    {
+        if (tutorialMessageLanguage.beenSeen == "false")
+        {
+            tutorialMessageLanguage.ShowTutorial();
         }
     }
 }

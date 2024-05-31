@@ -33,14 +33,14 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: plot 2
   description: 
-  unlocked: 0
-  gardenPrefab: {fileID: 5749581333223817254, guid: 3204a34591ea54444a2b35cb44d4c002,
+  unlocked: 1
+  gardenPrefab: {fileID: 3354950285357011319, guid: 2fc737f193915494fb144910fdf83c82,
     type: 3}
-  gardenVisual: {fileID: 5749581333223817254, guid: 002bd411a7620be439069f3e09eb7b15,
+  gardenVisual: {fileID: 971660494723879054, guid: 6b7feb163f261404aae5349127c69c50,
     type: 3}
-  cataloguePrefab: {fileID: 5749581333223817254, guid: 3204a34591ea54444a2b35cb44d4c002,
+  cataloguePrefab: {fileID: 3354950285357011319, guid: 2fc737f193915494fb144910fdf83c82,
     type: 3}
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 6994f15e5e018c8428cac9d68ade1162, type: 3}
   width: 1
   height: 1
   unlockLevel: 0

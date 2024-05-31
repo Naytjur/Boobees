@@ -27,15 +27,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 236527222784
-    m_Localized: Plot 3
+    m_Localized: Edge vegetation plot
     m_Metadata:
       m_Items: []
   - m_Id: 224623788032
-    m_Localized: Plot 2
+    m_Localized: Wild plot
     m_Metadata:
       m_Items: []
   - m_Id: 191627198464
-    m_Localized: 'Plot '
+    m_Localized: Ruderal plot
     m_Metadata:
       m_Items: []
   - m_Id: 164938842112

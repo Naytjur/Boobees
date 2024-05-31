@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: buff tailed bumble bee
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4643288565277106895, guid: 1ced17f26f1215b4aa3a8ae5be253602,
     type: 3}
   gardenVisual: {fileID: 4643288565277106895, guid: 1ced17f26f1215b4aa3a8ae5be253602,

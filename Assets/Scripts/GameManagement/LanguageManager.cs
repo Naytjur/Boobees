@@ -13,6 +13,7 @@ public class LanguageManager : MonoBehaviour
         {
             return;
         }
+        print(languageID);
         StartCoroutine(SetLanguage(languageID));
     }
 

@@ -3,12 +3,14 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
+using UnityEngine.UI;
 
 public class TutorialMessage : MonoBehaviour
 {
     public GameObject tutorialUIPrefab; // Reference to the Tutorial UI prefab
     public GameObject uiPanelPrefab;
     public LocalizedString message; // Message to display in the text box
+    public TutorialManager manager;
 
     [SerializeField]
     public string beenSeen = "false";
@@ -27,14 +29,50 @@ public class TutorialMessage : MonoBehaviour
 
         instantiatedUI = Instantiate(tutorialUIPrefab);
         textBox = instantiatedUI.GetComponentInChildren<TextMeshProUGUI>();
-        localizeStringEvent = instantiatedUI.GetComponent<TutorialMessageInfo>().localizeStringEvent;
-        localizeStringEvent.StringReference = message;
+
+        localizeStringEvent = instantiatedUI.GetComponent<TutorialMessageInfo>()?.localizeStringEvent;
+        if(localizeStringEvent != null)
+        {
+            localizeStringEvent.StringReference = message;
+        }
+
         instantiatedUI.SetActive(false); // Start with the UI hidden
 
+        // Add the TutorialUIClickHandler component and set it up
         if (useClickHandler)
         {
-            TutorialUIClickHandler clickHandler = instantiatedUI.GetComponent<Canvas>().gameObject.AddComponent<TutorialUIClickHandler>();
-            clickHandler.Setup(HideTutorialUI);
+            TutorialUIClickHandler clickHandler = instantiatedUI.GetComponent<TutorialUIClickHandler>();
+            if(clickHandler != null)
+            {
+                clickHandler.Setup(HideTutorialUI);
+            }
+
+            LanguagePopUp languages = instantiatedUI.GetComponent<LanguagePopUp>();
+
+            if(languages != null)
+            {
+                for(int i = 0; i < languages.languageButtons.Length; i++)
+                {
+                    languages.languageButtons[i].onClick.AddListener(HideTutorialUI);
+                    languages.languageButtons[i].onClick.AddListener(manager.PlayFirstTutorial);
+
+                    switch (i)
+                    {
+                        case 0:
+                            languages.languageButtons[i].onClick.AddListener(delegate { manager.languageManager.ChangeLanguage(0); });
+                            break;
+                        case 1:
+                            languages.languageButtons[i].onClick.AddListener(delegate { manager.languageManager.ChangeLanguage(1); });
+                            break;
+                        case 2:
+                            languages.languageButtons[i].onClick.AddListener(delegate { manager.languageManager.ChangeLanguage(2); });
+                            break;
+                        default:
+                            languages.languageButtons[i].onClick.AddListener(delegate { manager.languageManager.ChangeLanguage(1); });
+                            break;
+                    }
+                }
+            }
         }
         else
         {

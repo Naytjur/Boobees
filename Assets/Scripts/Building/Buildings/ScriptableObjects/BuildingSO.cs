@@ -21,8 +21,8 @@ public class BuildingSO : ItemInfo
     public int unlockLevel;
     public int cost;
 
-    public int maxCount { get; private set; }
-    public int count { get; private set; }
+    public int maxCount;
+    public int count;
 
     public enum Dir
     {
