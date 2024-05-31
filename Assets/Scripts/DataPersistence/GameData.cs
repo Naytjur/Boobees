@@ -29,7 +29,7 @@ public class GameData
         seenTutorials = new List<string>();
         buildingList = new List<BuildData>();
 
-        int totalTutorialMessages = 7;
+        int totalTutorialMessages = 8;
         for (int i = 0; i < totalTutorialMessages; i++)
         {
             seenTutorials.Add("false");

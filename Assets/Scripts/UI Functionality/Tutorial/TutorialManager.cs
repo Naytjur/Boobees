@@ -36,12 +36,17 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     {
         if(Input.GetMouseButtonDown(0))
         {
+            if (tutorialMessageStart2.beenSeen == "false" && tutorialMessageStart.beenSeen == "false")
+            {
+                PlayFirstTutorial();
+            }
             if (tutorialMessageStart2.beenSeen == "false" && tutorialMessageStart.beenSeen == "true")
             {
                 tutorialMessageStart2.ShowTutorial();
             }
         }
     }
+    
 
     public void LoadData(GameData data)
     {
@@ -56,7 +61,7 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
             }
             Debug.Log($"Tutorial {i} beenSeen: {tutorialMessages[i].beenSeen}");
         }
-        LanguageTutorial();
+        
     }
     public void SaveData(ref GameData data)
     {
@@ -71,7 +76,8 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
 
     private void PostLoad()
     {
-        PlayFirstTutorial();
+        
+        LanguageTutorial();
     }
     private void OnBuildingPlaced()
     {

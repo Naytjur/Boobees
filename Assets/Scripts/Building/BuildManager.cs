@@ -121,7 +121,6 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         {
             data.buildingList.Add(building);
         }
-    }
 
         foreach (BuildData building in buildings)
         {
