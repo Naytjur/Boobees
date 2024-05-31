@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
 
 public class DataPersistenceManager : MonoBehaviour
 {
-
     [Header("File Storage Config")]
-
     [SerializeField] private string fileName;
     private GameData gameData;
 
     private List<IDataPersistence> dataPersistenceObjects;
     private FileDataHandler dataHandler;
 
-    public static DataPersistenceManager instance {get; private set;}
+    public static DataPersistenceManager instance { get; private set; }
+    public static event Action postLoad;
 
     private void Awake()
     {
@@ -40,19 +40,20 @@ public class DataPersistenceManager : MonoBehaviour
 
     public void LoadGame()
     {
-
         this.gameData = dataHandler.Load();
 
         if (this.gameData == null)
         {
-            Debug.Log ("No save, starting new game");
+            Debug.Log("No save, starting new game");
             NewGame();
         }
-        
+
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
             dataPersistenceObj.LoadData(this.gameData);
         }
+
+        postLoad?.Invoke(); // Invoke postLoad event after loading is complete
     }
 
     public void SaveGame()
@@ -81,7 +82,6 @@ public class DataPersistenceManager : MonoBehaviour
         SaveGame();
     }
     #endif
-
 
     private List<IDataPersistence> FindAllDataPersistenceObjects()
     {

@@ -44,9 +44,13 @@ MonoBehaviour:
   width: 1
   height: 2
   unlockLevel: 2
+<<<<<<< HEAD
   cost: 10
   maxCount: 31
   count: 3
+=======
+  cost: 0
+>>>>>>> Luiz_Adding_Insects
   references:
     version: 2
     RefIds: []

@@ -28,19 +28,36 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
     public List<PlantSO> allPlants;
 
+    private bool isLoading = false;
+
     private void Awake()
     {
         instance = this;
+<<<<<<< HEAD
+=======
+    }
+
+    private void OnEnable()
+    {
+        DataPersistenceManager.postLoad += OnPostLoad;
+    }
+
+    private void Start()
+    {
+        maxHoneyScore = maxHoneyScoreBase;
+        maxPollenScore = maxPollenScoreBase;
+>>>>>>> Luiz_Adding_Insects
     }
 
     public void LoadData(GameData data)
     {
+        isLoading = true; // Set the flag to true at the start of loading
+
         this.playerLevel = data.playerLevel;
         this.honeyScore = data.playerHoney;
         this.pollenScore = data.playerPollen;
         this.maxHoneyScore = data.playerHoneyCap;
         this.maxPollenScore = data.playerPollenCap;
-        UpdateScores(pollenScore, honeyScore);
 
         foreach (string plantID in data.unlockedPlantIDs)
         {
@@ -51,7 +68,9 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
             }
         }
 
-        Debug.Log ("Loading GameData");
+        Debug.Log("Loading GameData");
+
+        isLoading = false; // Reset the flag after loading is done
     }
 
     public void SaveData(ref GameData data)
@@ -61,15 +80,18 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         data.playerPollen = this.pollenScore;
     }
 
-    private void Start()
+    private void OnPostLoad()
     {
-        maxHoneyScore = maxHoneyScoreBase;
-        maxPollenScore = maxPollenScoreBase;
+        maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
+        maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
+        UpdateUI();
+    }
 
-        honeyText.text = "Honey: " + honeyScore;
-        pollenText.text = "Pollen: " + pollenScore;
+    private void UpdateUI()
+    {
+        honeyText.text = $"{honeyScore} / {maxHoneyScore}";
+        pollenText.text = $"{pollenScore} / {maxPollenScore}";
         levelText.text = playerLevel.ToString();
-        onLevelUp?.Invoke(playerLevel);
     }
 
     public void UpdateScores(int pollen, int honey)
@@ -81,13 +103,10 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
         if (pollenScore >= maxPollenScore)
         {
-            pollenScore = 0;
             LevelUp();
         }
 
-        honeyText.text = $"{honeyScore} / {maxHoneyScore}";
-        pollenText.text = $"{pollenScore} / {maxPollenScore}";
-        levelText.text = playerLevel.ToString();
+        UpdateUI();
         onScoreChanged?.Invoke(pollen, honey);
     }
 
@@ -97,6 +116,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
         maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
         onLevelUp?.Invoke(playerLevel);
+        UpdateUI(); // Update level text
     }
 
     private PlantSO FindPlantByID(string id)
@@ -113,10 +133,6 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
     public bool CanAfford(int cost)
     {
-        if(cost <= honeyScore)
-        {
-            return true;
-        }
-        return false;
+        return cost <= honeyScore;
     }
 }
