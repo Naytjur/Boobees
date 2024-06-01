@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class TutorialMessage : MonoBehaviour
 {
     public GameObject tutorialUIPrefab; // Reference to the Tutorial UI prefab
-    public GameObject uiPanelPrefab;
+    public GameObject blackOutScreen;
     public LocalizedString message; // Message to display in the text box
     public TutorialManager manager;
 
@@ -79,15 +79,10 @@ public class TutorialMessage : MonoBehaviour
             Vector3 buttonPos = targetButton.transform.position;
 
             // Instantiate the UI panel independently
-            instantiatedPanel = Instantiate(uiPanelPrefab);
-            instantiatedPanel.transform.position = buttonPos;
-
-            // Ensure the panel is rendered behind the UI
-            instantiatedPanel.GetComponent<Canvas>().sortingOrder = instantiatedUI.GetComponent<Canvas>().sortingOrder - 1;
-
+            blackOutScreen.SetActive(true);
+            blackOutScreen.transform.position = buttonPos;
             // Allow clicks to pass through
-            CanvasGroup canvasGroup = instantiatedPanel.AddComponent<CanvasGroup>();
-            canvasGroup.blocksRaycasts = false;
+            //blackOutScreen.blocksRaycasts = false;
 
             Debug.Log("UI panel instantiated");
         }
@@ -108,7 +103,6 @@ public class TutorialMessage : MonoBehaviour
             Destroy(instantiatedPanel);
         }
     }
-
     public string HasBeenSeen()
     {
         return beenSeen;

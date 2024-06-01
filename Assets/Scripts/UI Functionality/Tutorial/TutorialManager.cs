@@ -17,6 +17,7 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     public LanguageManager languageManager;
 
     private bool postLoadCompleted = false;
+    public GameObject blackOutScreen;
 
     private void Awake()
     {
@@ -29,6 +30,7 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
         PlantingManager.instance.onPlantUnlocked += OnPlantUnlocked;
 
         TutorialMessage[] messages = FindObjectsOfType<TutorialMessage>();
+        blackOutScreen.SetActive(false);
 
         foreach (TutorialMessage message in messages)
         {
@@ -136,5 +138,9 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
         {
             tutorialMessageLanguage.ShowTutorial();
         }
+    }
+        public void HideBlackoutPanel()
+    {
+        blackOutScreen.SetActive(false);
     }
 }

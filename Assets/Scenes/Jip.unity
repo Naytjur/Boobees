@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -619,6 +619,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 322734725}
   - {fileID: 533379325}
   - {fileID: 1738080672}
   - {fileID: 708608351}
@@ -2455,6 +2456,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 29530733}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &322734724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 322734725}
+  - component: {fileID: 322734727}
+  - component: {fileID: 322734726}
+  m_Layer: 0
+  m_Name: BlackoutScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &322734725
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322734724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 34733158}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 4000, y: 4000}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &322734726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322734724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.92156863}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 80f90eb8dcc1e6540aa42b0a121076af, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &322734727
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322734724}
+  m_CullTransparentMesh: 1
 --- !u!4 &326509638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4495814638416489810, guid: df6b042e167437e49a7de60b40199810,
@@ -9029,6 +9105,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 996628310}
+        m_TargetAssemblyTypeName: TutorialMessage, Assembly-CSharp
+        m_MethodName: HideTutorialUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 996628306}
+        m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+        m_MethodName: HideBlackoutPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &984146037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9095,7 +9195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  uiPanelPrefab: {fileID: 0}
+  blackOutScreen: {fileID: 322734724}
   message:
     m_TableReference:
       m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
@@ -9105,8 +9205,8 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  manager: {fileID: 0}
-  beenSeen: 
+  manager: {fileID: 996628306}
+  beenSeen: false
   useClickHandler: 1
   targetButton: {fileID: 0}
   references:
@@ -9172,6 +9272,7 @@ MonoBehaviour:
   tutorialMessageLevel: {fileID: 996628312}
   tutorialMessages: []
   languageManager: {fileID: 1727399726}
+  blackOutScreen: {fileID: 322734724}
 --- !u!114 &996628307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9186,8 +9287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
-    type: 3}
+  blackOutScreen: {fileID: 322734724}
   message:
     m_TableReference:
       m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
@@ -9197,7 +9297,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  manager: {fileID: 0}
+  manager: {fileID: 996628306}
   beenSeen: false
   useClickHandler: 1
   targetButton: {fileID: 0}
@@ -9218,8 +9318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
-    type: 3}
+  blackOutScreen: {fileID: 322734724}
   message:
     m_TableReference:
       m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
@@ -9229,7 +9328,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  manager: {fileID: 0}
+  manager: {fileID: 996628306}
   beenSeen: false
   useClickHandler: 1
   targetButton: {fileID: 0}
@@ -9250,8 +9349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
-    type: 3}
+  blackOutScreen: {fileID: 322734724}
   message:
     m_TableReference:
       m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
@@ -9261,10 +9359,10 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  manager: {fileID: 0}
+  manager: {fileID: 996628306}
   beenSeen: false
   useClickHandler: 1
-  targetButton: {fileID: 0}
+  targetButton: {fileID: 1046548439}
   references:
     version: 2
     RefIds: []
@@ -9282,8 +9380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
-    type: 3}
+  blackOutScreen: {fileID: 322734724}
   message:
     m_TableReference:
       m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
@@ -9293,10 +9390,10 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  manager: {fileID: 0}
+  manager: {fileID: 996628306}
   beenSeen: false
-  useClickHandler: 1
-  targetButton: {fileID: 0}
+  useClickHandler: 0
+  targetButton: {fileID: 984146036}
   references:
     version: 2
     RefIds: []
@@ -9314,8 +9411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
-    type: 3}
+  blackOutScreen: {fileID: 322734724}
   message:
     m_TableReference:
       m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
@@ -9325,7 +9421,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  manager: {fileID: 0}
+  manager: {fileID: 996628306}
   beenSeen: false
   useClickHandler: 1
   targetButton: {fileID: 0}
@@ -9346,8 +9442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
-    type: 3}
+  blackOutScreen: {fileID: 322734724}
   message:
     m_TableReference:
       m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
@@ -9357,7 +9452,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  manager: {fileID: 0}
+  manager: {fileID: 996628306}
   beenSeen: false
   useClickHandler: 1
   targetButton: {fileID: 0}
@@ -9378,8 +9473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 6080105065141335937, guid: 34ec3b1c3ef1a4e499326bccaa19e9ba,
     type: 3}
-  uiPanelPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
-    type: 3}
+  blackOutScreen: {fileID: 322734724}
   message:
     m_TableReference:
       m_TableCollectionName: 
@@ -9389,7 +9483,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  manager: {fileID: 0}
+  manager: {fileID: 996628306}
   beenSeen: false
   useClickHandler: 1
   targetButton: {fileID: 0}
@@ -10289,6 +10383,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5a66cb41ceb6674a97e0056d1bd5123, type: 3}
+--- !u!114 &1046548439 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4458147196565720594}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1046669570
 GameObject:
   m_ObjectHideFlags: 0
@@ -13075,8 +13181,6 @@ MonoBehaviour:
   maxHoneyScoreBase: 100
   maxPollenScoreBase: 30
   playerLevel: 1
-  honeyText: {fileID: 5980329567232051196}
-  pollenText: {fileID: 1457950358}
   levelText: {fileID: 1509035640}
   honeyScore: 0
   pollenScore: 0
@@ -14536,18 +14640,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1457950356}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1457950358 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9194109391969327254, guid: 492b4d760e9e1c4428dceab38b942fd7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1457950356}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1464457328 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2747138694194525919, guid: 6486b94836e822c43a05c4e7411c8f51,
@@ -19688,7 +19780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  uiPanelPrefab: {fileID: 0}
+  blackOutScreen: {fileID: 0}
   message:
     m_TableReference:
       m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
@@ -22233,6 +22325,71 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1738080672}
     m_Modifications:
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 996628306}
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 996628306}
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideBlackoutPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: HideBlackoutPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TutorialManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TutorialManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 138675267244010972, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2732839070388428950, guid: 6996dfe8c11113f46a753084018ff91c,
         type: 3}
       propertyPath: m_Pivot.x
@@ -22417,6 +22574,71 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 996628309}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 996628306}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideTutorialUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: HideBlackoutPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TutorialMessage, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TutorialManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417073514574304798, guid: 6996dfe8c11113f46a753084018ff91c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23229,18 +23451,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5980329567232051194}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5980329567232051196 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9194109391969327254, guid: 492b4d760e9e1c4428dceab38b942fd7,
-    type: 3}
-  m_PrefabInstance: {fileID: 5980329567232051194}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &6018534817807752009
 RectTransform:
   m_ObjectHideFlags: 0
