@@ -9,12 +9,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Building", menuName = "Create Building")]
 public class BuildingSO : ItemInfo
 {
-    //Luiz Garbage
-    // private ShopItem item;
-    // [ReadOnly()] public PlaceableObjectData data = new PlaceableObjectData();
-
-
-    //Luiz Garbage
     public int width;
     public int height;
 
@@ -144,23 +138,4 @@ public class BuildingSO : ItemInfo
     {
         maxCount = Mathf.Max(0, 1 + (level - unlockLevel));
     }
-    //More Luiz Garbage
-    // public void Initialize(ShopItem shopItem)
-    // {
-    //     item = shopItem;
-    //     data.assetName = item.Name;
-    //     data.ID = SaveData.GenerateId();
-    // }
-
-    // public void Initialize(ShopItem shopItem, PlaceableObjectData objectData)
-    // {
-    //     item = shopItem;
-    //     data = objectData;
-    // }
-
-    // private void OnApplicationQuit()
-    // {
-    //     data.position = transform.postion;
-
-    // }
 }
