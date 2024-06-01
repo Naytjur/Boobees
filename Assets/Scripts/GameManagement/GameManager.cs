@@ -11,7 +11,8 @@ public enum GameState
     Building,
     Catalogue,
     Scanning,
-    Map
+    Map,
+    Settings
 }
 
 public class GameManager : MonoBehaviour
@@ -77,6 +78,9 @@ public class GameManager : MonoBehaviour
             case GameState.Map:
                 HandleMap();
                 break;
+            case GameState.Settings:
+                HandleSettings();
+                break;
         }
 
         onStateChange?.Invoke(newState);
@@ -108,6 +112,11 @@ public class GameManager : MonoBehaviour
     private void HandleViewing()
     {
         cameraPositon.SetCameraDefaultPosition();
+    }
+    
+    private void HandleSettings()
+    {
+
     }
 
     private void HandlePlanting()
