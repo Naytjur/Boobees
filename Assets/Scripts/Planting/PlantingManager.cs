@@ -7,7 +7,7 @@ using UnityEngine.Localization.Components;
 using UnityEngine.Localization;
 using UnityEngine.UI;
 
-public class PlantingManager : MonoBehaviour, IDataPersistence
+public class PlantingManager : MonoBehaviour
 {
     public static PlantingManager instance;
     private enum PlantState
@@ -27,8 +27,6 @@ public class PlantingManager : MonoBehaviour, IDataPersistence
 
     public Plot currentPlot;
     public List<Plant> plantList = new List<Plant>();
-
-    public List<PlantData> plants = new List<PlantData>();
 
     //UI
     public Button confirmButton;
@@ -51,12 +49,10 @@ public class PlantingManager : MonoBehaviour, IDataPersistence
     private void Awake()
     {
         instance = this;
-        DataPersistenceManager.postLoad += UpdatePlants;
     }
     private void Start()
     {
         GameManager.instance.onStateChange += UpdateActiveState;
-        ScoreManager.onLevelUp += OnLeveledUp;
         confirmButton.onClick.AddListener(Plant);
         clearButton.onClick.AddListener(ClearCurrentPlot);
     }
@@ -69,25 +65,6 @@ public class PlantingManager : MonoBehaviour, IDataPersistence
         }
 
         confirmButton.gameObject.SetActive(plantState != PlantState.Unselected);
-    }
-
-    //Save & Load stuff
-    public void LoadData(GameData data)
-    {
-
-        foreach (PlantData plant in data.plantList)
-        {
-            LoadPlant(plant.worldX, plant.worldY, plant.worldZ, plant.plantID, plant.plantRotation);
-        }
-    }
-
-    public void SaveData(ref GameData data)
-    {
-        data.plantList.Clear();
-        foreach(PlantData plant in plants)
-        {
-            data.plantList.Add(plant);
-        }
     }
 
     private void CheckHover()
@@ -281,18 +258,19 @@ public class PlantingManager : MonoBehaviour, IDataPersistence
         return allPlants[index];
     }
 
-    public void LoadPlant(float x, float y, float z, string id, int rotation)
+    //Help
+    public PlantSO GetPlantByID(string id)
     {
+        PlantSO plant = null;
 
-    }
+        foreach(PlantSO so in allPlants)
+        {
+            if(id == so.id)
+            {
+                plant = so;
+            }
+        }
 
-    public void UpdatePlants()
-    {
-
-    }
-
-    public void OnLeveledUp(int level)
-    {
-        UpdatePlants();
+        return plant;
     }
 }

@@ -34,7 +34,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     [Header("Buildings")]
     [SerializeField]
     private List<BuildingSO> allBuildings =  new List<BuildingSO>();
-    private List<BuildData> buildings = new List<BuildData>();
+    private List<Building> buildings = new List<Building>();
 
     //Internal Variables
     public Grid buildGrid;
@@ -109,9 +109,14 @@ public class BuildManager : MonoBehaviour, IDataPersistence
             building.RemoveCount(building.count);
         }
 
-        foreach (BuildData building in data.buildingList)
+        foreach (BuildData buildData in data.buildingList)
         {
-            PlaceBuilding(building.gridX, building.gridZ, building.buildingID, building.buildingRotation);
+            Building building = PlaceBuilding(buildData.gridX, buildData.gridZ, buildData.buildingID, buildData.buildingRotation);
+
+            if (building is Patch patch)
+            {
+                patch.LoadPlants(buildData.placedPlants);
+            }
         }
     }
 
@@ -124,9 +129,15 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     public void SaveData(ref GameData data)
     {
         data.buildingList.Clear();
-        foreach(BuildData building in buildings)
+
+        foreach (Building building in buildings)
         {
-            data.buildingList.Add(building);
+            if(building is Patch patch)
+            {
+                patch.SavePlants();
+            }
+
+            data.buildingList.Add(building.buildData);
         }
     }
 
@@ -166,12 +177,14 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         }
 
         BuildData data = new BuildData(currentBuilding.id, x, z, (int)direction);
-        buildings.Add(data);
 
         Vector2Int rotationOffset = currentBuilding.GetRotationOffset(direction);
         Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), currentBuilding, data, gridCellSize, Quaternion.Euler(0, currentBuilding.GetRotationDegrees(direction), 0), direction);
+        
+        buildings.Add(buildObject);
+        buildObject.buildData = data;
 
-        if(visual != null)
+        if (visual != null)
         {
             visual.gameObject.SetActive(false);
         }
@@ -187,15 +200,18 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         UpdateBuildState(BuildState.Unselected);
     }
 
-    private void PlaceBuilding(int x, int z, string id, int rotation)
+    private Building PlaceBuilding(int x, int z, string id, int rotation)
     {
         BuildingSO cur = GetBuildingByID(id);
         Vector2Int rotationOffset = cur.GetRotationOffset((BuildingSO.Dir) rotation);
         BuildData data = new BuildData(id, x, z, rotation);
-        buildings.Add(data);
+
         Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), cur, data, gridCellSize, Quaternion.Euler(0, cur.GetRotationDegrees((BuildingSO.Dir) rotation), 0), (BuildingSO.Dir) rotation);
 
-        if(visual != null)
+        buildings.Add(buildObject);
+        buildObject.buildData = data;
+
+        if (visual != null)
         {
             visual.gameObject.SetActive(false);
         }
@@ -208,6 +224,8 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         cur.AddCount(1);
 
         onBuildingPlaced?.Invoke();
+
+        return buildObject;
     }
 
     public void MoveBuilding(Building building)
@@ -245,7 +263,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     {
         CancelCurrent();
         RemoveFromGrid(currentMover);
-        buildings.Remove(currentMover.buildData);
+        buildings.Remove(currentMover);
         currentBuilding.AddCount(-1);
         ScoreManager.instance.UpdateScores(0, currentBuilding.cost / 2);
         Destroy(currentMover.gameObject);

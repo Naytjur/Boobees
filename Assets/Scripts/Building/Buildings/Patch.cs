@@ -84,4 +84,31 @@ public class Patch : Building
         }
         return buildings;
     }
+
+    public void LoadPlants(List<PlantData> plants)
+    {
+        if(plot == null)
+        {
+            plot = GetComponent<Plot>();
+        }
+
+        foreach(PlantData data in plants)
+        {
+            Transform plantTransform = Instantiate(PlantingManager.instance.GetPlantByID(data.plantID).gardenPrefab, plot.transform);
+            plantTransform.position = new Vector3(data.x, data.y, data.z);
+
+            Plant plant = plantTransform.GetComponent<Plant>();
+            PlantingManager.instance.plantList.Add(plant);
+            plot.AddPlant(plant);
+            plant.AssignPlot(plot.type);
+        }
+    }
+
+    public void SavePlants()
+    {
+        foreach(Plant plant in plot.plants)
+        {
+            buildData.placedPlants.Add(new PlantData(plant.plantSO.id, plant.transform.position.x, plant.transform.position.y, plant.transform.position.z));
+        }
+    }
 }

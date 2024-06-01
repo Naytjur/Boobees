@@ -6,16 +6,15 @@ using UnityEngine;
 public class PlantData
 {
     public string plantID;
-    public float worldX;
-    public float worldY;
-    public float worldZ;
-    public int plantRotation; 
+    public float x;
+    public float y;
+    public float z;
 
-    public PlantData(string id, float worldX, float worldZ, int rot)
+    public PlantData(string id, float x, float y, float z)
     {
         this.plantID = id;
-        this.plantRotation = rot;
-        this.worldX = worldX;
-        this.worldZ = worldZ;
+        this.x = x;
+        this.y = y;
+        this.z = z;
     }
 }

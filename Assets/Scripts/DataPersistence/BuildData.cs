@@ -8,7 +8,9 @@ public class BuildData
     public string buildingID;
     public int gridX;
     public int gridZ;
-    public int buildingRotation; 
+    public int buildingRotation;
+
+    public List<PlantData> placedPlants = new List<PlantData>();
 
     public BuildData(string id, int gridX, int gridZ, int rot)
     {
