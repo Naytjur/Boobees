@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class Patch : Building
 {
@@ -85,14 +87,14 @@ public class Patch : Building
         return buildings;
     }
 
-    public void LoadPlants(List<PlantData> plants)
+    public void LoadPlants(List<PlantData> plants, float logoutTime)
     {
-        if(plot == null)
+        if (plot == null)
         {
             plot = GetComponent<Plot>();
         }
 
-        foreach(PlantData data in plants)
+        foreach (PlantData data in plants)
         {
             Transform plantTransform = Instantiate(PlantingManager.instance.GetPlantByID(data.plantID).gardenPrefab, plot.transform);
             plantTransform.position = new Vector3(data.x, data.y, data.z);
@@ -101,14 +103,21 @@ public class Patch : Building
             PlantingManager.instance.plantList.Add(plant);
             plot.AddPlant(plant);
             plant.AssignPlot(plot.type);
+
+            // Start the decay timer for the loaded plant
+            plant.StartDecayTimer(data.timer, logoutTime);
         }
     }
 
     public void SavePlants()
     {
-        foreach(Plant plant in plot.plants)
+        foreach (Plant plant in plot.plants)
         {
-            buildData.placedPlants.Add(new PlantData(plant.plantSO.id, plant.transform.position.x, plant.transform.position.y, plant.transform.position.z));
+            if (plant != null)
+            {
+                float elapsedTime = plant.GetElapsedTime();
+                buildData.placedPlants.Add(new PlantData(plant.plantSO.id, plant.transform.position.x, plant.transform.position.y, plant.transform.position.z, elapsedTime));
+            }
         }
     }
 }

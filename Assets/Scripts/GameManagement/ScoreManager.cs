@@ -70,6 +70,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
     public void SaveData(ref GameData data)
     {
+        data.logoutTime = GetCurrentDateTimeAsFloat();
         data.playerLevel = this.playerLevel;
         data.playerHoney = this.honeyScore;
         data.playerPollen = this.pollenScore;
@@ -127,5 +128,19 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
     public bool CanAfford(int cost)
     {
         return cost <= honeyScore;
+    }
+    public static float GetCurrentDateTimeAsFloat()
+    {
+        // Get the current date and time
+        DateTime now = DateTime.UtcNow;
+
+        // Define the Unix epoch (January 1, 1970)
+        DateTime epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+
+        // Calculate the difference between now and the Unix epoch
+        TimeSpan timeSpan = now - epoch;
+
+        // Return the total seconds as a float
+        return (float)timeSpan.TotalSeconds;
     }
 }

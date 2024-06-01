@@ -10,6 +10,7 @@ public class GameData
     public int playerPollen;
     public int playerHoneyCap;
     public int playerPollenCap;
+    public float logoutTime;
 
     [SerializeField]
     public List<string> unlockedPlantIDs;
@@ -27,6 +28,7 @@ public class GameData
         this.playerPollen = 0;
         this.playerPollenCap = 0;
         this.playerHoneyCap = 0;
+        this.logoutTime = 0;
         unlockedPlantIDs = new List<string>();
         seenTutorials = new List<string>();
         buildingList = new List<BuildData>();

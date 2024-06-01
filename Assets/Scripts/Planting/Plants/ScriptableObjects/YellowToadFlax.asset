@@ -43,7 +43,7 @@ MonoBehaviour:
   correctPlots: 01000000
   baseSpawnRate: 0
   seedAmount: 0
-  decayTime: 5
+  decayTime: 100
   references:
     version: 2
     RefIds: []
