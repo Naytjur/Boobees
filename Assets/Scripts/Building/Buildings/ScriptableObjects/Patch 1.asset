@@ -45,6 +45,8 @@ MonoBehaviour:
   height: 1
   unlockLevel: 1
   cost: 0
+  maxCount: 1
+  count: 4
   references:
     version: 2
     RefIds: []

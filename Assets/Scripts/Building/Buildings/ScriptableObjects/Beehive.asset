@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Beehive
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 1730592248008074945, guid: a2ebe3d1b36a7f64d80021d61ab2bc2e,
     type: 3}
   gardenVisual: {fileID: 1730592248008074945, guid: 222f38bcc75bf7744b17ff69c49c220d,
@@ -45,6 +45,8 @@ MonoBehaviour:
   height: 1
   unlockLevel: 9
   cost: 150
+  maxCount: 0
+  count: 0
   references:
     version: 2
     RefIds: []

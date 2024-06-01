@@ -5357,6 +5357,8 @@ Transform:
   - {fileID: 1727399727}
   - {fileID: 578815257}
   - {fileID: 1551782518}
+  - {fileID: 1306566630}
+  - {fileID: 1090473309}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &649751506
@@ -10879,7 +10881,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2000126506}
+  m_Father: {fileID: 637247720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1097375033
 PrefabInstance:
@@ -13076,6 +13078,10 @@ MonoBehaviour:
   honeyText: {fileID: 5980329567232051196}
   pollenText: {fileID: 1457950358}
   levelText: {fileID: 1509035640}
+  honeyScore: 0
+  pollenScore: 0
+  maxHoneyScore: 0
+  maxPollenScore: 0
   allPlants: []
 --- !u!4 &1306566630
 Transform:
@@ -13090,7 +13096,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2000126506}
+  m_Father: {fileID: 637247720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1314369603 stripped
 Transform:
@@ -14327,6 +14333,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1950823916}
     m_Modifications:
+    - target: {fileID: 1656578079144369000, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050570199986255208, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050570199986255208, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050570199986255208, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2296688416964470920, guid: 492b4d760e9e1c4428dceab38b942fd7,
         type: 3}
       propertyPath: m_Sprite
@@ -14458,6 +14484,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pollen Resource Container
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004273096623849528, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: resource
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722634082392810288, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722634082392810288, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.77244145
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722634082392810288, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.4537647
       objectReference: {fileID: 0}
     - target: {fileID: 9194109391969327254, guid: 492b4d760e9e1c4428dceab38b942fd7,
         type: 3}
@@ -14719,7 +14765,6 @@ Transform:
   - {fileID: 822211151}
   - {fileID: 1923518457}
   - {fileID: 1159300775}
-  - {fileID: 2000126506}
   - {fileID: 1762365404}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16706,54 +16751,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1578453073}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1813021033
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1813021035}
-  - component: {fileID: 1813021034}
-  m_Layer: 0
-  m_Name: OverlayUIManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1813021034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1813021033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe960b74e9a6c274d9832c31410e5452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UIs:
-  - {fileID: 2458580767899038460}
-  - {fileID: 88040495362781221}
-  - {fileID: 8115263412294035834}
---- !u!4 &1813021035
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1813021033}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 300.9066, y: 587.2597, z: 143.25775}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2000126506}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1821924598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18444,40 +18441,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &2000126505
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2000126506}
-  m_Layer: 0
-  m_Name: ____LevelManagers____
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2000126506
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000126505}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1090473309}
-  - {fileID: 1813021035}
-  - {fileID: 1306566630}
-  m_Father: {fileID: 1476751590}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2003980452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23068,6 +23031,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1950823916}
     m_Modifications:
+    - target: {fileID: 1656578079144369000, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050570199986255208, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050570199986255208, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050570199986255208, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2296688416964470920, guid: 492b4d760e9e1c4428dceab38b942fd7,
         type: 3}
       propertyPath: m_Sprite
@@ -23199,6 +23182,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Honey Resource Container
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722634082392810288, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.4764151
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722634082392810288, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.85238206
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722634082392810288, guid: 492b4d760e9e1c4428dceab38b942fd7,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194109391969327254, guid: 492b4d760e9e1c4428dceab38b942fd7,
         type: 3}

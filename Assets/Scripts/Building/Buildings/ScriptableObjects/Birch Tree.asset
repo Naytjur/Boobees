@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Birch Tree
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 4192051278206427102, guid: fbdafe99f042ec24aa77899a968643b5,
     type: 3}
   gardenVisual: {fileID: 4192051278206427102, guid: 6cd338f3a65821f4d9e95f049df87ba0,
@@ -45,6 +45,8 @@ MonoBehaviour:
   height: 1
   unlockLevel: 11
   cost: 400
+  maxCount: 0
+  count: 0
   references:
     version: 2
     RefIds: []

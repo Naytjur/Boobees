@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Bench
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 4138045857846625545, guid: 9ff32137ff07dca4a88da4bc1e47ae24,
     type: 3}
   gardenVisual: {fileID: 4138045857846625545, guid: 7e1fd97f729914d4a95e48590cc7784e,
@@ -45,6 +45,8 @@ MonoBehaviour:
   height: 2
   unlockLevel: 5
   cost: 50
+  maxCount: 0
+  count: 0
   references:
     version: 2
     RefIds: []

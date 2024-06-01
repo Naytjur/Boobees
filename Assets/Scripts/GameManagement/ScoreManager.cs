@@ -14,14 +14,12 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
     [SerializeField] private int maxPollenScoreBase = 20;
     [SerializeField] public int playerLevel = 1;
 
-    public TMP_Text honeyText;
-    public TMP_Text pollenText;
     public TMP_Text levelText;
 
-    private int honeyScore = 0;
-    private int pollenScore = 0;
-    private int maxHoneyScore;
-    private int maxPollenScore;
+    public int honeyScore = 0;
+    public int pollenScore = 0;
+    public int maxHoneyScore;
+    public int maxPollenScore;
 
     public static event Action<int> onLevelUp;
     public static event Action<int, int> onScoreChanged;
@@ -86,8 +84,6 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
     private void UpdateUI()
     {
-        honeyText.text = $"{honeyScore} / {maxHoneyScore}";
-        pollenText.text = $"{pollenScore} / {maxPollenScore}";
         levelText.text = playerLevel.ToString();
     }
 

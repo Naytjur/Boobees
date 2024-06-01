@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using UnityEditor.Build.Pipeline.Utilities;
 using UnityEngine;
 using UnityEngine.UI;
@@ -67,6 +68,11 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     {
         instance = this;
         buildGrid = new Grid(gridWidth, gridHeight, gridCellSize, gridOrigin.position);
+    }
+
+    private void OnEnable()
+    {
+        DataPersistenceManager.postLoad += UpdateBuildings;
     }
 
     private void Start()
@@ -393,6 +399,16 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         onStateChanged?.Invoke(state);
     }
 
+    private void UpdateBuildings()
+    {
+        Debug.Log("Updating buildings");
+        foreach (BuildingSO building in allBuildings)
+        {
+            building.TryUnlock(ScoreManager.instance.playerLevel);
+            building.TryAdjustMaxCount(ScoreManager.instance.playerLevel);
+        }
+    }
+
     //Getters and Setters
     public void SetCurrentBuilding(BuildingSO building)
     {
@@ -468,10 +484,6 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
     private void OnLeveledUp(int level)
     {
-        foreach(BuildingSO building in allBuildings)
-        {
-            building.TryUnlock(level);
-            building.TryAdjustMaxCount(level);
-        }
+        UpdateBuildings();
     }
 }
