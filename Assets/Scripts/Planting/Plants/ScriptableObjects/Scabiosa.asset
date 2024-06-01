@@ -35,7 +35,7 @@ MonoBehaviour:
   description: "\u2022\tSouthern European annual  \n\u2022\tdeeply cut basal leaves
     and feathery stem leaves \n\u2022\tproduces fragrant 5-cm flower heads  \n\u2022\twhite,
     rose, crimson, blue, or deep mahogany purple "
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 3102992664574367547, guid: e35aed3eacb70a14ea8957ef41fd62b3,
     type: 3}
   gardenVisual: {fileID: 3102992664574367547, guid: e35aed3eacb70a14ea8957ef41fd62b3,

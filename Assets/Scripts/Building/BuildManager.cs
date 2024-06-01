@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data.Common;
+using Unity.Loading;
 using UnityEditor.Build.Pipeline.Utilities;
 using UnityEngine;
 using UnityEngine.UI;
@@ -127,11 +128,6 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         {
             data.buildingList.Add(building);
         }
-
-        foreach (BuildData building in buildings)
-        {
-            data.buildingList.Add(building);
-        }
     }
 
     //Building Placement
@@ -185,10 +181,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
             buildGrid.SetValue(cell.x, cell.y, buildObject, (int) direction);
         }
 
-
         currentBuilding.AddCount(1);
-
-        buildings.Add(new BuildData(currentBuilding.id, x, z, (int) direction));
 
         onBuildingPlaced?.Invoke();
         UpdateBuildState(BuildState.Unselected);
@@ -213,8 +206,6 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         }
 
         cur.AddCount(1);
-
-        buildings.Add(new BuildData(id, x, z, rotation));
 
         onBuildingPlaced?.Invoke();
     }

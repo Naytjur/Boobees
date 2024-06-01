@@ -40,7 +40,7 @@ public class PlantingManager : MonoBehaviour
 
     //events
     public event Action<PlantSO> onPlantUnlocked;
-    public event Action PlantPlanted;
+    public event Action onPlantPlanted;
 
     public LocalizeStringEvent plotFullEvent;
     public LocalizedString plotFullMessage;
@@ -117,13 +117,20 @@ public class PlantingManager : MonoBehaviour
             plantTransform.position = hoverPosition;
 
             Plant plant = plantTransform.GetComponent<Plant>();
+            plant.plantSO.seedAmount -= 1;
             plantList.Add(plant);
             currentPlot.AddPlant(plant);
             Destroy(hoverVisual.gameObject);
             plant.AssignPlot(currentPlot.type);
-            isPlanting = false;
+            
+            if(plant.plantSO.seedAmount <= 0)
+            {
+                StopPlanting();
+            }
+
             UpdateAmountUI();
-            PlantPlanted?.Invoke();
+
+            onPlantPlanted?.Invoke();
         }
 
         StartPlanting();
@@ -163,6 +170,7 @@ public class PlantingManager : MonoBehaviour
         if (plantState != PlantState.Unselected && hoverVisual != null)
         {
             Destroy(hoverVisual.gameObject);
+            currentPlant = null;
         }
     }
 
@@ -201,16 +209,11 @@ public class PlantingManager : MonoBehaviour
             {
                 if(!plant.unlocked)
                 {
-                    UnlockPlant(plant);
-                    name = plant.name;
-                    return true;   
+                    UnlockPlant(plant);     
                 }
-                else
-                {
-                    GetSeeds(plant);
-                    name = plant.name;
-                    return true;
-                }
+                GetSeeds(plant);
+                name = plant.name;
+                return true;
             }
         }
         name = "Invalid ID";
@@ -225,7 +228,7 @@ public class PlantingManager : MonoBehaviour
 
     private void GetSeeds(PlantSO plant)
     {
-        plant.seedAmount += UnityEngine.Random.Range(2, 5);
+        plant.seedAmount += 3;
     }
 
     private void UpdateActiveState(GameState state)
