@@ -13,13 +13,12 @@ public class PlantingUI : MonoBehaviour
     [SerializeField]
     private Transform buttonContainerTransform;
 
-    public LocalizeStringEvent plantNameEvent;
-    public LocalizedString plantName;
     public LocalizedString plantNotDiscoveredMessage;
 
     private void Start()
     {
         PlantingManager.instance.onPlantUnlocked += UpdatePlantButtons;
+        PlantingManager.instance.onPlantPlanted += UpdatePlantButtons;
     }
 
     private void OnEnable()
@@ -44,14 +43,11 @@ public class PlantingUI : MonoBehaviour
                 SelectPlant buttonInfo = button.GetComponent<SelectPlant>();
                 buttonInfo.Setup();
                 buttonInfo.SetIndex(PlantingManager.instance.GetPlantList().IndexOf(plant));
-                //buttonInfo.text.text = plant.name;
 
-                plantName = plant.itemNameLocalizedString;
-                plantNameEvent = buttonInfo.plantNameLocalizeStringEvent;
-                plantNameEvent.StringReference = plantName;
+                buttonInfo.plantNameLocalizeStringEvent.StringReference = plant.itemNameLocalizedString;
 
                 buttonInfo.image.sprite = plant.sprite;
-                button.GetComponent<Button>().interactable = plant.unlocked;
+                button.GetComponent<Button>().interactable = plant.unlocked && plant.seedAmount > 0;
                 index++;
             }
         }
@@ -62,20 +58,25 @@ public class PlantingUI : MonoBehaviour
                 Transform button = Instantiate(buttonPrefab, buttonContainerTransform);
                 SelectPlant buttonInfo = button.GetComponent<SelectPlant>();
                 buttonInfo.SetIndex(PlantingManager.instance.GetPlantList().IndexOf(plant));
-                //buttonInfo.text.text = plant.name;
 
-                /*plantName = plant.itemNameStringEvent.StringReference;
-                plantNameEvent = buttonInfo.plantNameLocalizeStringEvent;
-                plantNameEvent.StringReference = plantName;*/
-
-                plantNameEvent = buttonInfo.plantNameLocalizeStringEvent;
-                plantNameEvent.StringReference = plantNotDiscoveredMessage;
-
+                buttonInfo.plantNameLocalizeStringEvent.StringReference = plantNotDiscoveredMessage;
 
                 buttonInfo.image.sprite = plant.sprite;
-                button.GetComponent<Button>().interactable = plant.unlocked;
+                button.GetComponent<Button>().interactable = false;
                 index++;
             }
+        }
+    }
+
+    private void UpdatePlantButtons()
+    {
+        int index = 0;
+
+        foreach (Transform button in buttonContainerTransform)
+        {
+            var plant = PlantingManager.instance.GetPlantByIndex(button.GetComponent<SelectPlant>().GetIndex());
+            button.GetComponent<Button>().interactable = plant.unlocked && plant.seedAmount > 0;
+            index++;
         }
     }
 
