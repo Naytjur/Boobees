@@ -17,6 +17,8 @@ public class GameData
     public List<string> seenTutorials;
     [SerializeField]
     public List<BuildData> buildingList;
+    [SerializeField]
+    public List<PlantData> plantList;    
 
     public GameData()
     {
@@ -28,6 +30,7 @@ public class GameData
         unlockedPlantIDs = new List<string>();
         seenTutorials = new List<string>();
         buildingList = new List<BuildData>();
+        plantList = new List<PlantData>();
 
         int totalTutorialMessages = 8;
         for (int i = 0; i < totalTutorialMessages; i++)
