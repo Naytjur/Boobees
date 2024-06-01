@@ -16,9 +16,13 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
 
     public LanguageManager languageManager;
 
+    private bool postLoadCompleted = false;
+
     private void Awake()
     {
-        BuildManager.onBuildingPlaced += OnBuildingPlaced;
+        // Temporarily disable event subscription for onBuildingPlaced
+        postLoadCompleted = false;
+
         ScoreManager.onScoreChanged += OnScoreChanged;
         ScoreManager.onLevelUp += OnLevelUp;
         DataPersistenceManager.postLoad += PostLoad;
@@ -32,9 +36,20 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
             message.manager = this;
         }
     }
+
+    private void OnEnable()
+    {
+        BuildManager.onBuildingPlaced += OnBuildingPlaced;
+    }
+
+    private void OnDisable()
+    {
+        BuildManager.onBuildingPlaced -= OnBuildingPlaced;
+    }
+
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             if (tutorialMessageStart2.beenSeen == "false" && tutorialMessageStart.beenSeen == "true")
             {
@@ -42,7 +57,6 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
             }
         }
     }
-    
 
     public void LoadData(GameData data)
     {
@@ -57,8 +71,8 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
             }
             Debug.Log($"Tutorial {i} beenSeen: {tutorialMessages[i].beenSeen}");
         }
-        
     }
+
     public void SaveData(ref GameData data)
     {
         List<string> seenTutorials = new List<string>();
@@ -71,13 +85,19 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     }
 
     private void PostLoad()
-    {   
+    {
         LanguageTutorial();
+
+        // Enable the flag to allow OnBuildingPlaced to execute
+        postLoadCompleted = true;
     }
 
     private void OnBuildingPlaced()
     {
-        tutorialMessagePlot.ShowTutorial();
+        if (postLoadCompleted)
+        {
+            tutorialMessagePlot.ShowTutorial();
+        }
     }
 
     private void OnScoreChanged(int pollen, int honey)
