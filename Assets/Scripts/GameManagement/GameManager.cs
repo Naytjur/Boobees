@@ -133,9 +133,9 @@ public class GameManager : MonoBehaviour
             {
                 Grid grid = BuildManager.instance.buildGrid;
                 grid.GetXZ(pos, out int x, out int z);
-                if (grid.IsPositionOnGrid(x, z) && grid.GetGridObject(x, z).building != null)
+                if (grid.IsPositionOnGrid(x, z) && grid.GetGridObject(x, z, out GridObject tile))
                 {
-                    grid.GetGridObject(x, z).building.OnClick();
+                    tile.building?.OnClick();
                 }
             }
         }

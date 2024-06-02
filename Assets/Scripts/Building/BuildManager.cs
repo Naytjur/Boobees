@@ -5,6 +5,7 @@ using System.Data.Common;
 using Unity.Loading;
 using UnityEditor.Build.Pipeline.Utilities;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using static UnityEditor.FilePathAttribute;
 
@@ -82,6 +83,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         ScoreManager.onLevelUp += OnLeveledUp;
         onBuildingChanged += ChangeVisual;
         UpdateActiveState(GameManager.instance.state);
+        UpdateBuildings();
     }
 
     private void Update()
@@ -97,6 +99,11 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     {
         if (Input.GetMouseButton(0) && state != BuildState.Unselected && isActive)
         {
+            if(EventSystem.current.IsPointerOverGameObject())
+            {
+                return;
+            }
+
             UpdateVisualPosition();
         }
     }
@@ -361,7 +368,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
         foreach (Vector2Int cell in building.GetGridPositions(new Vector2Int(x, z), direction))
         {
-            if (!buildGrid.IsPositionOnGrid(cell.x, cell.y) || buildGrid.GetGridObject(cell.x, cell.y).building != null)
+            if (!buildGrid.IsPositionOnGrid(cell.x, cell.y) || !buildGrid.GetGridObject(cell.x, cell.y, out GridObject tile) || tile.building != null)
             {
                 return false;
             }

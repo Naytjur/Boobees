@@ -71,7 +71,12 @@ public class Patch : Building
 
         foreach(Vector2Int tile in GetSurroundingTiles())
         {
-            Building building = BuildManager.instance.buildGrid.GetGridObject(tile.x, tile.y).building;
+            Building building = null;
+
+            if(BuildManager.instance.buildGrid.GetGridObject(tile.x, tile.y, out GridObject gridObject))
+            {
+                building = gridObject.building;
+            }
 
             if(building != null)
             {

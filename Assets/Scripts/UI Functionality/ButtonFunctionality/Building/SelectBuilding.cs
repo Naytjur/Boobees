@@ -17,6 +17,7 @@ public class SelectBuilding : MonoBehaviour
     public LocalizeStringEvent buildNameLocalizeStringEvent;
     public LocalizeStringEvent buildCostLocalizationEvent;
     public LocalizeStringEvent buildUnlockLocalizationEvent;
+    public Image image;
     public TMP_Text buildingAmountText;
     public int buildingCost;
     public int buildingUnlockLevel;

@@ -30,7 +30,6 @@ public class PlantingManager : MonoBehaviour
 
     //UI
     public Button confirmButton;
-    public Button clearButton;
     public TMP_Text plantAmount;
     public Transform plantSelectionPanel;
 
@@ -54,7 +53,6 @@ public class PlantingManager : MonoBehaviour
     {
         GameManager.instance.onStateChange += UpdateActiveState;
         confirmButton.onClick.AddListener(Plant);
-        clearButton.onClick.AddListener(ClearCurrentPlot);
     }
 
     void Update()
@@ -109,8 +107,6 @@ public class PlantingManager : MonoBehaviour
 
     public void Plant()
     {
-        clearButton.interactable = true;
-
         if (plantState == PlantState.Planting && !currentPlot.IsFull())
         {
             Transform plantTransform = Instantiate(currentPlant.gardenPrefab, currentPlot.transform);
@@ -158,7 +154,6 @@ public class PlantingManager : MonoBehaviour
         UpdateAmountUI();
 
         StopPlanting();
-        clearButton.interactable = false;
         plantState = PlantState.Unselected;
         StartPlanting();
     }

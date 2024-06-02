@@ -81,6 +81,7 @@ public class BuildingUI : MonoBehaviour
             buildButtons.Add(button);
         }
         UpdateBuildButtons();
+        UpdateOverlay(BuildManager.instance.state);
     }
 
     private void UpdateBuildButtons()
@@ -93,10 +94,9 @@ public class BuildingUI : MonoBehaviour
             buildingNameEvent = select.buildNameLocalizeStringEvent;
             buildingNameEvent.StringReference = buildingName;
 
-            select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
+            select.image.sprite = select.building.sprite;
 
-            select.buildCostLocalizationEvent.RefreshString();
-            select.buildUnlockLocalizationEvent.RefreshString();
+            select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
 
             if (select.building.cost == 0)
             {
@@ -106,6 +106,11 @@ public class BuildingUI : MonoBehaviour
             if (select.building.unlocked)
             {
                 select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
+            }
+            else
+            {
+                select.buildCostLocalizationEvent.RefreshString();
+                select.buildUnlockLocalizationEvent.RefreshString();
             }
         }
     }
@@ -122,9 +127,6 @@ public class BuildingUI : MonoBehaviour
 
             select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
 
-            select.buildCostLocalizationEvent.RefreshString();
-            select.buildUnlockLocalizationEvent.RefreshString();
-
             if (select.building.cost == 0)
             {
                 buildingCostEvent = select.buildCostLocalizationEvent;
@@ -133,6 +135,11 @@ public class BuildingUI : MonoBehaviour
             if (select.building.unlocked)
             {
                 select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
+            }
+            else
+            {
+                select.buildCostLocalizationEvent.RefreshString();
+                select.buildUnlockLocalizationEvent.RefreshString();
             }
         }
     }
@@ -149,9 +156,6 @@ public class BuildingUI : MonoBehaviour
 
             select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
 
-            select.buildCostLocalizationEvent.RefreshString();
-            select.buildUnlockLocalizationEvent.RefreshString();
-
             if (select.building.cost == 0)
             {
                 buildingCostEvent = select.buildCostLocalizationEvent;
@@ -160,6 +164,11 @@ public class BuildingUI : MonoBehaviour
             if (select.building.unlocked)
             {
                 select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
+            }
+            else
+            {
+                select.buildCostLocalizationEvent.RefreshString();
+                select.buildUnlockLocalizationEvent.RefreshString();
             }
         }
     }
