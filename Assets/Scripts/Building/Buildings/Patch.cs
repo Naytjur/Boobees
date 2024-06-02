@@ -54,13 +54,13 @@ public class Patch : Building
         }
     }
 
-    private void UpdateModifierBuildingList()
+    public void UpdateModifierBuildingList()
     {
         modifierBuildings.Clear();
 
-        foreach(Building building in GetSurroundingBuildings())
+        foreach (Building building in GetSurroundingBuildings())
         {
-            if(!modifierBuildings.Contains(building.buildingSO))
+            if (building.CanAffectPatch(plot))
             {
                 modifierBuildings.Add(building.buildingSO);
             }
@@ -119,5 +119,10 @@ public class Patch : Building
                 buildData.placedPlants.Add(new PlantData(plant.plantSO.id, plant.transform.position.x, plant.transform.position.y, plant.transform.position.z, elapsedTime));
             }
         }
+    }
+
+    public List<BuildingSO> GetModifierBuildings()
+    {
+        return modifierBuildings;
     }
 }

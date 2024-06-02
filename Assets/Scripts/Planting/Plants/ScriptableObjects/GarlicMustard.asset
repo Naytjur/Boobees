@@ -44,7 +44,7 @@ MonoBehaviour:
   attractions:
   - {fileID: 11400000, guid: 75d96da0270fc5e49b36903aad489000, type: 2}
   correctPlots: 02000000
-  baseSpawnRate: 10
+  baseSpawnRate: 5
   seedAmount: 0
   decayTime: 129600
   references:

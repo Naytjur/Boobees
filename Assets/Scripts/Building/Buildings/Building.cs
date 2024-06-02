@@ -106,4 +106,23 @@ public class Building : MonoBehaviour
 
         return tiles;
     }
+
+    public virtual bool CanAffectPatch(Plot patch)
+    {
+        Debug.LogError("This method should be overridden in subclasses.");
+        return false;
+    }
+
+    private List<PlotType> GetAffectablePlotTypes()
+    {
+        List<PlotType> affectableTypes = new List<PlotType>();
+        foreach (PlotTypeModifier modifier in buildingSO.plotTypeModifiers)
+        {
+            if (modifier.canAffect)
+            {
+                affectableTypes.Add(modifier.plotType);
+            }
+        }
+        return affectableTypes;
+    }
 }

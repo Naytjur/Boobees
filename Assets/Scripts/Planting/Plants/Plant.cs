@@ -24,6 +24,8 @@ public class Plant : MonoBehaviour
         {
             spawnRate *= 2;
         }
+        // Apply modifiers from surrounding buildings
+        spawnRate = ApplySpawnRateModifiers(spawnRate);
 
         InvokeRepeating(nameof(TrySpawnInsect), UnityEngine.Random.Range(3, spawnRate), spawnRate);
 
@@ -32,7 +34,6 @@ public class Plant : MonoBehaviour
             targetTransform = transform;
         }
     }
-
     public void AssignPlot(PlotType plotType)
     {
         plot = plotType;
@@ -57,7 +58,10 @@ public class Plant : MonoBehaviour
         {
             if (item is InsectSO insect)
             {
-                if (UnityEngine.Random.Range(1, 101) <= insect.GetRarityPercentage())
+                float rarityPercentage = insect.GetRarityPercentage();
+                rarityPercentage = ApplyRarityModifiers(insect, rarityPercentage);
+
+                if (UnityEngine.Random.Range(1, 101) <= rarityPercentage)
                 {
                     SpawnInsect(item.gardenPrefab);
                 }
@@ -71,6 +75,55 @@ public class Plant : MonoBehaviour
         Insect newInsect = Instantiate(prefab, spawnPosition, Quaternion.identity).GetComponent<Insect>();
 
         newInsect.Spawn(targetTransform.position);
+    }
+
+        private float ApplySpawnRateModifiers(float baseSpawnRate)
+    {
+        foreach (BuildingSO building in GetModifierBuildings())
+        {
+            foreach (InsectModifier modifier in building.insectModifiers)
+            {
+                foreach (ItemInfo attraction in plantSO.attractions)
+                {
+                    if (attraction is InsectSO insect && (modifier.insectType == insect.type || modifier.insectType == InsectSO.Type.Bee || modifier.insectType == InsectSO.Type.Butterfly))
+                    {
+                        if (modifier.modifySpawnRate)
+                        {
+                            baseSpawnRate *= modifier.modifierAmount;  // Adjust the spawn rate
+                        }
+                    }
+                }
+            }
+        }
+        return baseSpawnRate;
+    }
+
+    private float ApplyRarityModifiers(InsectSO insect, float baseRarity)
+    {
+        foreach (BuildingSO building in GetModifierBuildings())
+        {
+            foreach (InsectModifier modifier in building.insectModifiers)
+            {
+                foreach (ItemInfo attraction in plantSO.attractions)
+                {
+                    if (attraction is InsectSO insectAttraction && (modifier.insectType == insectAttraction.type || modifier.insectType == InsectSO.Type.Bee || modifier.insectType == InsectSO.Type.Butterfly))
+                    {
+                        if (!modifier.modifySpawnRate)
+                        {
+                            baseRarity *= modifier.modifierAmount;  // Adjust the rarity
+                        }
+                    }
+                }
+            }
+        }
+        return baseRarity;
+    }
+
+
+    private List<BuildingSO> GetModifierBuildings()
+    {
+        Patch patch = GetComponentInParent<Patch>();
+        return patch != null ? patch.GetModifierBuildings() : new List<BuildingSO>();
     }
 
     public void StartDecayTimer(float elapsedTime, float logoutTime)
