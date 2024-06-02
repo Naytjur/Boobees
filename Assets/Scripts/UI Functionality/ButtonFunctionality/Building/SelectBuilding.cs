@@ -19,6 +19,7 @@ public class SelectBuilding : MonoBehaviour
     public LocalizeStringEvent buildUnlockLocalizationEvent;
     public Image image;
     public TMP_Text buildingAmountText;
+    public ToggleItemInfo itemInfoButton;
     public int buildingCost;
     public int buildingUnlockLevel;
 

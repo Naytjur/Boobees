@@ -23,6 +23,8 @@ public class BuildingUI : MonoBehaviour
     private Button rotateButton;
     [SerializeField]
     private Button removeButton;
+    [SerializeField]
+    private ItemInfoDisplay infoDisplay;
 
     private List<Transform> buildButtons = new List<Transform>();
 
@@ -74,6 +76,7 @@ public class BuildingUI : MonoBehaviour
         {
             Transform button = Instantiate(buttonPrefab, buttonContainerTransform);
             SelectBuilding select = button.GetComponent<SelectBuilding>();
+            select.itemInfoButton.Setup(select, infoDisplay);
             select.SetIndex(index);
             select.building = building;
             select.buildingCost = building.cost;
