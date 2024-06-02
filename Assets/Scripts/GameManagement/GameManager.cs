@@ -10,7 +10,9 @@ public enum GameState
     Planting,
     Building,
     Catalogue,
-    Scanning
+    Scanning,
+    Map,
+    Settings
 }
 
 public class GameManager : MonoBehaviour
@@ -73,9 +75,20 @@ public class GameManager : MonoBehaviour
             case GameState.PlotSelect:
                 HandlePlotSelect();
                 break;
+            case GameState.Map:
+                HandleMap();
+                break;
+            case GameState.Settings:
+                HandleSettings();
+                break;
         }
 
         onStateChange?.Invoke(newState);
+    }
+
+    private void HandleMap()
+    {
+        
     }
 
     private void HandlePlotSelect()
@@ -99,6 +112,11 @@ public class GameManager : MonoBehaviour
     private void HandleViewing()
     {
         cameraPositon.SetCameraDefaultPosition();
+    }
+    
+    private void HandleSettings()
+    {
+
     }
 
     private void HandlePlanting()
@@ -124,9 +142,9 @@ public class GameManager : MonoBehaviour
             {
                 Grid grid = BuildManager.instance.buildGrid;
                 grid.GetXZ(pos, out int x, out int z);
-                if (grid.IsPositionOnGrid(x, z) && grid.GetGridObject(x, z).building != null)
+                if (grid.IsPositionOnGrid(x, z) && grid.GetGridObject(x, z, out GridObject tile))
                 {
-                    grid.GetGridObject(x, z).building.OnClick();
+                    tile.building?.OnClick();
                 }
             }
         }

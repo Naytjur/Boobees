@@ -63,6 +63,6 @@ public class UIBook : MonoBehaviour
     public void CloseCatalogue()
     {
         SelectTabByReference(homePage);
-        GameManager.instance.ReturnToPreviousState();
+        GameManager.instance.UpdateGameState(GameState.Viewing);
     }
 }

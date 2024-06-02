@@ -12,7 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: House
   m_EditorClassIdentifier: 
-  id: 
+  id: 6
+  itemNameLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   itemName: 
   description: 
   unlocked: 0
@@ -24,3 +42,8 @@ MonoBehaviour:
   height: 4
   unlockLevel: 0
   cost: 0
+  maxCount: 0
+  count: 0
+  references:
+    version: 2
+    RefIds: []

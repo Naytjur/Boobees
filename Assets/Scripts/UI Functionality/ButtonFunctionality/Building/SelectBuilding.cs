@@ -17,6 +17,7 @@ public class SelectBuilding : MonoBehaviour
     public LocalizeStringEvent buildNameLocalizeStringEvent;
     public LocalizeStringEvent buildCostLocalizationEvent;
     public LocalizeStringEvent buildUnlockLocalizationEvent;
+    public Image image;
     public TMP_Text buildingAmountText;
     public int buildingCost;
     public int buildingUnlockLevel;
@@ -39,7 +40,7 @@ public class SelectBuilding : MonoBehaviour
     private void Select(int index)
     {
         ScoreManager.instance.UpdateScores(0, -building.cost);
-        buildManager.SetBuildingByIndex(index);
+        buildManager.StartPlacing(index);
     }
 
     public void SetIndex(int index)

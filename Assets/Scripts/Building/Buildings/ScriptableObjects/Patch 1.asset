@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Patch 1
   m_EditorClassIdentifier: 
-  id: 
+  id: 420
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
@@ -45,6 +45,8 @@ MonoBehaviour:
   height: 1
   unlockLevel: 1
   cost: 0
+  maxCount: 1
+  count: 4
   references:
     version: 2
     RefIds: []

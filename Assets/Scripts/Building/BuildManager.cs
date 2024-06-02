@@ -1,22 +1,26 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Reflection;
+using System.Data.Common;
+using Unity.Loading;
+using UnityEditor.Build.Pipeline.Utilities;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using static UnityEditor.FilePathAttribute;
 
-public class BuildManager : MonoBehaviour
+public class BuildManager : MonoBehaviour, IDataPersistence
 {
     public static BuildManager instance;
 
-    private enum BuildState
+    public enum BuildState
     {
         Unselected,
         Placing,
         Moving
     }
 
-    private BuildState state;
+    public BuildState state;
 
     [Header("Grid Configuration")]
     [SerializeField]
@@ -31,12 +35,13 @@ public class BuildManager : MonoBehaviour
     [Header("Buildings")]
     [SerializeField]
     private List<BuildingSO> allBuildings =  new List<BuildingSO>();
+    private List<Building> buildings = new List<Building>();
 
     //Internal Variables
     public Grid buildGrid;
     private bool isActive;
     private BuildingSO currentBuilding;
-    private GameObject currentMover;
+    private Building currentMover;
 
     [Header("Build Hovering")]
     //Hovering visuals
@@ -50,26 +55,26 @@ public class BuildManager : MonoBehaviour
     private Color unableColor;
     private BuildingSO.Dir direction = BuildingSO.Dir.Down;
 
-    //UI
-    [Header("UI Assignments")]
+    [Header("UI")]
     [SerializeField]
     private Button confirmButton;
-    [SerializeField]
-    private Button rotateButton;
-    [SerializeField]
-    private GameObject buildingSelectMenu;
 
 
     public static event Action onBuildingChanged;
     public static event Action onBuildingPlaced;
     public static event Action onBuildingMoved;
     public static event Action onBuildingRemoved;
+    public static event Action<BuildState> onStateChanged;
 
     private void Awake()
     {
         instance = this;
-        confirmButton.onClick.AddListener(PlaceBuilding);
-        rotateButton.onClick.AddListener(RotateBuilding);
+        buildGrid = new Grid(gridWidth, gridHeight, gridCellSize, gridOrigin.position);
+    }
+
+    private void OnEnable()
+    {
+        DataPersistenceManager.postLoad += UpdateBuildings;
     }
 
     private void Start()
@@ -78,33 +83,97 @@ public class BuildManager : MonoBehaviour
         ScoreManager.onLevelUp += OnLeveledUp;
         onBuildingChanged += ChangeVisual;
         UpdateActiveState(GameManager.instance.state);
-        buildGrid = new Grid(gridWidth, gridHeight, gridCellSize, gridOrigin.position);
-
-        foreach(BuildingSO building in allBuildings)
-        {
-            building.RemoveCount(building.count);
-        }
+        UpdateBuildings();
     }
 
     private void Update()
     {
-        if (visual != null && lastTarget != null && isActive)
+        if (currentBuilding != null && lastTarget != null && isActive)
         {
             buildGrid.GetXZ(lastTarget, out int x, out int z);
             confirmButton.interactable = CheckValidBuildPosition(currentBuilding, x, z);
             UpdateVisual();
         }
     }
-
     private void LateUpdate()
     {
         if (Input.GetMouseButton(0) && state != BuildState.Unselected && isActive)
         {
+            if(EventSystem.current.IsPointerOverGameObject())
+            {
+                return;
+            }
+
             UpdateVisualPosition();
         }
     }
 
+    //Save Load
+    public void LoadData(GameData data)
+    {
+        foreach (BuildingSO building in allBuildings)
+        {
+            building.RemoveCount(building.count);
+        }
+
+        foreach (BuildData buildData in data.buildingList)
+        {
+            Building building = PlaceBuilding(buildData.gridX, buildData.gridZ, buildData.buildingID, buildData.buildingRotation);
+
+            if (building is Patch patch)
+            {
+                patch.LoadPlants(buildData.placedPlants);
+            }
+        }
+    }
+
+    private int GetBuildIndex(int x, int y)
+    {
+        int index = y * buildGrid.GetGridWidth() + x;
+        return index;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.buildingList.Clear();
+
+        foreach (Building building in buildings)
+        {
+            if(building is Patch patch)
+            {
+                patch.SavePlants();
+            }
+
+            data.buildingList.Add(building.buildData);
+        }
+    }
+
     //Building Placement
+    public void StartPlacing(int index)
+    {
+        CancelCurrent();
+
+        if (index < allBuildings.Count)
+        {
+            confirmButton.onClick.RemoveAllListeners();
+            confirmButton.onClick.AddListener(PlaceBuilding);
+            SetCurrentBuilding(allBuildings[index]);
+            UpdateBuildState(BuildState.Placing);
+        }
+    }
+
+    public void StartMoving(Building build)
+    {
+        CancelCurrent();
+        confirmButton.onClick.RemoveAllListeners();
+        confirmButton.onClick.AddListener(delegate { MoveBuilding(build); });
+        SetCurrentMover(build);
+        direction = (BuildingSO.Dir) build.buildData.buildingRotation;
+        build.Hide();
+        RemoveFromGrid(build);
+        UpdateBuildState(BuildState.Moving);
+    }
+
     private void PlaceBuilding()
     {
         buildGrid.GetXZ(lastTarget, out int x, out int z);
@@ -114,85 +183,100 @@ public class BuildManager : MonoBehaviour
             return;
         }
 
-        Vector2Int rotationOffset = currentBuilding.GetRotationOffset(direction);
-        Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), currentBuilding, gridCellSize, Quaternion.Euler(0, currentBuilding.GetRotationDegrees(direction), 0));
+        BuildData data = new BuildData(currentBuilding.id, x, z, (int)direction);
 
-        if(visual != null)
+        Vector2Int rotationOffset = currentBuilding.GetRotationOffset(direction);
+        Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), currentBuilding, data, gridCellSize, Quaternion.Euler(0, currentBuilding.GetRotationDegrees(direction), 0), direction);
+        
+        buildings.Add(buildObject);
+        buildObject.buildData = data;
+
+        if (visual != null)
         {
             visual.gameObject.SetActive(false);
         }
 
         foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z), direction))
         {
-            buildGrid.SetValue(cell.x, cell.y, buildObject);
+            buildGrid.SetValue(cell.x, cell.y, buildObject, (int) direction);
         }
-
-        ToggleHoveringUI(false);
 
         currentBuilding.AddCount(1);
 
         onBuildingPlaced?.Invoke();
+        UpdateBuildState(BuildState.Unselected);
     }
 
-    private bool CheckValidBuildPosition(BuildingSO building, int x, int z)
+    private Building PlaceBuilding(int x, int z, string id, int rotation)
     {
-        foreach (Vector2Int cell in building.GetGridPositions(new Vector2Int(x, z), direction))
+        BuildingSO cur = GetBuildingByID(id);
+        Vector2Int rotationOffset = cur.GetRotationOffset((BuildingSO.Dir) rotation);
+        BuildData data = new BuildData(id, x, z, rotation);
+
+        Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), cur, data, gridCellSize, Quaternion.Euler(0, cur.GetRotationDegrees((BuildingSO.Dir) rotation), 0), (BuildingSO.Dir) rotation);
+
+        buildings.Add(buildObject);
+        buildObject.buildData = data;
+
+        if (visual != null)
         {
-            if (!buildGrid.IsPositionOnGrid(cell.x, cell.y) || buildGrid.GetGridObject(cell.x, cell.y).building != null)
-            {
-                return false;
-            }
+            visual.gameObject.SetActive(false);
         }
-        return true;
-    }
 
-    //Getters and Setters
-    public void SetBuildingByIndex(int index)
-    {
-        if (index < allBuildings.Count)
+        foreach (Vector2Int cell in cur.GetGridPositions(new Vector2Int(x, z), (BuildingSO.Dir) rotation))
         {
-            SetCurrentBuilding(allBuildings[index]);
-            state = BuildState.Placing;
+            buildGrid.SetValue(cell.x, cell.y, buildObject, rotation);
         }
+
+        cur.AddCount(1);
+
+        onBuildingPlaced?.Invoke();
+
+        return buildObject;
     }
 
-    public void SetCurrentBuilding(BuildingSO building)
+    public void MoveBuilding(Building building)
     {
-        currentBuilding = building;
-        onBuildingChanged?.Invoke();
+        buildGrid.GetXZ(lastTarget, out int x, out int z);
 
-    }
-
-    public BuildingSO GetCurrentBuilding()
-    {
-        return currentBuilding;
-    }
-
-    public List<BuildingSO> GetBuildingList()
-    {
-        return allBuildings;
-    }
-
-    public bool GetMouseGridPosition(out Vector3 hit)
-    {
-        hit = Vector3.zero;
-        
-        if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("BuildSurface"), out Vector3 pos))
+        if (!CheckValidBuildPosition(currentBuilding, x, z))
         {
-            buildGrid.GetXZ(pos, out int x, out int z);
-
-            if (buildGrid.IsPositionOnGrid(x, z))
-            {
-                hit = buildGrid.GetWorldPosition(x, z);
-                return true;
-            }
+            return;
         }
-        return false;
+
+        Vector2Int rotationOffset = currentBuilding.GetRotationOffset(direction);
+
+        RemoveFromGrid(building);
+
+        building.Move(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), Quaternion.Euler(0, currentBuilding.GetRotationDegrees(direction), 0), direction);
+
+
+        if (visual != null)
+        {
+            visual.gameObject.SetActive(false);
+        }
+
+        foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(x, z), direction))
+        {
+            buildGrid.SetValue(cell.x, cell.y, building, (int) direction);
+        }
+
+        onBuildingMoved?.Invoke();
+
+        UpdateBuildState(BuildState.Unselected);
     }
 
-    public void AddBuilding(BuildingSO building)
+    public void RemoveBuilding()
     {
-        allBuildings.Add(building);
+        CancelCurrent();
+        RemoveFromGrid(currentMover);
+        buildings.Remove(currentMover);
+        currentBuilding.AddCount(-1);
+        ScoreManager.instance.UpdateScores(0, currentBuilding.cost / 2);
+        Destroy(currentMover.gameObject);
+
+        onBuildingRemoved?.Invoke();
+        UpdateBuildState(BuildState.Unselected);
     }
 
     //Hovering visual
@@ -206,7 +290,7 @@ public class BuildManager : MonoBehaviour
             visual = null;
         }
 
-        BuildingSO buildingObject = BuildManager.instance.GetCurrentBuilding();
+        BuildingSO buildingObject = currentBuilding;
 
         if (buildingObject != null && GameManager.instance.state == GameState.Building)
         {
@@ -219,8 +303,6 @@ public class BuildManager : MonoBehaviour
             visualRenderers = new List<MeshRenderer>(visual.GetComponentsInChildren<MeshRenderer>());
             visual.localScale = new Vector3(gridCellSize, gridCellSize, gridCellSize);
         }
-
-        ToggleHoveringUI(true);
     }
 
     private void UpdateVisual()
@@ -270,60 +352,154 @@ public class BuildManager : MonoBehaviour
         }
     }
 
-
-    private void RotateBuilding()
+    public void RotateBuilding()
     {
         direction = BuildingSO.GetNextDir(direction);
         UpdateVisual();
     }
 
-    private void HandleClick()
+    //Helper
+    private bool CheckValidBuildPosition(BuildingSO building, int x, int z)
     {
-        if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("BuildSurface"), out Vector3 pos))
-        {       
-            buildGrid.GetXZ(pos, out int x, out int z);
+        if (building == null)
+        {
+            return false;
+        }
 
-            if (buildGrid.IsPositionOnGrid(x, z) && buildGrid.GetGridObject(x, z).building != null)
+        foreach (Vector2Int cell in building.GetGridPositions(new Vector2Int(x, z), direction))
+        {
+            if (!buildGrid.IsPositionOnGrid(cell.x, cell.y) || !buildGrid.GetGridObject(cell.x, cell.y, out GridObject tile) || tile.building != null)
             {
-                MoveBuilding(buildGrid.GetGridObject(x, z).building.buildingSO);
+                return false;
             }
+        }
+
+        return true;
+    }
+
+    private void RemoveFromGrid(Building building)
+    {
+        foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(building.buildData.gridX, building.buildData.gridZ), (BuildingSO.Dir) building.buildData.buildingRotation))
+        {
+            buildGrid.SetValue(cell.x, cell.y, null, 0);
         }
     }
 
-    private void MoveBuilding(BuildingSO building)
+    private void CancelCurrent()
     {
-        state = BuildState.Moving;
-        SetCurrentBuilding(building);
-    }
+        if(state == BuildState.Moving)
+        {
+            currentMover.Show();
 
-    private void ToggleHoveringUI(bool val)
-    {
-        confirmButton.gameObject.SetActive(val);
-        rotateButton.gameObject.SetActive(val);
-        buildingSelectMenu.gameObject.SetActive(!val);
-    }
-
-    //GameFlow
-    private void UpdateActiveState(GameState state)
-    {
-        isActive = state == GameState.Building;
-        this.state = BuildState.Unselected;
-        confirmButton.gameObject.SetActive(false);
-        rotateButton.gameObject.SetActive(false);
-        buildingSelectMenu.gameObject.SetActive(true);
+            foreach (Vector2Int cell in currentBuilding.GetGridPositions(new Vector2Int(currentMover.buildData.gridX, currentMover.buildData.gridZ), (BuildingSO.Dir)currentMover.buildData.buildingRotation))
+            {
+                buildGrid.SetValue(cell.x, cell.y, currentMover, currentMover.buildData.buildingRotation);
+            }
+        }
         if (visual != null)
         {
             Destroy(visual.gameObject);
             visual = null;
         }
     }
+    private void UpdateBuildState(BuildState state)
+    {
+        this.state = state;
+
+        if(state == BuildState.Unselected)
+        {
+            currentMover = null;
+            currentBuilding = null;
+        }
+
+        onStateChanged?.Invoke(state);
+    }
+
+    private void UpdateBuildings()
+    {
+        Debug.Log("Updating buildings");
+        foreach (BuildingSO building in allBuildings)
+        {
+            building.TryUnlock(ScoreManager.instance.playerLevel);
+            building.TryAdjustMaxCount(ScoreManager.instance.playerLevel);
+        }
+    }
+
+    //Getters and Setters
+    public void SetCurrentBuilding(BuildingSO building)
+    {
+        currentBuilding = building;
+        onBuildingChanged?.Invoke();
+    }
+
+    public void SetCurrentMover(Building building)
+    {
+        currentMover = building;
+        SetCurrentBuilding(building.buildingSO);
+    }
+
+    public BuildingSO GetCurrentBuilding()
+    {
+        return currentBuilding;
+    }
+
+    public List<BuildingSO> GetBuildingList()
+    {
+        return allBuildings;
+    }
+
+    public bool GetMouseGridPosition(out Vector3 hit)
+    {
+        hit = Vector3.zero;
+        
+        if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("BuildSurface"), out Vector3 pos))
+        {
+            buildGrid.GetXZ(pos, out int x, out int z);
+
+            if (buildGrid.IsPositionOnGrid(x, z))
+            {
+                hit = buildGrid.GetWorldPosition(x, z);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private BuildingSO GetBuildingByID(string id)
+    {
+        BuildingSO build = allBuildings[0];
+
+        foreach(BuildingSO building in allBuildings)
+        {
+            if(building.id == id)
+            {
+                build = building;
+                return build;
+            }
+        } 
+        return build;
+    }
+
+    //GameFlow
+    private void UpdateActiveState(GameState state)
+    {
+        isActive = state == GameState.Building;
+        UpdateBuildState(BuildState.Unselected);
+
+        if (visual != null)
+        {
+            Destroy(visual.gameObject);
+            visual = null;
+        }
+
+        if(state != GameState.Building)
+        {
+            CancelCurrent();
+        }
+    }
 
     private void OnLeveledUp(int level)
     {
-        foreach(BuildingSO building in allBuildings)
-        {
-            building.TryUnlock(level);
-            building.TryAdjustMaxCount(level);
-        }
+        UpdateBuildings();
     }
 }

@@ -24,8 +24,8 @@ EditorBuildSettings:
     path: Assets/Scenes/UI Overhaul.unity
     guid: 8d7dd3837cb4ed94a97185229542149f
   - enabled: 1
-    path: Assets/Scenes/Language Testing.unity
-    guid: 78ad68234db92554fab1d072e78454b3
+    path: Assets/Scenes/Jip.unity
+    guid: e989757cdc58d8b4c93f529c81f7e9bd
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6c762fe545d1a1f42b0f879d761d18e0,
       type: 2}

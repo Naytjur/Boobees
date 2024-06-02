@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEditor;
 
 public class ScoreManager : MonoBehaviour, IDataPersistence
 {
@@ -13,30 +14,58 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
     [SerializeField] private int maxPollenScoreBase = 20;
     [SerializeField] public int playerLevel = 1;
 
-    public TMP_Text honeyText;
-    public TMP_Text pollenText;
     public TMP_Text levelText;
 
-    private int honeyScore = 0;
-    private int pollenScore = 0;
-    private int maxHoneyScore;
-    private int maxPollenScore;
+    public int honeyScore = 0;
+    public int pollenScore = 0;
+    public int maxHoneyScore;
+    public int maxPollenScore;
 
     public static event Action<int> onLevelUp;
     public static event Action<int, int> onScoreChanged;
+
+    public List<PlantSO> allPlants;
+
+    private bool isLoading = false;
 
     private void Awake()
     {
         instance = this;
     }
 
+    private void OnEnable()
+    {
+        DataPersistenceManager.postLoad += OnPostLoad;
+    }
+
+    private void Start()
+    {
+        maxHoneyScore = maxHoneyScoreBase;
+        maxPollenScore = maxPollenScoreBase;
+    }
+
     public void LoadData(GameData data)
     {
+        isLoading = true; // Set the flag to true at the start of loading
+
         this.playerLevel = data.playerLevel;
         this.honeyScore = data.playerHoney;
         this.pollenScore = data.playerPollen;
-        UpdateScores(pollenScore, honeyScore);
-        Debug.Log ("Loading GameData");
+        this.maxHoneyScore = data.playerHoneyCap;
+        this.maxPollenScore = data.playerPollenCap;
+
+        foreach (string plantID in data.unlockedPlantIDs)
+        {
+            PlantSO plant = FindPlantByID(plantID);
+            if (plant != null)
+            {
+                plant.unlocked = true;
+            }
+        }
+
+        Debug.Log("Loading GameData");
+
+        isLoading = false; // Reset the flag after loading is done
     }
 
     public void SaveData(ref GameData data)
@@ -46,15 +75,16 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         data.playerPollen = this.pollenScore;
     }
 
-    private void Start()
+    private void OnPostLoad()
     {
-        maxHoneyScore = maxHoneyScoreBase;
-        maxPollenScore = maxPollenScoreBase;
+        maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
+        maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
+        UpdateUI();
+    }
 
-        honeyText.text = "Honey: " + honeyScore;
-        pollenText.text = "Pollen: " + pollenScore;
+    private void UpdateUI()
+    {
         levelText.text = playerLevel.ToString();
-        onLevelUp?.Invoke(playerLevel);
     }
 
     public void UpdateScores(int pollen, int honey)
@@ -66,13 +96,10 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
         if (pollenScore >= maxPollenScore)
         {
-            pollenScore = 0;
             LevelUp();
         }
 
-        honeyText.text = $"{honeyScore} / {maxHoneyScore}";
-        pollenText.text = $"{pollenScore} / {maxPollenScore}";
-        levelText.text = playerLevel.ToString();
+        UpdateUI();
         onScoreChanged?.Invoke(pollen, honey);
     }
 
@@ -82,15 +109,23 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
         maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
         onLevelUp?.Invoke(playerLevel);
-        
+        UpdateUI(); // Update level text
+    }
+
+    private PlantSO FindPlantByID(string id)
+    {
+        foreach (PlantSO plant in allPlants)
+        {
+            if (plant.id == id)
+            {
+                return plant;
+            }
+        }
+        return null;
     }
 
     public bool CanAfford(int cost)
     {
-        if(cost <= honeyScore)
-        {
-            return true;
-        }
-        return false;
+        return cost <= honeyScore;
     }
 }

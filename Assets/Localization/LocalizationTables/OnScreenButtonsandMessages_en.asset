@@ -126,6 +126,10 @@ MonoBehaviour:
     m_Localized: Not Discovered!
     m_Metadata:
       m_Items: []
+  - m_Id: 1487410510606336
+    m_Localized: Remove
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

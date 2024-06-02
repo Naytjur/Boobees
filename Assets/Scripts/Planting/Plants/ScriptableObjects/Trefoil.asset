@@ -34,7 +34,7 @@ MonoBehaviour:
   itemName: Trefoil
   description: "\u2022\tshort lived perennial legume \n\u2022\tAdapted to humid,
     temperate regions \n\u2022\tAdapted to a wide range of soils. "
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac,
     type: 3}
   gardenVisual: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac,
@@ -47,6 +47,7 @@ MonoBehaviour:
   correctPlots: 00000000
   baseSpawnRate: 10
   seedAmount: 0
+  decayTime: 1000
   references:
     version: 2
     RefIds: []

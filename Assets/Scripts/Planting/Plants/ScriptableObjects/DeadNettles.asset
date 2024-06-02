@@ -34,7 +34,7 @@ MonoBehaviour:
   itemName: Purple Dead Nettle
   description: "\u2022\tcolour of the flowers of dead-nettle varies  \n\u2022\twhite,
     yellow and purple to a deep purple. "
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 9187378265724472716, guid: b5e7920ae917a4348a6dd1c5555e4e58,
     type: 3}
   gardenVisual: {fileID: 9187378265724472716, guid: b5e7920ae917a4348a6dd1c5555e4e58,
@@ -47,6 +47,7 @@ MonoBehaviour:
   correctPlots: 01000000
   baseSpawnRate: 10
   seedAmount: 0
+  decayTime: 1000
   references:
     version: 2
     RefIds: []

@@ -9,4 +9,5 @@ public class PlantSO : CatalogueItemInfo
     public PlotType[] correctPlots;
     public float baseSpawnRate;
     public int seedAmount;
+    public int decayTime;
 }

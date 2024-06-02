@@ -10,6 +10,7 @@ public struct GridObject
 
     public int x;
     public int z;
+    public int rotation;
 
     public Building building;
 }
@@ -75,30 +76,46 @@ public class Grid
         z = Mathf.FloorToInt((worldPosition - origin).z / cellSize);
     }
 
-    public void SetValue(int x, int z, Building building)
+    public void SetValue(int x, int z, Building building, int rotation)
     {
         if(x  >= 0 && z >= 0 && x < width && z < height)
         {
             gridArray[x, z].building = building;
+            gridArray[x, z].rotation = rotation;
         }
     }
 
-    public void SetValue(Vector3 worldPosition, Building building)
+    public void SetValue(Vector3 worldPosition, Building building, int rotation)
     {
         GetXZ(worldPosition, out int x, out int z);
-        SetValue(x, z, building);
+        SetValue(x, z, building, rotation);
 
     }
 
-    public GridObject GetGridObject(int x, int z)
+    public bool GetGridObject(int x, int z, out GridObject gridObject)
     {
-        return gridArray[x, z];
+        gridObject = new GridObject();
+
+        if (x < width && x >= 0 && z < height && z >= 0 )
+        {
+            gridObject = gridArray[x, z];
+            return true;
+        }
+
+        return false;
     }
 
-    public GridObject GetGridObject(Vector3 worldPosition)
+    public bool GetGridObject(Vector3 worldPosition, out GridObject gridObject)
     {
         GetXZ(worldPosition, out int x, out int z);
-        return GetGridObject(x, z);
+
+        gridObject = new GridObject();
+        if (GetGridObject(x, z, out GridObject tile))
+        {
+            gridObject = tile;
+            return true;
+        }
+        return false;
     }
 
     public bool IsPositionOnGrid(int x, int z)
@@ -114,5 +131,20 @@ public class Grid
     {
         GetXZ(worldPosition, out int x, out int z);
         return IsPositionOnGrid(x, z);
+    }
+
+    public GridObject[,] GetGridArray()
+    {
+        return gridArray;
+    }
+
+    public int GetGridWidth()
+    {
+        return width;
+    }
+
+    public int GetGridHeight()
+    {
+        return height;
     }
 }

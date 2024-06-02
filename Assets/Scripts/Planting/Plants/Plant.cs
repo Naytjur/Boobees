@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -25,6 +26,8 @@ public class Plant : MonoBehaviour
         {
             targetTransform = transform;
         }
+
+        StartCoroutine(DecayTimer());
     }
 
     public void AssignPlot(PlotType plotType)
@@ -61,4 +64,18 @@ public class Plant : MonoBehaviour
 
         newInsect.Spawn(targetTransform.position);
     }
+    IEnumerator DecayTimer()
+{
+    float startTime = Time.realtimeSinceStartup;
+    float elapsedTime = 0f;
+
+    while (elapsedTime < plantSO.decayTime)
+    {
+        yield return null; // Wait for the next frame
+        elapsedTime = Time.realtimeSinceStartup - startTime;
+    }
+
+    Destroy(gameObject); // Destroy the plant object after decay time has elapsed
+}
+
 }

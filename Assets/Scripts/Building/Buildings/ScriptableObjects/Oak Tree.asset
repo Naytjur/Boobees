@@ -12,14 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Oak Tree
   m_EditorClassIdentifier: 
-  id: 
-  itemNameStringEvent: {fileID: 6551094353028546393, guid: 071ca6e033ec1bb418ae31d0fc7681ef,
-    type: 3}
+  id: 7
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
     m_TableEntryReference:
       m_KeyId: 164938842112
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  itemDescriptionLocalizedString:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -38,6 +45,8 @@ MonoBehaviour:
   height: 1
   unlockLevel: 7
   cost: 400
+  maxCount: 0
+  count: 0
   references:
     version: 2
     RefIds: []

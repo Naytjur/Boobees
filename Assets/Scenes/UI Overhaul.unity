@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3765,6 +3765,7 @@ Transform:
   - {fileID: 996628305}
   - {fileID: 734601602}
   - {fileID: 404056034}
+  - {fileID: 1551641047}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &655068640
@@ -6207,6 +6208,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -6266,6 +6268,7 @@ MonoBehaviour:
   tutorialMessageUnlock: {fileID: 996628308}
   tutorialMessageScore: {fileID: 996628307}
   tutorialMessageLevel: {fileID: 996628312}
+  tutorialMessages: []
 --- !u!114 &996628307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6289,6 +6292,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -6315,6 +6319,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -6341,6 +6346,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -6367,6 +6373,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -6393,6 +6400,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -6419,6 +6427,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: false
   references:
     version: 2
     RefIds: []
@@ -9569,6 +9578,7 @@ MonoBehaviour:
   honeyText: {fileID: 5980329567232051196}
   pollenText: {fileID: 1457950358}
   levelText: {fileID: 1509035640}
+  allPlants: []
 --- !u!4 &1306566630
 Transform:
   m_ObjectHideFlags: 0
@@ -11339,6 +11349,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 580880388}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1551641045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1551641047}
+  - component: {fileID: 1551641046}
+  m_Layer: 0
+  m_Name: DataPersistenceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1551641046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551641045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d63a1b99b4f3c4c9f012ca40d2dca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: data.game
+--- !u!4 &1551641047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551641045}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.764656, y: -2.822443, z: 1.9382896}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 637247720}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1569074815
 GameObject:
   m_ObjectHideFlags: 0
@@ -14987,6 +15042,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  beenSeen: 
   references:
     version: 2
     RefIds: []

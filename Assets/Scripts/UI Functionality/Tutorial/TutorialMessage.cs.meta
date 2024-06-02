@@ -6,6 +6,9 @@ MonoImporter:
   defaultReferences:
   - tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
       type: 3}
+  - spriteRendererPrefab: {fileID: 512821267306866775, guid: 9fbe3352de984e847bab7561b26b25ae,
+      type: 3}
+  - closeButton: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
