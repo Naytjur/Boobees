@@ -13225,14 +13225,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreCapModifier: 2
-  maxHoneyScoreBase: 50
-  maxPollenScoreBase: 30
+  maxHoneyScoreBase: 5
+  maxPollenScoreBase: 10
   playerLevel: 1
   levelText: {fileID: 1509035640}
   honeyScore: 0
   pollenScore: 0
   maxHoneyScore: 0
   maxPollenScore: 0
+  downtimeScoreModifier: 1
+  logoutTime: 0
   allPlants: []
 --- !u!4 &1306566630
 Transform:

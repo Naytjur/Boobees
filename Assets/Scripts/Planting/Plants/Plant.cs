@@ -22,7 +22,7 @@ public class Plant : MonoBehaviour
 
         if (isOnCorrectPlot == false)
         {
-            spawnRate *= 2;
+            spawnRate *= 0.6f;
         }
         // Apply modifiers from surrounding buildings
         spawnRate = ApplySpawnRateModifiers(spawnRate);
@@ -169,6 +169,8 @@ public class Plant : MonoBehaviour
         {
             currentPlot.RemovePlant(this);
         }
+        PlantingManager.instance.UpdateAmountUI();
+        plantSO.seedAmount++;
         Destroy(gameObject);
     }
 

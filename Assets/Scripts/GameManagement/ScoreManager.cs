@@ -9,9 +9,9 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 {
     public static ScoreManager instance;
 
-    [SerializeField] private float scoreCapModifier = 1.6f;
-    [SerializeField] private int maxHoneyScoreBase = 50;
-    [SerializeField] private int maxPollenScoreBase = 20;
+    [SerializeField] private float scoreCapModifier = 2f;
+    [SerializeField] private int maxHoneyScoreBase = 5;
+    [SerializeField] private int maxPollenScoreBase = 10;
     [SerializeField] public int playerLevel = 1;
 
     public TMP_Text levelText;
@@ -20,6 +20,11 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
     public int pollenScore = 0;
     public int maxHoneyScore;
     public int maxPollenScore;
+    public float downtimeScoreModifier = 0.01f;
+
+    public float logoutTime;
+
+
 
     public static event Action<int> onLevelUp;
     public static event Action<int, int> onScoreChanged;
@@ -53,6 +58,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         this.pollenScore = data.playerPollen;
         this.maxHoneyScore = data.playerHoneyCap;
         this.maxPollenScore = data.playerPollenCap;
+        this.logoutTime = data.logoutTime;
 
         foreach (string plantID in data.unlockedPlantIDs)
         {
@@ -78,8 +84,9 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
     private void OnPostLoad()
     {
-        maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
-        maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
+        maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
+        maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
+        DowntimeGains();
         UpdateUI();
     }
 
@@ -104,8 +111,8 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         {
             playerLevel++;
             honeyScore = 0;
-            maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
-            maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
+            maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
+            maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
             onLevelUp?.Invoke(playerLevel);
             UpdateUI(); // Update level text
         }
@@ -140,5 +147,29 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
         // Return the total seconds as a float
         return (float)timeSpan.TotalSeconds;
+    }
+
+    private void DowntimeGains()
+    {
+        if (logoutTime != 0)
+        {
+            // Calculate downtime
+            float currentTime = GetCurrentDateTimeAsFloat();
+            float downtime = currentTime - logoutTime;
+
+            // Calculate additional scores
+            int additionalPollen = Mathf.FloorToInt(downtime * downtimeScoreModifier * playerLevel);
+            int additionalHoney = Mathf.FloorToInt(downtime  * downtimeScoreModifier * playerLevel);
+
+            // Update scores
+            pollenScore += additionalPollen;
+            honeyScore += additionalHoney;
+
+            // Ensure honey does not exceed its cap
+            honeyScore = Mathf.Clamp(honeyScore, 0, maxHoneyScore);
+
+            // Update the UI with the new scores
+            onScoreChanged?.Invoke(additionalPollen, additionalHoney);
+        }
     }
 }
