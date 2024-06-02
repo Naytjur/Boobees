@@ -16,7 +16,12 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: c3faf987deb46264098c8c6ba47c5eee
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: e48614cbe1d0c014ba13e5dbdb2350a4
+    m_Address: Assets/NewLayer 2.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 64b33db1c0324944ca2667b152dd57be, type: 2}
   m_SchemaSet:

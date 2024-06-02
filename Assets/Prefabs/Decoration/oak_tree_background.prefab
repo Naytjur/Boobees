@@ -259,7 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4180919121889986635}
   m_Layer: 0
-  m_Name: Oak_tree_background
+  m_Name: oak_tree_background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
