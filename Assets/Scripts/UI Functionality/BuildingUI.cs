@@ -61,6 +61,7 @@ public class BuildingUI : MonoBehaviour
 
     private void LoadBuildButtons()
     {
+        print("LOading buttoins");
         int index = 0;
 
         foreach (Transform child in buttonContainerTransform)
