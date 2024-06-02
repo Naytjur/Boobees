@@ -130,6 +130,22 @@ MonoBehaviour:
     m_Localized: Remove
     m_Metadata:
       m_Items: []
+  - m_Id: 3196596235730944
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3196873680551936
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3196927824822272
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3197877641740288
+    m_Localized: German
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

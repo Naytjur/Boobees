@@ -130,6 +130,22 @@ MonoBehaviour:
     m_Localized: Verwijder
     m_Metadata:
       m_Items: []
+  - m_Id: 3196596235730944
+    m_Localized: Instellingen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3196873680551936
+    m_Localized: Muziek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3196927824822272
+    m_Localized: Taal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3197877641740288
+    m_Localized: Duits
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
