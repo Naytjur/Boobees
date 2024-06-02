@@ -13,6 +13,8 @@ public class Plant : MonoBehaviour
     public Transform targetTransform;
     private float elapsedTime = 0f;
     private float startTime;
+    private Coroutine decayCoroutine;
+    private Plot currentPlot;
 
     private void Start()
     {
@@ -42,6 +44,11 @@ public class Plant : MonoBehaviour
                 isOnCorrectPlot = true;
             }
         }
+    }
+
+    public void SetPlot(Plot plot)
+    {
+        currentPlot = plot;
     }
 
     private void TrySpawnInsect()
@@ -75,30 +82,41 @@ public class Plant : MonoBehaviour
 
         if (remainingTime <= 0)
         {
-            Destroy(gameObject);
+            RemoveFromPlotAndDestroy();
         }
         else
         {
-            startTime = Time.realtimeSinceStartup - elapsedTime; // Set the start time based on the elapsed time
-            StartCoroutine(DecayTimer(remainingTime));
+            startTime = Time.time - elapsedTime; // Set the start time based on the elapsed time
+            if (decayCoroutine != null)
+            {
+                StopCoroutine(decayCoroutine);
+            }
+            decayCoroutine = StartCoroutine(DecayTimer(remainingTime));
         }
     }
 
     public float GetElapsedTime()
     {
-        return Time.realtimeSinceStartup - startTime; // Calculate the elapsed time
+        return Time.time - startTime; // Calculate the elapsed time
     }
 
-    IEnumerator DecayTimer(float remainingTime)
+    private IEnumerator DecayTimer(float remainingTime)
     {
-        if (remainingTime <= 0)
+        while (remainingTime > 0)
         {
-            Destroy(gameObject);
-            yield break;
+            yield return null; // Wait for the next frame
+            remainingTime -= Time.deltaTime; // Decrease the remaining time by the delta time of the last frame
         }
+        RemoveFromPlotAndDestroy();
+    }
 
-        yield return new WaitForSeconds(remainingTime);
-        Destroy(gameObject); // Destroy the plant object after remaining decay time has elapsed
+    private void RemoveFromPlotAndDestroy()
+    {
+        if (currentPlot != null)
+        {
+            currentPlot.RemovePlant(this);
+        }
+        Destroy(gameObject);
     }
 
     // Method to get the current date and time as a float

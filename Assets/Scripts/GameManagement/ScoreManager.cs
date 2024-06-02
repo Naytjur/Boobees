@@ -10,7 +10,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
     public static ScoreManager instance;
 
     [SerializeField] private float scoreCapModifier = 1.6f;
-    [SerializeField] private int maxHoneyScoreBase = 100;
+    [SerializeField] private int maxHoneyScoreBase = 50;
     [SerializeField] private int maxPollenScoreBase = 20;
     [SerializeField] public int playerLevel = 1;
 
@@ -94,23 +94,21 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         pollenScore += pollen;
 
         honeyScore = Mathf.Clamp(honeyScore, 0, maxHoneyScore);
-
-        if (pollenScore >= maxPollenScore)
-        {
-            LevelUp();
-        }
-
         UpdateUI();
         onScoreChanged?.Invoke(pollen, honey);
     }
 
-    private void LevelUp()
+    public void LevelUp()
     {
-        playerLevel++;
-        maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
-        maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
-        onLevelUp?.Invoke(playerLevel);
-        UpdateUI(); // Update level text
+        if (pollenScore >= maxPollenScore && honeyScore == maxHoneyScore)
+        {
+            playerLevel++;
+            honeyScore = 0;
+            maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
+            maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
+            onLevelUp?.Invoke(playerLevel);
+            UpdateUI(); // Update level text
+        }
     }
 
     private PlantSO FindPlantByID(string id)
