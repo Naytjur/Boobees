@@ -58,6 +58,10 @@ MonoBehaviour:
     m_Localized: Bench
     m_Metadata:
       m_Items: []
+  - m_Id: 2998387840299008
+    m_Localized: Pond
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
