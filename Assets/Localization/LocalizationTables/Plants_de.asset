@@ -17,7 +17,171 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5d0db34fa9ee9cf49bb21cf4ec1fc93e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 70705414144
+    m_Localized: Klatschmohn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244376129175552
+    m_Localized: Gemeine Akelei
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244622829748224
+    m_Localized: Wiesen-Schaumkraut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246163615711232
+    m_Localized: Purpurrote Taubnessel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246707335921664
+    m_Localized: Acker-Wachtelweizen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 247911445102592
+    m_Localized: "Langbl\xE4ttriger Ehrenpreis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248526187462656
+    m_Localized: Knoblauchsrauke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248714025172992
+    m_Localized: "Gew\xF6hnlicher Blutweiderich"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248941658439680
+    m_Localized: Skabiose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249951630065664
+    m_Localized: Rainfarn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250202617217024
+    m_Localized: Sumpf-Hornklee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250925287407616
+    m_Localized: "Gew\xF6hnlicher Natternkopf"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251287054516224
+    m_Localized: Echtes Leinkraut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251874995273728
+    m_Localized: "Wildes Stiefm\xFCtterchen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252320203866112
+    m_Localized: Pflanzen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244243413008384
+    m_Localized: "W\xE4chst auf Grobem Feld\nEine leuchtend rote Bl\xFCtenpflanze,
+      die f\xFCr ihre zarten, papierartigen Bl\xFCtenbl\xE4tter und die ikonische
+      schwarze Mitte bekannt ist. Oft auf Feldern und an Stra\xDFenr\xE4ndern gefunden,
+      symbolisiert sie die Erinnerung.\nFunfact: Der Mohn ist die Quelle der Schlafmohnsamen,
+      die zur Herstellung von Morphin verwendet werden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244424611135488
+    m_Localized: "W\xE4chst auf Grobem Feld\nEine anmutige Pflanze mit markanten,
+      gespornten Bl\xFCten in verschiedenen Farben, oft blau oder violett.\r\nFunfact:
+      Die einzigartige Form der Bl\xFCte lockt h\xE4ufig langz\xFCngige Nektarfresser,
+      wie Motten und Kolibris an."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244934642696192
+    m_Localized: "W\xE4chst auf Wild-Feld\nAuch als Frauenkittel bekannt, hat diese
+      Pflanze zarte, blassrosa oder lila Bl\xFCten. Sie w\xE4chst h\xE4ufig auf feuchten
+      Wiesen,entlang von B\xE4chen und bl\xFCht im Fr\xFChling.\r\nFunfact: Das Wiesenschaumkraut
+      verbreitet ihre Samen durch einen Sprengmechanismus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246386417139712
+    m_Localized: "W\xE4chst auf Grobem Feld\nKr\xE4utepflanze mit weichen, haarigen
+      Bl\xE4ttern und r\xF6hrenf\xF6rmigen Bl\xFCten in violett-rosa und herzf\xF6rmigen,
+      violett gef\xE4rbten Bl\xE4ttern, die h\xE4ufig in G\xE4rten und Rasenfl\xE4chen
+      zu finden sind.\r\nFunFact: Taubnesseln haben trotz ihres Namens nichts mit
+      Brennnesseln zu tun und k\xF6nnen bedenkenlos ber\xFChrt werden, ohne, dass
+      man gestochen wird."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246830581350400
+    m_Localized: "W\xE4chst auf Grobem Feld\nEine halbparasit\xE4re Pflanze mit schlanken,
+      bl\xE4ttrigen St\xE4ngeln und r\xF6hrenf\xF6rmigen gelben oder violetten Bl\xFCten.
+      Es w\xE4chst typischerweise auf Wiesen und offenen W\xE4ldern.\r\nFunfact::
+      Acker-Wachtelweizen ist f\xFCr die N\xE4hrstoffversorgung auf andere Pflanzen
+      angewiesen. Daf\xFCr setzt sie sich an deren Wurzeln fest, um Nahrung abzusaugen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 247988779679744
+    m_Localized: "W\xE4chst auf Wild-Feld\nEine niedrig wachsende Pflanze mit kleinen,
+      leuchtend blauen oder violetten Bl\xFCten. Sie gedeiht in G\xE4rten und auf
+      Rasenfl\xE4chen.\r\nFunFact: Die Bl\xFCten des Ehrenpreis verwelken sehr schnell
+      nach dem Pfl\xFCcken."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248555061051392
+    m_Localized: "W\xE4chst auf Rand-Feld\nEine zweij\xE4hrige Pflanze mit kleinen,
+      wei\xDFen Bl\xFCten und herzf\xF6rmigen Bl\xE4ttern.Zerreibt man sie, riecht
+      sie nach Knoblauch.\nFunFact: Knoblauchsrauke wurde als Kraut in Nordamerika
+      eingef\xFChrt, ist aber seitdem zu einer weit verbreiteten invasiven Art geworden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248832648478720
+    m_Localized: "W\xE4chst auf Rand-Feld\nEine hohe, auff\xE4llige Pflanze mit leuchtend
+      violetten Bl\xFCtenst\xE4nden. Sie kommt h\xE4ufig in Feuchtgebieten vor und
+      kann zu einer invasiven Pflanze werden, die die heimische Vegetation verdr\xE4ngt.\r\nFunfact:
+      Gew\xF6hnlicher Blutweiderich kann pro Jahr \xFCber zwei Millionen Samen pro
+      Pflanze produzieren.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249011434881024
+    m_Localized: "W\xE4chst auf Wild-Feld\nAuch als Nadelkissenblume bekannt und
+      hat kugelf\xF6rmige Bl\xFCtenk\xF6pfe mit zahlreichen kleinen Bl\xFCten , meist
+      in Blau-, Rosa- oder Wei\xDFt\xF6nen.\r\nFunFact: Fr\xFCher wurde angenommen,
+      dass es aufgrund ihrer rauen Bl\xE4tter Kr\xE4tze und andere Hauterkrankungen
+      heilt.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249994005118976
+    m_Localized: "W\xE4chst auf Wild-Feld\nEine winterharte Staude mit B\xFCscheln
+      kleiner, knopfartiger gelber Bl\xFCten und aromatischen, farnartigen Bl\xE4ttern.\r\nFunFact:
+      Rainfarn wurde einst als nat\xFCrliches Konservierungsmittel bei Beerdigungen
+      verwendet, um Insekten abzuwehren und den Verfall zu verz\xF6gern."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250275908485120
+    m_Localized: "W\xE4chst auf Wild-Feld\nEine niedrig wachsende, ausladende Pflanze
+      mit B\xFCscheln leuchtend gelber Bl\xFCten. Man findet sie h\xE4ufig auf Wiesen
+      und an Stra\xDFenr\xE4ndern.\r\nFunFact: Sie wird an Stra\xDFenr\xE4ndern eingesetzt,
+      um Wind- und Wassererosion zu kontrollieren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251009370619904
+    m_Localized: "W\xE4chst auf Grobem Feld\nEine auff\xE4llige Pflanze mit hohen
+      \xC4hren aus blauen oder violetten Bl\xFCten und rauen, behaarten Stielen.\r\nFun
+      Fact: In der Antike galt Viper's Bugloss als Aphrodisiakum."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251329807056896
+    m_Localized: "W\xE4chst auf Wild-Feld\nEine mehrj\xE4hrige Pflanze mit leuchtend
+      gelben und orangefarbenen, l\xF6wenmaulartigen Bl\xFCten. Sie w\xE4chst oft
+      in B\xFCscheln an Stra\xDFenr\xE4ndern und auf Feldern.\r\nFunfact: Echtes
+      Leinkraut wird aufgrund seiner leuchtend gelben und orangen Farbkombination
+      auch \u201EButter und Eier\u201C \u200B\u200Bgenannt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251905659830272
+    m_Localized: "W\xE4chst auf Rand-Feld\nEine kleine, zarte Blume mit einer Mischung
+      aus violetten, gelben und wei\xDFen Bl\xFCtenbl\xE4ttern. Gefunden auf Wiesen
+      und Grasland.\r\nFun Fact: Wilde Stiefm\xFCtterchen wurden schon immer in Liebestr\xE4nken
+      verwendet.\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

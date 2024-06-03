@@ -40,7 +40,7 @@ MonoBehaviour:
     type: 3}
   cataloguePrefab: {fileID: 1845595262676596583, guid: 296214c8615effd47a35e418391977ab,
     type: 3}
-  sprite: {fileID: 21300000, guid: 5bf28aee9835f2542a16139d6e402626, type: 3}
+  sprite: {fileID: 21300000, guid: 77f837f03f9aca6418da48c0991d09ed, type: 3}
   attractions:
   - {fileID: 11400000, guid: e7f3171f7aa444a4192a94984079105f, type: 2}
   - {fileID: 11400000, guid: ddbc41d651d03554fb3acf1372c30cd7, type: 2}

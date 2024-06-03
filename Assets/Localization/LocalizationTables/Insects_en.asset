@@ -35,7 +35,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 72643535372288
-    m_Localized: no description yet
+    m_Localized: "A bee known for its blackish coloration and blunt antennal segments.\r\nFunFact:
+      It is a specialist pollinator, often found on flowers of the pea family\u200B\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 72724418330624
@@ -47,11 +48,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 72856652152832
-    m_Localized: no description yet
+    m_Localized: "A solitary bee with a metallic blue sheen, commonly found in Europe.\r\nFunFact:
+      The Blue Mason Bee often nests in small cavities in wood and walls\u200B."
     m_Metadata:
       m_Items: []
   - m_Id: 73038840135680
-    m_Localized: no description yet
+    m_Localized: "A common bumblebee with a buff-colored tail, known for its robust
+      size.\r\nFunFact: This species is often the first bumblebee to be seen in early
+      spring and one of the last in late autumn\u200B"
     m_Metadata:
       m_Items: []
   - m_Id: 73105722507264
@@ -59,7 +63,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 73159740948480
-    m_Localized: no description yet
+    m_Localized: 'A butterfly with bright yellow wings, often seen in woodlands and
+      gardens.
+
+      FunFact: The Brimstone is believed to be the original "butter-fly"
+      due to its butter-yellow color'
     m_Metadata:
       m_Items: []
   - m_Id: 73304176001024
@@ -111,51 +119,89 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 73383603535872
-    m_Localized: no description yet
+    m_Localized: "A small butterfly with vibrant blue wings, common in meadows and
+      grasslands.\r\nFunfact: The males have bright blue wings, while females are
+      brown with a hint of blue\u200B\r"
     m_Metadata:
       m_Items: []
   - m_Id: 73614055374848
-    m_Localized: no description yet
+    m_Localized: "A small, striped bee commonly found in Europe, particularly in
+      sandy habitats.\r\nFunfact: This bee is known for nesting in large aggregations,
+      often in sandy soils\u200B\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 73744326262784
-    m_Localized: no description yet
+    m_Localized: 'A solitary bee with greyish hair patches, typically found in Europe.
+
+      Funfact:
+      This bee prefers sunny, sandy areas for nesting and is an important pollinator
+      of early spring flower'
     m_Metadata:
       m_Items: []
   - m_Id: 73859782868992
-    m_Localized: no description yet
+    m_Localized: 'A robust butterfly with a characteristic rapid flight and orange-brown
+      wings.
+
+      Funfact: The caterpillars fo into hibernation as a half-grown
+      larva until winter is over.
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 74129648582656
-    m_Localized: no description yet
+    m_Localized: 'A large and striking butterfly with distinctive tail-like extensions
+      on its hindwings.
+
+      FunFact: The butterfly has a strong and fast flight,
+      but frequently pauses to hover over flowering herbs and sip nectar.
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 74255188295680
-    m_Localized: no description yet
+    m_Localized: "A butterfly with distinctive orange-tipped wings, commonly seen
+      in spring.\r\nFunfact: Males have the bright orange tips, while females lack
+      this coloration\u200B\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 74408565604352
-    m_Localized: no description yet
+    m_Localized: 'A migratory butterfly with orange, black, and white wings, found
+      worldwide.
+
+      FunFact: Painted Ladies migrate over 7,500 miles round-trip,
+      one of the longest migrations of any butterfly
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 74830671970304
-    m_Localized: no description yet
+    m_Localized: "A striking butterfly with black, red, and white markings, commonly
+      seen in gardens.\r\nFunfact: Red Admirals are known for their territorial behavior,
+      often defending a favorite feeding spot from other butterflies\u200B\r"
     m_Metadata:
       m_Items: []
   - m_Id: 74923840045056
-    m_Localized: no description yet
+    m_Localized: "A solitary bee often seen in gardens, known for its red hair and
+      nesting in cavities.\r\nFunfact: Red Mason Bees are excellent pollinators and
+      can pollinate up to 4,000 flowers a day\u200B\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 75074117763072
-    m_Localized: no description yet
+    m_Localized: "A large bumblebee with long tongues, allowing it to feed on deep
+      flowers.\r\nFunfact: Known for its preference for gardens and parks, it is
+      a vital pollinator of many plants\r"
     m_Metadata:
       m_Items: []
   - m_Id: 75226622656512
-    m_Localized: no description yet
+    m_Localized: "A bee that specializes in foraging on Viper's Bugloss flowers\r\nFunfact:
+      This bee relies almost exclusively on Viper's Bugloss for pollen, making it
+      highly specialized\u200B\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 75457179353088
-    m_Localized: no description yet
+    m_Localized: "A solitary bee species known for its distinctive yellow legs\r\nFunfact:
+      These bees have two flight periods each year, with the spring generation typically
+      being more numerous than the summer generation\u200B.\r"
     m_Metadata:
       m_Items: []
   references:

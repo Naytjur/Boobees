@@ -17,7 +17,47 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 491342107c14a9c4291c824a9d542725, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 18754764800
+    m_Localized: Bienenstock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78506819584
+    m_Localized: Bank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92914253824
+    m_Localized: Birke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118411427840
+    m_Localized: Busch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138296623104
+    m_Localized: Zaun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164938842112
+    m_Localized: Eiche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 286460411904
+    m_Localized: Stein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 191627198464
+    m_Localized: Grobes Feld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 224623788032
+    m_Localized: Wild-Feld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 236527222784
+    m_Localized: Rand-feld
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

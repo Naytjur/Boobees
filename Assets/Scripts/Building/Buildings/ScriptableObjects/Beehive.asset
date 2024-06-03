@@ -40,7 +40,7 @@ MonoBehaviour:
     type: 3}
   cataloguePrefab: {fileID: 1730592248008074945, guid: a2ebe3d1b36a7f64d80021d61ab2bc2e,
     type: 3}
-  sprite: {fileID: 21300000, guid: 4136bef108bf72d4c81e05ae9a8ab5f6, type: 3}
+  sprite: {fileID: 21300000, guid: becfb02e23122464384381d0ccf8b1b1, type: 3}
   width: 1
   height: 1
   specificMaxBuildingLimit: 1

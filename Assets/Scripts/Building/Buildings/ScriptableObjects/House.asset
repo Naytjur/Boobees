@@ -37,7 +37,7 @@ MonoBehaviour:
   gardenPrefab: {fileID: 0}
   gardenVisual: {fileID: 0}
   cataloguePrefab: {fileID: 0}
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 9f8f5e8f082b6654fb85b2f168576730, type: 3}
   width: 4
   height: 4
   unlockLevel: 0
