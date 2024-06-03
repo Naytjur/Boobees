@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
-  m_Name: Pond
+  m_Name: Nanus
   m_EditorClassIdentifier: 
-  id: 12
+  id: 13
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
     m_TableEntryReference:
-      m_KeyId: 2998387840299008
+      m_KeyId: 3320681170055168
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -31,25 +31,25 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  itemName: Pond
+  itemName: 
   description: 
   unlocked: 1
-  gardenPrefab: {fileID: 5312313822935156787, guid: 1693b4189858ba84e98e99c0714ea64d,
+  gardenPrefab: {fileID: 5368341089522705507, guid: b0a0d49237abd7d48b7cb95f7e7962b5,
     type: 3}
-  gardenVisual: {fileID: 5312313822935156787, guid: 7e76808b12fffb247bdac98fe38beeb1,
+  gardenVisual: {fileID: 5368341089522705507, guid: e1bf0fe5165a7ce4bbe87ff31df5aec6,
     type: 3}
-  cataloguePrefab: {fileID: 5312313822935156787, guid: 1693b4189858ba84e98e99c0714ea64d,
+  cataloguePrefab: {fileID: 5368341089522705507, guid: b0a0d49237abd7d48b7cb95f7e7962b5,
     type: 3}
-  sprite: {fileID: 21300000, guid: 6e84ceac6843ffe4d8bdffd986d1dd0a, type: 3}
-  width: 2
-  height: 2
-  specificMaxBuildingLimit: 0
+  sprite: {fileID: 21300000, guid: 52701de25e7c66c458fa9f1502d9164a, type: 3}
+  width: 1
+  height: 1
+  specificMaxBuildingLimit: 1
   unlockLevel: 1
   cost: 0
   maxCount: 1
-  count: 1
+  count: 0
   insectModifiers: []
-  affectedPlotTypes: 000000000100000002000000
+  affectedPlotTypes: 
   insectRarityModifiers: []
   references:
     version: 2

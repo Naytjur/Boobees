@@ -32,6 +32,7 @@ public class BuildingUI : MonoBehaviour
     private LocalizeStringEvent buildingNameEvent;
     private LocalizedString buildingName;
     private LocalizeStringEvent buildingCostEvent;
+    [SerializeField]
     private LocalizedString buildCostFree;
     private LocalizeStringEvent buildingUnlockEvent;
     private LocalizedString buildUnlocklevel;
