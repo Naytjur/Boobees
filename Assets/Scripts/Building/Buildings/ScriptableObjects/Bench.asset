@@ -40,7 +40,7 @@ MonoBehaviour:
     type: 3}
   cataloguePrefab: {fileID: 4138045857846625545, guid: 9ff32137ff07dca4a88da4bc1e47ae24,
     type: 3}
-  sprite: {fileID: 21300000, guid: f7f499f727741d04688501653a0a0aab, type: 3}
+  sprite: {fileID: 21300000, guid: d24752031a7b4664ab933653f4e1f213, type: 3}
   width: 1
   height: 2
   unlockLevel: 5

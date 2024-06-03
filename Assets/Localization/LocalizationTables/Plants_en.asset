@@ -23,11 +23,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 244243413008384
-    m_Localized: no description yet
+    m_Localized: 'Grows on ruderal plot
+
+      A bright red flowering plant known
+      for its delicate, papery petals and iconic black center. Often found in fields
+      and along roadsides, it symbolizes remembrance.
+
+      Fun Fact: The common
+      poppy is the source of the opium poppy''s seeds, which are used to produce
+      morphine.
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 244424611135488
-    m_Localized: no description yet
+    m_Localized: "Grows on ruderal plot\nA graceful plant with distinctive, spurred
+      flowers in various colors, often blue or purple.\r\nFunfact: The blossom\u2019s
+      unique shape makes it well equipped to attract long-tongued nectar feeders,
+      namely moths and hummingbirds.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 244376129175552
@@ -39,18 +52,32 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 244934642696192
-    m_Localized: "\u2022\tAlso known as Cardamine pratensis\r\n\u2022\tPerennial
-      herb found across Europe and western Asia\r\n\u2022\tBlooming on spikes close
-      to water\r\n\u2022\tIts name, pratensis, means 'meadow' in Latin.\r"
+    m_Localized: 'Grows on wild plot
+
+      Also known as lady''s smock, it has delicate,
+      pale pink or lilac flowers. It commonly grows in damp meadows and along streams,
+      blooming in early spring.
+
+      Funfact: The Cuckoo flower disperses its
+      seeds through an explosive mechanism.'
     m_Metadata:
       m_Items: []
   - m_Id: 246163615711232
-    m_Localized: Red Deadnettle
+    m_Localized: Purple Deadnettle
     m_Metadata:
       m_Items: []
   - m_Id: 246386417139712
-    m_Localized: "\u2022\tcolour of the flowers of dead-nettles varies \r\n\u2022\twhite,
-      yellow and purple to a deep purple."
+    m_Localized: 'Grows on ruderal plot
+
+      Herbaceous plants with soft, hairy
+      leaves and tubular flowers in shades of with purplish-pink flowers and heart-shaped,
+      purple-tinted leaves, commonly found in gardens and lawns.
+
+      FunFact:
+      Despite their name, dead nettles are not related to stinging nettles and are
+      safe to touch without getting stung.
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 246707335921664
@@ -58,10 +85,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 246830581350400
-    m_Localized: "\u2022\tBuff-tailed bumblebees sometimes gnaw a hole in the side
-      of the flower to access the nectar\r\n\u2022\tBoasts pink or purple flowers
-      atop tall stems\n\u2022\tBlooming from June to September\r\n\u2022\tThrives
-      in dry, chalky habitats across Western Europe.\r\n"
+    m_Localized: 'Grows on ruderal plot
+
+      A semi-parasitic plant with slender,
+      leafy stems and tubular yellow or purple flowers. It typically grows in meadows
+      and open woodlands.
+
+      Fun Fact: Field cow wheat relies on other plants
+      for nutrients, attaching to their roots to siphon off sustenance.
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 247911445102592
@@ -69,8 +102,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 247988779679744
-    m_Localized: "\u2022\tranging from groundcovers only a few inches tall to upright
-      plants\r\n\u2022\ttall, spiky blooms\r"
+    m_Localized: "Grows on wild plot\nA low-growing plant with small, bright blue
+      or purple flowers. It thrives in gardens and grassy areas.\r\nFunFact: The
+      flowers of garden speedwell wilt quickly after picking.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 248526187462656
@@ -78,7 +112,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 248555061051392
-    m_Localized: no description yet
+    m_Localized: "Grows on Edge vegetation plot\nA biennial plant with small, white
+      flowers and heart-shaped leaves. It has a garlicky smell when crushed.\r\nFunFact:
+      Garlic mustard was introduced to North America as a culinary herb but has since
+      become a widespread invasive species.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 248714025172992
@@ -86,7 +123,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 248832648478720
-    m_Localized: no description yet
+    m_Localized: 'Grows on Edge vegetation plot
+
+      A tall, showy plant with spikes
+      of vibrant purple flowers. Often found in wetlands, it can become invasive,
+      outcompeting native vegetation.
+
+      Funfact: Purple loosestrife can produce
+      over two million seeds per plant annually.
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 248941658439680
@@ -94,9 +140,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 249011434881024
-    m_Localized: "\u2022\tSouthern European annual \r\n\u2022\tdeeply cut basal leaves
-      and feathery stem leaves\r\n\u2022\tproduces fragrant 5-cm flower heads \r\n\u2022\twhite,
-      rose, crimson, blue, or deep mahogany purple.\r"
+    m_Localized: 'Grows on wild plot
+
+      Commonly known as pincushion flower,
+      it features spherical flower heads with numerous small blooms, usually in shades
+      of blue, pink, or white.
+
+      FunFact: Historically, it was believed to
+      cure scabies and other skin conditions due to its rough leaves.'
     m_Metadata:
       m_Items: []
   - m_Id: 249951630065664
@@ -104,7 +155,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 249994005118976
-    m_Localized: no description yet
+    m_Localized: 'Grows on wild plot
+
+      A hardy perennial with clusters of small,
+      button-like yellow flowers and aromatic, fern-like leaves.
+
+      FunFact:
+      Tansy was once used as a natural preservative in funerals to ward off insects
+      and delay decomposition.'
     m_Metadata:
       m_Items: []
   - m_Id: 250202617217024
@@ -112,8 +170,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 250275908485120
-    m_Localized: "\u2022\tshort lived perennial legume\r\n\u2022\tAdapted to humid,
-      temperate regions\r\n\u2022\tAdapted to a wide range of soils."
+    m_Localized: 'Grows on wild plot
+
+      A low-growing, spreading plant with clusters
+      of bright yellow flowers. It is commonly found in meadows and along roadsides.
+
+      FunFact:
+      It is used along roadsides to control wind and water erosion.
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 250925287407616
@@ -121,9 +186,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 251009370619904
-    m_Localized: "\u2022\tStriking plant with rough, hairy leaves and vibrant blue
-      flowers that start pink\r\n\u2022\tNative to Europe, western and central Asia\r\n\u2022\tBlooms
-      from May to September"
+    m_Localized: 'Grows on ruderal plot
+
+      A striking plant with tall spikes
+      of blue or purple flowers and rough, hairy stems.
+
+      Fun Fact: In ancient
+      times, Viper''s Bugloss was believed to be an aphrodisiac
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 251287054516224
@@ -131,7 +202,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 251329807056896
-    m_Localized: no description yet
+    m_Localized: 'Grows on wild plot
+
+      A perennial with bright yellow and orange,
+      snapdragon-like flowers. It often grows in clusters along roadsides and in
+      fields.
+
+      Funfact: Yellow toadflax is also known as "butter and eggs"
+      due to its bright yellow and orange color combination.
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 251874995273728
@@ -139,9 +219,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 251905659830272
-    m_Localized: "\u2022\tEuropean wildflower\r\n\u2022\tAlso found in North America\r\n\u2022\tvarious
-      colors, including purple, blue, yellow, or white\r\n\u2022\toften with a sought-after
-      tricolor pattern. \r"
+    m_Localized: 'Grows on Edge vegetation plot
+
+      A small, delicate flower with
+      a mix of purple, yellow, and white petals. Found in meadows and grasslands.
+
+      FunFact:
+      Wild pansies have been used historically in love potions.
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 252320203866112

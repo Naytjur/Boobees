@@ -40,12 +40,12 @@ MonoBehaviour:
     type: 3}
   cataloguePrefab: {fileID: 4195216918634333592, guid: 0ed19c8dfb4a6a24ca6fcb8e35f03818,
     type: 3}
-  sprite: {fileID: 21300000, guid: 52e0a4f02aecd4944af223aa3ff9aa23, type: 3}
+  sprite: {fileID: 21300000, guid: 41b6d413a2e614e44a18343a28520fe6, type: 3}
   width: 1
   height: 2
   unlockLevel: 2
   cost: 10
-  maxCount: 31
+  maxCount: 0
   count: 0
   references:
     version: 2
