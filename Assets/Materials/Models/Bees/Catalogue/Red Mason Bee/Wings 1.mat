@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Abdomen
+  m_Name: Wings 1
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -27,7 +27,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 3b61e32cba64f3940a9b3ce637fa3ef1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 522b13a1739ab3645b873100bfb69317, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -43,15 +43,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 362175bf859bb6243b03abe54f5db764, type: 3}
+        m_Texture: {fileID: 2800000, guid: 44b7a1bf4f9cd0f499afdbe70d42da18, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c8c545deeab693a449d24f6b7c5ad407, type: 3}
+        m_Texture: {fileID: 2800000, guid: ebc7121ecf7777c4d97e7517089309b3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 792a6d80c699d3b49b8616f9fc921e92, type: 3}
+        m_Texture: {fileID: 2800000, guid: 15e938a4742fb8b428f336ea86ba7237, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
