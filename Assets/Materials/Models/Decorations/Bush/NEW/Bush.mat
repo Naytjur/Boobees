@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: leaves
+  m_Name: Bush
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -27,7 +27,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: a8b6a40fb8d416e41bff2de20d41617e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9a912616b2f6259408b407b8913fe706, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -43,15 +43,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 4a2d345f48acb354ea431799c914b6ef, type: 3}
+        m_Texture: {fileID: 2800000, guid: 26135e0082eeb0248a82d7be2c8edf3a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f62b76b9a6fdc8d40a9c019b0ad66e78, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0a2b55301c8506f479b7018f53cd0267, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: cab06495519829542b000806f1b4e77c, type: 3}
+        m_Texture: {fileID: 2800000, guid: be36678c851e43b43bbf001cefcacd91, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
