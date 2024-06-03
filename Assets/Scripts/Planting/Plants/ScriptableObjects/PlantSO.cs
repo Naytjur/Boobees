@@ -9,5 +9,10 @@ public class PlantSO : CatalogueItemInfo
     public PlotType[] correctPlots;
     public float baseSpawnRate;
     public int seedAmount;
-    public int decayTime;
+    public float decayTime;
+
+    public void SetDecayTime(float newDecayTime)
+    {
+        this.decayTime = newDecayTime;
+    }
 }

@@ -118,6 +118,7 @@ public class PlantingManager : MonoBehaviour
             currentPlot.AddPlant(plant);
             Destroy(hoverVisual.gameObject);
             plant.AssignPlot(currentPlot.type);
+            plant.StartDecayTimer(0, GetCurrentDateTimeAsFloat());
             
             if(plant.plantSO.seedAmount <= 0)
             {
@@ -169,7 +170,7 @@ public class PlantingManager : MonoBehaviour
         }
     }
 
-    private void UpdateAmountUI()
+    public void UpdateAmountUI()
     {
         plantAmount.text = currentPlot.plantAmount.ToString() + "/" + currentPlot.maxPlants.ToString();
 
@@ -267,5 +268,19 @@ public class PlantingManager : MonoBehaviour
         }
 
         return plant;
+    }
+    public static float GetCurrentDateTimeAsFloat()
+    {
+        // Get the current date and time
+        DateTime now = DateTime.UtcNow;
+
+        // Define the Unix epoch (January 1, 1970)
+        DateTime epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+
+        // Calculate the difference between now and the Unix epoch
+        TimeSpan timeSpan = now - epoch;
+
+        // Return the total seconds as a float
+        return (float)timeSpan.TotalSeconds;
     }
 }

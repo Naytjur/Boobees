@@ -43,10 +43,28 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 4cabca5317d65464ab91544d9a2bc0b2, type: 3}
   width: 1
   height: 1
+  specificMaxBuildingLimit: 2
   unlockLevel: 4
   cost: 25
   maxCount: 0
   count: 0
+  insectModifiers: []
+  plotTypeModifiers:
+  - plotType: 0
+    canAffect: 1
+  - plotType: 1
+    canAffect: 1
+  - plotType: 2
+    canAffect: 1
+  insectRarityModifiers:
+  - insectType: 0
+    rarityModifier:
+      rarity: 1
+      modifierAmount: 2
+  - insectType: 1
+    rarityModifier:
+      rarity: 1
+      modifierAmount: 2
   references:
     version: 2
     RefIds: []

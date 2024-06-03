@@ -5,19 +5,53 @@ using System.Runtime.Serialization;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[System.Serializable]
+public struct InsectModifier
+{
+    public InsectSO.Type insectType; // The type of insect this modifier affects
+    public bool modifySpawnRate;     // True if modifying spawn rate, false if modifying rarity
+    public float modifierAmount;     // The amount to modify by
+}
+
+[System.Serializable]
+public struct PlotTypeModifier
+{
+    public PlotType plotType;
+    public bool canAffect; // Whether the building can affect this plot type
+}
 
 [CreateAssetMenu(fileName = "New Building", menuName = "Create Building")]
 public class BuildingSO : ItemInfo
 {
     public int width;
     public int height;
+    public int specificMaxBuildingLimit;
 
     public int unlockLevel;
     public int cost;
 
     public int maxCount;
     public int count;
+    public List<InsectModifier> insectModifiers = new List<InsectModifier>();
+    public List<PlotTypeModifier> plotTypeModifiers = new List<PlotTypeModifier>();
 
+    
+
+    [System.Serializable]
+    public struct InsectRarityModifier
+    {
+        public InsectSO.Type insectType;
+        public RarityModifier rarityModifier;
+    }
+
+    [System.Serializable]
+    public struct RarityModifier
+    {
+        public Rarity rarity;
+        public float modifierAmount;
+    }
+
+    public List<InsectRarityModifier> insectRarityModifiers = new List<InsectRarityModifier>();
     public enum Dir
     {
         Down,

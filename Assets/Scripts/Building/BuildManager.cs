@@ -111,6 +111,8 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     //Save Load
     public void LoadData(GameData data)
     {
+        float logoutTime = data.logoutTime;
+
         foreach (BuildingSO building in allBuildings)
         {
             building.RemoveCount(building.count);
@@ -122,7 +124,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
             if (building is Patch patch)
             {
-                patch.LoadPlants(buildData.placedPlants);
+                patch.LoadPlants(buildData.placedPlants, logoutTime);
             }
         }
     }
@@ -136,10 +138,11 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     public void SaveData(ref GameData data)
     {
         data.buildingList.Clear();
+        data.logoutTime = Plant.GetCurrentDateTimeAsFloat();
 
         foreach (Building building in buildings)
         {
-            if(building is Patch patch)
+            if (building is Patch patch)
             {
                 patch.SavePlants();
             }
