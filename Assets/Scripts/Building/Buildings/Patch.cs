@@ -22,6 +22,7 @@ public class Patch : Building
         GameManager.instance.onStateChange += OnGameStateChange;
         BuildManager.onBuildingPlaced += UpdateModifierBuildingList;
         plot = GetComponent<Plot>();
+        UpdateModifierBuildingList();
     }
     public override void OnClick()
     {

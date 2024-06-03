@@ -121,7 +121,6 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         foreach (BuildData buildData in data.buildingList)
         {
             Building building = PlaceBuilding(buildData.gridX, buildData.gridZ, buildData.buildingID, buildData.buildingRotation);
-
             if (building is Patch patch)
             {
                 patch.LoadPlants(buildData.placedPlants, logoutTime);

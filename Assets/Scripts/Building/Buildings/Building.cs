@@ -4,17 +4,8 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-
-    [SerializeField] private string id;
-
     public BuildingSO buildingSO;
     public BuildData buildData;
-
-    [ContextMenu("Generate gui for id")]
-    private void GenerateGuid()
-    {
-        id = System.Guid.NewGuid().ToString();
-    }
     
     public static Building Create(Vector3 worldPosition, Vector2Int origin, BuildingSO buildingSO, BuildData data, float size, Quaternion rotation, BuildingSO.Dir dir)
     {
@@ -107,22 +98,9 @@ public class Building : MonoBehaviour
         return tiles;
     }
 
-    public virtual bool CanAffectPatch(Plot patch)
+    public bool CanAffectPatch(Plot patch)
     {
-        Debug.LogError("This method should be overridden in subclasses.");
-        return false;
+        return buildingSO.affectedPlotTypes.Contains(patch.type);
     }
-
-    private List<PlotType> GetAffectablePlotTypes()
-    {
-        List<PlotType> affectableTypes = new List<PlotType>();
-        foreach (PlotTypeModifier modifier in buildingSO.plotTypeModifiers)
-        {
-            if (modifier.canAffect)
-            {
-                affectableTypes.Add(modifier.plotType);
-            }
-        }
-        return affectableTypes;
-    }
+ 
 }

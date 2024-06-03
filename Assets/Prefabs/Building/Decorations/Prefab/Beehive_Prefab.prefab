@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1730592248008074945}
-  - component: {fileID: 7389849808468164629}
+  - component: {fileID: 2453960264929351158}
   m_Layer: 0
   m_Name: Beehive_Prefab
   m_TagString: Untagged
@@ -157,7 +157,7 @@ Transform:
   - {fileID: 5133904212502977126}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7389849808468164629
+--- !u!114 &2453960264929351158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,11 +166,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1896370437441212087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f6b65a1508d7f14e942bf6765526a36, type: 3}
+  m_Script: {fileID: 11500000, guid: e6e37e6e9e3e6e448ab0717b8902ed5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
   buildingSO: {fileID: 11400000, guid: 495cef77f4871ea489d269a17d3266b3, type: 2}
+  buildData:
+    buildingID: 
+    gridX: 0
+    gridZ: 0
+    buildingRotation: 0
+    placedPlants: []
 --- !u!1 &4805415423384620356
 GameObject:
   m_ObjectHideFlags: 0

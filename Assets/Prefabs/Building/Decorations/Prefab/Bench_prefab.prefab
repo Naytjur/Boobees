@@ -296,7 +296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4138045857846625545}
-  - component: {fileID: 5092463170130333832}
+  - component: {fileID: 1467284883492327515}
   m_Layer: 0
   m_Name: Bench_prefab
   m_TagString: Untagged
@@ -320,7 +320,7 @@ Transform:
   - {fileID: 1630788577788612134}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5092463170130333832
+--- !u!114 &1467284883492327515
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -329,11 +329,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2476863913269376518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f6b65a1508d7f14e942bf6765526a36, type: 3}
+  m_Script: {fileID: 11500000, guid: e6e37e6e9e3e6e448ab0717b8902ed5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
   buildingSO: {fileID: 11400000, guid: c5e7afb82b8da7e43a605712bb05c913, type: 2}
+  buildData:
+    buildingID: 
+    gridX: 0
+    gridZ: 0
+    buildingRotation: 0
+    placedPlants: []
 --- !u!1 &4121459877416777626
 GameObject:
   m_ObjectHideFlags: 0

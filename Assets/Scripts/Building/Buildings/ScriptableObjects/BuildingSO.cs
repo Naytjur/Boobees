@@ -13,13 +13,6 @@ public struct InsectModifier
     public float modifierAmount;     // The amount to modify by
 }
 
-[System.Serializable]
-public struct PlotTypeModifier
-{
-    public PlotType plotType;
-    public bool canAffect; // Whether the building can affect this plot type
-}
-
 [CreateAssetMenu(fileName = "New Building", menuName = "Create Building")]
 public class BuildingSO : ItemInfo
 {
@@ -33,7 +26,7 @@ public class BuildingSO : ItemInfo
     public int maxCount;
     public int count;
     public List<InsectModifier> insectModifiers = new List<InsectModifier>();
-    public List<PlotTypeModifier> plotTypeModifiers = new List<PlotTypeModifier>();
+    public List<PlotType> affectedPlotTypes = new List<PlotType>();
 
     
 

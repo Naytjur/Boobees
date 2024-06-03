@@ -24,11 +24,6 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
         // Temporarily disable event subscription for onBuildingPlaced
         postLoadCompleted = false;
 
-        ScoreManager.onScoreChanged += OnScoreChanged;
-        ScoreManager.onLevelUp += OnLevelUp;
-        DataPersistenceManager.postLoad += PostLoad;
-        PlantingManager.instance.onPlantUnlocked += OnPlantUnlocked;
-
         TutorialMessage[] messages = FindObjectsOfType<TutorialMessage>();
         blackOutScreen.SetActive(false);
 
@@ -37,6 +32,14 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
             tutorialMessages.Add(message);
             message.manager = this;
         }
+    }
+    
+    void Start()
+    {
+        ScoreManager.onScoreChanged += OnScoreChanged;
+        ScoreManager.onLevelUp += OnLevelUp;
+        DataPersistenceManager.postLoad += PostLoad;
+        PlantingManager.instance.onPlantUnlocked += OnPlantUnlocked;
     }
 
     private void OnEnable()
