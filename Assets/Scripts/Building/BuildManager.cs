@@ -313,6 +313,22 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
         visual.transform.position = Vector3.Lerp(visual.transform.position, lastTarget + new Vector3(rotationOffset.x, 0, rotationOffset.y), Time.deltaTime * 20f);
         visual.transform.rotation = Quaternion.Euler(0, currentBuilding.GetRotationDegrees(direction), 0);
+
+        buildGrid.GetXZ(lastTarget, out int x, out int z);
+        if (!CheckValidBuildPosition(currentBuilding, x, z))
+        {
+            foreach (MeshRenderer renderer in visualRenderers)
+            {
+                renderer.material.SetColor("_Color", unableColor);
+            }
+        }
+        else
+        {
+            foreach (MeshRenderer renderer in visualRenderers)
+            {
+                renderer.material.SetColor("_Color", ableColor);
+            }
+        }
     }
 
     private void UpdateVisualPosition()
@@ -330,21 +346,6 @@ public class BuildManager : MonoBehaviour, IDataPersistence
             }
 
             lastTarget = hit;
-
-            if (!CheckValidBuildPosition(currentBuilding, x, z))
-            {
-                foreach (MeshRenderer renderer in visualRenderers)
-                {
-                    renderer.material.SetColor("_Color", unableColor);
-                }
-            }
-            else
-            {
-                foreach (MeshRenderer renderer in visualRenderers)
-                {
-                    renderer.material.SetColor("_Color", ableColor);
-                }
-            }
 
             if (!hasPositionOnGrid)
             {

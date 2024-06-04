@@ -47,10 +47,7 @@ public class BuildingUI : MonoBehaviour
         removeButton.onClick.RemoveAllListeners();
         rotateButton.onClick.AddListener(BuildManager.instance.RotateBuilding);
         removeButton.onClick.AddListener(BuildManager.instance.RemoveBuilding);
-    }
 
-    private void OnEnable()
-    {
         LoadBuildButtons();
     }
 
@@ -85,7 +82,7 @@ public class BuildingUI : MonoBehaviour
             index++;
             buildButtons.Add(button);
         }
-        UpdateBuildButtons();
+        Invoke("UpdateBuildButtons", 0.5f);
         UpdateOverlay(BuildManager.instance.state);
     }
 
@@ -108,6 +105,8 @@ public class BuildingUI : MonoBehaviour
                 buildingCostEvent = select.buildCostLocalizationEvent;
                 buildingCostEvent.StringReference = buildCostFree;
             }
+            print(select.building.unlocked);
+
             if (select.building.unlocked)
             {
                 select.buildingAmountText.text = select.building.count.ToString() + "/" + select.building.maxCount.ToString();
