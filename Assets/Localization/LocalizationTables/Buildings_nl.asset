@@ -63,7 +63,71 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3320681170055168
-    m_Localized: Nanus
+    m_Localized: Nanus Standbeeld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638307005071360
+    m_Localized: de Bijenkorf zorgt voor een kleine toename van bijen op alle Ruderale
+      Vaken en Wilde Vakken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638308695375872
+    m_Localized: het Hekje zorgt voor een kleine toename van insecten op aanliggende
+      Wilde vakken en ZoomPlanten vakken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638309873975296
+    m_Localized: het Bankje zorgt voor een kleine toename van insecten op aanliggende
+      Ruderale Vaken en Zoomplanten Vakken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638311174209536
+    m_Localized: de Berkenboom zorgt voor een kleine boost in passieve pollenproductie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638312944205824
+    m_Localized: de Eikenboom zorgt voor een kleine boost in passieve pollenproductie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638313674014720
+    m_Localized: "de Struik zorgt voor een kleine toename van insecten op aanliggende
+      Ruderale Vaken.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639053427605504
+    m_Localized: het Ruderale vak is een plek om je planten te plaatsen, vooral een-
+      en tweejarige planten doen het goed op deze vakken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639110470139904
+    m_Localized: het Wilde vak is een plek om je planten te plaatsen, vooral hoge
+      inheemse soorten en uitheemse prairie soorten doen het goed op deze vakken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639133681418240
+    m_Localized: het Zoomplanten vak is een plek om je planten te plaatsen, vooral
+      soorten die goed groeien aan bosranden en in (gedeeltelijk) schaduw doen het
+      goed op deze vakken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639151960195072
+    m_Localized: de Steen zorgt voor een kleine toename van ongewone en zeldzame
+      insecten op aanliggende vakken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639572787298304
+    m_Localized: het Nanus standbeeld zorgt voor een medium toename van zeldzame
+      insecten op aanliggende vakken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639178929569792
+    m_Localized: de Vijver zorgt voor een toename van alle insecten op aanliggende
+      vakken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639194695958528
+    m_Localized: de Scuur zorgt dat je meer zaadjes krijgt elke keer dat je een plant
+      scant
     m_Metadata:
       m_Items: []
   references:
