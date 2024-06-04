@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
 using UnityEngine.UI;
+using System.Collections;
 
 public class TutorialMessage : MonoBehaviour
 {
@@ -75,15 +76,9 @@ public class TutorialMessage : MonoBehaviour
         }
         else
         {
-            Vector3 buttonPos = targetButton.transform.position;
-
-            // Instantiate the UI panel independently
-            blackOutScreen.SetActive(true);
+            Vector3 buttonPos = targetButton.transform.position;            
             blackOutScreen.transform.position = buttonPos;
-            // Allow clicks to pass through
-            //blackOutScreen.blocksRaycasts = false;
-
-            Debug.Log("UI panel instantiated");
+            StartCoroutine(WaitAndActivate());
         }
 
         if (instantiatedUI != null && !instantiatedUI.activeSelf && beenSeen == "false")
@@ -106,5 +101,12 @@ public class TutorialMessage : MonoBehaviour
     public string HasBeenSeen()
     {
         return beenSeen;
+    }
+
+    IEnumerator WaitAndActivate()
+    {
+        yield return new WaitForSeconds(0.1f);
+        blackOutScreen.SetActive(true);
+        Debug.Log("UI panel instantiated");
     }
 }
