@@ -44,8 +44,8 @@ MonoBehaviour:
   width: 1
   height: 1
   specificMaxBuildingLimit: 1
-  unlockLevel: 1
-  cost: 0
+  unlockLevel: 10
+  cost: 100
   maxCount: 1
   count: 0
   insectModifiers: []

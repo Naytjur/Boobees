@@ -45,7 +45,7 @@ MonoBehaviour:
   height: 2
   specificMaxBuildingLimit: 2
   unlockLevel: 2
-  cost: 10
+  cost: 20
   maxCount: 0
   count: 0
   insectModifiers:
@@ -55,11 +55,7 @@ MonoBehaviour:
   - insectType: 1
     modifySpawnRate: 0
     modifierAmount: 0.2
-  plotTypeModifiers:
-  - plotType: 1
-    canAffect: 1
-  - plotType: 2
-    canAffect: 1
+  affectedPlotTypes: 
   insectRarityModifiers: []
   references:
     version: 2
