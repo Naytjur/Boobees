@@ -10,8 +10,8 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
     public static ScoreManager instance;
 
     [SerializeField] private float scoreCapModifier = 2f;
-    [SerializeField] private int maxHoneyScoreBase = 5;
-    [SerializeField] private int maxPollenScoreBase = 10;
+    [SerializeField] private int maxHoneyScoreBase = 20;
+    [SerializeField] private int maxPollenScoreBase = 50;
     [SerializeField] public int playerLevel = 1;
 
     public TMP_Text levelText;

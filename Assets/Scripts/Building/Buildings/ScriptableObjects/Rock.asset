@@ -36,7 +36,7 @@ MonoBehaviour:
   unlocked: 0
   gardenPrefab: {fileID: 3496962742392625404, guid: 01a92fa8a183d1c4d8369e068f939135,
     type: 3}
-  gardenVisual: {fileID: 3496962742392625404, guid: df5d8e9a214f9cf49985a89bd2994eef,
+  gardenVisual: {fileID: 3496962742392625404, guid: 7464befc28592284abc2987d41b9380d,
     type: 3}
   cataloguePrefab: {fileID: 3496962742392625404, guid: 01a92fa8a183d1c4d8369e068f939135,
     type: 3}
@@ -45,17 +45,11 @@ MonoBehaviour:
   height: 1
   specificMaxBuildingLimit: 2
   unlockLevel: 4
-  cost: 25
+  cost: 40
   maxCount: 0
   count: 0
   insectModifiers: []
-  plotTypeModifiers:
-  - plotType: 0
-    canAffect: 1
-  - plotType: 1
-    canAffect: 1
-  - plotType: 2
-    canAffect: 1
+  affectedPlotTypes: 
   insectRarityModifiers:
   - insectType: 0
     rarityModifier:
