@@ -3038,7 +3038,6 @@ MonoBehaviour:
   currentPlot: {fileID: 0}
   plantList: []
   confirmButton: {fileID: 1015018256}
-  clearButton: {fileID: 162073315223954835}
   plantAmount: {fileID: 1388236295}
   plantSelectionPanel: {fileID: 1114010107}
   isPlanting: 0
@@ -4368,6 +4367,19 @@ MonoBehaviour:
   confirmButton: {fileID: 813758380}
   rotateButton: {fileID: 2116822255}
   removeButton: {fileID: 906058041}
+  infoDisplay: {fileID: 0}
+  buildCostFree:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &537505835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2708308890862973074, guid: 6486b94836e822c43a05c4e7411c8f51,
@@ -24955,6 +24967,19 @@ MonoBehaviour:
   confirmButton: {fileID: 0}
   rotateButton: {fileID: 0}
   removeButton: {fileID: 0}
+  infoDisplay: {fileID: 0}
+  buildCostFree:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!222 &8943811326261388607
 CanvasRenderer:
   m_ObjectHideFlags: 0
