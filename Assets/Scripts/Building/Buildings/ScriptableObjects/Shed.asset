@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
-  m_Name: Birch Tree
+  m_Name: Shed
   m_EditorClassIdentifier: 
-  id: 3
+  id: 
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
     m_TableEntryReference:
-      m_KeyId: 92914253824
+      m_KeyId: 3693037299367936
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -26,26 +26,23 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
     m_TableEntryReference:
-      m_KeyId: 3638311174209536
+      m_KeyId: 3639194695958528
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  itemName: Birch Tree
+  itemName: 
   description: 
   unlocked: 0
-  gardenPrefab: {fileID: 4192051278206427102, guid: fbdafe99f042ec24aa77899a968643b5,
-    type: 3}
-  gardenVisual: {fileID: 4192051278206427102, guid: 6cd338f3a65821f4d9e95f049df87ba0,
-    type: 3}
-  cataloguePrefab: {fileID: 4192051278206427102, guid: fbdafe99f042ec24aa77899a968643b5,
-    type: 3}
-  sprite: {fileID: 21300000, guid: 78cf050dc444ae642b50a35a19bf5d4a, type: 3}
-  width: 1
-  height: 1
+  gardenPrefab: {fileID: 0}
+  gardenVisual: {fileID: 0}
+  cataloguePrefab: {fileID: 0}
+  sprite: {fileID: 0}
+  width: 0
+  height: 0
   specificMaxBuildingLimit: 0
-  unlockLevel: 11
-  cost: 400
+  unlockLevel: 0
+  cost: 0
   maxCount: 0
   count: 0
   insectModifiers: []

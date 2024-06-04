@@ -24,9 +24,9 @@ MonoBehaviour:
     m_LocalVariables: []
   itemDescriptionLocalizedString:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 3639110470139904
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -43,10 +43,14 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 0f4e4efe8fe148c4a8ffeb557c4b1b5a, type: 3}
   width: 1
   height: 1
+  specificMaxBuildingLimit: 0
   unlockLevel: 1
   cost: 0
   maxCount: 1
   count: 0
+  insectModifiers: []
+  affectedPlotTypes: 
+  insectRarityModifiers: []
   references:
     version: 2
     RefIds: []

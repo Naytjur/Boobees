@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Purple Loosestrife
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 6528819548581335760, guid: 9563aefb979354f47ab7d3e817efee17,
     type: 3}
   gardenVisual: {fileID: 6528819548581335760, guid: 9563aefb979354f47ab7d3e817efee17,
