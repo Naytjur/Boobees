@@ -17,7 +17,7 @@ public class VolumeSaveController : MonoBehaviour
 
     public void VolumeSlider(float volume)
     {
-        volumeTextUI.text = volume.ToString("0.0");
+        volumeTextUI.text = volume.ToString("0");
     }
 
     public void SaveVolumeButton()
@@ -31,6 +31,7 @@ public class VolumeSaveController : MonoBehaviour
     {
         float volumeValue = PlayerPrefs.GetFloat("VolumeValue");
         volumeSlider.value = volumeValue;
-        AudioListener.volume = volumeValue;
+        AudioListener.volume = volumeValue / 10;
+        VolumeSlider(volumeValue);
     }
 }

@@ -92,7 +92,7 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     private void PostLoad()
     {
         LanguageTutorial();
-
+        Debug.Log("PeeperSweeper");
         // Enable the flag to allow OnBuildingPlaced to execute
         postLoadCompleted = true;
     }
@@ -130,19 +130,19 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     {
         if (tutorialMessageStart.beenSeen != "true")
         {
-            Debug.Log("PeeperSweeper");
             tutorialMessageStart.ShowTutorial();
         }
     }
 
     public void LanguageTutorial()
     {
+
         if (tutorialMessageLanguage.beenSeen == "false")
         {
             tutorialMessageLanguage.ShowTutorial();
         }
     }
-        public void HideBlackoutPanel()
+    public void HideBlackoutPanel()
     {
         blackOutScreen.SetActive(false);
     }

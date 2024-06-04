@@ -26,7 +26,6 @@ public class TutorialMessage : MonoBehaviour
 
     public void ShowTutorial()
     {
-
         instantiatedUI = Instantiate(tutorialUIPrefab);
         textBox = instantiatedUI.GetComponentInChildren<TextMeshProUGUI>();
 
@@ -101,6 +100,7 @@ public class TutorialMessage : MonoBehaviour
         {
             instantiatedUI.SetActive(false);
             Destroy(instantiatedPanel);
+            manager.HideBlackoutPanel();
         }
     }
     public string HasBeenSeen()
