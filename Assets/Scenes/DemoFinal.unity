@@ -13800,7 +13800,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 798875242}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1440441420}
+        m_TargetAssemblyTypeName: TutorialMessage, Assembly-CSharp
+        m_MethodName: HideTutorialUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &798875242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14751,7 +14763,7 @@ GameObject:
   - component: {fileID: 900052904}
   - component: {fileID: 900052903}
   - component: {fileID: 900052902}
-  - component: {fileID: 900052901}
+  - component: {fileID: 900052909}
   m_Layer: 0
   m_Name: TutorialManager
   m_TagString: Untagged
@@ -14774,37 +14786,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1018873736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &900052901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900052899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
-    type: 3}
-  blackOutScreen: {fileID: 1991551608}
-  message:
-    m_TableReference:
-      m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
-    m_TableEntryReference:
-      m_KeyId: 6866786516992
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  manager: {fileID: 900052908}
-  beenSeen: false
-  useClickHandler: 1
-  targetButton: {fileID: 0}
-  references:
-    version: 2
-    RefIds: []
 --- !u!114 &900052902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15009,10 +14990,42 @@ MonoBehaviour:
   tutorialMessagePlot: {fileID: 900052904}
   tutorialMessageUnlock: {fileID: 900052903}
   tutorialMessageScore: {fileID: 900052902}
-  tutorialMessageLevel: {fileID: 900052901}
+  tutorialMessageCanLevel: {fileID: 900052909}
   tutorialMessages: []
   languageManager: {fileID: 206729304}
+  scoreManager: {fileID: 0}
   blackOutScreen: {fileID: 1991551608}
+--- !u!114 &900052909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900052899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  blackOutScreen: {fileID: 1991551608}
+  message:
+    m_TableReference:
+      m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
+    m_TableEntryReference:
+      m_KeyId: 6866786516992
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  manager: {fileID: 900052908}
+  beenSeen: false
+  useClickHandler: 0
+  targetButton: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &902453921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15730,6 +15743,7 @@ GameObject:
   - component: {fileID: 954505404}
   - component: {fileID: 954505403}
   - component: {fileID: 954505406}
+  - component: {fileID: 954505407}
   m_Layer: 0
   m_Name: Waluigi Button
   m_TagString: Untagged
@@ -15870,6 +15884,61 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 900052909}
+        m_TargetAssemblyTypeName: TutorialMessage, Assembly-CSharp
+        m_MethodName: HideTutorialUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 954505407}
+        m_TargetAssemblyTypeName: TutorialMessage, Assembly-CSharp
+        m_MethodName: ShowTutorial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &954505407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954505401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
+    type: 3}
+  blackOutScreen: {fileID: 1991551608}
+  message:
+    m_TableReference:
+      m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
+    m_TableEntryReference:
+      m_KeyId: 6866786516992
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  manager: {fileID: 900052908}
+  beenSeen: false
+  useClickHandler: 1
+  targetButton: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &958281897
 GameObject:
   m_ObjectHideFlags: 0
@@ -23067,7 +23136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIPrefab: {fileID: 512821267306866775, guid: a600167acbc1a714db7c79ad835af527,
     type: 3}
-  blackOutScreen: {fileID: 0}
+  blackOutScreen: {fileID: 1991551608}
   message:
     m_TableReference:
       m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
@@ -23077,10 +23146,10 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  manager: {fileID: 0}
-  beenSeen: 
-  useClickHandler: 1
-  targetButton: {fileID: 0}
+  manager: {fileID: 900052908}
+  beenSeen: false
+  useClickHandler: 0
+  targetButton: {fileID: 798875238}
   references:
     version: 2
     RefIds: []

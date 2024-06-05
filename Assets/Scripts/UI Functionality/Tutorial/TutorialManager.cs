@@ -10,11 +10,12 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     public TutorialMessage tutorialMessagePlot;
     public TutorialMessage tutorialMessageUnlock;
     public TutorialMessage tutorialMessageScore;
-    public TutorialMessage tutorialMessageLevel;
+    public TutorialMessage tutorialMessageCanLevel;
 
     public List<TutorialMessage> tutorialMessages = new List<TutorialMessage>();
 
     public LanguageManager languageManager;
+    public ScoreManager scoreManager;
 
     private bool postLoadCompleted = false;
     public GameObject blackOutScreen;
@@ -37,7 +38,6 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     void Start()
     {
         ScoreManager.onScoreChanged += OnScoreChanged;
-        ScoreManager.onLevelUp += OnLevelUp;
         DataPersistenceManager.postLoad += PostLoad;
         PlantingManager.instance.onPlantUnlocked += OnPlantUnlocked;
     }
@@ -111,16 +111,12 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
         {
             tutorialMessageScore.ShowTutorial();
         }
-    }
 
-    private void OnLevelUp(int level)
-    {
-        if (level == 2)
+        if ((pollen >= 50 && honey >=20))
         {
-            tutorialMessageLevel.ShowTutorial();
+            tutorialMessageCanLevel.ShowTutorial();
         }
     }
-
     private void OnPlantUnlocked(PlantSO plant)
     {
         tutorialMessageUnlock.ShowTutorial();
