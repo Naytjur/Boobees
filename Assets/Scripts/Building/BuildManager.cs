@@ -1,13 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Data.Common;
-using Unity.Loading;
-using UnityEditor.Build.Pipeline.Utilities;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using static UnityEditor.FilePathAttribute;
+
 
 public class BuildManager : MonoBehaviour, IDataPersistence
 {
@@ -204,6 +201,8 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         }
 
         currentBuilding.AddCount(1);
+
+        ScoreManager.instance.UpdateScores(0, -currentBuilding.cost);
 
         onBuildingPlaced?.Invoke();
         UpdateBuildState(BuildState.Unselected);
@@ -420,7 +419,6 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
     private void UpdateBuildings()
     {
-        Debug.Log("Updating buildings");
         foreach (BuildingSO building in allBuildings)
         {
             building.TryUnlock(ScoreManager.instance.playerLevel);
@@ -457,6 +455,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         
         if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("BuildSurface"), out Vector3 pos))
         {
+            pos += new Vector3(0.001f, 0, 0.001f);
             buildGrid.GetXZ(pos, out int x, out int z);
 
             if (buildGrid.IsPositionOnGrid(x, z))

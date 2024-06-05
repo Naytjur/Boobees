@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 [System.Serializable]
@@ -72,8 +73,18 @@ public class Grid
 
     public void GetXZ(Vector3 worldPosition, out int x, out int z)
     {
-        x = Mathf.FloorToInt((worldPosition - origin).x / cellSize);
-        z = Mathf.FloorToInt((worldPosition - origin).z / cellSize);
+        float xFloat = (worldPosition - origin).x / cellSize;
+        float zFloat = (worldPosition - origin).z / cellSize;
+
+        Debug.Log(zFloat + " " + (zFloat == 4f));
+
+        x = Mathf.FloorToInt(xFloat);
+        z = Mathf.FloorToInt(zFloat);
+
+        if(zFloat >= 3.99f && zFloat < 5f)
+        {
+            z = 4;
+        }
     }
 
     public void SetValue(int x, int z, Building building, int rotation)

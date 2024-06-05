@@ -3,7 +3,6 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
-using UnityEngine.UI;
 using System.Collections;
 
 public class TutorialMessage : MonoBehaviour
@@ -17,7 +16,7 @@ public class TutorialMessage : MonoBehaviour
     public string beenSeen = "false";
 
     public bool useClickHandler = true; // Toggle for the type of tutorial
-    public Button targetButton;
+    public Transform targetButton;
 
     private GameObject instantiatedUI;
     private GameObject instantiatedPanel;
@@ -27,6 +26,11 @@ public class TutorialMessage : MonoBehaviour
 
     public void ShowTutorial()
     {
+        if(beenSeen == "true")
+        {
+            return;
+        }
+
         instantiatedUI = Instantiate(tutorialUIPrefab);
         textBox = instantiatedUI.GetComponentInChildren<TextMeshProUGUI>();
 
@@ -76,7 +80,7 @@ public class TutorialMessage : MonoBehaviour
         }
         else
         {
-            Vector3 buttonPos = targetButton.transform.position;            
+            Vector3 buttonPos = targetButton.position;            
             blackOutScreen.transform.position = buttonPos;
             StartCoroutine(WaitAndActivate());
         }

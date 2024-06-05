@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: grey patched mining bee
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 4199769178840822221, guid: ac300dc12bdeda64bbe8b253b95171c4,
     type: 3}
   gardenVisual: {fileID: 4199769178840822221, guid: ac300dc12bdeda64bbe8b253b95171c4,

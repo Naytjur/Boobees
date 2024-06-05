@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Common Brimstone
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 4956082533760744419, guid: 125eb5c7944d94044a93f392b87c72c4,
     type: 3}
   gardenVisual: {fileID: 4956082533760744419, guid: 125eb5c7944d94044a93f392b87c72c4,
