@@ -59,7 +59,76 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3320681170055168
-    m_Localized: Nanus
+    m_Localized: Nanus Statue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638307005071360
+    m_Localized: "Der Bienenstock sorgt f\xFCr eine minimal erh\xF6hte Ansammlung
+      von Bienen auf angrenzenden Wild-Feldern.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2998387840299008
+    m_Localized: Teich
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638308695375872
+    m_Localized: "Der Zaun sorgt f\xFCr eine minimal erh\xF6hte Ansammlung von Insekten
+      auf angrenzenden Wild-Feldern und Rand-Feldern.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638309873975296
+    m_Localized: "Die Bank sorgt f\xFCr eine minimal erh\xF6hte Ansammlung von Insekten
+      auf angrenzenden Groben Feldern und Rand-Feldern.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638311174209536
+    m_Localized: "Die Birke sorgt f\xFCr eine minimale Erh\xF6hung der passiven Pollenproduktion."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638312944205824
+    m_Localized: "Die Eiche sorgt f\xFCr eine minimale Erh\xF6hung der passiven Pollenproduktion"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638313674014720
+    m_Localized: "Der Busch sorgt f\xFCr eine minimal erh\xF6hte Ansammlung von Insekten
+      auf angrenzenden Groben Feldern.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639053427605504
+    m_Localized: "Das Grobe Feld ist ein Ort zum Anpflanzen, insbesondere ein-und
+      zweij\xE4hrige Pflanzen gedeihen gut auf diesen Feldern.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639110470139904
+    m_Localized: "Das Wild-Feld ist ein Ort zum Anpflanzen, insbesondere hohe (niederl\xE4ndische)
+      einheimische Pflanzen und exotische Pr\xE4rariearten gedeihen gut auf diesen
+      Feldern.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639133681418240
+    m_Localized: "Das Rand-Feld ist ein Ort zum Anpflanzen, insbesondere Arten, die
+      am besten an Waldr\xE4ndern und im Halbschatten wachsen, gedeihen gut auf diesen
+      Feldern.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639151960195072
+    m_Localized: "Der Stein sorgt f\xFCr eine minimal erh\xF6hte Ansammlung von ungew\xF6hnlichen
+      und seltenen Insekten auf angrenzenden Groben Feldern und Rand-Feldern.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639178929569792
+    m_Localized: "Der Teich sorgt f\xFCr eine erh\xF6hte Ansammlung aller Insekten
+      an angrenzende Felder."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639194695958528
+    m_Localized: Der Schuppen gibt einen extra Samen, jedesmal wenn eine neue Pflanze
+      gescannt wird.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639572787298304
+    m_Localized: "Die Nanus Statue sorgt f\xFCr eine mittlere erh\xF6hte Ansammlung
+      von seltenen Insekten auf angrenzenden Feldern.\r"
     m_Metadata:
       m_Items: []
   references:
