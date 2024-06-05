@@ -14991,10 +14991,9 @@ MonoBehaviour:
   tutorialMessageUnlock: {fileID: 900052903}
   tutorialMessageScore: {fileID: 900052902}
   tutorialMessageCanLevel: {fileID: 900052909}
-  tutorialMessageLevel: {fileID: 0}
   tutorialMessages: []
   languageManager: {fileID: 206729304}
-  scoremanager: {fileID: 0}
+  scoreManager: {fileID: 0}
   blackOutScreen: {fileID: 1991551608}
 --- !u!114 &900052909
 MonoBehaviour:
@@ -15023,7 +15022,7 @@ MonoBehaviour:
   manager: {fileID: 900052908}
   beenSeen: false
   useClickHandler: 0
-  targetButton: {fileID: 954505406}
+  targetButton: {fileID: 0}
   references:
     version: 2
     RefIds: []
@@ -23150,7 +23149,7 @@ MonoBehaviour:
   manager: {fileID: 900052908}
   beenSeen: false
   useClickHandler: 0
-  targetButton: {fileID: 798875241}
+  targetButton: {fileID: 798875238}
   references:
     version: 2
     RefIds: []
