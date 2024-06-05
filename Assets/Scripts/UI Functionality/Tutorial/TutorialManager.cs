@@ -56,7 +56,7 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (tutorialMessageStart2.beenSeen == "false" && tutorialMessageStart.beenSeen == "true")
+            if (tutorialMessageStart.beenSeen == "true")
             {
                 tutorialMessageStart2.ShowTutorial();
             }
