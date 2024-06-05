@@ -49,7 +49,7 @@ MonoBehaviour:
   maxCount: 0
   count: 0
   insectModifiers: []
-  affectedPlotTypes: 
+  affectedPlotTypes: 000000000100000002000000
   insectRarityModifiers:
   - insectType: 0
     rarityModifier:
@@ -59,6 +59,14 @@ MonoBehaviour:
     rarityModifier:
       rarity: 1
       modifierAmount: 2
+  - insectType: 1
+    rarityModifier:
+      rarity: 2
+      modifierAmount: 0.2
+  - insectType: 0
+    rarityModifier:
+      rarity: 2
+      modifierAmount: 0.2
   references:
     version: 2
     RefIds: []

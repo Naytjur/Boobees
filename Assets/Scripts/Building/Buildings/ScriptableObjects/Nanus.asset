@@ -46,11 +46,19 @@ MonoBehaviour:
   specificMaxBuildingLimit: 1
   unlockLevel: 10
   cost: 100
-  maxCount: 1
+  maxCount: 0
   count: 0
   insectModifiers: []
   affectedPlotTypes: 
-  insectRarityModifiers: []
+  insectRarityModifiers:
+  - insectType: 0
+    rarityModifier:
+      rarity: 2
+      modifierAmount: 3
+  - insectType: 0
+    rarityModifier:
+      rarity: 0
+      modifierAmount: 3
   references:
     version: 2
     RefIds: []
