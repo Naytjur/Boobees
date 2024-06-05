@@ -35,7 +35,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 72643535372288
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022  Een bij die bekend staat om zijn zwartachtige kleur en
+      stompe antennesegmenten.\r\n\u2022  Te vinden in verschillende omgevingen,
+      zoals gras gebieden en tuinen.\r\n\nLeuk feitje: Het is een gespecialiseerde
+      bestuiver, die wordt vaak aangetroffen op bloemen van de Kattenstaart familie"
     m_Metadata:
       m_Items: []
   - m_Id: 72724418330624
@@ -47,15 +50,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 72856652152832
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022  Een eenzame bij met een metaalblauwe glans, algemeen aangetroffen
+      in Europa.\r\n\u2022  Blauwe metselbijen zijn donker metaal-achtig blauw en
+      niet bruin en oranje gestreept zoals de honingbij.\r\n\u2022  De bijen hergebruiken
+      gaten die door andere insecten of dieren zijn geboord om hun nestholte te maken.\r\n\nLeuk
+      feitje: De Blauwe Metselaarbij nestelt vaak in kleine holtes in hout en muren.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 73038840135680
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022  Een gewone hommel met een bleekgele staart, bekend om zijn
+      robuuste formaat.\r\n\u2022  Aardhommels zijn de grootste hommels en verschijnen
+      in het vroege voorjaar.\r\n\u2022  Ze houden van alle soorten bloemen, maar
+      vooral van open madeliefachtige bloemen, waar ze met hun korte tong gemakkelijker
+      bij de nectar kunnen komen.\r\n\u2022  Ze nestelen ondergronds in grote groepen
+      van wel 600 bijen, vaak in oude zoogdiernesten.\r\n\nLeuk feitje: Deze soort
+      is vaak de eerste hommel die in het vroege voorjaar wordt gezien en een van
+      de laatste in de late herfst"
     m_Metadata:
       m_Items: []
   - m_Id: 73159740948480
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022  Een vlinder, vaak gezien in vochtige bossen en tuinen.\r\n\u2022 
+      Mannetjes zijn citroengeel, terwijl vrouwtjes groenachtig wit zijn met oranje
+      vlekken in het midden van elke vleugel.\r\n\u2022  Volwassenen overwinteren
+      bij koud weer.\r\n\u2022  Ze rusten met hun vleugels gesloten.\r\n\nLeuk feitje:
+      Er wordt geloofd dat de botergele kleur van de Citroenvlinder de reden is tot
+      het engels woord voor vlinder \"butter-fly\""
     m_Metadata:
       m_Items: []
   - m_Id: 73105722507264
@@ -111,51 +130,114 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 73383603535872
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Een kleine vlinder met helderblauwe vleugels, vaak in weilanden
+      en graslanden.\r\n\u2022 Vanaf eind april zijn de eerste vlinders te zien.\r\n\u2022
+      Mannetjes zijn behoorlijk territoriaal en verjagen alle insecten in hun territorium.\r\n\u2022
+      Ze zijn aangetrokken tot verschillende soorten peulvruchten, vooral de klaver.\r\n\nLeuk
+      feitje: De mannetjes hebben helderblauwe vleugels, terwijl de vrouwtjes bruin
+      zijn met een vleugje blauw"
     m_Metadata:
       m_Items: []
   - m_Id: 73614055374848
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Een kleine, gestreepte bij die veel voorkomt in Europa,
+      vooral in zandhabitats.\r\n\u2022 Specialist voor boerenwormkruid.\r\n\u2022
+      Hij nestelt in steile wanden van zand, leem of l\xF6ss.\r\n\u2022 Ze transporteren
+      stuifmeel voor hun kinderen op hun achterpoten, niet op hun maag.\r\n\nLeuk
+      feite  Deze bij staat erom bekend dat ze in grote groepen nestelt, vaak in
+      zandgronden"
     m_Metadata:
       m_Items: []
   - m_Id: 73744326262784
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Een Solitaire bij met grijsachtige plukken haar, meestal
+      gevonden in Europa.\r\n\u2022 Ze zijn te vinden in allerlei open graslandhabitats.\r\n\u2022
+      De vrouwtjes zijn zwart en hebben twee brede asgrijze strepen haar over de
+      borstkas.\r\n\u2022 De mannetjes zien er vergelijkbaar uit, maar de borstkas
+      is volledig bekleed met minder dichte grijze haren\r\n\nLeuk feitje: Deze bij
+      geeft de voorkeur aan zonnige, zanderige gebieden om in te nestelen en is een
+      belangrijke bestuiver van vroege voorjaarsbloemen"
     m_Metadata:
       m_Items: []
   - m_Id: 73859782868992
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Een robuuste vlinder met een karakteristieke snelle vlucht
+      en oranjebruine vleugels.\r\n\u2022 Hij wordt aangetroffen in allerlei habitats,
+      waarstruiken, hoge kruiden en grassen voorkomen, bijvoorbeeld; weilanden, bermen,
+      heggen en natte heide.\r\n\u2022 De mannelijke Groot Dikkopje is een zeer territoriale
+      vlinder, en wanneer hij wordt gestoord vanaf zijn favoriete \u2018baars\u2019
+      op een lang gras of struik, zal hij bijna altijd terugkeren naar dezelfde plek.\r\n\nLeuk
+      feitje: De rupsen gaan als halfvolgroeide larve in winterslaap tot de winter
+      voorbij is"
     m_Metadata:
       m_Items: []
   - m_Id: 74129648582656
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Een grote en opvallende vlinder met opvallende staartachtige
+      verlengingen van de achtervleugels.\r\n\u2022 Bezoekt bloemrijke plekken, zoals
+      kruidenrijke graslanden, klaver- en luzernevelden.\r\n\nLeuk feitje: De vlinder
+      heeft een sterke en snelle vlucht, maar pauzeert regelmatig om boven bloeiende
+      kruiden te zweven en van nectar te genieten."
     m_Metadata:
       m_Items: []
   - m_Id: 74255188295680
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Een vlinder met opvallende oranje getipte vleugels, vaak
+      gezien in de lente.\r\n\u2022 Tijdens de paartijd zijn de mannetjes voortdurend
+      op zoek naar vrouwtjes en volgen ze alles wat wit is.\r\n\u2022 Ze leggen hun
+      eieren meestal in Pinksterbloemen en Look-zonder-Look, waar ze ook van drinken.\r\n\nLeuk
+      feitje: Mannetjes hebben feloranje punten, terwijl vrouwtjes deze kleuring
+      missen"
     m_Metadata:
       m_Items: []
   - m_Id: 74408565604352
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Een trekvlinder met oranje, zwarte en witte vleugels, die
+      wereldwijd voorkomt.\r\n\u2022 Kan lange afstanden afleggen van Nederland tot
+      Zuid-Europa en Noord-Afrika.\r\n\u2022 Kan de vorst niet overleven.\r\n\u2022
+      De rupsen voeden zich voornamelijk met distels.\r\n\nLeuk feitje: Painted Ladies
+      migreren meer dan 12.000 kilometer heen en terug, een van de langste migraties
+      van alle vlinders"
     m_Metadata:
       m_Items: []
   - m_Id: 74830671970304
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Een opvallende vlinder met zwarte, rode en witte markeringen.\r\n\u2022
+      Kan in vrijwel elke omgeving gevonden worden, van tuinen tot zeekusten en van
+      stadcentrums tot de toppen van bergen. \n\u2022 Je vind ze meestal nectar drinkend
+      op tuinbuddleia's of bloeiende klimop of op rottend fruit.\r\n\r\nLeuk feitje:
+      Atalanta's staan bekend om hun teritoriaal gedrag, waarbij ze vaaak hun favoriete
+      voedingsplek verdedigen van andere vlinders."
     m_Metadata:
       m_Items: []
   - m_Id: 74923840045056
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Een solitaire bij die vaak in tuinen wordt gezien, bekend
+      om zijn rode haar en nestelen in holtes zoals holle plantenstengels, in gaten
+      in kliffen en in de afbrokkelende mortel van oude gebouwen.\r\n\u2022 Elk vrouwtje
+      bouwt zijn eigen nest.\r\n\u2022 De rode metselaarbij is bedekt met dicht gemberachtig
+      haar.\r\n\nLeuk feitje: Red Mason Bees zijn uitstekende bestuivers en kunnen
+      tot 4.000 bloemen per dag bestuiven"
     m_Metadata:
       m_Items: []
   - m_Id: 75074117763072
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Een grote hommel met lange tongen, waardoor hij zich kan
+      voeden met diepe bloemen.\r\n\u2022 Hommelsoort met de langste tong van Nederland.\r\n\u2022
+      Ze kunnen bij nectar komen die voor de meeste insecten gebruikelijk verboden
+      is.\r\n\u2022 Ze vliegen in het vroege voorjaar uit en nestel op of net boven
+      de grond.\r\n\nLeuk feitje: Staat bekend om zijn voorkeur voor tuinen en parken
+      en is een essenti\xEBle bestuiver van veel planten"
     m_Metadata:
       m_Items: []
   - m_Id: 75226622656512
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Een bij die gespecialiseerd is in het halen van voedsel
+      bij Slangenkruid-bloemen.\r\n\u2022 Deze bij leeft op zichzelf in plaats van
+      in een colony en maakt zijn nest in holle boomstronken en gaten in hout en
+      metselwerk, afgedekt met modder.\r\n\nLeuk feitje: Deze bij is voor stuifmeel
+      bijna uitsluitend afhankelijk van de Viper's Bugloss, waardoor die zeer gespecialiseerd
+      is"
     m_Metadata:
       m_Items: []
   - m_Id: 75457179353088
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Een solitaire bijensoort die bekend staat om zijn opvallende
+      gele poten.\r\n\u2022 Hij bouwt nesten in blootliggende oevers en kliffen,
+      bloembedden, bermen langs de weg en in schaars begroeide akkerranden.\r\n\u2022
+      Het verzamelt stuifmeel van een breed scala aan planten, waaronder bloeiende
+      bomen en struiken, onkruid en tuinsoorten.\r\n\nLeuk feitje: Deze bijen hebben
+      elk jaar twee vliegperiodes, waarbij de lentegeneratie doorgaans talrijker
+      is dan de zomergeneratie."
     m_Metadata:
       m_Items: []
   references:
