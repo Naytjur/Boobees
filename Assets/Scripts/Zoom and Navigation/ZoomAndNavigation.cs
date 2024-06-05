@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ZoomAndNavigation : MonoBehaviour
 {
@@ -40,7 +41,12 @@ public class ZoomAndNavigation : MonoBehaviour
 
     private void Update()
     {
-        if(GameManager.instance.state == GameState.Viewing)
+        if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+        {
+            return;
+        }
+
+        if (GameManager.instance.state == GameState.Viewing)
         {
             if (Input.touchCount >= 1)
             {

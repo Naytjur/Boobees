@@ -76,8 +76,6 @@ public class Grid
         float xFloat = (worldPosition - origin).x / cellSize;
         float zFloat = (worldPosition - origin).z / cellSize;
 
-        Debug.Log(zFloat + " " + (zFloat == 4f));
-
         x = Mathf.FloorToInt(xFloat);
         z = Mathf.FloorToInt(zFloat);
 

@@ -8,7 +8,6 @@ using System.Collections;
 public class TutorialMessage : MonoBehaviour
 {
     public GameObject tutorialUIPrefab; // Reference to the Tutorial UI prefab
-    public GameObject blackOutScreen;
     public LocalizedString message; // Message to display in the text box
     public TutorialManager manager;
 
@@ -16,7 +15,6 @@ public class TutorialMessage : MonoBehaviour
     public string beenSeen = "false";
 
     public bool useClickHandler = true; // Toggle for the type of tutorial
-    public Transform targetButton;
 
     private GameObject instantiatedUI;
     private GameObject instantiatedPanel;
@@ -78,12 +76,6 @@ public class TutorialMessage : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            Vector3 buttonPos = targetButton.position;            
-            blackOutScreen.transform.position = buttonPos;
-            StartCoroutine(WaitAndActivate());
-        }
 
         if (instantiatedUI != null && !instantiatedUI.activeSelf && beenSeen == "false")
         {
@@ -99,18 +91,10 @@ public class TutorialMessage : MonoBehaviour
         {
             instantiatedUI.SetActive(false);
             Destroy(instantiatedPanel);
-            manager.HideBlackoutPanel();
         }
     }
     public string HasBeenSeen()
     {
         return beenSeen;
-    }
-
-    IEnumerator WaitAndActivate()
-    {
-        yield return new WaitForSeconds(0.1f);
-        blackOutScreen.SetActive(true);
-        Debug.Log("UI panel instantiated");
     }
 }
