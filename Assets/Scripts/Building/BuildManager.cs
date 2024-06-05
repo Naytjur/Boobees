@@ -96,7 +96,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     {
         if (Input.GetMouseButton(0) && state != BuildState.Unselected && isActive)
         {
-            if(EventSystem.current.IsPointerOverGameObject())
+            if(EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
             {
                 return;
             }
