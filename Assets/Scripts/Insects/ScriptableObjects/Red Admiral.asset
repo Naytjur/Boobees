@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c822e7f279714a4585ab9d2cd5a9f82, type: 3}
   m_Name: Red Admiral
   m_EditorClassIdentifier: 
-  id: 
+  id: 808012
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
@@ -47,7 +47,7 @@ MonoBehaviour:
   type: 1
   rarity: 1
   pollenProduction: 3
-  honeyProduction: 1
+  honeyProduction: 2
   insectFlySpeed: 0.5
   insectStayDuration: 6
   flyAwayDuration: 2

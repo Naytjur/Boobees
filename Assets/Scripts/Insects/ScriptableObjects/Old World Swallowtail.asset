@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c822e7f279714a4585ab9d2cd5a9f82, type: 3}
   m_Name: Old World Swallowtail
   m_EditorClassIdentifier: 
-  id: 
+  id: 808009
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
@@ -45,9 +45,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ad2df3ecc1ef8a640bcbb6da5b83e480, type: 2}
   - {fileID: 11400000, guid: 8f86b53a5520b3241a2e056af231f393, type: 2}
   type: 1
-  rarity: 1
-  pollenProduction: 3
-  honeyProduction: 1
+  rarity: 2
+  pollenProduction: 5
+  honeyProduction: 3
   insectFlySpeed: 0.5
   insectStayDuration: 6
   flyAwayDuration: 2

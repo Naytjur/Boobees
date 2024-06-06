@@ -35,7 +35,7 @@ MonoBehaviour:
   description: "\u2022\tEuropean wildflower \n\u2022\tAlso found in North America
     \n\u2022\tvarious colors, including purple, blue, yellow, or white \n\u2022\toften
     with a sought-after tricolor pattern.  "
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 3523959829202924707, guid: 812665bfe64b27c4cb143b943e1e91c5,
     type: 3}
   gardenVisual: {fileID: 3523959829202924707, guid: 812665bfe64b27c4cb143b943e1e91c5,

@@ -37,8 +37,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6359988764672
-    m_Localized: "Jetzt wo du ein leeres Feld hast, kannst du den Betrachten Knopf
-      antippen um zur\xFCck zur Ansicht zu gehen um deine erste Pflanze zu scannen. "
+    m_Localized: "Jetzt wo du ein leeres Feld hast, kannst du den Verlassen Knopf
+      antippen um zur\xFCck zur Ansicht zu gehen um deine erste Pflanze zu scannen."
     m_Metadata:
       m_Items: []
   - m_Id: 6434597044224

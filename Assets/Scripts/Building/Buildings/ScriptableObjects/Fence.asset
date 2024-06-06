@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Fence
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 4195216918634333592, guid: 0ed19c8dfb4a6a24ca6fcb8e35f03818,
     type: 3}
   gardenVisual: {fileID: 1194263165967490117, guid: 9c0cf775121800c4887f5f36af3fbc56,
@@ -46,15 +46,12 @@ MonoBehaviour:
   specificMaxBuildingLimit: 2
   unlockLevel: 2
   cost: 20
-  maxCount: 0
-  count: 0
+  maxCount: 3
+  count: 1
   insectModifiers:
   - insectType: 0
     modifySpawnRate: 1
-    modifierAmount: 0.2
-  - insectType: 1
-    modifySpawnRate: 1
-    modifierAmount: 0.2
+    modifierAmount: 5
   affectedPlotTypes: 0100000002000000
   insectRarityModifiers: []
   references:

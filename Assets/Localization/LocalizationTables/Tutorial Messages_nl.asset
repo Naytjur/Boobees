@@ -36,8 +36,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6359988764672
-    m_Localized: "Nu dat je een leeg vak heeft, kunt u op de knop Bekijken drukken
-      om terug te gaan naar de weergavemodus en van daaruit uw eerste bloem te scannen\r"
+    m_Localized: Nu dat je een leeg vak heeft, kunt u op de sluiten knop drukken
+      om terug te gaan naar de weergavemodus en van daaruit uw eerste bloem te scannen.
     m_Metadata:
       m_Items: []
   - m_Id: 6434597044224
