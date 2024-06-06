@@ -139,6 +139,10 @@ MonoBehaviour:
     m_Key: German Language Settings Button
     m_Metadata:
       m_Items: []
+  - m_Id: 4645749293776896
+    m_Key: Seeds Left Message
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
