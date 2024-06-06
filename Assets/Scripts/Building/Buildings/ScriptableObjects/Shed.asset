@@ -43,10 +43,14 @@ MonoBehaviour:
   sprite: {fileID: 0}
   width: 4
   height: 4
+  specificMaxBuildingLimit: 0
   unlockLevel: 0
   cost: 0
   maxCount: 0
   count: 0
+  insectModifiers: []
+  affectedPlotTypes: 
+  insectRarityModifiers: []
   references:
     version: 2
     RefIds: []
