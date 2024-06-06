@@ -80,6 +80,16 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         data.playerLevel = this.playerLevel;
         data.playerHoney = this.honeyScore;
         data.playerPollen = this.pollenScore;
+
+        data.unlockedPlantIDs.Clear();
+
+       foreach (PlantSO plant in allPlants)
+        {
+            if (plant.unlocked)
+            {
+                data.unlockedPlantIDs.Add(plant.id);
+            }
+        }
     }
 
     private void OnPostLoad()

@@ -19866,7 +19866,21 @@ MonoBehaviour:
   maxPollenScore: 0
   downtimeScoreModifier: 0.01
   logoutTime: 0
-  allPlants: []
+  allPlants:
+  - {fileID: 11400000, guid: 5c312add34da3d84883adc51a2fe3a4c, type: 2}
+  - {fileID: 11400000, guid: 175d4618a28e6c24bafcd601478e69f8, type: 2}
+  - {fileID: 11400000, guid: 16f562297a88a1540adcd6562b889647, type: 2}
+  - {fileID: 11400000, guid: bc415727e4347414ba21c58e03b563a4, type: 2}
+  - {fileID: 11400000, guid: ddbc41d651d03554fb3acf1372c30cd7, type: 2}
+  - {fileID: 11400000, guid: 11b13cb280409f44f8d2446eff3b57af, type: 2}
+  - {fileID: 11400000, guid: 87514f25ea41a8e42addb721f9dd9f77, type: 2}
+  - {fileID: 11400000, guid: f8e75f3fc2826e04397825c104b8f86b, type: 2}
+  - {fileID: 11400000, guid: 9a9749b9ceabf8a45984f92674aa74fc, type: 2}
+  - {fileID: 11400000, guid: 080dc4f5c417c9a4fb706a4c5713e728, type: 2}
+  - {fileID: 11400000, guid: ad2df3ecc1ef8a640bcbb6da5b83e480, type: 2}
+  - {fileID: 11400000, guid: e7f3171f7aa444a4192a94984079105f, type: 2}
+  - {fileID: 11400000, guid: 8f86b53a5520b3241a2e056af231f393, type: 2}
+  - {fileID: 11400000, guid: 33f9b8e1eb4908e41a42f3543631b2b8, type: 2}
 --- !u!1001 &1239592607
 PrefabInstance:
   m_ObjectHideFlags: 0
