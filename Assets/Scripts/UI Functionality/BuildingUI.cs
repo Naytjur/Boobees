@@ -99,7 +99,7 @@ public class BuildingUI : MonoBehaviour
 
             select.image.sprite = select.building.sprite;
 
-            select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
+            select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAffordBuy(select.building.cost);
 
             if (select.building.cost == 0)
             {
@@ -130,7 +130,7 @@ public class BuildingUI : MonoBehaviour
             buildingNameEvent = select.buildNameLocalizeStringEvent;
             buildingNameEvent.StringReference = buildingName;
 
-            select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
+            select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAffordBuy(select.building.cost);
 
             if (select.building.cost == 0)
             {
@@ -159,7 +159,7 @@ public class BuildingUI : MonoBehaviour
             buildingNameEvent = select.buildNameLocalizeStringEvent;
             buildingNameEvent.StringReference = buildingName;
 
-            select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAfford(select.building.cost);
+            select.button.interactable = select.building.unlocked && select.building.HasCountLeft() && ScoreManager.instance.CanAffordBuy(select.building.cost);
 
             if (select.building.cost == 0)
             {

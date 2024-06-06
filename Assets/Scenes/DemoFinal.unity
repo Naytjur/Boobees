@@ -15714,6 +15714,7 @@ GameObject:
   - component: {fileID: 954505403}
   - component: {fileID: 954505406}
   - component: {fileID: 954505407}
+  - component: {fileID: 954505408}
   m_Layer: 0
   m_Name: Waluigi Button
   m_TagString: Untagged
@@ -15907,6 +15908,18 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &954505408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954505401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7eb3adde5739b47b8f74db2740999f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &958281897
 GameObject:
   m_ObjectHideFlags: 0
@@ -19848,8 +19861,8 @@ MonoBehaviour:
   levelText: {fileID: 1872986081}
   honeyScore: 0
   pollenScore: 0
-  maxHoneyScore: 0
-  maxPollenScore: 0
+  maxHoneyScore: 20
+  maxPollenScore: 50
   downtimeScoreModifier: 0.01
   logoutTime: 0
   allPlants: []

@@ -18,8 +18,8 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
     public int honeyScore = 0;
     public int pollenScore = 0;
-    public int maxHoneyScore;
-    public int maxPollenScore;
+    public int maxHoneyScore = 20;
+    public int maxPollenScore = 50;
     public float downtimeScoreModifier = 0.01f;
 
     public float logoutTime;
@@ -107,7 +107,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
     public void LevelUp()
     {
-        if (pollenScore >= maxPollenScore && honeyScore == maxHoneyScore)
+        if (CanAffordLevel())
         {
             playerLevel++;
             honeyScore = 0;
@@ -131,10 +131,16 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         return null;
     }
 
-    public bool CanAfford(int cost)
+    public bool CanAffordBuy(int cost)
     {
         return cost <= honeyScore;
     }
+
+    public bool CanAffordLevel()
+    {
+        return pollenScore >= maxPollenScore && honeyScore == maxHoneyScore;
+    }
+
     public static float GetCurrentDateTimeAsFloat()
     {
         // Get the current date and time
