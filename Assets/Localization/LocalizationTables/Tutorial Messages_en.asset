@@ -69,6 +69,14 @@ MonoBehaviour:
       top right. Once you tap this message the tutorial will finish."
     m_Metadata:
       m_Items: []
+  - m_Id: 4597198706618368
+    m_Localized: 'Congratulations! You haven gathered enough pollen and honey for
+      your first level up, click on the level up button to continue.
+
+      Remember:
+      leveling up costs all your Honey!'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

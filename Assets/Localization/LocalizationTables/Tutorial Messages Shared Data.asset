@@ -47,6 +47,10 @@ MonoBehaviour:
     m_Key: Tutorial Message first level
     m_Metadata:
       m_Items: []
+  - m_Id: 4597198706618368
+    m_Key: Tutorial Message Can Level
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
