@@ -81,6 +81,11 @@ public class DataPersistenceManager : MonoBehaviour
     {
         SaveGame();
     }
+
+    private void OnApplicationFocus(bool false)
+    {
+        SaveGame();
+    }
     #endif
 
     private List<IDataPersistence> FindAllDataPersistenceObjects()

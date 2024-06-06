@@ -30,6 +30,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
     public static event Action<int, int> onScoreChanged;
 
     public List<PlantSO> allPlants;
+    public List<InsectSO> allInsects;
 
     private bool isLoading = false;
 
@@ -69,6 +70,15 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
             }
         }
 
+        foreach (string insectID in data.unlockedInsectIDs)
+        {
+            InsectSO insect = FindInsectByID(insectID);
+            if (insect != null)
+            {
+                insect.unlocked = true;
+            }
+        }
+
         Debug.Log("Loading GameData");
 
         isLoading = false; // Reset the flag after loading is done
@@ -82,12 +92,21 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         data.playerPollen = this.pollenScore;
 
         data.unlockedPlantIDs.Clear();
+        data.unlockedInsectIDs.Clear();
 
        foreach (PlantSO plant in allPlants)
         {
             if (plant.unlocked)
             {
                 data.unlockedPlantIDs.Add(plant.id);
+            }
+        }
+
+        foreach (InsectSO insect in allInsects)
+        {
+            if (insect.unlocked)
+            {
+                data.unlockedInsectIDs.Add(insect.id);
             }
         }
     }
@@ -141,6 +160,18 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         return null;
     }
 
+    private InsectSO FindInsectByID(string id)
+    {
+        foreach (InsectSO insect in allInsects)
+        {
+            if (insect.id == id)
+            {
+                return insect;
+            }
+        }
+        return null;
+    }
+
     public bool CanAfford(int cost)
     {
         return cost <= honeyScore;
@@ -169,7 +200,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
             float downtime = currentTime - logoutTime;
 
             // Calculate additional scores
-            int additionalPollen = Mathf.FloorToInt(downtime * downtimeScoreModifier * playerLevel);
+            int additionalPollen = Mathf.FloorToInt((downtime * downtimeScoreModifier * playerLevel)/2);
             int additionalHoney = Mathf.FloorToInt(downtime  * downtimeScoreModifier * playerLevel);
 
             // Update scores

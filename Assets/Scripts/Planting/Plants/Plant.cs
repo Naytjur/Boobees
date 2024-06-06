@@ -16,6 +16,8 @@ public class Plant : MonoBehaviour
     private Coroutine decayCoroutine;
     private Plot currentPlot;
 
+    private bool gameRunning = true;
+
     private void Start()
     {
         float spawnRate = plantSO.baseSpawnRate;
@@ -54,16 +56,19 @@ public class Plant : MonoBehaviour
 
     private void TrySpawnInsect()
     {
-        foreach (ItemInfo item in plantSO.attractions)
+        if (gameRunning == true)
         {
-            if (item is InsectSO insect)
+            foreach (ItemInfo item in plantSO.attractions)
             {
-                float rarityPercentage = insect.GetRarityPercentage();
-                rarityPercentage = ApplyRarityModifiers(insect, rarityPercentage);
-
-                if (UnityEngine.Random.Range(1, 101) <= rarityPercentage)
+                if (item is InsectSO insect)
                 {
-                    SpawnInsect(item.gardenPrefab);
+                    float rarityPercentage = insect.GetRarityPercentage();
+                    rarityPercentage = ApplyRarityModifiers(insect, rarityPercentage);
+
+                    if (UnityEngine.Random.Range(1, 101) <= rarityPercentage)
+                    {
+                        SpawnInsect(item.gardenPrefab);
+                    }
                 }
             }
         }
@@ -189,4 +194,15 @@ public class Plant : MonoBehaviour
         // Return the total seconds as a float
         return (float)timeSpan.TotalSeconds;
     }
+
+    #if UNITY_ANDROID && !UNITY_EDITOR
+    private void OnApplicationFocus(bool false)
+    {
+        gameRunning = false;
+    }
+    private void OnApplicationFocus(bool true)
+    {
+        gameRunning = true;
+    }
+    #endif
 }

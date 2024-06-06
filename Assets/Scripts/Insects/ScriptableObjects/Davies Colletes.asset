@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c822e7f279714a4585ab9d2cd5a9f82, type: 3}
   m_Name: Davies Colletes
   m_EditorClassIdentifier: 
-  id: 
+  id: 808006
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
