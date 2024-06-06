@@ -19,52 +19,60 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 31371231232
-    m_Localized: Welkom in je virtuele tuin, hier zal je vakken kunnen plaatsen,
-      bloemen kunnen planten, versieren en insecten voor bij zien vliegen!
+    m_Localized: Welkom in je virtuele tuin, hier kun je bloem vakken plaatsen, bloemen
+      planten, decoreren en kijken hoe de insecten door je tuin zoemen!
     m_Metadata:
       m_Items: []
   - m_Id: 6110616420352
-    m_Localized: "Laten we eerst uw eerste vak plaatsen, zodat u aan de slag kunt
-      met tuinieren! Tik op de knop Bouwen aan de rechterkant van uw scherm om naar
+    m_Localized: "Begin door je eerste vak te plaatsen, zodat je aan de slag kunt
+      met tuinieren! Klik op de bouw knop aan de rechterkant van je scherm om naar
       de bouwmodus te gaan.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6253247922176
     m_Localized: "In de bouwmodus kun je een structuur selecteren, deze plaatsen
-      waar je hem wilt hebben en je keuze bevestigen! Probeer het voorlopig door
-      uw eerste vak te plaatsen.\r"
+      waar je hem wilt hebben en je keuze bevestigen! Probeer het uit door je eerste
+      vak te plaatsen.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6359988764672
-    m_Localized: Nu dat je een leeg vak heeft, kunt u op de sluiten knop drukken
-      om terug te gaan naar de weergavemodus en van daaruit uw eerste bloem te scannen.
+    m_Localized: "Nu je een leeg vak hebt, kan je op de sluit knop drukken om terug
+      te gaan naar de weergavemodus en van daaruit je eerste bloem scannen\r."
     m_Metadata:
       m_Items: []
   - m_Id: 6434597044224
-    m_Localized: 'Als u nu op de ontgrendelingsknop linksboven drukt, opent u de
-      streepjescodescanner en hoeft u vanaf daar alleen maar uw camera op de streepjescodes
-      naast de bloemen vakken te richten!
+    m_Localized: 'Als je nu op de camera knop links onderin drukt: open je de barcode
+      scanner en hoef je vanaf daar alleen maar je camera op de streepjescodes naast
+      de bloemen vakken te richten!
 
 '
     m_Metadata:
       m_Items: []
   - m_Id: 6590511906816
-    m_Localized: "Je hebt je eerste bloem ontgrendeld! Als u nu in de weergavemodus
-      op uw vak tikt, kunt u beginnen met het plaatsen van bloemen, net zoals u gebouwen
-      plaatst in de bouwmodus!\r"
+    m_Localized: "Je hebt je eerste bloem ontgrendeld! Als je nu in de weergavemodus
+      op de planten knop klikt, en daarna op een vak klikt, kan je beginnen met het
+      plaatsen van bloemen, net zoals je gebouwen plaatst in de bouwmodus!\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6737438375936
     m_Localized: De insecten zoemen en de bloemen bloeien, insecten leveren stuifmeel
-      en honing op, stuifmeel verhoogt je niveau en ontgrendelt nieuwe decoraties
-      en meer percelen naarmate je niveaus stijgen, en honing kan worden gebruikt
-      om de decoraties te kopen die je in de winkel hebt ontgrendeld!
+      en honing op, stuifmeel verhoogt je level en ontgrendelt nieuwe decoraties
+      en meer vakken naarmate je level stijgt, en honing kan worden gebruikt om te
+      levelen en de decoraties te kopen die je in de winkel hebt ontgrendeld!
     m_Metadata:
       m_Items: []
   - m_Id: 6866786516992
     m_Localized: Je hebt het onder de knie, nu kun je meer bloemen scannen om je
-      tuin naar hartenlust te vergroten en te versieren! Zodra u op dit bericht tikt,
-      wordt de tutorial voltooid.
+      tuin naar hartenlust te vergroten en te versieren! Zodra je op dit bericht
+      tikt, wordt de tutorial voltooid.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4597198706618368
+    m_Localized: 'Gefeliciteerd! Je hebt genoeg pollen en honing verzameld om een
+      level omhoog te gaan! Klik op de level up knop om verder te gaan.
+
+      Opmerking:
+      Levelen kost al je honing'
     m_Metadata:
       m_Items: []
   references:

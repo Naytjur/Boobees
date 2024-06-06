@@ -67,6 +67,12 @@ MonoBehaviour:
       oben rechts antippst. Sobald du dies tust wird das Tutorial beendet."
     m_Metadata:
       m_Items: []
+  - m_Id: 4597198706618368
+    m_Localized: "Gl\xFCckwunsch! Du hast genug Pollen und Honig gesammelt um dein
+      erstes Level aufzusteigen. Dr\xFCcke den Level-up Knopf um fortzufahren. Aber
+      beachte: Ein Level anzusteigen kostet dich all dein Honig!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
