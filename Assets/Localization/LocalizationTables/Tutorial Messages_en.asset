@@ -37,8 +37,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6359988764672
-    m_Localized: "Now that you have an empty plot you can press the View button to
-      go back to the viewing mode to scan your first flower.\r"
+    m_Localized: Now that you have an empty plot you can press the Exit button to
+      go back to the viewing mode to scan your first flowe
     m_Metadata:
       m_Items: []
   - m_Id: 6434597044224
