@@ -55,7 +55,7 @@ MonoBehaviour:
   - insectType: 1
     modifySpawnRate: 1
     modifierAmount: 0.2
-  affectedPlotTypes: 
+  affectedPlotTypes: 0000000002000000
   insectRarityModifiers: []
   references:
     version: 2

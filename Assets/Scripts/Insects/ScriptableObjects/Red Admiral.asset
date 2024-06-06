@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Red Admiral
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 3772998878474597588, guid: 8128517209b955d4a91cbadd89952b24,
     type: 3}
   gardenVisual: {fileID: 3772998878474597588, guid: 8128517209b955d4a91cbadd89952b24,

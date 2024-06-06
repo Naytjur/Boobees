@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Pond
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 5312313822935156787, guid: 1693b4189858ba84e98e99c0714ea64d,
     type: 3}
   gardenVisual: {fileID: 5312313822935156787, guid: 7e76808b12fffb247bdac98fe38beeb1,
@@ -46,9 +46,15 @@ MonoBehaviour:
   specificMaxBuildingLimit: 0
   unlockLevel: 6
   cost: 300
-  maxCount: 1
-  count: 1
-  insectModifiers: []
+  maxCount: 0
+  count: 0
+  insectModifiers:
+  - insectType: 0
+    modifySpawnRate: 1
+    modifierAmount: 0.2
+  - insectType: 0
+    modifySpawnRate: 1
+    modifierAmount: 0.2
   affectedPlotTypes: 000000000100000002000000
   insectRarityModifiers: []
   references:

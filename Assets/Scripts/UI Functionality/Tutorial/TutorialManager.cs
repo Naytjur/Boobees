@@ -10,14 +10,14 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     public TutorialMessage tutorialMessagePlot;
     public TutorialMessage tutorialMessageUnlock;
     public TutorialMessage tutorialMessageScore;
-    public TutorialMessage tutorialMessageLevel;
+    public TutorialMessage tutorialMessageCanLevel;
 
     public List<TutorialMessage> tutorialMessages = new List<TutorialMessage>();
 
     public LanguageManager languageManager;
+    public ScoreManager scoreManager;
 
     private bool postLoadCompleted = false;
-    public GameObject blackOutScreen;
 
     private void Awake()
     {
@@ -25,7 +25,6 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
         postLoadCompleted = false;
 
         TutorialMessage[] messages = FindObjectsOfType<TutorialMessage>();
-        blackOutScreen.SetActive(false);
 
         foreach (TutorialMessage message in messages)
         {
@@ -37,7 +36,6 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     void Start()
     {
         ScoreManager.onScoreChanged += OnScoreChanged;
-        ScoreManager.onLevelUp += OnLevelUp;
         DataPersistenceManager.postLoad += PostLoad;
         PlantingManager.instance.onPlantUnlocked += OnPlantUnlocked;
     }
@@ -56,7 +54,7 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (tutorialMessageStart2.beenSeen == "false" && tutorialMessageStart.beenSeen == "true")
+            if (tutorialMessageStart.beenSeen == "true")
             {
                 tutorialMessageStart2.ShowTutorial();
             }
@@ -92,7 +90,7 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     private void PostLoad()
     {
         LanguageTutorial();
-
+        Debug.Log("PeeperSweeper");
         // Enable the flag to allow OnBuildingPlaced to execute
         postLoadCompleted = true;
     }
@@ -111,16 +109,12 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
         {
             tutorialMessageScore.ShowTutorial();
         }
-    }
 
-    private void OnLevelUp(int level)
-    {
-        if (level == 2)
+        if ((pollen >= 50 && honey >=20))
         {
-            tutorialMessageLevel.ShowTutorial();
+            tutorialMessageCanLevel.ShowTutorial();
         }
     }
-
     private void OnPlantUnlocked(PlantSO plant)
     {
         tutorialMessageUnlock.ShowTutorial();
@@ -130,20 +124,16 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     {
         if (tutorialMessageStart.beenSeen != "true")
         {
-            Debug.Log("PeeperSweeper");
             tutorialMessageStart.ShowTutorial();
         }
     }
 
     public void LanguageTutorial()
     {
+
         if (tutorialMessageLanguage.beenSeen == "false")
         {
             tutorialMessageLanguage.ShowTutorial();
         }
-    }
-        public void HideBlackoutPanel()
-    {
-        blackOutScreen.SetActive(false);
     }
 }

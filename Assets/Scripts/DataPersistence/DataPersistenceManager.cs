@@ -29,7 +29,7 @@ public class DataPersistenceManager : MonoBehaviour
     {
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
-        LoadGame();
+        Invoke("LoadGame", 0.1f);
         ScoreManager.onLevelUp += OnLevelUp;
     }
 

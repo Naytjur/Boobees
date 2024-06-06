@@ -42,6 +42,7 @@ public class BuildingUI : MonoBehaviour
         ScoreManager.onLevelUp += UpdateBuildButtons;
         BuildManager.onStateChanged += UpdateOverlay;
         BuildManager.onStateChanged += UpdateBuildButtons;
+        GameManager.instance.onStateChange += OnGameStateChanged;
 
         rotateButton.onClick.RemoveAllListeners();
         removeButton.onClick.RemoveAllListeners();
@@ -175,5 +176,10 @@ public class BuildingUI : MonoBehaviour
                 select.buildUnlockLocalizationEvent.RefreshString();
             }
         }
+    }
+
+    private void OnGameStateChanged(GameState state)
+    {
+        UpdateBuildButtons();
     }
 }

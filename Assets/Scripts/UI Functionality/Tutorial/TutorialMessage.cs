@@ -3,12 +3,11 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
-using UnityEngine.UI;
+using System.Collections;
 
 public class TutorialMessage : MonoBehaviour
 {
     public GameObject tutorialUIPrefab; // Reference to the Tutorial UI prefab
-    public GameObject blackOutScreen;
     public LocalizedString message; // Message to display in the text box
     public TutorialManager manager;
 
@@ -16,7 +15,6 @@ public class TutorialMessage : MonoBehaviour
     public string beenSeen = "false";
 
     public bool useClickHandler = true; // Toggle for the type of tutorial
-    public Button targetButton;
 
     private GameObject instantiatedUI;
     private GameObject instantiatedPanel;
@@ -26,6 +24,10 @@ public class TutorialMessage : MonoBehaviour
 
     public void ShowTutorial()
     {
+        if(beenSeen == "true")
+        {
+            return;
+        }
 
         instantiatedUI = Instantiate(tutorialUIPrefab);
         textBox = instantiatedUI.GetComponentInChildren<TextMeshProUGUI>();
@@ -73,18 +75,6 @@ public class TutorialMessage : MonoBehaviour
                     }
                 }
             }
-        }
-        else
-        {
-            Vector3 buttonPos = targetButton.transform.position;
-
-            // Instantiate the UI panel independently
-            blackOutScreen.SetActive(true);
-            blackOutScreen.transform.position = buttonPos;
-            // Allow clicks to pass through
-            //blackOutScreen.blocksRaycasts = false;
-
-            Debug.Log("UI panel instantiated");
         }
 
         if (instantiatedUI != null && !instantiatedUI.activeSelf && beenSeen == "false")

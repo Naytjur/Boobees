@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: plot 3
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 6381339335208327123, guid: 1c7cf9ee8bc8cca408c11abdb54ed5e0,
     type: 3}
   gardenVisual: {fileID: 5492878927725313885, guid: 0855cea34be49934c988c4b1595b95b9,

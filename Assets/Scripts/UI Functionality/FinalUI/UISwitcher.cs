@@ -18,10 +18,13 @@ public class UISwitcher : MonoBehaviour
     private GameObject selectionUI;
     [SerializeField]
     private GameObject mapUI;
+    [SerializeField]
+    private GameObject settingsUI;
 
     private void Start()
     {
         GameManager.instance.onStateChange += SwitchUI;
+        SwitchUI(GameManager.instance.state);
     }
 
     private void SwitchUI(GameState state)
@@ -50,6 +53,9 @@ public class UISwitcher : MonoBehaviour
             case GameState.Map:
                 mapUI.SetActive(true);
                 break;
+            case GameState.Settings:
+                settingsUI.SetActive(true);
+                break;
         }
     }
 
@@ -62,5 +68,6 @@ public class UISwitcher : MonoBehaviour
         scanningUI.SetActive(false);
         selectionUI.SetActive(false);
         mapUI.SetActive(false);
+        settingsUI.SetActive(false);
     }
 }
