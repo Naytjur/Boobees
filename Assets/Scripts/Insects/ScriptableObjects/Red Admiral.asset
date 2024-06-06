@@ -47,7 +47,7 @@ MonoBehaviour:
   type: 1
   rarity: 1
   pollenProduction: 3
-  honeyProduction: 1
+  honeyProduction: 2
   insectFlySpeed: 0.5
   insectStayDuration: 6
   flyAwayDuration: 2

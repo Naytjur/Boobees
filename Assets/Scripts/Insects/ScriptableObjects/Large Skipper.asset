@@ -44,9 +44,9 @@ MonoBehaviour:
   attractions:
   - {fileID: 11400000, guid: f8e75f3fc2826e04397825c104b8f86b, type: 2}
   type: 1
-  rarity: 0
-  pollenProduction: 2
-  honeyProduction: 0
+  rarity: 2
+  pollenProduction: 5
+  honeyProduction: 2
   insectFlySpeed: 0.5
   insectStayDuration: 6
   flyAwayDuration: 2

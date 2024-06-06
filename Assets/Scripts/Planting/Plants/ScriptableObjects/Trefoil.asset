@@ -43,7 +43,7 @@ MonoBehaviour:
     type: 3}
   sprite: {fileID: 21300000, guid: 8050c0cc0a8a38241a737436d7c25f75, type: 3}
   attractions:
-  - {fileID: 11400000, guid: f78e8b971c8104d489063a076b1dda52, type: 2}
+  - {fileID: 11400000, guid: 1fa3d55ede19f3443b68e151f7eb49e2, type: 2}
   correctPlots: 00000000
   baseSpawnRate: 100
   seedAmount: 0

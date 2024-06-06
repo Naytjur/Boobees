@@ -62,11 +62,11 @@ MonoBehaviour:
   - insectType: 1
     rarityModifier:
       rarity: 2
-      modifierAmount: 0.2
+      modifierAmount: 0.5
   - insectType: 0
     rarityModifier:
       rarity: 2
-      modifierAmount: 0.2
+      modifierAmount: 0.5
   references:
     version: 2
     RefIds: []

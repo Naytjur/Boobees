@@ -15,21 +15,16 @@ public class Plant : MonoBehaviour
     private float startTime;
     private Coroutine decayCoroutine;
     private Plot currentPlot;
+    private float spawnRate;
 
     private bool gameRunning = true;
 
     private void Start()
     {
-        float spawnRate = plantSO.baseSpawnRate;
+        BuildManager.onBuildingPlaced +=OnBuidingPlaced;
+        SpawnRangeChanger();
 
-        if (isOnCorrectPlot == false)
-        {
-            spawnRate *= 0.6f;
-        }
-        // Apply modifiers from surrounding buildings
-        spawnRate = ApplySpawnRateModifiers(spawnRate);
-
-        InvokeRepeating(nameof(TrySpawnInsect), UnityEngine.Random.Range(3, spawnRate), spawnRate);
+        StartCoroutine(SpawnInsect());
 
         if (targetTransform == null)
         {
@@ -52,6 +47,15 @@ public class Plant : MonoBehaviour
     public void SetPlot(Plot plot)
     {
         currentPlot = plot;
+    }
+    private IEnumerator SpawnInsect()
+    {
+        while (true)
+        {
+            float randomSpawnRate = UnityEngine.Random.Range(3, spawnRate);
+            yield return new WaitForSeconds(randomSpawnRate);
+            TrySpawnInsect();
+        }
     }
 
     private void TrySpawnInsect()
@@ -82,25 +86,32 @@ public class Plant : MonoBehaviour
         newInsect.Spawn(targetTransform.position);
     }
 
-        private float ApplySpawnRateModifiers(float baseSpawnRate)
+    private void SpawnRangeChanger()
     {
+        spawnRate = plantSO.baseSpawnRate;
+        // Apply modifiers from surrounding buildings
+        spawnRate -= ApplySpawnRateModifiers();
+        if (isOnCorrectPlot == false)
+        {
+            spawnRate *= 1.2f;
+        }
+    }
+    private float ApplySpawnRateModifiers()
+    {
+        float totalModifier = 0f;
+
         foreach (BuildingSO building in GetModifierBuildings())
         {
             foreach (InsectModifier modifier in building.insectModifiers)
             {
-                foreach (ItemInfo attraction in plantSO.attractions)
+
+                if (modifier.modifySpawnRate)
                 {
-                    if (attraction is InsectSO insect && (modifier.insectType == insect.type || modifier.insectType == InsectSO.Type.Bee || modifier.insectType == InsectSO.Type.Butterfly))
-                    {
-                        if (modifier.modifySpawnRate)
-                        {
-                            baseSpawnRate *= modifier.modifierAmount;  // Adjust the spawn rate
-                        }
-                    }
+                    totalModifier += modifier.modifierAmount;  // Accumulate the modifier amount
                 }
             }
         }
-        return baseSpawnRate;
+        return totalModifier;
     }
 
     private float ApplyRarityModifiers(InsectSO insect, float baseRarity)
@@ -115,7 +126,7 @@ public class Plant : MonoBehaviour
                     {
                         if (!modifier.modifySpawnRate)
                         {
-                            baseRarity *= modifier.modifierAmount;  // Adjust the rarity
+                            baseRarity += modifier.modifierAmount;  // Adjust the rarity
                         }
                     }
                 }
@@ -195,14 +206,15 @@ public class Plant : MonoBehaviour
         return (float)timeSpan.TotalSeconds;
     }
 
-    #if UNITY_ANDROID && !UNITY_EDITOR
-    private void OnApplicationFocus(bool false)
+    private void OnBuidingPlaced()
     {
-        gameRunning = false;
+        SpawnRangeChanger();
     }
-    private void OnApplicationFocus(bool true)
+
+    #if UNITY_ANDROID && !UNITY_EDITOR
+    private void OnApplicationFocus(bool gameFocused)
     {
-        gameRunning = true;
+        gameRunning = gameFocused;
     }
     #endif
 }
