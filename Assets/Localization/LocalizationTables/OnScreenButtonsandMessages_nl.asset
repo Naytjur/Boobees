@@ -146,6 +146,10 @@ MonoBehaviour:
     m_Localized: Duits
     m_Metadata:
       m_Items: []
+  - m_Id: 4645749293776896
+    m_Localized: 'Zaadjes: {seeds-component.seedsLeft}'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

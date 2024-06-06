@@ -14,11 +14,13 @@ public class SelectPlant : MonoBehaviour
     [Tooltip("Not required if button is on the same gameobject")]
     public Button button;
     public Image image;
-    public TMP_Text text;
+    //public TMP_Text text;
 
     private PlantingManager plantingManager;
 
     public LocalizeStringEvent plantNameLocalizeStringEvent;
+    public int seedsLeft;
+    public LocalizeStringEvent seedsLocalizedStringEvent;
 
     public void Setup()
     {

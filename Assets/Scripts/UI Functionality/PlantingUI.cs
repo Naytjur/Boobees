@@ -60,6 +60,7 @@ public class PlantingUI : MonoBehaviour
                 buttonInfo.SetIndex(PlantingManager.instance.GetPlantList().IndexOf(plant));
 
                 buttonInfo.plantNameLocalizeStringEvent.StringReference = plantNotDiscoveredMessage;
+                buttonInfo.seedsLeft = plant.seedAmount;
 
                 buttonInfo.image.sprite = plant.sprite;
                 button.GetComponent<Button>().interactable = false;
@@ -76,6 +77,8 @@ public class PlantingUI : MonoBehaviour
         {
             var plant = PlantingManager.instance.GetPlantByIndex(button.GetComponent<SelectPlant>().GetIndex());
             button.GetComponent<Button>().interactable = plant.unlocked && plant.seedAmount > 0;
+            button.GetComponent<SelectPlant>().seedsLeft = plant.seedAmount;
+            button.GetComponent<SelectPlant>().seedsLocalizedStringEvent.RefreshString();
             index++;
         }
     }
@@ -88,6 +91,8 @@ public class PlantingUI : MonoBehaviour
         {
             var plant = PlantingManager.instance.GetPlantByIndex(button.GetComponent<SelectPlant>().GetIndex());
             button.GetComponent<Button>().interactable = plant.unlocked;
+            button.GetComponent<SelectPlant>().seedsLeft = plant.seedAmount;
+            button.GetComponent<SelectPlant>().seedsLocalizedStringEvent.RefreshString();
             index++;
         }
     }
