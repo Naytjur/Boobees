@@ -489,7 +489,7 @@ MonoBehaviour:
   image: {fileID: 8784896493687021685}
   plantNameLocalizeStringEvent: {fileID: 8512728420980216132}
   seedsLeft: 0
-  seedsLocalizedStringEvent: {fileID: 0}
+  seedsLocalizedStringEvent: {fileID: 4132616874313548325}
 --- !u!114 &1064869463345869514
 MonoBehaviour:
   m_ObjectHideFlags: 0
