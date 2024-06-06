@@ -15,39 +15,38 @@ MonoBehaviour:
   id: 
   itemNameLocalizedString:
     m_TableReference:
-      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
+      m_TableCollectionName: 
     m_TableEntryReference:
-      m_KeyId: 3693037299367936
+      m_KeyId: 0
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   itemDescriptionLocalizedString:
     m_TableReference:
-      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
+      m_TableCollectionName: 
     m_TableEntryReference:
-      m_KeyId: 3639194695958528
+      m_KeyId: 0
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  itemName: 
+  itemName: Shed
   description: 
   unlocked: 0
-  gardenPrefab: {fileID: 0}
-  gardenVisual: {fileID: 0}
-  cataloguePrefab: {fileID: 0}
+  gardenPrefab: {fileID: 7214276076198305582, guid: 810c38d66d3f09d408a3936515a22019,
+    type: 3}
+  gardenVisual: {fileID: 7214276076198305582, guid: d5224e6bcf0ee9f40922f41a714b948a,
+    type: 3}
+  cataloguePrefab: {fileID: 7214276076198305582, guid: 810c38d66d3f09d408a3936515a22019,
+    type: 3}
   sprite: {fileID: 0}
-  width: 0
-  height: 0
-  specificMaxBuildingLimit: 0
+  width: 4
+  height: 4
   unlockLevel: 0
   cost: 0
   maxCount: 0
   count: 0
-  insectModifiers: []
-  affectedPlotTypes: 
-  insectRarityModifiers: []
   references:
     version: 2
     RefIds: []
