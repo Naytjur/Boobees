@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Poppy
   description: IDK
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 3523959829202924707, guid: b2525b567e9063e46bbf22620c924839,
     type: 3}
   gardenVisual: {fileID: 3523959829202924707, guid: b2525b567e9063e46bbf22620c924839,

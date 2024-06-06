@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: YellowToadflax
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 0}
   gardenVisual: {fileID: 0}
   cataloguePrefab: {fileID: 0}

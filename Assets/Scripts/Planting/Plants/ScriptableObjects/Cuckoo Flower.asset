@@ -35,7 +35,7 @@ MonoBehaviour:
   description: "\u2022\tAlso known as Cardamine pratensis \n\u2022\tPerennial herb
     found across Europe and western Asia \n\u2022\tBlooming on spikes close to water
     \n\u2022\tIts name, pratensis, means 'meadow' in Latin. "
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 1081788682774422257, guid: 8a9b68f7c2d7e1448a9b72b710909c54,
     type: 3}
   gardenVisual: {fileID: 1081788682774422257, guid: 8a9b68f7c2d7e1448a9b72b710909c54,

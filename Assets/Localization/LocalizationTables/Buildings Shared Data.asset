@@ -115,6 +115,10 @@ MonoBehaviour:
     m_Key: nanus Statue Description
     m_Metadata:
       m_Items: []
+  - m_Id: 3693037299367936
+    m_Key: Shed Name
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

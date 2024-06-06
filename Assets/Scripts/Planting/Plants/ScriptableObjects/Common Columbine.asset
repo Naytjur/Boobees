@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Common Columbine
   description: 
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 733835967828618253, guid: 895cf69080bfa654ea80af3cee8d98b6,
     type: 3}
   gardenVisual: {fileID: 733835967828618253, guid: 895cf69080bfa654ea80af3cee8d98b6,
