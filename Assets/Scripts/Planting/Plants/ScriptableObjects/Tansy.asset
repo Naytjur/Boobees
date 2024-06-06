@@ -33,7 +33,7 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Tansy
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 2314066945184813227, guid: 1b6d4c453f81ab44bb465564b2bb70b8,
     type: 3}
   gardenVisual: {fileID: 2314066945184813227, guid: 1b6d4c453f81ab44bb465564b2bb70b8,
