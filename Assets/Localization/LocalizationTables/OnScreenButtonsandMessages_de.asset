@@ -126,15 +126,26 @@ MonoBehaviour:
     m_Localized: Noch nicht entdeckt!
     m_Metadata:
       m_Items: []
-  - m_Id: 4645749293776896
-    m_Localized: 
+  - m_Id: 3196596235730944
+    m_Localized: Einstellungen
     m_Metadata:
-      m_Items:
-      - rid: 3666191844867571714
+      m_Items: []
+  - m_Id: 3196873680551936
+    m_Localized: Musik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3196927824822272
+    m_Localized: Sprache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3197877641740288
+    m_Localized: Deutsch
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
     - rid: 3666191844867571714
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00001ff5771f000000005fbfde3a01000000df92543f010000005fcc48811000
+        m_Entries: 00001ff5771f000000005fbfde3a01000000df92543f0100
