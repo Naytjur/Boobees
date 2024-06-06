@@ -24,6 +24,7 @@ public class UISwitcher : MonoBehaviour
     private void Start()
     {
         GameManager.instance.onStateChange += SwitchUI;
+        SwitchUI(GameManager.instance.state);
     }
 
     private void SwitchUI(GameState state)

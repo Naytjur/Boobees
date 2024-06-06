@@ -13076,7 +13076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &750661559
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15006,7 +15006,7 @@ MonoBehaviour:
     m_LocalVariables: []
   manager: {fileID: 900052908}
   beenSeen: false
-  useClickHandler: 0
+  useClickHandler: 1
   references:
     version: 2
     RefIds: []
@@ -31042,17 +31042,17 @@ PrefabInstance:
     - target: {fileID: 2050570199986255208, guid: 492b4d760e9e1c4428dceab38b942fd7,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2050570199986255208, guid: 492b4d760e9e1c4428dceab38b942fd7,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2050570199986255208, guid: 492b4d760e9e1c4428dceab38b942fd7,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2296688416964470920, guid: 492b4d760e9e1c4428dceab38b942fd7,
         type: 3}
