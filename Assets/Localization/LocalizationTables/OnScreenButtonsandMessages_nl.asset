@@ -149,11 +149,12 @@ MonoBehaviour:
   - m_Id: 4645749293776896
     m_Localized: 'Zaadjes: {seeds-component.seedsLeft}'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 8168968436361986049
   references:
     version: 2
     RefIds:
     - rid: 8168968436361986049
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00001ff5771f00000000df92543f010000005fbfde3a0100
+        m_Entries: 00001ff5771f00000000df92543f010000005fbfde3a010000005fcc48811000
