@@ -37,8 +37,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6359988764672
-    m_Localized: "Now that you have an empty plot you can press the View button to
-      go back to the viewing mode to scan your first flower.\r"
+    m_Localized: 'Now that you have an empty plot you can press the Exit button to
+      go back to the viewing mode to scan your first flower.
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 6434597044224
@@ -57,9 +59,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6737438375936
     m_Localized: The insects are buzzing and the flowers are blooming, insects will
-      earn you pollen and honey, pollen will increase your level and unlock new decorations
-      and more plots as your levels increase, and honey can be used to buy the decorations
-      you unlocked in the shop!
+      earn you pollen and honey, pollen will  allow you to increase your level and
+      honey can be used to level up and buy the decorations you unlocked in the shop!
     m_Metadata:
       m_Items: []
   - m_Id: 6866786516992
@@ -73,7 +74,7 @@ MonoBehaviour:
     m_Localized: 'Congratulations! You haven gathered enough pollen and honey for
       your first level up, click on the level up button to continue.
 
-      Remember:
+      Note:
       leveling up costs all your Honey!'
     m_Metadata:
       m_Items: []
