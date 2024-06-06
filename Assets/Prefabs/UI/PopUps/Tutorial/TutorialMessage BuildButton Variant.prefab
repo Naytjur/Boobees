@@ -392,6 +392,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TutorialMessage BuildButton Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1148404867104668985, guid: a600167acbc1a714db7c79ad835af527,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1182897038812983255, guid: a600167acbc1a714db7c79ad835af527,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -433,6 +438,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 0e9586a005c127e458d135d8e62ea3ca,
         type: 3}
+    - target: {fileID: 7957482663827870687, guid: a600167acbc1a714db7c79ad835af527,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8981765028355636098, guid: a600167acbc1a714db7c79ad835af527,
         type: 3}
       propertyPath: m_Pivot.x
