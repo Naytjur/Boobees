@@ -47,7 +47,7 @@ MonoBehaviour:
   unlockLevel: 1
   cost: 0
   maxCount: 1
-  count: 0
+  count: 1
   insectModifiers: []
   affectedPlotTypes: 
   insectRarityModifiers: []
