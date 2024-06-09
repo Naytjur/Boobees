@@ -23,8 +23,6 @@ public class GameData
     [SerializeField]
     public List<PlantData> plantList;
     [SerializeField]
-    public List<string> plantIDs;
-    [SerializeField]
     public List<int> plantSeedAmounts;
 
     public GameData()
@@ -40,7 +38,6 @@ public class GameData
         seenTutorials = new List<string>();
         buildingList = new List<BuildData>();
         plantList = new List<PlantData>();
-        plantIDs = new List<string>();
         plantSeedAmounts = new List<int>();
     }
 }
