@@ -69,6 +69,17 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
                 plant.unlocked = true;
             }
         }
+        for (int i = 0; i < data.plantIDs.Count; i++)
+        {
+            string plantID = data.plantIDs[i];
+            int seedAmount = data.plantSeedAmounts[i];
+
+            PlantSO plant = FindPlantByID(plantID);
+            if (plant != null)
+            {
+                plant.seedAmount = seedAmount; // Load the seed amount
+            }
+        }
 
         foreach (string insectID in data.unlockedInsectIDs)
         {
@@ -99,6 +110,8 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
             if (plant.unlocked)
             {
                 data.unlockedPlantIDs.Add(plant.id);
+                data.plantIDs.Add(plant.id);
+                data.plantSeedAmounts.Add(plant.seedAmount);
             }
         }
 
