@@ -10,4 +10,6 @@ public class ScanPopUpInfo : MonoBehaviour
 {
     public Image flowerImage;
     public LocalizeStringEvent localizeStringEvent;
+    public int addedSeedAmount = 0;
+    public LocalizeStringEvent seedsLocalizeStringEvent;
 }

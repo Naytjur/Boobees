@@ -152,7 +152,12 @@ MonoBehaviour:
       m_Items:
       - rid: 8168968436361986049
   - m_Id: 5846880221069312
-    m_Localized: 'je hebt {seeds-component.addedSeedAmount} zaadjes gekregen voor:'
+    m_Localized: 'Je hebt {seeds-component.addedSeedAmount} zaadjes gekregen voor:'
+    m_Metadata:
+      m_Items:
+      - rid: 8168968436361986049
+  - m_Id: 5857427448594432
+    m_Localized: Je hebt {seeds-component.addedSeedAmount} zaadjes gekregen
     m_Metadata:
       m_Items:
       - rid: 8168968436361986049
@@ -162,4 +167,4 @@ MonoBehaviour:
     - rid: 8168968436361986049
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00001ff5771f00000000df92543f010000005fbfde3a010000005fcc4881100000009fe2b4c51400
+        m_Entries: 00001ff5771f00000000df92543f010000005fbfde3a010000005fcc4881100000009fe2b4c5140000005f9a4ccf1400

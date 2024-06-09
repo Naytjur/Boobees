@@ -26,10 +26,12 @@ public class ScanPopUp : MonoBehaviour
         ScanPopUpInfo scanPopUpInfo = popUp.GetComponent<ScanPopUpInfo>();
         //scanPopUpInfo.scanText.text = "You have unlocked " + plant.itemName + "!";
         plantName = plant.itemNameLocalizedString;
+        scanPopUpInfo.addedSeedAmount = PlantingManager.instance.seedsGained;
         localizeStringEvent = popUp.GetComponent<ScanPopUpInfo>().localizeStringEvent;
         localizeStringEvent.StringReference = plantName;
         scanPopUpInfo.flowerImage.sprite = plant.sprite;
         //scanPopUpInfo.unlockedPlant = plantName;
+        scanPopUpInfo.seedsLocalizeStringEvent.RefreshString();
     }
 
 

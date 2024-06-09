@@ -147,6 +147,10 @@ MonoBehaviour:
     m_Key: Seeds Gained Message
     m_Metadata:
       m_Items: []
+  - m_Id: 5857427448594432
+    m_Key: Seeds Gaiend Unlock Message
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
