@@ -61,12 +61,17 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         this.maxPollenScore = data.playerPollenCap;
         this.logoutTime = data.logoutTime;
 
-        foreach (int plantID in data.unlockedPlantIDs)
+        for (int i = 0; i < data.unlockedPlantIDs.Count; i++)
         {
+            string plantID = data.unlockedPlantIDs[i];
             PlantSO plant = FindPlantByID(plantID);
             if (plant != null)
             {
                 plant.unlocked = true;
+                if (i < data.plantSeedAmounts.Count)
+                {
+                    plant.seedAmount = data.plantSeedAmounts[i]; // Load the seed amount
+                }
             }
         }
 
@@ -93,12 +98,14 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
         data.unlockedPlantIDs.Clear();
         data.unlockedInsectIDs.Clear();
+        data.plantSeedAmounts.Clear();
 
        foreach (PlantSO plant in allPlants)
         {
             if (plant.unlocked)
             {
                 data.unlockedPlantIDs.Add(plant.id);
+                data.plantSeedAmounts.Add(plant.seedAmount); // Save the seed amount
             }
         }
 

@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/ScanSeedsPopUpScreen.prefab.meta
 guid: 6db18cc1b8acba24c9d82efb3fd5b8a0
 PrefabImporter:
+========
+guid: 0bc8dddf81ce6a04c9c305be9486dbf9
+folderAsset: yes
+DefaultImporter:
+>>>>>>>> Lara_Add_Models:Assets/Music/Sound Effects.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

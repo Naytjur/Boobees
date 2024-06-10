@@ -73,6 +73,11 @@ MonoBehaviour:
       beachte: Ein Level anzusteigen kostet dich all dein Honig!"
     m_Metadata:
       m_Items: []
+  - m_Id: 6091517627052032
+    m_Localized: "Tippe jetzt den Pflanz-knopf an und w\xE4hle dein Feld aus um zu
+      pflanzen!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
