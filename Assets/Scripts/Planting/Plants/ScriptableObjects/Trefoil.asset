@@ -35,9 +35,9 @@ MonoBehaviour:
   description: "\u2022\tshort lived perennial legume \n\u2022\tAdapted to humid,
     temperate regions \n\u2022\tAdapted to a wide range of soils. "
   unlocked: 1
-  gardenPrefab: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac,
+  gardenPrefab: {fileID: 3028264091558947843, guid: 33574dc15c4a045449f191a20151e1c0,
     type: 3}
-  gardenVisual: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac,
+  gardenVisual: {fileID: 3028264091558947843, guid: 33574dc15c4a045449f191a20151e1c0,
     type: 3}
   cataloguePrefab: {fileID: 4684263671051397182, guid: 8ef3375ee596f154b8a978b85b0f28ac,
     type: 3}
