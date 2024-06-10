@@ -34,9 +34,9 @@ MonoBehaviour:
   itemName: Painted Lady
   description: 
   unlocked: 0
-  gardenPrefab: {fileID: 5612030763618812037, guid: 6ba5b5e1183e79c49971a837424c0970,
+  gardenPrefab: {fileID: 4956082533760744419, guid: de874789fa720b041b153697129d5cc8,
     type: 3}
-  gardenVisual: {fileID: 5612030763618812037, guid: 6ba5b5e1183e79c49971a837424c0970,
+  gardenVisual: {fileID: 4956082533760744419, guid: de874789fa720b041b153697129d5cc8,
     type: 3}
   cataloguePrefab: {fileID: 5612030763618812037, guid: 6ba5b5e1183e79c49971a837424c0970,
     type: 3}

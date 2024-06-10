@@ -34,9 +34,9 @@ MonoBehaviour:
   itemName: Large Skipper
   description: 
   unlocked: 0
-  gardenPrefab: {fileID: 8766090558337067375, guid: b3ffba26c25753b49b05f1a557ec3830,
+  gardenPrefab: {fileID: 4956082533760744419, guid: 0193ff7aa62e2a743a92c22d31f8b207,
     type: 3}
-  gardenVisual: {fileID: 8766090558337067375, guid: b3ffba26c25753b49b05f1a557ec3830,
+  gardenVisual: {fileID: 4956082533760744419, guid: 0193ff7aa62e2a743a92c22d31f8b207,
     type: 3}
   cataloguePrefab: {fileID: 8766090558337067375, guid: b3ffba26c25753b49b05f1a557ec3830,
     type: 3}
