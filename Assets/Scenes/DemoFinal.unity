@@ -769,6 +769,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 794645107}
     m_Modifications:
+    - target: {fileID: 95409547166226617, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_Name
+      value: language button Dutch
+      objectReference: {fileID: 0}
     - target: {fileID: 1367863603231033052, guid: e38f912935facd947861eba7faf668c8,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -803,6 +808,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: Dutch
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040701555489885499, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_Name
+      value: language button English
       objectReference: {fileID: 0}
     - target: {fileID: 2518587064230170819, guid: e38f912935facd947861eba7faf668c8,
         type: 3}
@@ -929,11 +939,86 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ZoomSlider, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 3865078748865244310, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865078748865244310, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865078748865244310, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 206729304}
+    - target: {fileID: 3865078748865244310, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865078748865244310, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeLanguage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865078748865244310, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LanguageManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865078748865244310, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3892726871524866062, guid: e38f912935facd947861eba7faf668c8,
         type: 3}
       propertyPath: zoomAndNavigation
       value: 
       objectReference: {fileID: 99893145}
+    - target: {fileID: 4047642713017612008, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047642713017612008, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047642713017612008, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 206729304}
+    - target: {fileID: 4047642713017612008, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047642713017612008, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeLanguage
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047642713017612008, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LanguageManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047642713017612008, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047642713017612008, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4609742547722981689, guid: e38f912935facd947861eba7faf668c8,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -948,6 +1033,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Settingscreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820959186512832936, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_Name
+      value: language button German
       objectReference: {fileID: 0}
     - target: {fileID: 6432998605390670538, guid: e38f912935facd947861eba7faf668c8,
         type: 3}
@@ -968,6 +1058,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033583431645213409, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033583431645213409, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033583431645213409, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 206729304}
+    - target: {fileID: 7033583431645213409, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033583431645213409, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeLanguage
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033583431645213409, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LanguageManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033583431645213409, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033583431645213409, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8491824952442594626, guid: e38f912935facd947861eba7faf668c8,
         type: 3}
