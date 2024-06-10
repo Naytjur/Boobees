@@ -10,21 +10,11 @@ public class ZoomAndNavigation : MonoBehaviour
 
     public Camera mainCamera;
     private Plane map;
-    [SerializeField]
+    [SerializeField, Range(0f, 2f)]
     private float navSpeed = 1;
     [SerializeField, Range(0f, 2f)]
     private float zoomSpeed = 1;
 
-    [SerializeField]
-    private Vector3 startPos;
-    [SerializeField]
-    private float xLimitPos = 4f;
-    [SerializeField]
-    private float xLimitNeg = -4f;
-    [SerializeField]
-    private float zoomLimit = 6.5f;
-    [SerializeField]
-    private float depthLimit = 15f;
 
     [SerializeField]
     private Collider boundingBox;
@@ -36,7 +26,6 @@ public class ZoomAndNavigation : MonoBehaviour
         {
             mainCamera = Camera.main;
         }
-        startPos = mainCamera.transform.position;
     }
 
     private void Update()

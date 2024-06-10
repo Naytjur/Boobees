@@ -15,7 +15,6 @@ public class LevelPopUp : MonoBehaviour
     private GameObject unlockedImagePrefab;
 
     public LocalizedString unlockedLocalizedString;
-    public LocalizedString emptyLocalizedString;
 
     private bool isInitialized = false;
 

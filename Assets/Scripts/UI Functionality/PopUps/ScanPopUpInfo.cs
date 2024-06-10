@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class ScanPopUpInfo : MonoBehaviour
 {
     public Image flowerImage;
-    //public TMP_Text scanText;
     public LocalizeStringEvent localizeStringEvent;
-    //public LocalizedString unlockedPlant;
+    public int addedSeedAmount = 0;
+    public LocalizeStringEvent seedsLocalizeStringEvent;
 }

@@ -15,12 +15,8 @@ MonoBehaviour:
   m_TableCollectionName: Tutorial Messages
   m_TableCollectionNameGuidString: f08b529ce8dc4a540a33a3f34c2ce43a
   m_Entries:
-  - m_Id: 31371231232
-    m_Key: 'Tutorial Message start '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6110616420352
-    m_Key: Tutorial Message start 2
+  - m_Id: 6434597044224
+    m_Key: Back to View Mode Message
     m_Metadata:
       m_Items: []
   - m_Id: 6253247922176
@@ -31,24 +27,32 @@ MonoBehaviour:
     m_Key: Plot placed Message
     m_Metadata:
       m_Items: []
-  - m_Id: 6434597044224
-    m_Key: Back to View Mode Message
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6590511906816
-    m_Key: Unlock Pop Up Message
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6737438375936
-    m_Key: Tutorial Message First Pollen/Honey
+  - m_Id: 4597198706618368
+    m_Key: Tutorial Message Can Level
     m_Metadata:
       m_Items: []
   - m_Id: 6866786516992
     m_Key: Tutorial Message first level
     m_Metadata:
       m_Items: []
-  - m_Id: 4597198706618368
-    m_Key: Tutorial Message Can Level
+  - m_Id: 6737438375936
+    m_Key: Tutorial Message First Pollen/Honey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6091517627052032
+    m_Key: Tutorial Message Go to Planting Mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31371231232
+    m_Key: 'Tutorial Message start '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6110616420352
+    m_Key: Tutorial Message start 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6590511906816
+    m_Key: Unlock Pop Up Message
     m_Metadata:
       m_Items: []
   m_Metadata:

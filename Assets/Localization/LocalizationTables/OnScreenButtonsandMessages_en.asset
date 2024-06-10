@@ -151,10 +151,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 8168968436361986050
+  - m_Id: 5846880221069312
+    m_Localized: 'You have gained {seeds-component.addedSeedAmount} seeds for:'
+    m_Metadata:
+      m_Items:
+      - rid: 8168968436361986050
+  - m_Id: 5857427448594432
+    m_Localized: You have gained {seeds-component.addedSeedAmount} seeds
+    m_Metadata:
+      m_Items:
+      - rid: 8168968436361986050
   references:
     version: 2
     RefIds:
     - rid: 8168968436361986050
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00001ff5771f00000000df92543f010000005fbfde3a010000005fcc48811000
+        m_Entries: 00001ff5771f00000000df92543f010000005fbfde3a010000005fcc4881100000009fe2b4c5140000005f9a4ccf1400

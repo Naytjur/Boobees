@@ -20,6 +20,7 @@ public class PlantingManager : MonoBehaviour
     public List<PlantSO> allPlants;
 
     private PlantSO currentPlant;
+    public int seedsGained = 3;
 
     //hovering
     private Transform hoverVisual;
@@ -33,6 +34,9 @@ public class PlantingManager : MonoBehaviour
     public TMP_Text plantAmount;
     public Transform plantSelectionPanel;
 
+    public LocalizeStringEvent plotFullEvent;
+    public LocalizedString plotFullMessage;
+
     //State
     public bool isPlanting = false;
     private PlantState plantState = PlantState.Unselected;
@@ -40,9 +44,8 @@ public class PlantingManager : MonoBehaviour
     //events
     public event Action<PlantSO> onPlantUnlocked;
     public event Action onPlantPlanted;
+    public event Action<PlantSO> onSeedsGained;
 
-    public LocalizeStringEvent plotFullEvent;
-    public LocalizedString plotFullMessage;
 
 
     private void Awake()
@@ -203,11 +206,11 @@ public class PlantingManager : MonoBehaviour
         {
             if (plant.id == id)
             {
+                GetSeeds(plant);
                 if(!plant.unlocked)
                 {
                     UnlockPlant(plant);     
                 }
-                GetSeeds(plant);
                 name = plant.name;
                 return true;
             }
@@ -224,7 +227,18 @@ public class PlantingManager : MonoBehaviour
 
     private void GetSeeds(PlantSO plant)
     {
-        plant.seedAmount += 3;
+        if (plant.CanGainSeeds())
+        {
+            plant.GainSeeds(seedsGained);
+            if (plant.unlocked)
+            {
+                onSeedsGained?.Invoke(plant);
+            }
+        }
+        else
+        {
+            Debug.Log("Too soon to gain seeds for this plant.");
+        }
     }
 
     private void UpdateActiveState(GameState state)

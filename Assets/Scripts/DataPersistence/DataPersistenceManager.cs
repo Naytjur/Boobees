@@ -31,6 +31,9 @@ public class DataPersistenceManager : MonoBehaviour
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         Invoke("LoadGame", 0.1f);
         ScoreManager.onLevelUp += OnLevelUp;
+        PlantingManager.instance.onSeedsGained +=OnSeedsGained;
+        PlantingManager.instance.onPlantPlanted +=OnPlantPlanted;
+        BuildManager.onBuildingPlaced += OnBuildingPlaced;
     }
 
     public void NewGame()
@@ -67,6 +70,18 @@ public class DataPersistenceManager : MonoBehaviour
     }
 
     private void OnLevelUp(int level)
+    {
+        SaveGame();
+    }
+    private void OnSeedsGained(PlantSO plant)
+    {
+        SaveGame();
+    }
+    private void OnPlantPlanted()
+    {
+        SaveGame();
+    }
+    private void OnBuildingPlaced()
     {
         SaveGame();
     }
