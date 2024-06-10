@@ -34,9 +34,9 @@ MonoBehaviour:
   itemName: Small Garden BumbleBee
   description: 
   unlocked: 0
-  gardenPrefab: {fileID: 4526560040097895035, guid: 86fbcd523b64167488f80b6a66d8aa19,
+  gardenPrefab: {fileID: 4199769178840822221, guid: 69fdc070d03ff5045badb0fb7e9f952e,
     type: 3}
-  gardenVisual: {fileID: 4526560040097895035, guid: 86fbcd523b64167488f80b6a66d8aa19,
+  gardenVisual: {fileID: 4199769178840822221, guid: 69fdc070d03ff5045badb0fb7e9f952e,
     type: 3}
   cataloguePrefab: {fileID: 4526560040097895035, guid: 86fbcd523b64167488f80b6a66d8aa19,
     type: 3}
