@@ -10,7 +10,7 @@ public class ZoomAndNavigation : MonoBehaviour
 
     public Camera mainCamera;
     private Plane map;
-    [SerializeField, Range(0f, 2f)]
+    [SerializeField, Range(0f, 10f)]
     private float navSpeed = 1;
     [SerializeField, Range(0f, 2f)]
     private float zoomSpeed = 1;

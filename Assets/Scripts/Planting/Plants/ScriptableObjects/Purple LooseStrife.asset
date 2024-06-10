@@ -33,12 +33,12 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Purple Loosestrife
   description: 
-  unlocked: 0
-  gardenPrefab: {fileID: 6528819548581335760, guid: 9563aefb979354f47ab7d3e817efee17,
+  unlocked: 1
+  gardenPrefab: {fileID: 7799533110317909081, guid: b68a575542e0b1b46af7e65ea9511cf4,
     type: 3}
-  gardenVisual: {fileID: 6528819548581335760, guid: 9563aefb979354f47ab7d3e817efee17,
+  gardenVisual: {fileID: 7799533110317909081, guid: b68a575542e0b1b46af7e65ea9511cf4,
     type: 3}
-  cataloguePrefab: {fileID: 6528819548581335760, guid: 9563aefb979354f47ab7d3e817efee17,
+  cataloguePrefab: {fileID: 7799533110317909081, guid: b68a575542e0b1b46af7e65ea9511cf4,
     type: 3}
   sprite: {fileID: 21300000, guid: 8c44f12e349d28f42bbb8ba35b0ba63a, type: 3}
   attractions:
@@ -46,7 +46,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2411ef689e319b24995a5199db4f2370, type: 2}
   correctPlots: 02000000
   baseSpawnRate: 100
-  seedAmount: 0
+  seedAmount: 13
   decayTime: 82800
   references:
     version: 2

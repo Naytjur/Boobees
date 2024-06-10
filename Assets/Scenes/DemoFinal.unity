@@ -2131,7 +2131,7 @@ GameObject:
   - component: {fileID: 99893146}
   - component: {fileID: 99893145}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: ZoomandNav
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2150,8 +2150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 1111252207}
-  navSpeed: 1
-  zoomSpeed: 1
+  navSpeed: 3.5
+  zoomSpeed: 0.2
   boundingBox: {fileID: 847995607}
 --- !u!64 &99893146
 MeshCollider:
@@ -16208,12 +16208,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ddbc41d651d03554fb3acf1372c30cd7, type: 2}
   - {fileID: 11400000, guid: 11b13cb280409f44f8d2446eff3b57af, type: 2}
   - {fileID: 11400000, guid: 87514f25ea41a8e42addb721f9dd9f77, type: 2}
+  - {fileID: 11400000, guid: f8e75f3fc2826e04397825c104b8f86b, type: 2}
   - {fileID: 11400000, guid: 9a9749b9ceabf8a45984f92674aa74fc, type: 2}
   - {fileID: 11400000, guid: 080dc4f5c417c9a4fb706a4c5713e728, type: 2}
   - {fileID: 11400000, guid: ad2df3ecc1ef8a640bcbb6da5b83e480, type: 2}
   - {fileID: 11400000, guid: e7f3171f7aa444a4192a94984079105f, type: 2}
   - {fileID: 11400000, guid: 8f86b53a5520b3241a2e056af231f393, type: 2}
-  - {fileID: 11400000, guid: f8e75f3fc2826e04397825c104b8f86b, type: 2}
+  - {fileID: 11400000, guid: 33f9b8e1eb4908e41a42f3543631b2b8, type: 2}
   seedsGained: 3
   currentPlot: {fileID: 0}
   plantList: []

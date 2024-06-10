@@ -34,7 +34,7 @@ MonoBehaviour:
   itemName: Garden Speedwell
   description: "\u2022\tranging from groundcovers only a few inches tall to upright
     plants \n\u2022\ttall, spikey blooms "
-  unlocked: 0
+  unlocked: 1
   gardenPrefab: {fileID: 7378541901793563536, guid: d9c926e3a7b000a48b2a355ce4f24401,
     type: 3}
   gardenVisual: {fileID: 7378541901793563536, guid: d9c926e3a7b000a48b2a355ce4f24401,
@@ -47,7 +47,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1532bdf8fb83c914fbaa3c86c2d96c2e, type: 2}
   correctPlots: 01000000
   baseSpawnRate: 100
-  seedAmount: 0
+  seedAmount: 2
   decayTime: 82800
   references:
     version: 2
