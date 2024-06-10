@@ -32,7 +32,10 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     [Header("Buildings")]
     [SerializeField]
     private List<BuildingSO> allBuildings =  new List<BuildingSO>();
+    [SerializeField]
+    private Transform parentTransform;
     private List<Building> buildings = new List<Building>();
+
 
     //Internal Variables
     public Grid buildGrid;
@@ -185,7 +188,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         BuildData data = new BuildData(currentBuilding.id, x, z, (int)direction);
 
         Vector2Int rotationOffset = currentBuilding.GetRotationOffset(direction);
-        Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), currentBuilding, data, gridCellSize, Quaternion.Euler(0, currentBuilding.GetRotationDegrees(direction), 0), direction);
+        Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), currentBuilding, data, gridCellSize, Quaternion.Euler(0, currentBuilding.GetRotationDegrees(direction), 0), direction, parentTransform);
         
         buildings.Add(buildObject);
         buildObject.buildData = data;
@@ -214,7 +217,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         Vector2Int rotationOffset = cur.GetRotationOffset((BuildingSO.Dir) rotation);
         BuildData data = new BuildData(id, x, z, rotation);
 
-        Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), cur, data, gridCellSize, Quaternion.Euler(0, cur.GetRotationDegrees((BuildingSO.Dir) rotation), 0), (BuildingSO.Dir) rotation);
+        Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), cur, data, gridCellSize, Quaternion.Euler(0, cur.GetRotationDegrees((BuildingSO.Dir) rotation), 0), (BuildingSO.Dir) rotation, parentTransform);
 
         buildings.Add(buildObject);
         buildObject.buildData = data;

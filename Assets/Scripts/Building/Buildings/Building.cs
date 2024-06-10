@@ -7,9 +7,9 @@ public class Building : MonoBehaviour
     public BuildingSO buildingSO;
     public BuildData buildData;
     
-    public static Building Create(Vector3 worldPosition, Vector2Int origin, BuildingSO buildingSO, BuildData data, float size, Quaternion rotation, BuildingSO.Dir dir)
+    public static Building Create(Vector3 worldPosition, Vector2Int origin, BuildingSO buildingSO, BuildData data, float size, Quaternion rotation, BuildingSO.Dir dir, Transform parent)
     {
-        Transform buildingTransform = Instantiate(buildingSO.gardenPrefab, worldPosition, rotation);
+        Transform buildingTransform = Instantiate(buildingSO.gardenPrefab, worldPosition, rotation, parent);
 
         Building building  = buildingTransform.GetComponent<Building>();
         building.buildingSO = buildingSO;
