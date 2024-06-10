@@ -926,6 +926,11 @@ PrefabInstance:
       objectReference: {fileID: 99893145}
     - target: {fileID: 3602972856747138125, guid: e38f912935facd947861eba7faf668c8,
         type: 3}
+      propertyPath: m_MaxValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602972856747138125, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1797331549}
@@ -1038,6 +1043,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: language button German
+      objectReference: {fileID: 0}
+    - target: {fileID: 6432998605390670538, guid: e38f912935facd947861eba7faf668c8,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6432998605390670538, guid: e38f912935facd947861eba7faf668c8,
         type: 3}
