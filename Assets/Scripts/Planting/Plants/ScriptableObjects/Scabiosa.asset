@@ -36,19 +36,19 @@ MonoBehaviour:
     and feathery stem leaves \n\u2022\tproduces fragrant 5-cm flower heads  \n\u2022\twhite,
     rose, crimson, blue, or deep mahogany purple "
   unlocked: 0
-  gardenPrefab: {fileID: 3102992664574367547, guid: e35aed3eacb70a14ea8957ef41fd62b3,
+  gardenPrefab: {fileID: 4861038469679225440, guid: b44d5c01341520743927cfb898a704c8,
     type: 3}
-  gardenVisual: {fileID: 3102992664574367547, guid: e35aed3eacb70a14ea8957ef41fd62b3,
+  gardenVisual: {fileID: 4861038469679225440, guid: b44d5c01341520743927cfb898a704c8,
     type: 3}
-  cataloguePrefab: {fileID: 3102992664574367547, guid: e35aed3eacb70a14ea8957ef41fd62b3,
+  cataloguePrefab: {fileID: 4861038469679225440, guid: b44d5c01341520743927cfb898a704c8,
     type: 3}
   sprite: {fileID: 21300000, guid: a288d67740ac00c488a0bc19bfa76682, type: 3}
   attractions:
   - {fileID: 11400000, guid: 1532bdf8fb83c914fbaa3c86c2d96c2e, type: 2}
   - {fileID: 11400000, guid: e5d3f7bd23e62ef44b45e02917799113, type: 2}
   - {fileID: 11400000, guid: 240290f74e275fc4abbed3687cac3660, type: 2}
-  correctPlots: 00000000
-  baseSpawnRate: 100
+  correctPlots: 01000000
+  baseSpawnRate: 70
   seedAmount: 0
   decayTime: 82800
   references:

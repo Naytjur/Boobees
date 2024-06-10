@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f78e8b971c8104d489063a076b1dda52, type: 2}
   - {fileID: 11400000, guid: 495e116121ebcc5418722cec3d675bf9, type: 2}
   correctPlots: 00000000
-  baseSpawnRate: 100
+  baseSpawnRate: 70
   seedAmount: 0
   decayTime: 82800
   references:

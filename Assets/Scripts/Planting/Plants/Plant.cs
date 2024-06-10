@@ -52,6 +52,7 @@ public class Plant : MonoBehaviour
     {
         while (true)
         {
+            UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
             float randomSpawnRate = UnityEngine.Random.Range(3, spawnRate);
             yield return new WaitForSeconds(randomSpawnRate);
             TrySpawnInsect();

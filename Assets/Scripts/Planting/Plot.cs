@@ -5,9 +5,9 @@ using UnityEngine;
 
 public enum PlotType 
 { 
-    Plot1, 
-    Plot2, 
-    Plot3
+    Ruderal, 
+    Wild, 
+    Edgevegetation
 }
 
 public class Plot : MonoBehaviour

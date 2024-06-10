@@ -184,13 +184,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 251329807056896
-    m_Localized: "\u2022 Grows on wild plots and is typically found on roadsides
-      and waste areas or in fields, pastures, edges of forests and rangeland. \r\n\u2022
-      It prefers sites with well-drained sandy or gravelly soils.\r\n\u2022 The plants
-      begin growing from the roots as soon as the soil warms in early spring.\r\n\u2022
-      Only Bumbleebees can open the flowers by pressing their full body weight on
-      the bottom petal.\r\n\r\nFun Fact: The flower can be pressed to be opened to
-      make it look like a lions mouth."
+    m_Localized: "\u2022 Grows on wild and edgevegetation plots and is typically
+      found on roadsides and waste areas or in fields, pastures, edges of forests
+      and rangeland. \r\n\u2022 It prefers sites with well-drained sandy or gravelly
+      soils.\r\n\u2022 The plants begin growing from the roots as soon as the soil
+      warms in early spring.\r\n\u2022 Only Bumbleebees can open the flowers by pressing
+      their full body weight on the bottom petal.\r\n\r\nFun Fact: The flower can
+      be pressed to be opened to make it look like a lions mouth."
     m_Metadata:
       m_Items: []
   - m_Id: 251874995273728

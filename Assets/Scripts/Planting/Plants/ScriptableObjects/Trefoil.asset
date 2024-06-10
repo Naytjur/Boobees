@@ -44,8 +44,8 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 8050c0cc0a8a38241a737436d7c25f75, type: 3}
   attractions:
   - {fileID: 11400000, guid: 1fa3d55ede19f3443b68e151f7eb49e2, type: 2}
-  correctPlots: 00000000
-  baseSpawnRate: 100
+  correctPlots: 01000000
+  baseSpawnRate: 70
   seedAmount: 0
   decayTime: 82800
   references:

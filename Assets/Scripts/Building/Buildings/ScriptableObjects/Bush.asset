@@ -34,11 +34,11 @@ MonoBehaviour:
   itemName: Bush
   description: 
   unlocked: 0
-  gardenPrefab: {fileID: 6592982531291578103, guid: b79f70cd74cf0e64eb55f9d0bbe1cc46,
+  gardenPrefab: {fileID: 1312631940782077593, guid: ea3ea903da1fa174580da2ce5c632c2a,
     type: 3}
-  gardenVisual: {fileID: 6592982531291578103, guid: 32146917543b0bd44a0a6425b515fdca,
+  gardenVisual: {fileID: 1312631940782077593, guid: ea3ea903da1fa174580da2ce5c632c2a,
     type: 3}
-  cataloguePrefab: {fileID: 6592982531291578103, guid: b79f70cd74cf0e64eb55f9d0bbe1cc46,
+  cataloguePrefab: {fileID: 6797666298096170890, guid: 680ee604af714af49b36db02ab331882,
     type: 3}
   sprite: {fileID: 21300000, guid: 4175a1b5a7997b548a85ac738f1caa37, type: 3}
   width: 1
