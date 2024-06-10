@@ -10,10 +10,10 @@ public class ZoomAndNavigation : MonoBehaviour
 
     public Camera mainCamera;
     private Plane map;
-    [SerializeField, Range(0f, 10f)]
-    private float navSpeed = 1;
-    [SerializeField, Range(0f, 2f)]
-    private float zoomSpeed = 1;
+    [Range(0f, 0.5f)]
+    public float navSpeed = 1;
+    [Range(0f, 0.5f)]
+    public float zoomSpeed = 1;
 
 
     [SerializeField]
@@ -50,7 +50,7 @@ public class ZoomAndNavigation : MonoBehaviour
                 delta1 = MapPositionDelta(Input.GetTouch(0));
                 if (Input.GetTouch(0).phase == TouchPhase.Moved)
                 {
-                    mainCamera.transform.Translate(delta1 / navSpeed, Space.World);
+                    mainCamera.transform.Translate(delta1 * navSpeed, Space.World);
                 
 
                 }
