@@ -41,8 +41,8 @@ MonoBehaviour:
   cataloguePrefab: {fileID: 7214276076198305582, guid: 810c38d66d3f09d408a3936515a22019,
     type: 3}
   sprite: {fileID: 21300000, guid: 9f8f5e8f082b6654fb85b2f168576730, type: 3}
-  width: 4
-  height: 4
+  width: 2
+  height: 2
   specificMaxBuildingLimit: 0
   unlockLevel: 0
   cost: 0

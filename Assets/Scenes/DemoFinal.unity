@@ -13164,6 +13164,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 25217dbd663c47b4bb5ae17b30826b6a, type: 2}
   - {fileID: 11400000, guid: 49eed9160fdd56d4aa7d47206fb48e68, type: 2}
   - {fileID: 11400000, guid: af0955861b44d6640a3b0437e9ac9bea, type: 2}
+  - {fileID: 11400000, guid: 57f48e0487f697049a64680bf514db45, type: 2}
   parentTransform: {fileID: 414769661}
   ableColor: {r: 0.28627455, g: 0.75824773, b: 1, a: 0.5019608}
   unableColor: {r: 1, g: 0.28773582, b: 0.28773582, a: 0.5019608}
