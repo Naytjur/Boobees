@@ -8215,7 +8215,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 382574022}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 482541261}
+        m_TargetAssemblyTypeName: TutorialMessage, Assembly-CSharp
+        m_MethodName: HideTutorialUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &382574022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9492,6 +9504,7 @@ GameObject:
   - component: {fileID: 482541258}
   - component: {fileID: 482541257}
   - component: {fileID: 482541256}
+  - component: {fileID: 482541261}
   m_Layer: 0
   m_Name: Exit
   m_TagString: Untagged
@@ -9587,7 +9600,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 482541259}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 482541261}
+        m_TargetAssemblyTypeName: TutorialMessage, Assembly-CSharp
+        m_MethodName: ShowTutorial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &482541259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9626,6 +9651,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482541254}
   m_CullTransparentMesh: 1
+--- !u!114 &482541261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482541254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9523e31743c984c93f63f98d1eab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialUIPrefab: {fileID: 4522050070109030558, guid: 04fbd7106f2046a4299fb749a0c08c0f,
+    type: 3}
+  message:
+    m_TableReference:
+      m_TableCollectionName: GUID:f08b529ce8dc4a540a33a3f34c2ce43a
+    m_TableEntryReference:
+      m_KeyId: 6091517627052032
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  manager: {fileID: 900052908}
+  beenSeen: false
+  useClickHandler: 0
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &501895368
 GameObject:
   m_ObjectHideFlags: 0

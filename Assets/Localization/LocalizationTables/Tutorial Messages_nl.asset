@@ -75,6 +75,10 @@ MonoBehaviour:
       Levelen kost al je honing'
     m_Metadata:
       m_Items: []
+  - m_Id: 6091517627052032
+    m_Localized: Tik op de knop Planten en selecteer uw perceel om te gaan planten!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

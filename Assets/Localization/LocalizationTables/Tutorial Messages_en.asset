@@ -78,6 +78,10 @@ MonoBehaviour:
       leveling up costs all your Honey!'
     m_Metadata:
       m_Items: []
+  - m_Id: 6091517627052032
+    m_Localized: Now tap the planting icon and select your plot to get planting!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
