@@ -227,10 +227,17 @@ public class PlantingManager : MonoBehaviour
 
     private void GetSeeds(PlantSO plant)
     {
-        plant.seedAmount += seedsGained;
-        if (plant.unlocked)
+        if (plant.CanGainSeeds())
         {
-            onSeedsGained?.Invoke(plant);
+            plant.GainSeeds(seedsGained);
+            if (plant.unlocked)
+            {
+                onSeedsGained?.Invoke(plant);
+            }
+        }
+        else
+        {
+            Debug.Log("Too soon to gain seeds for this plant.");
         }
     }
 
