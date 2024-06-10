@@ -92,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -349,8 +349,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -625,6 +625,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Item3 Frame
       objectReference: {fileID: 0}
+    - target: {fileID: 4978138569914619921, guid: 108cbdf6511ed66439a2fa0ad95c8ced,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978138569914619921, guid: 108cbdf6511ed66439a2fa0ad95c8ced,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -823,6 +833,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7905558743309678899}
     m_Modifications:
+    - target: {fileID: 2845226992105695236, guid: 71e2a0d9eeeedb3429c5526378675e06,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845226992105695236, guid: 71e2a0d9eeeedb3429c5526378675e06,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4640779496006328789, guid: 71e2a0d9eeeedb3429c5526378675e06,
         type: 3}
       propertyPath: m_Name
@@ -947,6 +967,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1750943901829392948}
     m_Modifications:
+    - target: {fileID: 2695802380919236708, guid: 52d67852c03b7cc4993dcff00a68030f,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2695802380919236708, guid: 52d67852c03b7cc4993dcff00a68030f,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4788016319370387893, guid: 52d67852c03b7cc4993dcff00a68030f,
         type: 3}
       propertyPath: m_Name
@@ -1071,6 +1101,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7905558743309678899}
     m_Modifications:
+    - target: {fileID: 1052117969691387159, guid: 2ce208b8265f021419767b1825c950c3,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052117969691387159, guid: 2ce208b8265f021419767b1825c950c3,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6187438295795368518, guid: 2ce208b8265f021419767b1825c950c3,
         type: 3}
       propertyPath: m_Pivot.x
