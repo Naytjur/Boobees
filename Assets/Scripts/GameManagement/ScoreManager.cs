@@ -11,7 +11,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
     [SerializeField] private float scoreCapModifier = 2f;
     [SerializeField] public int maxHoneyScoreBase = 20;
-    [SerializeField] public int maxPollenScoreBase = 50;
+    [SerializeField] public int maxPollenScoreBase = 30;
     [SerializeField] public int playerLevel = 1;
 
     public TMP_Text levelText;
@@ -19,7 +19,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
     public int honeyScore = 0;
     public int pollenScore = 0;
     public int maxHoneyScore = 20;
-    public int maxPollenScore = 50;
+    public int maxPollenScore = 30;
     public float downtimeScoreModifier = 0.01f;
 
     public float logoutTime;
@@ -149,7 +149,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
             honeyScore = 0;
             pollenScore = pollenScore - maxPollenScore;
             maxHoneyScore = Mathf.RoundToInt(maxHoneyScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
-            maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel));
+            maxPollenScore = Mathf.RoundToInt(maxPollenScoreBase * Mathf.Pow(scoreCapModifier, playerLevel - 1));
             onLevelUp?.Invoke(playerLevel);
             UpdateUI(); // Update level text
         }

@@ -36,7 +36,7 @@ MonoBehaviour:
     of the flower to access the nectar \n\u2022\tBoasts pink or purple flowers atop
     tall stems.  \n\u2022\tBlooming from June to September\n\u2022\tThrives in dry,
     chalky habitats across Western Europe. "
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 7800843598508841643, guid: 2837c299f0400b749b8f86973f9e588b,
     type: 3}
   gardenVisual: {fileID: 7800843598508841643, guid: 2837c299f0400b749b8f86973f9e588b,
@@ -49,7 +49,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d7eb532e82d4ddd4fa8735b4dadc9c1e, type: 2}
   correctPlots: 00000000
   baseSpawnRate: 100
-  seedAmount: 2
+  seedAmount: 0
   decayTime: 82800
   references:
     version: 2
