@@ -63,7 +63,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
 
         for (int i = 0; i < data.unlockedPlantIDs.Count; i++)
         {
-            string plantID = data.unlockedPlantIDs[i];
+            int plantID = data.unlockedPlantIDs[i];
             PlantSO plant = FindPlantByID(plantID);
             if (plant != null)
             {
