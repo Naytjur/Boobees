@@ -34,9 +34,9 @@ MonoBehaviour:
   itemName: Red Admiral
   description: 
   unlocked: 0
-  gardenPrefab: {fileID: 3772998878474597588, guid: 8128517209b955d4a91cbadd89952b24,
+  gardenPrefab: {fileID: 4956082533760744419, guid: f10fc301e5e3f4245bcb587f443e458f,
     type: 3}
-  gardenVisual: {fileID: 3772998878474597588, guid: 8128517209b955d4a91cbadd89952b24,
+  gardenVisual: {fileID: 4956082533760744419, guid: f10fc301e5e3f4245bcb587f443e458f,
     type: 3}
   cataloguePrefab: {fileID: 3772998878474597588, guid: 8128517209b955d4a91cbadd89952b24,
     type: 3}

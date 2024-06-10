@@ -34,9 +34,9 @@ MonoBehaviour:
   itemName: Blue Mason Bee
   description: 
   unlocked: 0
-  gardenPrefab: {fileID: 3611198201999882327, guid: df37df460e372c345bcd3cb025f31999,
+  gardenPrefab: {fileID: 4199769178840822221, guid: 5eff819fcdae1664ba71d1fd3d9abad1,
     type: 3}
-  gardenVisual: {fileID: 3611198201999882327, guid: df37df460e372c345bcd3cb025f31999,
+  gardenVisual: {fileID: 4199769178840822221, guid: 5eff819fcdae1664ba71d1fd3d9abad1,
     type: 3}
   cataloguePrefab: {fileID: 3611198201999882327, guid: df37df460e372c345bcd3cb025f31999,
     type: 3}

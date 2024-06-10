@@ -34,9 +34,9 @@ MonoBehaviour:
   itemName: Red Mason Bee
   description: 
   unlocked: 0
-  gardenPrefab: {fileID: 7436579170595587751, guid: 4abf6521c6e024c44bc859eaa725167e,
+  gardenPrefab: {fileID: 4199769178840822221, guid: 1dc6c59de2ea1eb48b1209d746242193,
     type: 3}
-  gardenVisual: {fileID: 7436579170595587751, guid: 4abf6521c6e024c44bc859eaa725167e,
+  gardenVisual: {fileID: 4199769178840822221, guid: 1dc6c59de2ea1eb48b1209d746242193,
     type: 3}
   cataloguePrefab: {fileID: 7436579170595587751, guid: 4abf6521c6e024c44bc859eaa725167e,
     type: 3}
