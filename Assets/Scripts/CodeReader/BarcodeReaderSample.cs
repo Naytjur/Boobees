@@ -19,6 +19,8 @@ public class BarcodeReaderSample : MonoBehaviour
     private XROrigin sessionOrigin;
     [SerializeField]
     private ARCameraManager cameraManager;
+    [SerializeField]
+    private Transform popUpCanvas;
 
     private bool scanningEnabled;
 
@@ -47,7 +49,7 @@ public class BarcodeReaderSample : MonoBehaviour
 
     unsafe void OnCameraFrameReceived(ARCameraFrameEventArgs eventArgs)
     {
-        if (!cameraManager.TryAcquireLatestCpuImage(out XRCpuImage image))
+        if (popUpCanvas.childCount > 0 || !cameraManager.TryAcquireLatestCpuImage(out XRCpuImage image))
             return;
 
         var conversionParams = new XRCpuImage.ConversionParams
@@ -96,9 +98,9 @@ public class BarcodeReaderSample : MonoBehaviour
 
         result = reader.Decode(texture.GetPixels32(), texture.width, texture.height);
 
-        if(result != null)
+        if(result != null && int.TryParse(result.Text, out int number))
         {
-            PlantingManager.instance.TryUnlockPlant(result.Text, out string name);
+            PlantingManager.instance.TryUnlockPlant(number, out string name);
         }
     }
 

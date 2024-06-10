@@ -200,7 +200,7 @@ public class PlantingManager : MonoBehaviour
     }
 
     //Unlocking plants
-    public bool TryUnlockPlant(string id, out string name)
+    public bool TryUnlockPlant(int id, out string name)
     {
         foreach(PlantSO plant in allPlants)
         {
@@ -262,7 +262,7 @@ public class PlantingManager : MonoBehaviour
     }
 
     //Help
-    public PlantSO GetPlantByID(string id)
+    public PlantSO GetPlantByID(int id)
     {
         PlantSO plant = null;
 

@@ -61,7 +61,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         this.maxPollenScore = data.playerPollenCap;
         this.logoutTime = data.logoutTime;
 
-        foreach (string plantID in data.unlockedPlantIDs)
+        foreach (int plantID in data.unlockedPlantIDs)
         {
             PlantSO plant = FindPlantByID(plantID);
             if (plant != null)
@@ -70,7 +70,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
             }
         }
 
-        foreach (string insectID in data.unlockedInsectIDs)
+        foreach (int insectID in data.unlockedInsectIDs)
         {
             InsectSO insect = FindInsectByID(insectID);
             if (insect != null)
@@ -148,7 +148,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         }
     }
 
-    private PlantSO FindPlantByID(string id)
+    private PlantSO FindPlantByID(int id)
     {
         foreach (PlantSO plant in allPlants)
         {
@@ -160,7 +160,7 @@ public class ScoreManager : MonoBehaviour, IDataPersistence
         return null;
     }
 
-    private InsectSO FindInsectByID(string id)
+    private InsectSO FindInsectByID(int id)
     {
         foreach (InsectSO insect in allInsects)
         {

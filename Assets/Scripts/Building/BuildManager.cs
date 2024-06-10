@@ -211,7 +211,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         UpdateBuildState(BuildState.Unselected);
     }
 
-    private Building PlaceBuilding(int x, int z, string id, int rotation)
+    private Building PlaceBuilding(int x, int z, int id, int rotation)
     {
         BuildingSO cur = GetBuildingByID(id);
         Vector2Int rotationOffset = cur.GetRotationOffset((BuildingSO.Dir) rotation);
@@ -470,7 +470,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         return false;
     }
 
-    private BuildingSO GetBuildingByID(string id)
+    private BuildingSO GetBuildingByID(int id)
     {
         BuildingSO build = allBuildings[0];
 

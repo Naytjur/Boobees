@@ -5,13 +5,13 @@ using UnityEngine;
 [System.Serializable]
 public class PlantData
 {
-    public string plantID;
+    public int plantID;
     public float x;
     public float y;
     public float z;
     public float timer;
 
-    public PlantData(string id, float x, float y, float z, float timer)
+    public PlantData(int id, float x, float y, float z, float timer)
     {
         this.plantID = id;
         this.x = x;
