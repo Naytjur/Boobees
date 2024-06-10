@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c822e7f279714a4585ab9d2cd5a9f82, type: 3}
   m_Name: SmallGardenBumbleBee
   m_EditorClassIdentifier: 
-  id: 
+  id: 808014
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
@@ -33,21 +33,21 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Small Garden BumbleBee
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 4526560040097895035, guid: 86fbcd523b64167488f80b6a66d8aa19,
     type: 3}
   gardenVisual: {fileID: 4526560040097895035, guid: 86fbcd523b64167488f80b6a66d8aa19,
     type: 3}
   cataloguePrefab: {fileID: 4526560040097895035, guid: 86fbcd523b64167488f80b6a66d8aa19,
     type: 3}
-  sprite: {fileID: 21300000, guid: 4136bef108bf72d4c81e05ae9a8ab5f6, type: 3}
+  sprite: {fileID: 21300000, guid: 6e24f1ab5b69f1d459709189b3d1b454, type: 3}
   attractions:
   - {fileID: 11400000, guid: bc415727e4347414ba21c58e03b563a4, type: 2}
   - {fileID: 11400000, guid: 5c312add34da3d84883adc51a2fe3a4c, type: 2}
   type: 0
-  rarity: 2
-  pollenProduction: 3
-  honeyProduction: 5
+  rarity: 1
+  pollenProduction: 2
+  honeyProduction: 3
   insectFlySpeed: 1
   insectStayDuration: 4
   flyAwayDuration: 1.5

@@ -40,13 +40,14 @@ MonoBehaviour:
     type: 3}
   cataloguePrefab: {fileID: 3523959829202924707, guid: b2525b567e9063e46bbf22620c924839,
     type: 3}
-  sprite: {fileID: 21300000, guid: 58fbe682be6fbe34baa6a2c666710c83, type: 3}
+  sprite: {fileID: 21300000, guid: b769bbf9175037146a7a67b7ca4308d0, type: 3}
   attractions:
   - {fileID: 11400000, guid: 6c8fe990521c3bb4296587b11efd3bed, type: 2}
   - {fileID: 11400000, guid: 933e21aca1eb4594d94b9d06f59ed46e, type: 2}
   correctPlots: 00000000
-  baseSpawnRate: 10
-  seedAmount: 0
+  baseSpawnRate: 100
+  seedAmount: 6
+  decayTime: 82800
   references:
     version: 2
     RefIds: []

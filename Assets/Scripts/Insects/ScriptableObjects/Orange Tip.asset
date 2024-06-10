@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c822e7f279714a4585ab9d2cd5a9f82, type: 3}
   m_Name: Orange Tip
   m_EditorClassIdentifier: 
-  id: 
+  id: 808010
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
@@ -33,14 +33,14 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Orange Tip
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 4032609055323066662, guid: 71d1f3882d72c6649bc92880d32d0771,
     type: 3}
   gardenVisual: {fileID: 4032609055323066662, guid: 71d1f3882d72c6649bc92880d32d0771,
     type: 3}
   cataloguePrefab: {fileID: 4032609055323066662, guid: 71d1f3882d72c6649bc92880d32d0771,
     type: 3}
-  sprite: {fileID: 21300000, guid: 42d1e1d6b5e94e84a95c70e94e402d0b, type: 3}
+  sprite: {fileID: 21300000, guid: 68c2a5e84c8658a4cb36783466c83e27, type: 3}
   attractions:
   - {fileID: 11400000, guid: 175d4618a28e6c24bafcd601478e69f8, type: 2}
   - {fileID: 11400000, guid: 11b13cb280409f44f8d2446eff3b57af, type: 2}

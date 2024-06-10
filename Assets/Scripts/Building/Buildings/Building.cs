@@ -4,21 +4,12 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-
-    [SerializeField] private string id;
-
     public BuildingSO buildingSO;
     public BuildData buildData;
-
-    [ContextMenu("Generate gui for id")]
-    private void GenerateGuid()
-    {
-        id = System.Guid.NewGuid().ToString();
-    }
     
-    public static Building Create(Vector3 worldPosition, Vector2Int origin, BuildingSO buildingSO, BuildData data, float size, Quaternion rotation, BuildingSO.Dir dir)
+    public static Building Create(Vector3 worldPosition, Vector2Int origin, BuildingSO buildingSO, BuildData data, float size, Quaternion rotation, BuildingSO.Dir dir, Transform parent)
     {
-        Transform buildingTransform = Instantiate(buildingSO.gardenPrefab, worldPosition, rotation);
+        Transform buildingTransform = Instantiate(buildingSO.gardenPrefab, worldPosition, rotation, parent);
 
         Building building  = buildingTransform.GetComponent<Building>();
         building.buildingSO = buildingSO;
@@ -106,4 +97,10 @@ public class Building : MonoBehaviour
 
         return tiles;
     }
+
+    public bool CanAffectPatch(Plot patch)
+    {
+        return buildingSO.affectedPlotTypes.Contains(patch.type);
+    }
+ 
 }

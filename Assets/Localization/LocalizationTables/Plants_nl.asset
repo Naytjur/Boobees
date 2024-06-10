@@ -23,7 +23,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 244243413008384
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022  Groeit op ruderale vakken en is te vinden in ruderale plaatsen.\r\n\u2022
+      Door de intensivering van de landbouw is het in Nederland niet meer zo gebruikelijk.\r\n\u2022
+      Het produceert geen nectar, alleen stuifmeel en na de bestuiving vallen de
+      bloemblaadjes eraf.\r\n\r\nLeuk weetje: De klaproos lijkt voor het menselijk
+      oog rood te zijn, maar voor bijen is dat niet het geval vanwege UV-absorptie."
     m_Metadata:
       m_Items: []
   - m_Id: 244376129175552
@@ -31,7 +35,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 244424611135488
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Groeit op wilde vakken en geeft de voorkeur aan rijke, klamme
+      grond en is te vinden op vochtige plaatsen.\r\n\u2022 De zaden zijn giftig
+      als ze worden ingeslikt.\r\n\u2022 Wilde Akelei is behoorlijk veerkrachtig
+      en droogtetolerant.\r\n\u2022 Trekt kolibries, vlinders en Pijlstaarten aan.\r\n\r\nLeuk
+      feitje: de unieke vorm van de bloesem maakt hem goed uitgerust om nectarvoeders
+      met lange tong aan te trekken, namelijk motten en kolibries."
     m_Metadata:
       m_Items: []
   - m_Id: 244622829748224
@@ -39,10 +48,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 244934642696192
-    m_Localized: "\u2022\tOok bekend als Cardamine pratensis\r\n\u2022\tMeerjarig
-      kruid die gevonden kan worden in heel Europa en West-Azi\xEB\n\u2022\tBloeit
-      op stekels dichtbij water\n\u2022\tDe naam, pratensis, betekend 'weide' in
-      Latijn.\r"
+    m_Localized: "\u2022 Groeit op wilde vakken en houdt van vochtige grond, vooral
+      langs wegbermen en in vochtige akkers.\r\n\u2022 De nectarrijke bloemen en
+      felle kleuren trekken allerlei aan bestuivers aan, waaronder bijen, vlinders
+      en zweefvliegen, waardoor lokale ecosystemen in stand worden gehouden.\r\n\u2022
+      Het is een belangrijke voedselbron voor verschillende soorten rupsen. \r\n\r\nLeuk
+      feitje: de pinksterbloem verspreidt zijn zaden via een explosief mechanisme.\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 246163615711232
@@ -50,8 +61,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 246386417139712
-    m_Localized: "\u2022\tDe bloemen van de dovenetels kunnen verschillende kleuren
-      hebben\n\u2022\tWit, geel en paars"
+    m_Localized: "\u2022 Groeit op ruderale vakken en is te vinden in gazons, langs
+      wegen, tuinen en weilanden.\r\n\u2022 Hoewel paarse dovenetels in het voorjaar
+      een belangrijke voedselbron is voor bestuivers, bestuift die ook zichzelf.\r\n\u2022
+      Het trekt hommels en andere bijensoorten aan.\r\n\r\nLeuk feitje: ondanks hun
+      naam zijn dode brandnetels niet verwant aan brandnetels en kunnen ze veilig
+      worden aangeraakt zonder dat ze worden gestoken."
     m_Metadata:
       m_Items: []
   - m_Id: 246707335921664
@@ -59,10 +74,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 246830581350400
-    m_Localized: "\u2022\tAardhommels knagen soms een gat in de zijkant van de bloem
-      om bij de nectar te komen\n\u2022\tHeeft roze of paarse bloemen bovenop hoge
-      stelen\n\u2022\tBloeit van juni tot september\n\u2022\tBloeit best in droge,
-      kalkrijke habitats in heel West-Europa."
+    m_Localized: "\u2022 Groeit op ruderale vakken, vooral op droge kalkrijke gronden
+      en bloeit in de zomer. \r\n\u2022 De paarse kleur maakt de plant opmerkelijker
+      voor bestuivers.\r\n\u2022 Doet wel aan fotosynthese maar neemt water en voedingsstoffen
+      op van een waardplant, in dit geval tarwe/graan.\r\n\u2022 Trekt hommels aan,
+      maar alleen hommels met een lange tong hebben toegang tot de nectar\r\n\r\nLeuk
+      feitje: In het Engels staat het plaatselijk bekend als \"armoedekruid\", ooit
+      werden mensen betaald om de plant te wieden en voorzichtig naar buiten te dragen
+      om verbrand te worden."
     m_Metadata:
       m_Items: []
   - m_Id: 247911445102592
@@ -70,8 +89,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 247988779679744
-    m_Localized: "\u2022 vari\xEBrend van bodembedekkers van slechts enkele centimeters
-      hoog tot rechtopstaande planten \n\u2022 hoge, stekelige bloemen\r"
+    m_Localized: "\u2022 Groeit op wilde vakken en is meestal te vinden langs rivieren.
+      De bloem bloeit in de zomer en komt veel voor in Nederland.\r\n\u2022 Zelfbestuiving
+      is zeer onwaarschijnlijk, maar bestuiving door buren kan plaatsvinden, waarbij
+      stuifmeel van een hogere bloem op de meeldraad van een lagere bloem valt.\r\n\u2022
+      Het trekt meerdere soorten hommels en vlinders aan.\r\n\r\nLeuk feitje: De
+      Lange Ereprijs kan zich ook via de wortels voortplanten."
     m_Metadata:
       m_Items: []
   - m_Id: 248526187462656
@@ -79,7 +102,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 248555061051392
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Groeit op Zoomplanten vakken en verspreidt zich snel langs
+      bermen, paden en heklijnen.\r\n\u2022 Het kan zichzelf bevruchten of worden
+      bevrucht door bestuivers. Het is zeer invasief, daarom is het het beste om
+      het niet in tuinen te planten.\r\n\u2022 Chemische stoffen in de Look-zonder-Look
+      zijn giftig voor de larven van de inheemse vlinders.\r\n\r\nLeuk feitje: Look-zonder-Look
+      werd als keukenkruid in Noord-Amerika ge\xEFntroduceerd, maar is sindsdien
+      een wijdverbreide invasieve soort geworden."
     m_Metadata:
       m_Items: []
   - m_Id: 248714025172992
@@ -87,7 +116,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 248832648478720
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Groeit op ZoomPlanten vakken en wordt meestal aangetroffen
+      rond waterkanten, maar kan ook op drogere plekken groeien in tuinen.\r\n\u2022
+      Deze plant is een van de weinige bloemen in Nederland die planten kan hebben
+      met een lange, middellange en korte stijl.\r\n\u2022 Bloeit midden in de zomer
+      en trekt vlinders en bijen aan.\r\n\r\nLeuk feitje: Paarse kattestaart kan
+      jaarlijks meer dan twee miljoen zaden per plant produceren. \r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 248941658439680
@@ -95,9 +129,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 249011434881024
-    m_Localized: "\u2022 Zuid-Europese eenjaars bloemen\n\u2022 diep ingesneden basale
-      bladeren en geveerde stengelbladeren\r\n\u2022 produceert geurige bloemhoofdjes
-      van 5 cm\r\n\u2022 wit, roze, karmozijnrood, blauw of diep mahoniepaars."
+    m_Localized: "\u2022 Groeit op wilde vakken en bevindt zich in soortenrijke graslanden.
+      Behoort tot de kamperfoeliefamilie en bloeit tussen mei en herfst.\r\n\u2022
+      Heeft ondiepe bloemen, rijke nectarproductie en lange bloeiperiode, waardoor
+      hij veel insectensoorten aantrekt.\r\n\u2022 Naast bestuivers kan Beemdkroon
+      ook nuttige insecten aantrekken, zoals lieveheersbeestjes en zweefvliegen.\r\n\r\nLeuk
+      feitje: Historisch gezien werd geloofd dat het schurft en andere huidaandoeningen
+      kon genezen vanwege de ruwe bladeren."
     m_Metadata:
       m_Items: []
   - m_Id: 249951630065664
@@ -105,7 +143,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 249994005118976
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Groeit op wilde vakken en houdt van voedingsrijke omstandigheden
+      op iedere grond, behalve veen.\r\n\u2022 Kan een plantgemeenschap vormen met
+      Bijvoet in een ruderaal terrein, dat voedsel biedt aan dieren zoals slakken.\r\n\u2022
+      Behoort tot de Composietenfamilie en is een giftige plant. Trekt verschillende
+      vlinders en bijen aan.\r\n\u2022 Vroeger werd het gebruikt als wormafweermiddel.\r\n\r\nLeuk
+      weetje: Boerenwormkruid werd ooit gebruikt als natuurlijk conserveermiddel
+      bij begrafenissen om insecten af \u200B\u200Bte weren en de ontbinding te vertragen."
     m_Metadata:
       m_Items: []
   - m_Id: 250202617217024
@@ -113,9 +157,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 250275908485120
-    m_Localized: "\u2022 kortlevende meerjarige peulvruchten\r\n\u2022 Aangepast
-      aan vochtige, gematigde streken\r\n\u2022 Aangepast aan een breed scala aan
-      bodems"
+    m_Localized: "\u2022 Groeit op wilde vakken en houdt van vochtige plaatsen. Het
+      is herkenbaar aan de bloemstructuur bestaande uit 5 bloemblaadjes. Het lokt
+      insecten met het bovenste bloemblad dat de \"vlag\" wordt genoemd.\r\n\u2022
+      Insecten moeten op de middelste bloembladen landen om de onderste bloembladen
+      te openen.\r\n\u2022 Geeft nectar en stuifmeel en is waardplant voor meerdere
+      vlindersoorten.\r\n\u2022 Hij trekt zowel zeldzame als gewone bijensoorten
+      aan, maar is ook een waardevolle voedselplant voor veel motten.\r\n\r\nLeuk
+      weetje: Lange Ereprijs wordt langs bermen gebruikt om wind- en watererosie
+      tegen te gaan."
     m_Metadata:
       m_Items: []
   - m_Id: 250925287407616
@@ -123,9 +173,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 251009370619904
-    m_Localized: "\u2022 Opvallende plant met ruwe, behaarde bladeren en felblauwe
-      bloemen die roze beginnen\r\n\u2022 Inheems in Europa, West- en Centraal-Azi\xEB\r\n\u2022
-      Bloeit van mei tot september"
+    m_Localized: "\u2022 Groeit op ruderale vakken en houdt van zandige plaatsen
+      zoals duinen, maar ze kunnen in tuinen op verschillende bodems, zelfs klei,
+      zich staande houden.\r\n\u2022 Bloeit van mei tot september en heeft een ruime
+      nectarperiode.\r\n\u2022 In tegenstelling tot veel andere bloemen produceert
+      Viper's Bugloss de hele dag nectar en wordt de nectar beschermd bij warm of
+      regenachtig weer, waardoor een zeer betrouwbare nectarbron gedurende vele weken
+      ontstaat.\r\n\u2022 Het trekt vlinders en bijen aan.\r\n\r\nLeuk feitje: het
+      stuifmeel van het slangenkruid is blauw."
     m_Metadata:
       m_Items: []
   - m_Id: 251287054516224
@@ -133,7 +188,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 251329807056896
-    m_Localized: nog geen omschrijving
+    m_Localized: "\u2022 Groeit op wilde vakken en wordt doorgaans aangetroffen in
+      bermen en afvalgebieden of in velden, weilanden, randen van bossen en weilanden.\r\n\u2022
+      Hij geeft de voorkeur aan plaatsen met goed doorlatende zand- of grindgronden.\r\n\u2022
+      De planten beginnen vanaf de wortels te groeien zodra de grond in het vroege
+      voorjaar opwarmt.\r\n\u2022 Alleen hommels kunnen de bloemen van deze plant
+      openen door met hun volledige lichaamsgewicht op het onderste bloemblad te
+      drukken.\r\n\r\nLeuk feitje: Je kunt op de bloem drukken om hem te openen,
+      zodat hij op de muil van een leeuw lijkt."
     m_Metadata:
       m_Items: []
   - m_Id: 251874995273728
@@ -141,9 +203,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 251905659830272
-    m_Localized: "\u2022 Europese wilde bloem\r\n\u2022 Komt ook voor in Noord-Amerika\r\n\u2022
-      verschillende kleuren, waaronder paars, blauw, geel of wit\r\n\u2022 vaak met
-      een gewild driekleurig patroon"
+    m_Localized: "\u2022 Groeit op Zoomplanten vakken en is te vinden in weilanden
+      of vochtige bossen.\r\n\u2022 Alle wilde soorten bloeien vroeg in het voorjaar,
+      maar sommige gekweekte soorten bloeien later.\r\n\u2022 De bloesem van het
+      wilde viooltje is eetbaar.\r\n\u2022 Het trekt bestuivers aan, zoals hommels,
+      maar ze zijn ook in staat zichzelf te bevruchten.\r\n\r\nLeuk feitje: Drie-Kleurig
+      viooltjes werden van historisch gezien gebruikt in liefdesdrankjes.\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 252320203866112

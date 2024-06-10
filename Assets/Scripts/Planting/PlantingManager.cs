@@ -20,6 +20,7 @@ public class PlantingManager : MonoBehaviour
     public List<PlantSO> allPlants;
 
     private PlantSO currentPlant;
+    public int seedsGained = 3;
 
     //hovering
     private Transform hoverVisual;
@@ -30,9 +31,11 @@ public class PlantingManager : MonoBehaviour
 
     //UI
     public Button confirmButton;
-    public Button clearButton;
     public TMP_Text plantAmount;
     public Transform plantSelectionPanel;
+
+    public LocalizeStringEvent plotFullEvent;
+    public LocalizedString plotFullMessage;
 
     //State
     public bool isPlanting = false;
@@ -40,10 +43,9 @@ public class PlantingManager : MonoBehaviour
 
     //events
     public event Action<PlantSO> onPlantUnlocked;
-    public event Action PlantPlanted;
+    public event Action onPlantPlanted;
+    public event Action<PlantSO> onSeedsGained;
 
-    public LocalizeStringEvent plotFullEvent;
-    public LocalizedString plotFullMessage;
 
 
     private void Awake()
@@ -54,7 +56,6 @@ public class PlantingManager : MonoBehaviour
     {
         GameManager.instance.onStateChange += UpdateActiveState;
         confirmButton.onClick.AddListener(Plant);
-        clearButton.onClick.AddListener(ClearCurrentPlot);
     }
 
     void Update()
@@ -109,21 +110,27 @@ public class PlantingManager : MonoBehaviour
 
     public void Plant()
     {
-        clearButton.interactable = true;
-
         if (plantState == PlantState.Planting && !currentPlot.IsFull())
         {
             Transform plantTransform = Instantiate(currentPlant.gardenPrefab, currentPlot.transform);
             plantTransform.position = hoverPosition;
 
             Plant plant = plantTransform.GetComponent<Plant>();
+            plant.plantSO.seedAmount -= 1;
             plantList.Add(plant);
             currentPlot.AddPlant(plant);
             Destroy(hoverVisual.gameObject);
             plant.AssignPlot(currentPlot.type);
-            isPlanting = false;
+            plant.StartDecayTimer(0, GetCurrentDateTimeAsFloat());
+            
+            if(plant.plantSO.seedAmount <= 0)
+            {
+                StopPlanting();
+            }
+
             UpdateAmountUI();
-            PlantPlanted?.Invoke();
+
+            onPlantPlanted?.Invoke();
         }
 
         StartPlanting();
@@ -151,7 +158,6 @@ public class PlantingManager : MonoBehaviour
         UpdateAmountUI();
 
         StopPlanting();
-        clearButton.interactable = false;
         plantState = PlantState.Unselected;
         StartPlanting();
     }
@@ -163,10 +169,11 @@ public class PlantingManager : MonoBehaviour
         if (plantState != PlantState.Unselected && hoverVisual != null)
         {
             Destroy(hoverVisual.gameObject);
+            currentPlant = null;
         }
     }
 
-    private void UpdateAmountUI()
+    public void UpdateAmountUI()
     {
         plantAmount.text = currentPlot.plantAmount.ToString() + "/" + currentPlot.maxPlants.ToString();
 
@@ -199,18 +206,13 @@ public class PlantingManager : MonoBehaviour
         {
             if (plant.id == id)
             {
+                GetSeeds(plant);
                 if(!plant.unlocked)
                 {
-                    UnlockPlant(plant);
-                    name = plant.name;
-                    return true;   
+                    UnlockPlant(plant);     
                 }
-                else
-                {
-                    GetSeeds(plant);
-                    name = plant.name;
-                    return true;
-                }
+                name = plant.name;
+                return true;
             }
         }
         name = "Invalid ID";
@@ -225,7 +227,11 @@ public class PlantingManager : MonoBehaviour
 
     private void GetSeeds(PlantSO plant)
     {
-        plant.seedAmount += UnityEngine.Random.Range(2, 5);
+        plant.seedAmount += seedsGained;
+        if (plant.unlocked)
+        {
+            onSeedsGained?.Invoke(plant);
+        }
     }
 
     private void UpdateActiveState(GameState state)
@@ -253,5 +259,35 @@ public class PlantingManager : MonoBehaviour
     public PlantSO GetPlantByIndex(int index)
     {
         return allPlants[index];
+    }
+
+    //Help
+    public PlantSO GetPlantByID(string id)
+    {
+        PlantSO plant = null;
+
+        foreach(PlantSO so in allPlants)
+        {
+            if(id == so.id)
+            {
+                plant = so;
+            }
+        }
+
+        return plant;
+    }
+    public static float GetCurrentDateTimeAsFloat()
+    {
+        // Get the current date and time
+        DateTime now = DateTime.UtcNow;
+
+        // Define the Unix epoch (January 1, 1970)
+        DateTime epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+
+        // Calculate the difference between now and the Unix epoch
+        TimeSpan timeSpan = now - epoch;
+
+        // Return the total seconds as a float
+        return (float)timeSpan.TotalSeconds;
     }
 }

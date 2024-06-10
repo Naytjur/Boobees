@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 [System.Serializable]
@@ -72,8 +73,16 @@ public class Grid
 
     public void GetXZ(Vector3 worldPosition, out int x, out int z)
     {
-        x = Mathf.FloorToInt((worldPosition - origin).x / cellSize);
-        z = Mathf.FloorToInt((worldPosition - origin).z / cellSize);
+        float xFloat = (worldPosition - origin).x / cellSize;
+        float zFloat = (worldPosition - origin).z / cellSize;
+
+        x = Mathf.FloorToInt(xFloat);
+        z = Mathf.FloorToInt(zFloat);
+
+        if(zFloat >= 3.99f && zFloat < 5f)
+        {
+            z = 4;
+        }
     }
 
     public void SetValue(int x, int z, Building building, int rotation)
@@ -92,15 +101,30 @@ public class Grid
 
     }
 
-    public GridObject GetGridObject(int x, int z)
+    public bool GetGridObject(int x, int z, out GridObject gridObject)
     {
-        return gridArray[x, z];
+        gridObject = new GridObject();
+
+        if (x < width && x >= 0 && z < height && z >= 0 )
+        {
+            gridObject = gridArray[x, z];
+            return true;
+        }
+
+        return false;
     }
 
-    public GridObject GetGridObject(Vector3 worldPosition)
+    public bool GetGridObject(Vector3 worldPosition, out GridObject gridObject)
     {
         GetXZ(worldPosition, out int x, out int z);
-        return GetGridObject(x, z);
+
+        gridObject = new GridObject();
+        if (GetGridObject(x, z, out GridObject tile))
+        {
+            gridObject = tile;
+            return true;
+        }
+        return false;
     }
 
     public bool IsPositionOnGrid(int x, int z)

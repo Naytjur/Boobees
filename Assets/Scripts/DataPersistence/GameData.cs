@@ -10,13 +10,18 @@ public class GameData
     public int playerPollen;
     public int playerHoneyCap;
     public int playerPollenCap;
+    public float logoutTime;
 
     [SerializeField]
     public List<string> unlockedPlantIDs;
     [SerializeField]
+    public List<string> unlockedInsectIDs;
+    [SerializeField]
     public List<string> seenTutorials;
     [SerializeField]
     public List<BuildData> buildingList;
+    [SerializeField]
+    public List<PlantData> plantList;    
 
     public GameData()
     {
@@ -25,14 +30,11 @@ public class GameData
         this.playerPollen = 0;
         this.playerPollenCap = 0;
         this.playerHoneyCap = 0;
+        this.logoutTime = 0;
         unlockedPlantIDs = new List<string>();
+        unlockedInsectIDs = new List<string>();
         seenTutorials = new List<string>();
         buildingList = new List<BuildData>();
-
-        int totalTutorialMessages = 8;
-        for (int i = 0; i < totalTutorialMessages; i++)
-        {
-            seenTutorials.Add("false");
-        }
+        plantList = new List<PlantData>();
     }
 }

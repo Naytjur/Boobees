@@ -33,19 +33,20 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Garlic Mustard
   description: No description yet
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 7636367637897617607, guid: 5aa77dc9a1f3aed449d0a2a4c4afc782,
     type: 3}
   gardenVisual: {fileID: 7636367637897617607, guid: 5aa77dc9a1f3aed449d0a2a4c4afc782,
     type: 3}
   cataloguePrefab: {fileID: 7636367637897617607, guid: 5aa77dc9a1f3aed449d0a2a4c4afc782,
     type: 3}
-  sprite: {fileID: 21300000, guid: bcdc094e4dd05094aa62770933cd9b0d, type: 3}
+  sprite: {fileID: 21300000, guid: ea08ef2c741fb994e9e1717202727e03, type: 3}
   attractions:
   - {fileID: 11400000, guid: 75d96da0270fc5e49b36903aad489000, type: 2}
   correctPlots: 02000000
-  baseSpawnRate: 10
-  seedAmount: 0
+  baseSpawnRate: 100
+  seedAmount: 6
+  decayTime: 82800
   references:
     version: 2
     RefIds: []

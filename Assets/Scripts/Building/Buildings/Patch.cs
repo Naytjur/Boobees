@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class Patch : Building
 {
@@ -20,6 +22,7 @@ public class Patch : Building
         GameManager.instance.onStateChange += OnGameStateChange;
         BuildManager.onBuildingPlaced += UpdateModifierBuildingList;
         plot = GetComponent<Plot>();
+        UpdateModifierBuildingList();
     }
     public override void OnClick()
     {
@@ -52,13 +55,13 @@ public class Patch : Building
         }
     }
 
-    private void UpdateModifierBuildingList()
+    public void UpdateModifierBuildingList()
     {
         modifierBuildings.Clear();
 
-        foreach(Building building in GetSurroundingBuildings())
+        foreach (Building building in GetSurroundingBuildings())
         {
-            if(!modifierBuildings.Contains(building.buildingSO))
+            if (building.CanAffectPatch(plot))
             {
                 modifierBuildings.Add(building.buildingSO);
             }
@@ -71,7 +74,12 @@ public class Patch : Building
 
         foreach(Vector2Int tile in GetSurroundingTiles())
         {
-            Building building = BuildManager.instance.buildGrid.GetGridObject(tile.x, tile.y).building;
+            Building building = null;
+
+            if(BuildManager.instance.buildGrid.GetGridObject(tile.x, tile.y, out GridObject gridObject))
+            {
+                building = gridObject.building;
+            }
 
             if(building != null)
             {
@@ -83,5 +91,44 @@ public class Patch : Building
 
         }
         return buildings;
+    }
+
+    public void LoadPlants(List<PlantData> plants, float logoutTime)
+    {
+        if (plot == null)
+        {
+            plot = GetComponent<Plot>();
+        }
+
+        foreach (PlantData data in plants)
+        {
+            Transform plantTransform = Instantiate(PlantingManager.instance.GetPlantByID(data.plantID).gardenPrefab, plot.transform);
+            plantTransform.position = new Vector3(data.x, data.y, data.z);
+
+            Plant plant = plantTransform.GetComponent<Plant>();
+            PlantingManager.instance.plantList.Add(plant);
+            plot.AddPlant(plant);
+            plant.AssignPlot(plot.type);
+
+            // Start the decay timer for the loaded plant
+            plant.StartDecayTimer(data.timer, logoutTime);
+        }
+    }
+
+    public void SavePlants()
+    {
+        foreach (Plant plant in plot.plants)
+        {
+            if (plant != null)
+            {
+                float elapsedTime = plant.GetElapsedTime();
+                buildData.placedPlants.Add(new PlantData(plant.plantSO.id, plant.transform.position.x, plant.transform.position.y, plant.transform.position.z, elapsedTime));
+            }
+        }
+    }
+
+    public List<BuildingSO> GetModifierBuildings()
+    {
+        return modifierBuildings;
     }
 }

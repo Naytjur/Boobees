@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c822e7f279714a4585ab9d2cd5a9f82, type: 3}
   m_Name: Viper's Bugloss Mason Bee
   m_EditorClassIdentifier: 
-  id: 
+  id: 808015
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
@@ -40,7 +40,7 @@ MonoBehaviour:
     type: 3}
   cataloguePrefab: {fileID: 1056636721253544634, guid: 16f433e4524901641a2077caff9fe318,
     type: 3}
-  sprite: {fileID: 21300000, guid: bc8aad0e3aa6d7a43a9e3654e222b180, type: 3}
+  sprite: {fileID: 21300000, guid: 04fefda795d598449b6e2b53eaed0676, type: 3}
   attractions:
   - {fileID: 11400000, guid: e7f3171f7aa444a4192a94984079105f, type: 2}
   - {fileID: 11400000, guid: 8f86b53a5520b3241a2e056af231f393, type: 2}

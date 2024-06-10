@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c822e7f279714a4585ab9d2cd5a9f82, type: 3}
   m_Name: Davies Colletes
   m_EditorClassIdentifier: 
-  id: 
+  id: 808006
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
@@ -40,14 +40,14 @@ MonoBehaviour:
     type: 3}
   cataloguePrefab: {fileID: 6931672666160478595, guid: ca90826bb7ba2d646aad27cc1db9ef59,
     type: 3}
-  sprite: {fileID: 21300000, guid: 62c87ea954003f8439142fb59f2a5c03, type: 3}
+  sprite: {fileID: 21300000, guid: 181c9f2842bc35942bd46766dfb6177d, type: 3}
   attractions:
   - {fileID: 11400000, guid: 080dc4f5c417c9a4fb706a4c5713e728, type: 2}
   - {fileID: 11400000, guid: 175d4618a28e6c24bafcd601478e69f8, type: 2}
   type: 0
-  rarity: 0
-  pollenProduction: 1
-  honeyProduction: 2
+  rarity: 2
+  pollenProduction: 3
+  honeyProduction: 4
   insectFlySpeed: 1
   insectStayDuration: 4
   flyAwayDuration: 1.5

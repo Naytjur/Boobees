@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Patch 3
   m_EditorClassIdentifier: 
-  id: 0
+  id: 11
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
@@ -24,27 +24,33 @@ MonoBehaviour:
     m_LocalVariables: []
   itemDescriptionLocalizedString:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 3639133681418240
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   itemName: plot 3
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 6381339335208327123, guid: 1c7cf9ee8bc8cca408c11abdb54ed5e0,
     type: 3}
   gardenVisual: {fileID: 5492878927725313885, guid: 0855cea34be49934c988c4b1595b95b9,
     type: 3}
   cataloguePrefab: {fileID: 6381339335208327123, guid: 1c7cf9ee8bc8cca408c11abdb54ed5e0,
     type: 3}
-  sprite: {fileID: 21300000, guid: 6994f15e5e018c8428cac9d68ade1162, type: 3}
+  sprite: {fileID: 21300000, guid: 10060d46d29e19545aa341d182b6fe71, type: 3}
   width: 1
   height: 1
-  unlockLevel: 0
+  specificMaxBuildingLimit: 0
+  unlockLevel: 1
   cost: 0
+  maxCount: 1
+  count: 0
+  insectModifiers: []
+  affectedPlotTypes: 
+  insectRarityModifiers: []
   references:
     version: 2
     RefIds: []

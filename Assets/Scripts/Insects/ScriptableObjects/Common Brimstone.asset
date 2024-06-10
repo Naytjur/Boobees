@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c822e7f279714a4585ab9d2cd5a9f82, type: 3}
   m_Name: Common Brimstone
   m_EditorClassIdentifier: 
-  id: 
+  id: 808004
   itemNameLocalizedString:
     m_TableReference:
       m_TableCollectionName: GUID:38ae0a995648f0949ac8f896377c22fa
@@ -33,14 +33,14 @@ MonoBehaviour:
     m_LocalVariables: []
   itemName: Common Brimstone
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 4956082533760744419, guid: 125eb5c7944d94044a93f392b87c72c4,
     type: 3}
   gardenVisual: {fileID: 4956082533760744419, guid: 125eb5c7944d94044a93f392b87c72c4,
     type: 3}
   cataloguePrefab: {fileID: 1845595262676596583, guid: 296214c8615effd47a35e418391977ab,
     type: 3}
-  sprite: {fileID: 21300000, guid: 5bf28aee9835f2542a16139d6e402626, type: 3}
+  sprite: {fileID: 21300000, guid: 77f837f03f9aca6418da48c0991d09ed, type: 3}
   attractions:
   - {fileID: 11400000, guid: e7f3171f7aa444a4192a94984079105f, type: 2}
   - {fileID: 11400000, guid: ddbc41d651d03554fb3acf1372c30cd7, type: 2}

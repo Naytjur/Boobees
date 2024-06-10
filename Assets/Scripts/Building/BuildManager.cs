@@ -1,10 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build.Pipeline.Utilities;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using static UnityEditor.FilePathAttribute;
+
 
 public class BuildManager : MonoBehaviour, IDataPersistence
 {
@@ -32,7 +32,10 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     [Header("Buildings")]
     [SerializeField]
     private List<BuildingSO> allBuildings =  new List<BuildingSO>();
-    private List<BuildData> buildings = new List<BuildData>();
+    [SerializeField]
+    private Transform parentTransform;
+    private List<Building> buildings = new List<Building>();
+
 
     //Internal Variables
     public Grid buildGrid;
@@ -69,12 +72,18 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         buildGrid = new Grid(gridWidth, gridHeight, gridCellSize, gridOrigin.position);
     }
 
+    private void OnEnable()
+    {
+        DataPersistenceManager.postLoad += UpdateBuildings;
+    }
+
     private void Start()
     {
         GameManager.instance.onStateChange += UpdateActiveState;
         ScoreManager.onLevelUp += OnLeveledUp;
         onBuildingChanged += ChangeVisual;
         UpdateActiveState(GameManager.instance.state);
+        UpdateBuildings();
     }
 
     private void Update()
@@ -90,6 +99,11 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     {
         if (Input.GetMouseButton(0) && state != BuildState.Unselected && isActive)
         {
+            if(EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+            {
+                return;
+            }
+
             UpdateVisualPosition();
         }
     }
@@ -97,14 +111,20 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     //Save Load
     public void LoadData(GameData data)
     {
+        float logoutTime = data.logoutTime;
+
         foreach (BuildingSO building in allBuildings)
         {
             building.RemoveCount(building.count);
         }
 
-        foreach (BuildData building in data.buildingList)
+        foreach (BuildData buildData in data.buildingList)
         {
-            PlaceBuilding(building.gridX, building.gridZ, building.buildingID, building.buildingRotation);
+            Building building = PlaceBuilding(buildData.gridX, buildData.gridZ, buildData.buildingID, buildData.buildingRotation);
+            if (building is Patch patch)
+            {
+                patch.LoadPlants(buildData.placedPlants, logoutTime);
+            }
         }
     }
 
@@ -117,14 +137,16 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     public void SaveData(ref GameData data)
     {
         data.buildingList.Clear();
-        foreach(BuildData building in buildings)
-        {
-            data.buildingList.Add(building);
-        }
+        data.logoutTime = Plant.GetCurrentDateTimeAsFloat();
 
-        foreach (BuildData building in buildings)
+        foreach (Building building in buildings)
         {
-            data.buildingList.Add(building);
+            if (building is Patch patch)
+            {
+                patch.SavePlants();
+            }
+
+            data.buildingList.Add(building.buildData);
         }
     }
 
@@ -164,12 +186,14 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         }
 
         BuildData data = new BuildData(currentBuilding.id, x, z, (int)direction);
-        buildings.Add(data);
 
         Vector2Int rotationOffset = currentBuilding.GetRotationOffset(direction);
-        Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), currentBuilding, data, gridCellSize, Quaternion.Euler(0, currentBuilding.GetRotationDegrees(direction), 0), direction);
+        Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), currentBuilding, data, gridCellSize, Quaternion.Euler(0, currentBuilding.GetRotationDegrees(direction), 0), direction, parentTransform);
+        
+        buildings.Add(buildObject);
+        buildObject.buildData = data;
 
-        if(visual != null)
+        if (visual != null)
         {
             visual.gameObject.SetActive(false);
         }
@@ -179,24 +203,26 @@ public class BuildManager : MonoBehaviour, IDataPersistence
             buildGrid.SetValue(cell.x, cell.y, buildObject, (int) direction);
         }
 
-
         currentBuilding.AddCount(1);
 
-        buildings.Add(new BuildData(currentBuilding.id, x, z, (int) direction));
+        ScoreManager.instance.UpdateScores(0, -currentBuilding.cost);
 
         onBuildingPlaced?.Invoke();
         UpdateBuildState(BuildState.Unselected);
     }
 
-    private void PlaceBuilding(int x, int z, string id, int rotation)
+    private Building PlaceBuilding(int x, int z, string id, int rotation)
     {
         BuildingSO cur = GetBuildingByID(id);
         Vector2Int rotationOffset = cur.GetRotationOffset((BuildingSO.Dir) rotation);
         BuildData data = new BuildData(id, x, z, rotation);
-        buildings.Add(data);
-        Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), cur, data, gridCellSize, Quaternion.Euler(0, cur.GetRotationDegrees((BuildingSO.Dir) rotation), 0), (BuildingSO.Dir) rotation);
 
-        if(visual != null)
+        Building buildObject = Building.Create(buildGrid.GetWorldPosition(x + rotationOffset.x, z + rotationOffset.y), new Vector2Int(x, z), cur, data, gridCellSize, Quaternion.Euler(0, cur.GetRotationDegrees((BuildingSO.Dir) rotation), 0), (BuildingSO.Dir) rotation, parentTransform);
+
+        buildings.Add(buildObject);
+        buildObject.buildData = data;
+
+        if (visual != null)
         {
             visual.gameObject.SetActive(false);
         }
@@ -208,9 +234,9 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
         cur.AddCount(1);
 
-        buildings.Add(new BuildData(id, x, z, rotation));
-
         onBuildingPlaced?.Invoke();
+
+        return buildObject;
     }
 
     public void MoveBuilding(Building building)
@@ -248,7 +274,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     {
         CancelCurrent();
         RemoveFromGrid(currentMover);
-        buildings.Remove(currentMover.buildData);
+        buildings.Remove(currentMover);
         currentBuilding.AddCount(-1);
         ScoreManager.instance.UpdateScores(0, currentBuilding.cost / 2);
         Destroy(currentMover.gameObject);
@@ -289,6 +315,22 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
         visual.transform.position = Vector3.Lerp(visual.transform.position, lastTarget + new Vector3(rotationOffset.x, 0, rotationOffset.y), Time.deltaTime * 20f);
         visual.transform.rotation = Quaternion.Euler(0, currentBuilding.GetRotationDegrees(direction), 0);
+
+        buildGrid.GetXZ(lastTarget, out int x, out int z);
+        if (!CheckValidBuildPosition(currentBuilding, x, z))
+        {
+            foreach (MeshRenderer renderer in visualRenderers)
+            {
+                renderer.material.SetColor("_Color", unableColor);
+            }
+        }
+        else
+        {
+            foreach (MeshRenderer renderer in visualRenderers)
+            {
+                renderer.material.SetColor("_Color", ableColor);
+            }
+        }
     }
 
     private void UpdateVisualPosition()
@@ -306,21 +348,6 @@ public class BuildManager : MonoBehaviour, IDataPersistence
             }
 
             lastTarget = hit;
-
-            if (!CheckValidBuildPosition(currentBuilding, x, z))
-            {
-                foreach (MeshRenderer renderer in visualRenderers)
-                {
-                    renderer.material.SetColor("_Color", unableColor);
-                }
-            }
-            else
-            {
-                foreach (MeshRenderer renderer in visualRenderers)
-                {
-                    renderer.material.SetColor("_Color", ableColor);
-                }
-            }
 
             if (!hasPositionOnGrid)
             {
@@ -346,7 +373,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
         foreach (Vector2Int cell in building.GetGridPositions(new Vector2Int(x, z), direction))
         {
-            if (!buildGrid.IsPositionOnGrid(cell.x, cell.y) || buildGrid.GetGridObject(cell.x, cell.y).building != null)
+            if (!buildGrid.IsPositionOnGrid(cell.x, cell.y) || !buildGrid.GetGridObject(cell.x, cell.y, out GridObject tile) || tile.building != null)
             {
                 return false;
             }
@@ -393,6 +420,15 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         onStateChanged?.Invoke(state);
     }
 
+    private void UpdateBuildings()
+    {
+        foreach (BuildingSO building in allBuildings)
+        {
+            building.TryUnlock(ScoreManager.instance.playerLevel);
+            building.TryAdjustMaxCount(ScoreManager.instance.playerLevel);
+        }
+    }
+
     //Getters and Setters
     public void SetCurrentBuilding(BuildingSO building)
     {
@@ -422,6 +458,7 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         
         if (Mouse3D.GetMouseWorldPosition(LayerMask.GetMask("BuildSurface"), out Vector3 pos))
         {
+            pos += new Vector3(0.001f, 0, 0.001f);
             buildGrid.GetXZ(pos, out int x, out int z);
 
             if (buildGrid.IsPositionOnGrid(x, z))
@@ -468,10 +505,6 @@ public class BuildManager : MonoBehaviour, IDataPersistence
 
     private void OnLeveledUp(int level)
     {
-        foreach(BuildingSO building in allBuildings)
-        {
-            building.TryUnlock(level);
-            building.TryAdjustMaxCount(level);
-        }
+        UpdateBuildings();
     }
 }

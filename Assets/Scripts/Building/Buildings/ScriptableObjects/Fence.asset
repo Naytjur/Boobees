@@ -24,29 +24,36 @@ MonoBehaviour:
     m_LocalVariables: []
   itemDescriptionLocalizedString:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 3638308695375872
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   itemName: Fence
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 4195216918634333592, guid: 0ed19c8dfb4a6a24ca6fcb8e35f03818,
     type: 3}
   gardenVisual: {fileID: 1194263165967490117, guid: 9c0cf775121800c4887f5f36af3fbc56,
     type: 3}
   cataloguePrefab: {fileID: 4195216918634333592, guid: 0ed19c8dfb4a6a24ca6fcb8e35f03818,
     type: 3}
-  sprite: {fileID: 21300000, guid: 52e0a4f02aecd4944af223aa3ff9aa23, type: 3}
+  sprite: {fileID: 21300000, guid: 41b6d413a2e614e44a18343a28520fe6, type: 3}
   width: 1
   height: 2
+  specificMaxBuildingLimit: 2
   unlockLevel: 2
-  cost: 10
-  maxCount: 31
-  count: 3
+  cost: 20
+  maxCount: 0
+  count: 0
+  insectModifiers:
+  - insectType: 0
+    modifySpawnRate: 1
+    modifierAmount: 5
+  affectedPlotTypes: 0100000002000000
+  insectRarityModifiers: []
   references:
     version: 2
     RefIds: []

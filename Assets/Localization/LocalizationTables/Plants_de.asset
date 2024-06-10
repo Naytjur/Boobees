@@ -17,7 +17,215 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5d0db34fa9ee9cf49bb21cf4ec1fc93e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 70705414144
+    m_Localized: Klatschmohn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244376129175552
+    m_Localized: Gemeine Akelei
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244622829748224
+    m_Localized: Wiesen-Schaumkraut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246163615711232
+    m_Localized: Purpurrote Taubnessel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246707335921664
+    m_Localized: Acker-Wachtelweizen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 247911445102592
+    m_Localized: "Langbl\xE4ttriger Ehrenpreis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248526187462656
+    m_Localized: Knoblauchsrauke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248714025172992
+    m_Localized: "Gew\xF6hnlicher Blutweiderich"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248941658439680
+    m_Localized: Skabiose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249951630065664
+    m_Localized: Rainfarn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250202617217024
+    m_Localized: Sumpf-Hornklee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250925287407616
+    m_Localized: "Gew\xF6hnlicher Natternkopf"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251287054516224
+    m_Localized: Echtes Leinkraut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251874995273728
+    m_Localized: "Wildes Stiefm\xFCtterchen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252320203866112
+    m_Localized: Pflanzen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244243413008384
+    m_Localized: "\u2022 W\xE4chst auf Groben Feldern und war vor der \xDCbernahme
+      der Landwirtschaft h\xE4ufig auf Feldern zu sehen, heute meist nur noch an
+      Stra\xDFenr\xE4ndern.\r\n\u2022 Aufgrund der Intensivierung der Landwirtschaft
+      kommt es in den Niederlanden nicht mehr so \u200B\u200Bh\xE4ufig vor.\r\n\u2022
+      Sie produziert keinen Nektar, sondern nur Pollen und nach der Best\xE4ubung
+      fallen die Bl\xFCtenbl\xE4tter ab.\r\n\r\nFun fact: Der Mohn mag f\xFCr das
+      menschliche Auge rot sein, f\xFCr Bienen ist dies aufgrund der UV-Absorption
+      jedoch nicht der Fall."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244424611135488
+    m_Localized: "\u2022 W\xE4chst auf Wilden Feldern und bevorzugt n\xE4hrstoffreiche,
+      feuchte B\xF6den und kommt an feuchten Orten vor.\r\n\u2022 Die Samen sind
+      giftig beim Verzehr.\r\n\u2022 Ist recht widerstandsf\xE4hig und d\xFCrretolerant.\r\n\u2022
+      Zieht Kolibris, Schmetterlinge und Schw\xE4rmer an.\r\n\r\nFun Fact: Aufgrund
+      ihrer einzigartigen Form ist die Bl\xFCte gut geeignet, langz\xFCngige Nektarfresser,
+      wie Motten und Kolibris, anzulocken."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244934642696192
+    m_Localized: "\u2022 W\xE4chst auf Wilden Feldern und mag feuchte, n\xE4hrstoffreiche
+      B\xF6den, besonders an Stra\xDFenr\xE4ndern und in feuchten Feldern.\r\n\u2022
+      Seine nektarreichen Bl\xFCten und leuchtenden Farben ziehen eine Vielzahl von
+      Best\xE4ubern an, darunter Bienen, Schmetterlinge und Schwebfliegen, und tragen
+      so zur Erhaltung der lokalen \xD6kosysteme bei.\r\n\u2022 Es ist eine wichtige
+      Nahrungsquelle f\xFCr mehrere Raupenarten.\r\n\r\nFun Fact: Das Wiesen-Schaumkraut
+      verbreitet seine Samen durch einen Sprengmechanismus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246386417139712
+    m_Localized: "\u2022 W\xE4chst auf Groben Feldern und ist auf Rasenfl\xE4chen,
+      entlang von Stra\xDFen, G\xE4rten und Wiesen zu finden.\r\n\u2022 Obwohl die
+      Purpurrote Taubnessel im Fr\xFChjahr eine wichtige Nahrungsquelle f\xFCr Best\xE4uber
+      ist, kann sie sich auch selbst bet\xE4uben.\r\n\u2022 Sie lockt Hummeln und
+      andere Bienenarten an.\r\n\r\nFun Fact: Purpurrote Taubnesseln haben trotz
+      ihres Namens nichts mit Brennnesseln zu tun und k\xF6nnen bedenkenlos ber\xFChrt
+      werden, ohne gestochen zu werden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246830581350400
+    m_Localized: "\u2022 W\xE4chst auf Groben Feldern, insbesondere auf trockenen,
+      kalkhaltigen B\xF6den, und bl\xFCht im Sommer. \r\n\u2022 Die violette Farbe
+      macht die Pflanze f\xFCr Best\xE4uber interessanter.\r\n\u2022 F\xFChrt Photosynthese
+      durch, absorbiert aber Wasser und N\xE4hrstoffe von einer Wirtspflanze, in
+      diesem Fall Weizen/Getreide.\r\n\u2022 Lockt Hummeln an, aber nur solche mit
+      einer langen Zunge k\xF6nnen an den Nektar gelangen\r\n\r\nFun Fact: Die Pflanze
+      war auch als Armutskraut bekannt. Fr\xFCher wurden die Menschen daf\xFCr bezahlt,
+      die Pflanze auszurei\xDFen und mit Vorsicht zum Verbrennen weggetragen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 247988779679744
+    m_Localized: "\u2022 W\xE4chst auf Wilden Feldern und ist normalerweise entlang
+      von Fl\xFCssen zu finden. Sie bl\xFCht im Sommer und ist in den Niederlanden
+      sehr verbreitet.\r\n\u2022 Eine Selbstbest\xE4ubung ist sehr unwahrscheinlich,
+      es kann jedoch zu einer Nachbarbest\xE4ubung kommen, bei der Pollen von einer
+      h\xF6heren Bl\xFCte auf das Staubblatt einer niedrigeren Bl\xFCte fallen.\r\n\u2022
+      Es lockt zahlreiche Hummel- und Schmetterlingsarten an.\r\n\r\nFun Fact: Der
+      Garten-Ehrenpreis kann sich auch \xFCber die Wurzeln fortpflanzen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248555061051392
+    m_Localized: "\u2022 W\xE4chst auf Rand-Feldern und breitet sich schnell entlang
+      von Stra\xDFenr\xE4ndern, Wegen und Zaunlinien aus.\r\n\u2022 Es kann sich
+      selbst befruchten oder von Best\xE4ubern befruchtet werden. Da sie sehr invasiv
+      ist, sollte man sie am besten nicht in G\xE4rten pflanzen.\r\n\u2022 Die im
+      Knoblauchsrauken enthaltenen Chemikalien sind f\xFCr die Larven der einheimischen
+      Schmetterlinge giftig.\r\n\r\nFun Fact: Knoblauchsrauke wurde als K\xFCchenkraut
+      in Nordamerika eingef\xFChrt, ist aber seitdem zu einer weit verbreiteten invasiven
+      Art geworden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248832648478720
+    m_Localized: "\u2022 W\xE4chst auf Rand-Feldern und findet sich normalerweise
+      in Ufern\xE4he, kann aber auch an trockeneren Stellen in G\xE4rten wachsen.
+      \r\n\u2022 Diese Pflanze ist eine der wenigen Blumen in den Niederlanden, die
+      Pflanzen mit langer, mittellanger und kurzer H\xF6he haben kann.\r\n\u2022
+      Bl\xFCht mitten im Sommer und lockt Schmetterlinge und Bienen an.\r\n\r\nFun
+      Fact: Blutweiderich kann j\xE4hrlich \xFCber zwei Millionen Samen pro Pflanze
+      produzieren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249011434881024
+    m_Localized: "\u2022 W\xE4chst auf Wilden Feldern und kommt in artenreichen Graslandschaften
+      vor. Geh\xF6rt zur Familie der Gei\xDFblattgew\xE4chse und bl\xFCht zwischen
+      Mai und Herbst. \r\n\u2022 Hat flache Bl\xFCten, eine reiche Nektarproduktion
+      und eine lange Bl\xFCtezeit, sodass es viele Insektenarten anzieht. \r\n\u2022
+      Scabiosa kann neben Best\xE4ubern auch n\xFCtzliche Insekten wie Marienk\xE4fer
+      und Schwebfliegen anlocken.\r\n\r\nFun Fact: Fr\xFCher wurde angenommen, dass
+      es aufgrund seiner rauen Bl\xE4tter Kr\xE4tze und andere Hauterkrankungen heilt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249994005118976
+    m_Localized: "\r\u2022 W\xE4chst auf Wilden Feldern und mag n\xE4hrstoffreiche
+      Bedingungen auf jedem Boden, au\xDFer auf Torf. \r\n\u2022 Kann in unebenem
+      Gel\xE4nde mit Beifu\xDF eine Pflanzengemeinschaft bilden, die Tieren wie Schnecken
+      Nahrung bietet.\r\n\u2022 Geh\xF6rt zur Familie der Korbbl\xFCtler und ist
+      eine giftige Pflanze. Zieht verschiedene Schmetterlinge und Bienen an.\r\n\u2022
+      Fr\xFCher wurde es als Wurmschutzmittel verwendet.\r\n\r\nFun Fact: Rainfarn
+      wurde einst als nat\xFCrliches Konservierungsmittel bei Beerdigungen verwendet,
+      um Insekten abzuwehren und den Verfall zu verz\xF6gern."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250275908485120
+    m_Localized: "\u2022 W\xE4chst auf Wilden Feldern und liebt feuchte Orte. \n\u2022
+      Erkennbar ist es an der Bl\xFCtenstruktur aus 5 Bl\xFCtenbl\xE4ttern. Es lockt
+      Insekten mit dem oberen Bl\xFCtenblatt an, das als \u201EFlagge\u201C bezeichnet
+      wird.\r\n\u2022 Insekten m\xFCssen auf den mittleren Bl\xFCtenbl\xE4ttern landen,
+      um die unteren Bl\xFCtenbl\xE4tter zu \xF6ffnen.\r\n\u2022 Gibt Nektar und
+      Pollen und ist eine Wirtspflanze f\xFCr mehrere Schmetterlingsarten. \r\n\u2022
+      Sie lockt sowohl seltene als auch h\xE4ufig vorkommende Bienenarten an, ist
+      aber auch eine wertvolle Nahrungspflanze f\xFCr viele Motten.\r\n\r\nFun Fact:
+      Sumpf-Hornklee wird entlang von Stra\xDFenr\xE4ndern verwendet, um Wind- und
+      Wassererosion zu kontrollieren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251009370619904
+    m_Localized: "\u2022 W\xE4chst auf Groben Feldern und liebt sandige Standorte
+      wie D\xFCnen, obwohl sie in G\xE4rten auf verschiedenen B\xF6den, sogar Lehmb\xF6den,
+      \xFCberleben k\xF6nnen.\r\n\u2022 Bl\xFCht von Mai bis September und hat eine
+      lange Nektarperiode.\r\n\u2022 Im Gegensatz zu vielen anderen Blumen produziert
+      der Gew\xF6hnliche Natternkopf den ganzen Tag \xFCber Nektar, wobei dieser
+      bei hei\xDFem oder regnerischem Wetter gesch\xFCtzt ist, sodass er \xFCber
+      viele Wochen hinweg eine sehr zuverl\xE4ssige Nektarquelle darstellt\r\n\u2022
+      Sie lockt Schmetterlinge und Bienen an.\r\n\r\nFun Fact: Der Pollen des Gew\xF6nhlichen
+      Natterkopfes ist tats\xE4chlich blau."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251329807056896
+    m_Localized: "\u2022 W\xE4chst auf Wilden Feldern und kommt typischerweise an
+      Stra\xDFenr\xE4ndern und Brachfl\xE4chen oder auf Feldern, Weiden, Waldr\xE4ndern
+      und Weideland vor. \r\n\u2022 Bevorzugt Standorte mit gut durchl\xE4ssigen
+      Sand- oder Kiesb\xF6den.\r\n\u2022 Die Pflanzen beginnen aus den Wurzeln zu
+      wachsen, sobald sich der Boden im Fr\xFChjahr erw\xE4rmt.\r\n\u2022 Nur Hummeln
+      k\xF6nnen die Bl\xFCten \xF6ffnen, indem sie mit ihrem gesamten K\xF6rpergewicht
+      auf das untere Bl\xFCtenblatt dr\xFCcken.\r\n\r\nFun Fact: Die Blume kann durch
+      Dr\xFCcken ge\xF6ffnet werden, sodass sie wie ein L\xF6wenmaul aussieht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251905659830272
+    m_Localized: "\u2022 W\xE4chst auf Rand-Feldern und ist auf Wiesen oder feuchten
+      W\xE4ldern zu finden. \r\n\u2022 Alle Wildarten bl\xFChen fr\xFCh im Fr\xFChling,
+      einige Kultursorten bl\xFChen jedoch sp\xE4ter.\r\n\u2022 Die Bl\xFCten des
+      Wilden Stiefm\xFCtterchens sind essbar.\r\n\u2022 Es lockt Best\xE4uber wie
+      Hummeln an, kann sich aber auch selbst befruchten.\r\n\r\nFun Fact: Wilde Stiefm\xFCtterchen
+      wurden schon immer in Liebestr\xE4nken verwendet."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

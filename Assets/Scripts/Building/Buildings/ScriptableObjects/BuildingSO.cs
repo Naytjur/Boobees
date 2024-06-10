@@ -5,25 +5,46 @@ using System.Runtime.Serialization;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[System.Serializable]
+public struct InsectModifier
+{
+    public InsectSO.Type insectType; // The type of insect this modifier affects
+    public bool modifySpawnRate;     // True if modifying spawn rate, false if modifying rarity
+    public float modifierAmount;     // The amount to modify by
+}
 
 [CreateAssetMenu(fileName = "New Building", menuName = "Create Building")]
 public class BuildingSO : ItemInfo
 {
-    //Luiz Garbage
-    // private ShopItem item;
-    // [ReadOnly()] public PlaceableObjectData data = new PlaceableObjectData();
-
-
-    //Luiz Garbage
     public int width;
     public int height;
+    public int specificMaxBuildingLimit;
 
     public int unlockLevel;
     public int cost;
 
     public int maxCount;
     public int count;
+    public List<InsectModifier> insectModifiers = new List<InsectModifier>();
+    public List<PlotType> affectedPlotTypes = new List<PlotType>();
 
+    
+
+    [System.Serializable]
+    public struct InsectRarityModifier
+    {
+        public InsectSO.Type insectType;
+        public RarityModifier rarityModifier;
+    }
+
+    [System.Serializable]
+    public struct RarityModifier
+    {
+        public Rarity rarity;
+        public float modifierAmount;
+    }
+
+    public List<InsectRarityModifier> insectRarityModifiers = new List<InsectRarityModifier>();
     public enum Dir
     {
         Down,
@@ -144,23 +165,4 @@ public class BuildingSO : ItemInfo
     {
         maxCount = Mathf.Max(0, 1 + (level - unlockLevel));
     }
-    //More Luiz Garbage
-    // public void Initialize(ShopItem shopItem)
-    // {
-    //     item = shopItem;
-    //     data.assetName = item.Name;
-    //     data.ID = SaveData.GenerateId();
-    // }
-
-    // public void Initialize(ShopItem shopItem, PlaceableObjectData objectData)
-    // {
-    //     item = shopItem;
-    //     data = objectData;
-    // }
-
-    // private void OnApplicationQuit()
-    // {
-    //     data.position = transform.postion;
-
-    // }
 }

@@ -10,19 +10,19 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     public TutorialMessage tutorialMessagePlot;
     public TutorialMessage tutorialMessageUnlock;
     public TutorialMessage tutorialMessageScore;
-    public TutorialMessage tutorialMessageLevel;
+    public TutorialMessage tutorialMessageCanLevel;
 
     public List<TutorialMessage> tutorialMessages = new List<TutorialMessage>();
 
     public LanguageManager languageManager;
+    public ScoreManager scoreManager;
+
+    private bool postLoadCompleted = false;
 
     private void Awake()
     {
-        BuildManager.onBuildingPlaced += OnBuildingPlaced;
-        ScoreManager.onScoreChanged += OnScoreChanged;
-        ScoreManager.onLevelUp += OnLevelUp;
-        DataPersistenceManager.postLoad += PostLoad;
-        PlantingManager.instance.onPlantUnlocked += OnPlantUnlocked;
+        // Temporarily disable event subscription for onBuildingPlaced
+        postLoadCompleted = false;
 
         TutorialMessage[] messages = FindObjectsOfType<TutorialMessage>();
 
@@ -32,17 +32,34 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
             message.manager = this;
         }
     }
+    
+    void Start()
+    {
+        ScoreManager.onScoreChanged += OnScoreChanged;
+        DataPersistenceManager.postLoad += PostLoad;
+        PlantingManager.instance.onPlantUnlocked += OnPlantUnlocked;
+    }
+
+    private void OnEnable()
+    {
+        BuildManager.onBuildingPlaced += OnBuildingPlaced;
+    }
+
+    private void OnDisable()
+    {
+        BuildManager.onBuildingPlaced -= OnBuildingPlaced;
+    }
+
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            if (tutorialMessageStart2.beenSeen == "false" && tutorialMessageStart.beenSeen == "true")
+            if (tutorialMessageStart.beenSeen == "true")
             {
                 tutorialMessageStart2.ShowTutorial();
             }
         }
     }
-    
 
     public void LoadData(GameData data)
     {
@@ -57,8 +74,8 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
             }
             Debug.Log($"Tutorial {i} beenSeen: {tutorialMessages[i].beenSeen}");
         }
-        
     }
+
     public void SaveData(ref GameData data)
     {
         List<string> seenTutorials = new List<string>();
@@ -71,13 +88,19 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     }
 
     private void PostLoad()
-    {   
+    {
         LanguageTutorial();
+        Debug.Log("PeeperSweeper");
+        // Enable the flag to allow OnBuildingPlaced to execute
+        postLoadCompleted = true;
     }
 
     private void OnBuildingPlaced()
     {
-        tutorialMessagePlot.ShowTutorial();
+        if (postLoadCompleted)
+        {
+            tutorialMessagePlot.ShowTutorial();
+        }
     }
 
     private void OnScoreChanged(int pollen, int honey)
@@ -86,16 +109,12 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
         {
             tutorialMessageScore.ShowTutorial();
         }
-    }
 
-    private void OnLevelUp(int level)
-    {
-        if (level == 2)
+        if ((pollen >= 50 && honey >=20))
         {
-            tutorialMessageLevel.ShowTutorial();
+            tutorialMessageCanLevel.ShowTutorial();
         }
     }
-
     private void OnPlantUnlocked(PlantSO plant)
     {
         tutorialMessageUnlock.ShowTutorial();
@@ -105,13 +124,13 @@ public class TutorialManager : MonoBehaviour, IDataPersistence
     {
         if (tutorialMessageStart.beenSeen != "true")
         {
-            Debug.Log("PeeperSweeper");
             tutorialMessageStart.ShowTutorial();
         }
     }
 
     public void LanguageTutorial()
     {
+
         if (tutorialMessageLanguage.beenSeen == "false")
         {
             tutorialMessageLanguage.ShowTutorial();

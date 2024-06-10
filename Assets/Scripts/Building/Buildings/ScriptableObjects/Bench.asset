@@ -24,27 +24,36 @@ MonoBehaviour:
     m_LocalVariables: []
   itemDescriptionLocalizedString:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 3638309873975296
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   itemName: Bench
   description: 
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 4138045857846625545, guid: 9ff32137ff07dca4a88da4bc1e47ae24,
     type: 3}
   gardenVisual: {fileID: 4138045857846625545, guid: 7e1fd97f729914d4a95e48590cc7784e,
     type: 3}
   cataloguePrefab: {fileID: 4138045857846625545, guid: 9ff32137ff07dca4a88da4bc1e47ae24,
     type: 3}
-  sprite: {fileID: 21300000, guid: f7f499f727741d04688501653a0a0aab, type: 3}
+  sprite: {fileID: 21300000, guid: d24752031a7b4664ab933653f4e1f213, type: 3}
   width: 1
   height: 2
+  specificMaxBuildingLimit: 2
   unlockLevel: 5
   cost: 50
+  maxCount: 0
+  count: 0
+  insectModifiers:
+  - insectType: 1
+    modifySpawnRate: 1
+    modifierAmount: 5
+  affectedPlotTypes: 0000000002000000
+  insectRarityModifiers: []
   references:
     version: 2
     RefIds: []

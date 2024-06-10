@@ -23,11 +23,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 244243413008384
-    m_Localized: no description yet
+    m_Localized: "\u2022 Grows on ruderal plots and it used to be seen a lot on field
+      before argriculture took over, now mostly just on roadsides.\r\n\u2022 It is
+      not as common in the Netherlands anymore due to intensivation of the agricultur.\r\n\u2022
+      It does not produce Nectar, just pollen and after pollonation, the petals fall
+      off.\r\n\r\nFun Fact: The common poppy might be red to the human's eye, but
+      for bees they aren't because of UV absorbation."
     m_Metadata:
       m_Items: []
   - m_Id: 244424611135488
-    m_Localized: no description yet
+    m_Localized: "\u2022 Grows on wild plots and prefers rich, moist soils and can
+      be found in damp places.\r\n\u2022 The seeds are poisonous if ingested.\r\n\u2022
+      Is also quite resilient and drought-tolerant.\r\n\u2022 Attracts hummingbirds,
+      butterflies and hawkmoths.\r\n\r\nFun fact: The blossom's unique shape makes
+      it well equipped to attract long-tongued nectar feeders, namely moths and hummingbirds."
     m_Metadata:
       m_Items: []
   - m_Id: 244376129175552
@@ -39,18 +48,25 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 244934642696192
-    m_Localized: "\u2022\tAlso known as Cardamine pratensis\r\n\u2022\tPerennial
-      herb found across Europe and western Asia\r\n\u2022\tBlooming on spikes close
-      to water\r\n\u2022\tIts name, pratensis, means 'meadow' in Latin.\r"
+    m_Localized: "\u2022 Grows on wild plots and likes damp rich soil, especially
+      on road verges and in damp fields.\r\n\u2022 Its nectar-rich flowers and  vibrant
+      colors attract a variety of pollinators, including bees, butterflies, and hoverflies,
+      helping to sustain local ecosystems.\r\n\u2022 It is an important food source
+      fo several species of caterpillars.\r\n\r\nFun fact: The Cuckoo flower disperses
+      its seeds through an explosive mechanism.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 246163615711232
-    m_Localized: Red Deadnettle
+    m_Localized: Purple Deadnettle
     m_Metadata:
       m_Items: []
   - m_Id: 246386417139712
-    m_Localized: "\u2022\tcolour of the flowers of dead-nettles varies \r\n\u2022\twhite,
-      yellow and purple to a deep purple."
+    m_Localized: "\u2022 Grows on ruderal plots  and can be found in lawns, along
+      roads, gardens and meadows.\r\n\u2022 Allthough being an important food source
+      for pollinators in spring, purple deadnettle also self-pollinates.\r\n\u2022
+      It attracts bumblebees and other bee species.\r\n\r\nFun fact: Despite their
+      name, dead nettles are not related to stinging nettles and are safe to touch
+      without getting stung."
     m_Metadata:
       m_Items: []
   - m_Id: 246707335921664
@@ -58,10 +74,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 246830581350400
-    m_Localized: "\u2022\tBuff-tailed bumblebees sometimes gnaw a hole in the side
-      of the flower to access the nectar\r\n\u2022\tBoasts pink or purple flowers
-      atop tall stems\n\u2022\tBlooming from June to September\r\n\u2022\tThrives
-      in dry, chalky habitats across Western Europe.\r\n"
+    m_Localized: "\u2022 Grows on ruderal plots, particularly on dry chalky soils
+      and blooms in summer. The purple color helps make the plant more remarkable
+      for pollinators.\r\n\u2022 Does do photosynthesis but absorbs water and nutrients
+      from a hostplant, in this case wheat/grain.\r\n\u2022 Attracts Bumblebebees,
+      but only ones with a long tongue can access the nectar\r\n\r\nFun Fact: Known
+      locally as poverty weed, people were once paid to pull up the plant and carefully
+      carry it off site to be burnt."
     m_Metadata:
       m_Items: []
   - m_Id: 247911445102592
@@ -69,8 +88,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 247988779679744
-    m_Localized: "\u2022\tranging from groundcovers only a few inches tall to upright
-      plants\r\n\u2022\ttall, spiky blooms\r"
+    m_Localized: "\u2022 Grows on wild plots and can be usually found alongside rivers.
+      It blooms in summer and is very common in the Netherlands.\r\n\u2022 Self-pollination
+      is very unlikely but neighbor pollination can happen, where pollen from a higher
+      flower falls onto the stamen of a lower flower.\r\n\u2022 It attracts multiple
+      species of bumblebees and butterflies.\r\n\r\nFun Fact: The garden speedwell
+      can also procreate via the roots.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 248526187462656
@@ -78,7 +101,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 248555061051392
-    m_Localized: no description yet
+    m_Localized: "\u2022 Grows on edge vegetation plots and spreads quickly along
+      roadsides, trails and fence lines.\r\n\u2022 It can self-fertilize or be fertilized
+      by pollinators. It is highly invasive, that is why it is best to not plant
+      it in gardens.\r\n\u2022 Chemicals in garlic mustard are toxic to the larvae
+      of the native butterflies.\r\n\r\nFun fact: Garlic mustard was introduced to
+      North America as a culinary herb but has since become a widespread invasive
+      species."
     m_Metadata:
       m_Items: []
   - m_Id: 248714025172992
@@ -86,7 +115,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 248832648478720
-    m_Localized: no description yet
+    m_Localized: "\u2022 Grows on Edge vegetation Plots and usually found around
+      waterfronts, but can also grow in dryer spots in gardens.. \r\n\u2022 This
+      plant is one of the only flowers in the netherlands that can have plants with
+      long,medium long and short style.\r\n\u2022 Blooms in the middle of summer
+      and attracts butterflies and bees.\r\n\r\nFun Fact: Purple loosestrife can
+      produce over two million seeds per plant yearly."
     m_Metadata:
       m_Items: []
   - m_Id: 248941658439680
@@ -94,9 +128,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 249011434881024
-    m_Localized: "\u2022\tSouthern European annual \r\n\u2022\tdeeply cut basal leaves
-      and feathery stem leaves\r\n\u2022\tproduces fragrant 5-cm flower heads \r\n\u2022\twhite,
-      rose, crimson, blue, or deep mahogany purple.\r"
+    m_Localized: "\u2022 Grows on wild plots and is located in species-rich graslands.
+      Belongs to the Honeysuckle family and blooms between may and autumn. \r\n\u2022
+      Has shallow flowers, rich nectar production and long bloom period, so it attracts
+      many insects species. \r\n\u2022 Aside from pollinators, Scabiosa can also
+      attract beneficial insects such as ladybugs and hoverflies.\r\n\r\nFun Fact:
+      Historically, it was believed to cure scabies and other skin conditions due
+      to its rough leaves."
     m_Metadata:
       m_Items: []
   - m_Id: 249951630065664
@@ -104,7 +142,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 249994005118976
-    m_Localized: no description yet
+    m_Localized: "\u2022 Grows on wild plots and likes nutrient rich circumstances
+      on any soil, except fromt peat. \r\n\u2022 Can form a a plant community with
+      Mugwort in ruderal terrain, which offers food for animals like snails.\r\n\u2022
+      Belongs to the daisy family and is a poisinous plant. Attracts various Butterflies
+      and Bees.\r\n\u2022 It used to be used as a worm repellant.\r\n\r\nFun Fact:
+      Tansy was once used as a natural preservative in funerals to ward off insects
+      and delay decomposition."
     m_Metadata:
       m_Items: []
   - m_Id: 250202617217024
@@ -112,8 +156,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 250275908485120
-    m_Localized: "\u2022\tshort lived perennial legume\r\n\u2022\tAdapted to humid,
-      temperate regions\r\n\u2022\tAdapted to a wide range of soils."
+    m_Localized: "\u2022 Grows on wild plots and loves damp places. It is recognizable
+      by the flower structure made of 5 petals. It lures insects with the top petal
+      calles the \"flag\".\r\n\u2022 Insects have to land on the middle petals to
+      open up the bottom petals.\r\n\u2022 Gives Nectar and Pollen and is a hostplant
+      for multiple butterfly species. \r\n\u2022 It attracts both rare and common
+      bee species but its also a valuable food plant for many moths.\r\n\r\nFun fact:
+      Bird's-foot Trefoil is used along roadsides to control wind and water erosion."
     m_Metadata:
       m_Items: []
   - m_Id: 250925287407616
@@ -121,9 +170,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 251009370619904
-    m_Localized: "\u2022\tStriking plant with rough, hairy leaves and vibrant blue
-      flowers that start pink\r\n\u2022\tNative to Europe, western and central Asia\r\n\u2022\tBlooms
-      from May to September"
+    m_Localized: "\u2022 Grows on ruderal plots and loves sandy places like dunes
+      eventhough in gardens they can maintain in different soils, even clay.\r\n\u2022
+      Blooms from May to September and has a large nectar period.\r\n\u2022 Unlike
+      many flowers, Viper's Bugloss produces nectar throughout the day and the nectar
+      is protected in hot or rainy weather, producing a very reliable nectar source
+      over many weeks\r\nI\u2022 t attracts Butterflies and Bees.\r\n\r\nFun Fact:
+      The Pollen of the Viper's Bugloss is actually blue."
     m_Metadata:
       m_Items: []
   - m_Id: 251287054516224
@@ -131,7 +184,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 251329807056896
-    m_Localized: no description yet
+    m_Localized: "\u2022 Grows on wild plots and is typically found on roadsides
+      and waste areas or in fields, pastures, edges of forests and rangeland. \r\n\u2022
+      It prefers sites with well-drained sandy or gravelly soils.\r\n\u2022 The plants
+      begin growing from the roots as soon as the soil warms in early spring.\r\n\u2022
+      Only Bumbleebees can open the flowers by pressing their full body weight on
+      the bottom petal.\r\n\r\nFun Fact: The flower can be pressed to be opened to
+      make it look like a lions mouth."
     m_Metadata:
       m_Items: []
   - m_Id: 251874995273728
@@ -139,9 +198,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 251905659830272
-    m_Localized: "\u2022\tEuropean wildflower\r\n\u2022\tAlso found in North America\r\n\u2022\tvarious
-      colors, including purple, blue, yellow, or white\r\n\u2022\toften with a sought-after
-      tricolor pattern. \r"
+    m_Localized: "\u2022 Grows on edge vegetation plots and can be found in meadows
+      or damp woods. \r\n\u2022 All wild species bloom early in the spring but some
+      cultivated varieties bloom later.\r\n\u2022 The blossom of the wild pansy is
+      edible.\r\n\u2022 It attracts pollinators like bumblebess but they are also
+      capable of self-fertilizing.\r\n\r\nFun fact: Wild pansies have been used historically
+      in love potions."
     m_Metadata:
       m_Items: []
   - m_Id: 252320203866112

@@ -58,6 +58,80 @@ MonoBehaviour:
     m_Localized: Bench
     m_Metadata:
       m_Items: []
+  - m_Id: 2998387840299008
+    m_Localized: Pond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3320681170055168
+    m_Localized: Nanus Statue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638307005071360
+    m_Localized: the Beehive gives a small increase in bees on any Ruderal plots
+      and Wild plots in your garden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638308695375872
+    m_Localized: 'the Fence gives a small increase in insects on adjacent Wild plots
+      and Edge Vegetation plots '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638309873975296
+    m_Localized: 'the Bench gives a small increase in insects on adjacent Ruderal
+      plots and Edge Vegetation plots '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639151960195072
+    m_Localized: 'the Rock gives a small increase in uncommon and rare insects on
+      adjacent plots '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638313674014720
+    m_Localized: 'the Bush gives a small increase in insects on adjacent Ruderal
+      plots '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638311174209536
+    m_Localized: the Birch tree provides a small boost in passive pollen production
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3638312944205824
+    m_Localized: "the Oak tree provides a small boost in passive pollen production\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639053427605504
+    m_Localized: the Ruderal Plot is a place to plant your plants, especially annual
+      and biannual plants do well on these plots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639110470139904
+    m_Localized: the Wild plot is a place to plant your plants, especially tall (dutch)
+      native plants and exotic prairie species do well on these plots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639178929569792
+    m_Localized: the Pond increases all insects on adjacent plots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639194695958528
+    m_Localized: the Shed gives you extra seeds everytime you scan a plant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639133681418240
+    m_Localized: the Edge Vegetation Plot is a place to plant your plants, especially
+      species that grow best on edges of forests and in (partial) shadow will do
+      well on these plots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639572787298304
+    m_Localized: the Nanus Statue gives a medium increase in rare insects on adjacent
+      plots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3693037299367936
+    m_Localized: Shed
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

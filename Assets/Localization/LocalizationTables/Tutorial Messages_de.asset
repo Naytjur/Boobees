@@ -17,7 +17,62 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: f08b529ce8dc4a540a33a3f34c2ce43a, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 31371231232
+    m_Localized: Willkommen in deinem virtuellen Garten, hier kannst du deine Felder
+      platzieren, Pflanzen pflanzen, dekorieren und die Insekten in deinem Garten
+      rumschwirren sehen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6110616420352
+    m_Localized: "Lass uns zuerst dein erstes Feld platzieren, sodass du direkt mit
+      dem G\xE4rtnern anfangen kannst! Tippe auf den Bauen Knopf auf der rechten
+      Seite deines Bildschirmes um den Baumodus zu betreten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6253247922176
+    m_Localized: "Im Baumodus kannst du eine Struktur ausw\xE4hlen, platziere es
+      wo du willst und best\xE4tige, wenn du mit der Platzierung zufrieden bist!
+      Probier es f\xFCr's erste mit deinem ersten Feld aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6359988764672
+    m_Localized: "Jetzt wo du ein leeres Feld hast, kannst du den Verlassen Knopf
+      antippen um zur\xFCck zur Ansicht zu gehen um deine erste Pflanze zu scannen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6434597044224
+    m_Localized: "Wenn du du jetzt den Kamera Knopf in der unteren linken Ecke antippst,
+      \xF6ffnest du du den Barcode Scanner. Dort musst du nur deine Kamera auf einen
+      Barcode richten der neben den Feldern steht!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6590511906816
+    m_Localized: "Du hast deine erste Blume entdeckt! Tippe nun auf den Pflanzen
+      Knop in der Ansicht und w\xE4hle ein Feld aus. Du kannst nun deine Blumen so
+      platzieren, wie du es im Baumodus getan hast!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6737438375936
+    m_Localized: "Die Insekten summen und die Blumen bl\xFChen. Insekten geben dir
+      Pollen und Honig. Pollen lassen dich Level aufsteigen und je h\xF6her dein
+      Level, desto mehr Dekorationen und Felder schaltest du frei. Mit Honig kaufst
+      du im Shop die neu freigschalteten Dekorationen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6866786516992
+    m_Localized: "Du hast den Dreh raus, jetzt kannst mehr Blumen scannen um deinen
+      Garten nach Herzenslust zu dekorieren und vergr\xF6\xDFern! Du kannst dir jederzeit
+      alle deine freigschalteten Pflanzen und Insekten anschauen indem du den Katalog
+      oben rechts antippst. Sobald du dies tust wird das Tutorial beendet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4597198706618368
+    m_Localized: "Gl\xFCckwunsch! Du hast genug Pollen und Honig gesammelt um dein
+      erstes Level aufzusteigen. Dr\xFCcke den Level-up Knopf um fortzufahren. Aber
+      beachte: Ein Level anzusteigen kostet dich all dein Honig!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

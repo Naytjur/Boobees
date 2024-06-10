@@ -16,8 +16,151 @@ MonoBehaviour:
     m_Code: de
   m_SharedData: {fileID: 11400000, guid: a976c210a69094941bd0250d22978374, type: 2}
   m_Metadata:
-    m_Items: []
-  m_TableData: []
+    m_Items:
+    - rid: 3666191844867571714
+  m_TableData:
+  - m_Id: 34600074018816
+    m_Localized: Du hast Level  {level-component.displayLevel} erreicht !
+    m_Metadata:
+      m_Items:
+      - rid: 3666191844867571714
+  - m_Id: 9271443456
+    m_Localized: Bau-modus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2153395453952
+    m_Localized: Englisch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2261537193984
+    m_Localized: "Niederl\xE4ndisch"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28801935278080
+    m_Localized: Pflanz-Modus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28990423105536
+    m_Localized: "Best\xE4tigen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29098422239232
+    m_Localized: "Zur\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30006765879296
+    m_Localized: Code benutzen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33450511761408
+    m_Localized: 'Freigeschaltet:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51157160361984
+    m_Localized: Tippe und fortzufahren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251840555843584
+    m_Localized: "N\xE4chste"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251888479961088
+    m_Localized: Vorherige
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257921063518208
+    m_Localized: "Schlie\xDFen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257957088395264
+    m_Localized: Gehe zur Startseite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257958564790272
+    m_Localized: Gehe zum Katalog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269742315077632
+    m_Localized: Gib einen Code ein...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281907453427712
+    m_Localized: 'Freigeschaltete Blume:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346203344535552
+    m_Localized: Freischaltbar ab level {unlockLevel-component.buildingUnlockLevel}
+    m_Metadata:
+      m_Items:
+      - rid: 3666191844867571714
+  - m_Id: 320343619076096
+    m_Localized: Eingabe Pflanzen Freischaltcode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338413267910656
+    m_Localized: Tippe um mit dem Pflanzen zu beginnen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346225268162560
+    m_Localized: Gratis!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346262823960576
+    m_Localized: Voll!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348291973709824
+    m_Localized: 'Lockt an:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348796535898112
+    m_Localized: 'Angelockt durch:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351107450601472
+    m_Localized: 'Preis: {cost-component.buildingCost}'
+    m_Metadata:
+      m_Items:
+      - rid: 3666191844867571714
+  - m_Id: 634263730847744
+    m_Localized: Noch nicht entdeckt!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3196596235730944
+    m_Localized: Einstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3196873680551936
+    m_Localized: Musik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3196927824822272
+    m_Localized: Sprache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3197877641740288
+    m_Localized: Deutsch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5846880221069312
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 3666191844867571714
+  - m_Id: 4645749293776896
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 3666191844867571714
+  - m_Id: 5857427448594432
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 3666191844867571714
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 3666191844867571714
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00001ff5771f000000005fbfde3a01000000df92543f010000009fe2b4c5140000005fcc4881100000005f9a4ccf1400

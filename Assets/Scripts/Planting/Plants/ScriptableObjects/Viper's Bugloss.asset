@@ -35,14 +35,14 @@ MonoBehaviour:
   description: "\u2022\tEuropean wildflower \u2022\tAlso found in North America \u2022\tvarious
     colors, including purple, blue, yellow, or white \u2022\toften with a sought-after
     tricolor pattern.  "
-  unlocked: 1
+  unlocked: 0
   gardenPrefab: {fileID: 8391304303747840104, guid: 23b79293d9008534da2fa3f9ec1f957f,
     type: 3}
   gardenVisual: {fileID: 8391304303747840104, guid: 23b79293d9008534da2fa3f9ec1f957f,
     type: 3}
   cataloguePrefab: {fileID: 8391304303747840104, guid: 23b79293d9008534da2fa3f9ec1f957f,
     type: 3}
-  sprite: {fileID: 21300000, guid: 94ac8778e45c1b34498223feca3e1bb1, type: 3}
+  sprite: {fileID: 21300000, guid: 4692d50ca9bd5bf4eb7fe7ff104ec153, type: 3}
   attractions:
   - {fileID: 11400000, guid: 8a8531d69422c3d498377e61ea42de98, type: 2}
   - {fileID: 11400000, guid: 240290f74e275fc4abbed3687cac3660, type: 2}
@@ -50,8 +50,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f78e8b971c8104d489063a076b1dda52, type: 2}
   - {fileID: 11400000, guid: 495e116121ebcc5418722cec3d675bf9, type: 2}
   correctPlots: 00000000
-  baseSpawnRate: 10
+  baseSpawnRate: 100
   seedAmount: 0
+  decayTime: 82800
   references:
     version: 2
     RefIds: []

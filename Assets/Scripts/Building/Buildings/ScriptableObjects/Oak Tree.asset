@@ -24,9 +24,9 @@ MonoBehaviour:
     m_LocalVariables: []
   itemDescriptionLocalizedString:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 3638312944205824
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -40,11 +40,17 @@ MonoBehaviour:
     type: 3}
   cataloguePrefab: {fileID: 4495814638416489810, guid: df6b042e167437e49a7de60b40199810,
     type: 3}
-  sprite: {fileID: 21300000, guid: c76def1eb8c1a7343bce901c3c4418a5, type: 3}
+  sprite: {fileID: 21300000, guid: 42ae5ac4ae430d343bd15c4bc1f13a3c, type: 3}
   width: 1
   height: 1
-  unlockLevel: 7
+  specificMaxBuildingLimit: 0
+  unlockLevel: 12
   cost: 400
+  maxCount: 0
+  count: 0
+  insectModifiers: []
+  affectedPlotTypes: 
+  insectRarityModifiers: []
   references:
     version: 2
     RefIds: []

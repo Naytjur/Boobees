@@ -12,21 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da27bc4c03b572347ad99fefe6e20697, type: 3}
   m_Name: Shed
   m_EditorClassIdentifier: 
-  id: 
+  id: 13
   itemNameLocalizedString:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 3693037299367936
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   itemDescriptionLocalizedString:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:491342107c14a9c4291c824a9d542725
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 3639194695958528
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -40,13 +40,17 @@ MonoBehaviour:
     type: 3}
   cataloguePrefab: {fileID: 7214276076198305582, guid: 810c38d66d3f09d408a3936515a22019,
     type: 3}
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 9f8f5e8f082b6654fb85b2f168576730, type: 3}
   width: 4
   height: 4
+  specificMaxBuildingLimit: 0
   unlockLevel: 0
   cost: 0
-  maxCount: 0
+  maxCount: 2
   count: 0
+  insectModifiers: []
+  affectedPlotTypes: 
+  insectRarityModifiers: []
   references:
     version: 2
     RefIds: []

@@ -17,7 +17,238 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 38ae0a995648f0949ac8f896377c22fa, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 6234767360
+    m_Localized: Insekten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54653812736
+    m_Localized: Bienen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 65017937920
+    m_Localized: Schmetterlinge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72458172301312
+    m_Localized: "S\xE4gehornbiene"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72724418330624
+    m_Localized: Blaue Mauerbiene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72883176931328
+    m_Localized: Dunkle Erdhummel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73105722507264
+    m_Localized: Zitronenfalter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73304176001024
+    m_Localized: "Hauhechel-Bl\xE4uling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73517557022720
+    m_Localized: Gemeine Seidenbiene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73673086009344
+    m_Localized: Weidensandbiene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73813154791424
+    m_Localized: Rostfarbiger Dickkopffalter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74020122722304
+    m_Localized: Schwalbenschwanz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74173437116416
+    m_Localized: Aurorafalter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74365599154176
+    m_Localized: Distelfalter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74653613621248
+    m_Localized: Admiral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74923840045056
+    m_Localized: "\u2022 Eine Einzelbiene, die oft in G\xE4rten zu sehen ist und
+      f\xFCr ihre roten Haare bekannt ist und in Hohlr\xE4umen wie hohlen Pflanzenst\xE4ngeln,
+      in Felsl\xF6chern und im br\xF6ckelnden M\xF6rtel alter Geb\xE4ude nistet.\r\n\u2022
+      Jedes Weibchen baut ihr eigenes Nest. \r\n\u2022 Die Rote Mauerbiene ist mit
+      dichtem, r\xF6tlichem Haar bedeckt.\r\n\r\nFun Fact: Rote Mauerbienen sind
+      ausgezeichnete Best\xE4uber und k\xF6nnen bis zu 4.000 Blumen pro Tag best\xE4uben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74866050924544
+    m_Localized: Rote Mauerbiene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75004957884416
+    m_Localized: Gartenhummel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75166690246656
+    m_Localized: Natterkopf-Mauerbiene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75362245476352
+    m_Localized: Gemeine Sandbiene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72643535372288
+    m_Localized: "\u2022 Eine Biene, die f\xFCr ihre schw\xE4rzliche F\xE4rbung und
+      die stumpfen Antennensegmente bekannt ist.\r\n\u2022 Kommt in verschiedenen
+      Lebensr\xE4umen vor, von Grasland bis hin zu Gartenfl\xE4chen.\r\n\r\nFun Fact:
+      Die S\xE4gehornbiene ist ein Spezialbest\xE4uber, der oft auf Bl\xFCten der
+      Familie der Erbsen zu finden ist"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72856652152832
+    m_Localized: "\u2022 Eine Einzelbiene die h\xE4ufig in Europa vorkommt.\r\n\u2022
+      Blaue Mauerbienen sind dunkel und metallisch blau und nicht, wie die Honigbiene,
+      braun und orange gestreift.\r\n\u2022 Sie verwendet L\xF6cher, die von anderen
+      Insekten oder Tieren gebohrt wurden, wieder, um ihre Nesth\xF6hle zu bauen.\r\n\r\nFun
+      Fact: Die Blaue Mauerbiene nistet oft in kleinen Hohlr\xE4umen in Holz und
+      W\xE4nden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73038840135680
+    m_Localized: "\u2022 Eine gew\xF6hnliche Hummel mit einem gelbbraunen Schwanz,
+      bekannt f\xFCr ihre robuste Gr\xF6\xDFe.\r\n\u2022 Dunkle Erdhummeln sind die
+      gr\xF6\xDFten Hummeln und schl\xFCpfen im Fr\xFChling.\r\n\u2022 Sie lieben
+      alle Arten von Blumen, besonders offene, g\xE4nsebl\xFCmchenartige Bl\xFCten,
+      bei denen sie mit ihren kurzen Zungen den Nektar leichter erreichen k\xF6nnen.\r\n\u2022
+      Sie nisten unter der Erde in gro\xDFen Gruppen von bis zu 600 Bienen, oft in
+      alten S\xE4ugetiernestern.\r\n\r\nFun Fact: Diese Hummelart ist oft die erste
+      Hummel, die man im Fr\xFChjahr sieht, und eine der letzten im Sp\xE4therbst"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73159740948480
+    m_Localized: "\u2022 Ein Schmetterling, der oft in feuchten W\xE4ldern und G\xE4rten
+      zu sehen ist.\r\n\u2022 M\xE4nnchen sind zitronengelb, Weibchen gr\xFCnlich-wei\xDF
+      mit orangefarbenen Flecken in der Mitte jedes Fl\xFCgels.\r\n\u2022 Erwachsene
+      Zitronenfalter halten bei kaltem Wetter Winterschlaf.\r\n\u2022 Sie ruhen mit
+      geschlossenen Fl\xFCgeln.\r\n\r\nFun Fact: Aufgrund seiner buttergelben Farbe
+      gilt der Zitronenfalter als der urspr\xFCngliche \"Butter-fly\"."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73383603535872
+    m_Localized: "\u2022 Ein kleiner Schmetterling mit leuchtend blauen Fl\xFCgeln,
+      der h\xE4ufig auf Wiesen und im Grasland vorkommt.\r\n\u2022 Erste Schmetterlinge
+      sind ab Ende April zu sehen.\r\n\u2022 M\xE4nnchen sind sehr territorial und
+      vertreiben alle Insekten in ihrem Revier.\r\n\u2022 Wird von verschiedenen
+      H\xFClsenfruchtarten angezogen, insbesondere vom Kleeblatt.\r\n\r\nFun Fact:
+      Die M\xE4nnchen haben leuchtend blaue Fl\xFCgel, w\xE4hrend die Weibchen braun
+      mit einem Hauch von Blau sind."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73614055374848
+    m_Localized: "\u2022 Eine kleine, gestreifte Biene, die h\xE4ufig in Europa vorkommt,
+      insbesondere in sandigen Lebensr\xE4umen.\r\n\u2022 Spezialist f\xFCr Rainfarn.\r\n\u2022
+      Sie nistet in Steilw\xE4nden aus Sand, Lehm oder L\xF6ss.\r\n\u2022 Sie transportiert
+      die Pollen f\xFCr Ihre Kinder auf den Hinterbeinen, nicht auf dem Bauch.\r\n\r\nFun
+      Fact: Diese Biene ist daf\xFCr bekannt, in gro\xDFen Gruppen zu nisten, oft
+      auf sandigen B\xF6den"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73744326262784
+    m_Localized: "\u2022 Eine Einzelbiene mit gr\xE4ulichen Haarflecken, die typischerweise
+      in Europa vorkommt.\r\n\u2022 Sie kommen in einer Vielzahl offener Graslandlebensr\xE4ume
+      vor.\r\n\u2022 Die Weibchen sind schwarz und haben zwei breite aschgraue Haarb\xE4nder
+      \xFCber dem Brustkorb. \r\n\u2022 Die M\xE4nnchen sind \xE4hnlich, aber der
+      Brustkorb ist vollst\xE4ndig mit weniger dichten grauen Haaren bedeckt\r\n\r\nFun
+      Fact: Diese Biene bevorzugt sonnige, sandige Gebiete zum Nisten und ist ein
+      wichtiger Best\xE4uber f\xFCr fr\xFChe Fr\xFChlingsblumen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73859782868992
+    m_Localized: "\u2022 Ein robuster Schmetterling mit charakteristischem Schnellflug
+      und orangebraunen Fl\xFCgeln.\r\n\u2022 Er kommt in einer Vielzahl von Lebensr\xE4umen
+      vor, wie zum Beispiel in Str\xE4uchern, hohen Kr\xE4utern und Gr\xE4sern; Weiden,
+      Stra\xDFenr\xE4nder, Hecken und feuchten Heidelandschaften.\r\n\u2022 Der m\xE4nnliche
+      Rostfarbige Dickkopffalter ist ein sehr territorialer Schmetterling, und wenn
+      er von seinem Lieblingssitz auf einem hohen Gras oder Busch gest\xF6rt wird,
+      kehrt er fast immer an die gleiche Stelle zur\xFCck.\r\n\r\nFun Fact: Die Raupen
+      gehen als halb ausgewachsene Larve in den Winterschlaf, bis der Winter vor\xFCber
+      ist."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74129648582656
+    m_Localized: "\u2022 Ein gro\xDFer und auff\xE4lliger Schmetterling mit markanten
+      schwanzartigen Verl\xE4ngerungen an den Hinterfl\xFCgeln.\r\n\u2022 Kann weite
+      Strecken zur\xFCcklegen.\r\n\u2022 Besucht blumenreiche Orte, wie kr\xE4uterreiches
+      Grasland, Klee- und Luzernefelder.\r\n\r\nFun Fact: Der Schwalbenschwanz hat
+      einen starken und schnellen Flug, h\xE4lt aber h\xE4ufig inne, um \xFCber bl\xFChenden
+      Kr\xE4utern zu schweben und Nektar zu schl\xFCrfen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74255188295680
+    m_Localized: "\u2022 Ein Schmetterling mit markanten orangefarbenen Fl\xFCgelspitzen,
+      der h\xE4ufig im Fr\xFChling zu sehen ist.\r\n\u2022 W\xE4hrend der Paarungszeit
+      sind die M\xE4nnchen st\xE4ndig auf der Suche nach Weibchen und folgen allem,
+      was wei\xDF ist.\r\n\u2022 Sie legen ihre Eier meist in Wiesenschaumkraut und
+      Knoblauchsrauke, wovon sie auch trinken.\r\n\r\nFun Fact: M\xE4nnchen haben
+      die leuchtend orangefarbenen Spitzen, w\xE4hrend Weibchen diese F\xE4rbung
+      fehlt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74408565604352
+    m_Localized: "\u2022 Ein wandernder Schmetterling mit orangefarbenen, schwarzen
+      und wei\xDFen Fl\xFCgeln, der weltweit vorkommt.\r\n\u2022 Kann weite Strecken
+      von den Niederlanden bis nach S\xFCdeuropa und Nordafrika zur\xFCcklegen.\r\n\u2022
+      Kann Frost nicht \xFCberleben.\r\n\u2022 Die Raupen ern\xE4hren sich haupts\xE4chlich
+      von Disteln.\r\n\r\nFun Fact: Distelfalter legen eine Hin- und R\xFCckstrecke
+      von \xFCber 7.500 Meilen zur\xFCck, eine der l\xE4ngsten Wanderungen aller
+      Schmetterlinge"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74830671970304
+    m_Localized: "\u2022 Ein auff\xE4lliger Schmetterling mit schwarzen, roten und
+      wei\xDFen Abzeichen.\r\n\u2022 Kann in fast jedem Lebensraum gefunden werden,
+      von G\xE4rten bis zu Meeresk\xFCsten und Stadtzentren bis zu Berggipfeln.\r\n\u2022
+      Man sieht sie typischerweise beim Nektar trinken an Sommerfliedern oder bl\xFChendem
+      Efeu sowie an verrottenden Fr\xFCchten.\r\n\r\nFun Fact: Rote Admirale sind
+      f\xFCr ihr Territorialverhalten bekannt und verteidigen oft einen bevorzugten
+      Futterplatz vor anderen Schmetterlingen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75074117763072
+    m_Localized: "\u2022 Eine gro\xDFe Hummel mit langer Zunge, die es ihr erm\xF6glicht,
+      sich von tiefen Bl\xFCten zu ern\xE4hren.\r\n\u2022 Hummelart mit der l\xE4ngsten
+      Zunge in den Niederlanden.\r\n\u2022 Sie k\xF6nnen Nektar aufnehmen, was f\xFCr
+      die meisten Insekten normalerweise tabu ist.\r\n\u2022 Fliegen im Fr\xFChjahr
+      aus und nisten auf oder knapp \xFCber dem Boden.\r\n\r\nFun Fact: Bekannt f\xFCr
+      ihre Vorliebe f\xFCr G\xE4rten und Parks, ist sie ein wichtiger Best\xE4uber
+      vieler Pflanzen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75226622656512
+    m_Localized: "\u2022 Eine Biene, die sich auf die Nahrungssuche auf Gew\xF6hnlichen
+      Natternkopf-Bl\xFCten spezialisiert hat.\r\n\u2022 Die Biene lebt allein und
+      nicht in einer Kolonie.\r\n\u2022 Sie baut ihr Nest in hohlen St\xE4mmen oder
+      L\xF6chern in Holz und Mauerwerk, die mit Schlamm bedeckt sind.\r\n\r\nFun
+      Fact: Diese Biene bezieht fast ausschlie\xDFlich die Pollen des gew\xF6hnlichen
+      Natterkopfes, was sie zu einer hochspezialisierten Biene macht"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75457179353088
+    m_Localized: "\u2022 Eine Einzelbienenart, die f\xFCr ihre charakteristischen
+      gelben Beine bekannt ist.\r\n\u2022 Sie baut Nester in freiliegenden Ufern
+      und Klippen, Blumenbeeten, Stra\xDFenr\xE4ndern und in sp\xE4rlich bewachsenen
+      Feldr\xE4ndern.\r\n\u2022 Sie sammelt Pollen von einer Vielzahl von Pflanzen,
+      darunter bl\xFChende B\xE4ume und Str\xE4ucher, Unkr\xE4uter und Gartenarten.\r\n\r\nFun
+      Fact: Diese Bienen haben jedes Jahr zwei Flugperioden, wobei die Fr\xFChlingsgeneration
+      normalerweise zahlreicher ist als die Sommergeneration."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
