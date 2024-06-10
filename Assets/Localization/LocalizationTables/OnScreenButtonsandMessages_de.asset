@@ -143,17 +143,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5846880221069312
-    m_Localized: 
+    m_Localized: "Du hast (seedamount) Samen bekommen f\xFCr: "
     m_Metadata:
       m_Items:
       - rid: 3666191844867571714
   - m_Id: 4645749293776896
-    m_Localized: 
+    m_Localized: "Samen:\r {seeds-component.seedsLeft}"
     m_Metadata:
       m_Items:
       - rid: 3666191844867571714
   - m_Id: 5857427448594432
-    m_Localized: 
+    m_Localized: Du hast {seeds-component.addedSeedAmount} Samen bekommen
     m_Metadata:
       m_Items:
       - rid: 3666191844867571714
