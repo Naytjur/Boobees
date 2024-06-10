@@ -7,7 +7,7 @@ using UnityEngine.Localization;
 
 public class ItemInfo : ScriptableObject
 {
-    public string id;
+    public int id;
     public LocalizedString itemNameLocalizedString;
     public LocalizedString itemDescriptionLocalizedString;
     public string itemName;

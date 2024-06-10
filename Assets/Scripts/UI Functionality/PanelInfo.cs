@@ -10,43 +10,29 @@ public class PanelInfo : MonoBehaviour
 {
     public List<PlantSO> plantInfo = new List<PlantSO>();
 
-    private string IdNum;
+    private int idNum;
     private int index;
-    public TextMeshProUGUI PlantName;
-    public TextMeshProUGUI PlantDescription;
-    public Image PlantModel;
+    public TextMeshProUGUI plantName;
+    public TextMeshProUGUI plantDescription;
+    public Image plantModel;
 
-    // Start is called before the first frame update
-    void Start()
+    public void ChangeID(int NumberToChangeTo)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    { 
-        
-    }
-
-    public void ChangeID(string NumberToChangeTo)
-    {
-        IdNum = NumberToChangeTo;
+        idNum = NumberToChangeTo;
 
         for (int i = 0; i < plantInfo.Count; i++)
         {
-            if (plantInfo[i].id == IdNum)
+            if (plantInfo[i].id == idNum)
             {
                 index = i;
             }
-        }
-        
+        }  
     }
-
 
     public void ChangePlantName()
     {
-        PlantName.text = plantInfo[index].itemName;
-        PlantDescription.text = plantInfo[index].description;
+        plantName.text = plantInfo[index].itemName;
+        plantDescription.text = plantInfo[index].description;
         Debug.Log(plantInfo.Count);
         Debug.Log(plantInfo[index].itemName);
         Debug.Log(plantInfo[index].description);

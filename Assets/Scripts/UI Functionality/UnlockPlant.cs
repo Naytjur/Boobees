@@ -23,11 +23,14 @@ public class UnlockPlant : MonoBehaviour
 
     private void ConfirmInput()
     {
-        if(PlantingManager.instance.TryUnlockPlant(inputField.text, out string name))
+        if(int.TryParse(inputField.text, out int number))
         {
-            confirmInputText.text = name;
-            gameObject.SetActive(false);
-            return;
+            if(PlantingManager.instance.TryUnlockPlant(number, out string name))
+            {
+                confirmInputText.text = name;
+                gameObject.SetActive(false);
+                return;
+            }
         }
         confirmInputText.text = "Invalid code!";
     }
