@@ -88,7 +88,6 @@ public class Patch : Building
                     buildings.Add(building);
                 }
             }
-
         }
         return buildings;
     }
