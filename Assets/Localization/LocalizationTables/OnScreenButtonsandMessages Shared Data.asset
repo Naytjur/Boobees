@@ -151,6 +151,18 @@ MonoBehaviour:
     m_Key: Seeds Gaiend Unlock Message
     m_Metadata:
       m_Items: []
+  - m_Id: 6209647775412224
+    m_Key: Navigation Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6209733125304320
+    m_Key: Zoom Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6213761569746944
+    m_Key: Sensitivity Message
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

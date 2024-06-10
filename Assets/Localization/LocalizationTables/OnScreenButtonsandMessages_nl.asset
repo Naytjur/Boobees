@@ -161,6 +161,18 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 8168968436361986049
+  - m_Id: 6209647775412224
+    m_Localized: Navigatie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6209733125304320
+    m_Localized: Zoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6213761569746944
+    m_Localized: 'Sensitiviteit:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
