@@ -116,6 +116,11 @@ public class Patch : Building
 
     public void SavePlants()
     {
+        if (plot == null)
+        {
+            plot = GetComponent<Plot>();
+        }
+
         foreach (Plant plant in plot.plants)
         {
             if (plant != null)

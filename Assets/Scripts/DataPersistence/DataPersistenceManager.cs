@@ -32,8 +32,7 @@ public class DataPersistenceManager : MonoBehaviour
         Invoke("LoadGame", 0.1f);
         ScoreManager.onLevelUp += OnLevelUp;
         PlantingManager.instance.onSeedsGained +=OnSeedsGained;
-        PlantingManager.instance.onPlantPlanted +=OnPlantPlanted;
-        BuildManager.onBuildingPlaced += OnBuildingPlaced;
+        PlantingManager.instance.onPlantPlanted += OnPlantPlanted;
     }
 
     public void NewGame()
@@ -78,10 +77,6 @@ public class DataPersistenceManager : MonoBehaviour
         SaveGame();
     }
     private void OnPlantPlanted()
-    {
-        SaveGame();
-    }
-    private void OnBuildingPlaced()
     {
         SaveGame();
     }

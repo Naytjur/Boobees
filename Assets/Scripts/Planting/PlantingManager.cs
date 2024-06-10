@@ -280,7 +280,6 @@ public class PlantingManager : MonoBehaviour
                 plant = so;
             }
         }
-
         return plant;
     }
     public static float GetCurrentDateTimeAsFloat()
