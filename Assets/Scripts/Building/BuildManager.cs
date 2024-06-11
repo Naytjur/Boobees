@@ -103,7 +103,6 @@ public class BuildManager : MonoBehaviour, IDataPersistence
             {
                 return;
             }
-
             UpdateVisualPosition();
         }
     }
@@ -172,7 +171,6 @@ public class BuildManager : MonoBehaviour, IDataPersistence
         SetCurrentMover(build);
         direction = (BuildingSO.Dir) build.buildData.buildingRotation;
         build.Hide();
-        RemoveFromGrid(build);
         UpdateBuildState(BuildState.Moving);
     }
 

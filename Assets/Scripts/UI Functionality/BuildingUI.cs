@@ -6,7 +6,6 @@ using UnityEngine.UI;
 using System;
 using UnityEngine.Localization.Components;
 using UnityEngine.Localization;
-using static BuildManager;
 
 public class BuildingUI : MonoBehaviour
 {
@@ -54,10 +53,10 @@ public class BuildingUI : MonoBehaviour
 
     private void UpdateOverlay(BuildManager.BuildState state)
     {
-        confirmButton.gameObject.SetActive(state != BuildState.Unselected);
-        rotateButton.gameObject.SetActive(state != BuildState.Unselected);
-        buttonContainer.gameObject.SetActive(state == BuildState.Unselected);
-        removeButton.gameObject.SetActive(state == BuildState.Moving);
+        confirmButton.gameObject.SetActive(state != BuildManager.BuildState.Unselected);
+        rotateButton.gameObject.SetActive(state != BuildManager.BuildState.Unselected);
+        buttonContainer.gameObject.SetActive(state == BuildManager.BuildState.Unselected);
+        removeButton.gameObject.SetActive(state == BuildManager.BuildState.Moving);
     }
 
     private void LoadBuildButtons()

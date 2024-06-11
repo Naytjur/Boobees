@@ -19,6 +19,8 @@ public class Plant : MonoBehaviour
 
     private bool gameRunning = true;
 
+    private bool isPaused = false;
+
     private void Start()
     {
         BuildManager.onBuildingPlaced +=OnBuidingPlaced;
@@ -31,6 +33,19 @@ public class Plant : MonoBehaviour
             targetTransform = transform;
         }
     }
+
+    private void OnApplicationPause(bool pause)
+    {
+        isPaused = pause;
+        Time.timeScale = 0f;
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        isPaused = !focus;
+        Time.timeScale = 1f;
+    }
+
     public void AssignPlot(PlotType plotType)
     {
         plot = plotType;
@@ -52,10 +67,13 @@ public class Plant : MonoBehaviour
     {
         while (true)
         {
-            UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
-            float randomSpawnRate = UnityEngine.Random.Range(3, spawnRate);
-            yield return new WaitForSeconds(randomSpawnRate);
-            TrySpawnInsect();
+            if(!isPaused)
+            {
+                UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
+                float randomSpawnRate = UnityEngine.Random.Range(3, spawnRate);
+                yield return new WaitForSeconds(randomSpawnRate);
+                TrySpawnInsect();
+            }
         }
     }
 

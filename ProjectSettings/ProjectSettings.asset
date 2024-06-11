@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: ToBeeDetermined
-  productName: Flower Garden
+  productName: HortusHome
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -135,7 +135,7 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 1.0.3
+  bundleVersion: 2.0
   preloadedAssets:
   - {fileID: 0}
   - {fileID: 0}
@@ -161,7 +161,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.ToBeeDetermined.FlowerGarden
+    Android: com.ToBeeDetermined.HortusHome
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -286,7 +286,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 4136bef108bf72d4c81e05ae9a8ab5f6, type: 3}
+      m_Icon: {fileID: 2800000, guid: d67e22b4de04704439729531096f34b9, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
