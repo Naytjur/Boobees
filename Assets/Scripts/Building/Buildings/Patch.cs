@@ -120,12 +120,13 @@ public class Patch : Building
         {
             plot = GetComponent<Plot>();
         }
+        
+        buildData.placedPlants.Clear();
 
         foreach (Plant plant in plot.plants)
         {
             if (plant != null)
             {
-                buildData.placedPlants.Clear();
                 float elapsedTime = plant.GetElapsedTime();
                 buildData.placedPlants.Add(new PlantData(plant.plantSO.id, plant.transform.position.x, plant.transform.position.y, plant.transform.position.z, elapsedTime));
             }

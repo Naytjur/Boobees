@@ -17,8 +17,6 @@ public class Plant : MonoBehaviour
     private Plot currentPlot;
     private float spawnRate;
 
-    private bool gameRunning = true;
-
     private bool isPaused = false;
 
     private void Start()
@@ -32,18 +30,6 @@ public class Plant : MonoBehaviour
         {
             targetTransform = transform;
         }
-    }
-
-    private void OnApplicationPause(bool pause)
-    {
-        isPaused = pause;
-        Time.timeScale = 0f;
-    }
-
-    private void OnApplicationFocus(bool focus)
-    {
-        isPaused = !focus;
-        Time.timeScale = 1f;
     }
 
     public void AssignPlot(PlotType plotType)
@@ -79,19 +65,16 @@ public class Plant : MonoBehaviour
 
     private void TrySpawnInsect()
     {
-        if (gameRunning == true)
+        foreach (ItemInfo item in plantSO.attractions)
         {
-            foreach (ItemInfo item in plantSO.attractions)
+            if (item is InsectSO insect)
             {
-                if (item is InsectSO insect)
-                {
-                    float rarityPercentage = insect.GetRarityPercentage();
-                    rarityPercentage = ApplyRarityModifiers(insect, rarityPercentage);
+                float rarityPercentage = insect.GetRarityPercentage();
+                rarityPercentage = ApplyRarityModifiers(insect, rarityPercentage);
 
-                    if (UnityEngine.Random.Range(1, 101) <= rarityPercentage)
-                    {
-                        SpawnInsect(item.gardenPrefab);
-                    }
+                if (UnityEngine.Random.Range(1, 101) <= rarityPercentage)
+                {
+                    SpawnInsect(item.gardenPrefab);
                 }
             }
         }
@@ -230,10 +213,17 @@ public class Plant : MonoBehaviour
         SpawnRangeChanger();
     }
 
-    #if UNITY_ANDROID && !UNITY_EDITOR
-    private void OnApplicationFocus(bool gameFocused)
+#if UNITY_ANDROID && !UNITY_EDITOR
+        private void OnApplicationPause(bool pause)
     {
-        gameRunning = gameFocused;
+        isPaused = pause;
+        Time.timeScale = 0f;
     }
-    #endif
+
+    private void OnApplicationFocus(bool focus)
+    {
+        isPaused = !focus;
+        Time.timeScale = 1f;
+    }
+#endif
 }
