@@ -120,7 +120,7 @@ public class Patch : Building
         {
             plot = GetComponent<Plot>();
         }
-        
+
         buildData.placedPlants.Clear();
 
         foreach (Plant plant in plot.plants)

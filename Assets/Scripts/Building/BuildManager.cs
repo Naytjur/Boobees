@@ -487,17 +487,18 @@ public class BuildManager : MonoBehaviour, IDataPersistence
     private void UpdateActiveState(GameState state)
     {
         isActive = state == GameState.Building;
+
+        if(state != GameState.Building)
+        {
+            CancelCurrent();
+        }
+
         UpdateBuildState(BuildState.Unselected);
 
         if (visual != null)
         {
             Destroy(visual.gameObject);
             visual = null;
-        }
-
-        if(state != GameState.Building)
-        {
-            CancelCurrent();
         }
     }
 
